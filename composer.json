@@ -1,0 +1,47 @@
+{
+    "name": "adnanmula/keyforge-game-log-parser",
+    "description": "",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Adnan Mula",
+            "email": "adnan.mula.bakkar@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.4",
+        "symfony/dom-crawler": "^7.2",
+        "symfony/css-selector": "^7.2"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "symfony/var-dumper": "^7.0",
+        "phpro/grumphp": "^2.5",
+        "adnanmula/coding-standard": "^0.0.10",
+        "phpunit/phpunit": "^11.0"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@auto-scripts",
+            "rm -rf .git/hooks",
+            "cp -r scripts/git-hooks .git/hooks"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "AdnanMula\\KeyforgeGameLogParser\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AdnanMula\\KeyforgeGameLogParser\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpro/grumphp": true
+        }
+    }
+}

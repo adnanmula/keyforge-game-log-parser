@@ -1,0 +1,27 @@
+nan26 brings Sapphire Domantis of the Valley to The Crucible
+NaN brings Erazfhy, Lair Dancer to The Crucible
+NaN won the flip and is first player
+ nan26 has connected to the game server
+ NaN has connected to the game server
+nan26 is shuffling their deck
+nan26 draws 6 card  s to their maximum of 6
+NaN is shuffling their deck
+NaN draws 6 card  s to their maximum of 6
+NaN draws 1 card
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses skyborn  as their active house this turn
+Main phase - NaN
+Ready phase - NaN
+Draw phase - NaN
+End of turn 1
+nan26: 0 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 1 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses logos  as their active house this turn
+Main phase - nan26
+ nan26 concedes
+ NaN has won the game
