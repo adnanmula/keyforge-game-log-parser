@@ -3,6 +3,7 @@
 namespace AdnanMula\KeyforgeGameLogParser;
 
 use AdnanMula\KeyforgeGameLogParser\VO\AmberObtainedCollection;
+use AdnanMula\KeyforgeGameLogParser\VO\CardsDiscardedCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsDrawnCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsPlayedCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\HouseChosenCollection;
@@ -19,6 +20,7 @@ final class Player implements \JsonSerializable
         public AmberObtainedCollection $amberObtained = new AmberObtainedCollection(),
         public KeyForgedCollection $keysForged = new KeyForgedCollection(),
         public CardsDrawnCollection $cardsDrawn = new CardsDrawnCollection(),
+        public CardsDiscardedCollection $cardsDiscarded = new CardsDiscardedCollection(),
         public CardsPlayedCollection $cardsPlayed = new CardsPlayedCollection(),
         public HouseChosenCollection $housesPlayed = new HouseChosenCollection(),
     ) {}
@@ -62,6 +64,7 @@ final class Player implements \JsonSerializable
             'keys_forged' => $this->keysForged->jsonSerialize(),
             'cards_played' => $this->cardsPlayed->jsonSerialize(),
             'cards_drawn' => $this->cardsDrawn->jsonSerialize(),
+            'cards_discarded' => $this->cardsDiscarded->jsonSerialize(),
         ];
     }
 }

@@ -1,0 +1,401 @@
+nan26 brings Sisylove, the Spider Companion to The Crucible
+NaN brings Dhirrbriar, the Snobbish Lake Pirate to The Crucible
+NaN won the flip and is first player
+ NaN has connected to the game server
+ nan26 has connected to the game server
+nan26 is shuffling their deck
+nan26 draws 6 card  s to their maximum of 6
+NaN is shuffling their deck
+NaN draws 6 card  s to their maximum of 6
+NaN draws 1 card
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+Main phase - NaN
+NaN plays Eclectic Inquiry
+NaN gains an Æmber  due to Eclectic Inquiry's bonus icon
+NaN draws a card  due to Eclectic Inquiry's bonus icon
+NaN uses Eclectic Inquiry to archive the top two cards  of their deck
+Ready phase - NaN
+Draw phase - NaN
+End of turn 1
+nan26: 0 Æmber  (0 keys) NaN: 1 Æmber  (0 keys)
+TURN 1 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses geistoid  as their active house this turn
+Main phase - nan26
+nan26 plays In Here Somewhere…
+nan26 gains an Æmber  due to In Here Somewhere…'s bonus icon
+nan26 uses In Here Somewhere… to discard the top 5 cards  of their deck
+nan26 plays Parabyte
+nan26 deals 1 damage to Parabyte due to Parabyte's bonus icon
+nan26 uses Parabyte to capture 1 Æmber  from their opponent , placing it on Parabyte
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 2 card  s to their maximum of 6
+End of turn 1
+nan26: 1 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 2 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 7 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+NaN moves all the cards  in their archives to their hand
+Main phase - NaN
+NaN plays Library Card
+NaN plays Chronus
+NaN plays Fission Bloom
+NaN plays Titan Engineer
+NaN deals 1 damage to Parabyte due to Titan Engineer's bonus icon
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 2 card  s to their maximum of 6
+End of turn 2
+nan26: 1 Æmber  (0 keys) NaN: 1 Æmber  (0 keys)
+TURN 2 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses mars  as their active house this turn
+Main phase - nan26
+nan26 plays Phloxem Spike
+nan26 gains an Æmber  due to Phloxem Spike's bonus icon
+nan26 plays Terrance Surefoot
+nan26 uses Terrance Surefoot to capture 1 Æmber  from their opponent , placing it on Terrance Surefoot
+nan26 plays Harmonic Pack
+nan26 gains an Æmber  due to Harmonic Pack's bonus icon
+nan26 chooses option ' Opponent's '
+nan26 uses Harmonic Pack to deal 2 damage to Chronus
+nan26 plays Yandylinx
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 4 card  s to their maximum of 6
+End of turn 2
+nan26: 3 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 3 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses saurian  as their active house this turn
+Main phase - NaN
+NaN plays Sagittarii’s Gaze
+NaN gains an Æmber  due to Sagittarii’s Gaze's bonus icon
+NaN uses Sagittarii’s Gaze to exalt Chronus
+NaN plays Cornicen Octavia
+NaN plays Citizen Shrix
+NaN uses Citizen Shrix to exalt Citizen Shrix and steal 1 Æmber
+NaN plays Thero Centurion
+NaN uses Thero Centurion to capture 1 Æmber  from their opponent , placing it on Thero Centurion
+NaN plays Defense Initiative
+NaN uses Defense Initiative to ward Chronus
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 5 card  s to their maximum of 6
+End of turn 3
+nan26: 1 Æmber  (0 keys) NaN: 2 Æmber  (0 keys)
+TURN 3 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 7 Æmber
+House phase - nan26
+nan26 chooses mars  as their active house this turn
+Main phase - nan26
+nan26 plays Naja
+nan26 plays Eldest Batchminder
+nan26 captures an Æmber  on Terrance Surefoot due to Eldest Batchminder's bonus icon
+nan26 deals 1 damage to Chronus due to Eldest Batchminder's bonus icon
+Chronus's ward token prevents the damage dealt by a bonus icon and is discarded
+nan26 uses Yandylinx to reap with Yandylinx
+nan26 uses Yandylinx to discard Crunch
+nan26 uses Terrance Surefoot to reap with Terrance Surefoot
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+nan26 uses Eldest Batchminder to place 2 +1 power counters on Terrance Surefoot, Yandylinx, and Naja
+End of turn 3
+nan26: 3 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 4 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 7 Æmber
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN plays Snarette
+NaN draws a card  due to Snarette's bonus icon
+NaN uses Chronus to archive a card
+NaN plays Mindfire
+NaN uses Mindfire to discard a card  at random from nan26's hand
+nan26 discards Stratowise at random
+NaN plays Angwish
+NaN deals 1 damage to Eldest Batchminder due to Angwish's bonus icon
+NaN plays Mark of Dis
+NaN gains an Æmber  due to Mark of Dis's bonus icon
+NaN uses Mark of Dis to deal 2 damage to Eldest Batchminder
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+NaN uses Snarette to capture 1 Æmber  from their opponent , placing it on Snarette
+End of turn 4
+nan26: 2 Æmber  (0 keys) NaN: 1 Æmber  (0 keys)
+TURN 4 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 2 amber. The current cost is 7 Æmber
+House phase - nan26
+nan26 chooses geistoid  as their active house this turn
+Main phase - nan26
+nan26 plays In Here Somewhere…
+nan26 gains an Æmber  due to In Here Somewhere…'s bonus icon
+nan26 uses In Here Somewhere… to archive 2 cards  from their discard pile
+nan26 uses In Here Somewhere… to archive A Ghost in the Sun and In Here Somewhere…
+nan26 plays In Here Somewhere…
+nan26 gains an Æmber  due to In Here Somewhere…'s bonus icon
+nan26 captures an Æmber  on Naja due to In Here Somewhere…'s bonus icon
+nan26 uses In Here Somewhere… to archive 2 cards  from their discard pile
+nan26 uses In Here Somewhere… to archive In Here Somewhere… and Parabyte
+nan26 plays Wellstring
+nan26 gains an Æmber  due to Wellstring's bonus icon
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 4 card  s to their maximum of 6
+End of turn 4
+nan26: 5 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 5 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 7 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+Main phase - NaN
+NaN uses Library Card to purge Library Card and then draw a card  after playing a card  for the remainder of the turn
+NaN uses Fission Bloom to resolve the bonus icons of the next card  played an additional time
+NaN plays Diametric Charge
+NaN uses Fission Bloom to resolve the bonus icons of Diametric Charge an additional time
+NaN gains an Æmber  due to Diametric Charge's bonus icon
+NaN gains an Æmber  due to Diametric Charge's bonus icon
+NaN uses Library Card to draw 1 card
+NaN draws 1 card
+NaN uses Diametric Charge to deal 1 damage to Naja and 2 to their neighbors
+NaN plays Novu Dynamo
+NaN captures an Æmber  on Titan Engineer due to Novu Dynamo's bonus icon
+NaN uses Library Card to draw 1 card
+NaN draws 1 card
+NaN plays Sloppy Labwork
+NaN gains an Æmber  due to Sloppy Labwork's bonus icon
+NaN draws a card  due to Sloppy Labwork's bonus icon
+NaN uses Chronus to archive a card
+NaN uses Library Card to draw 1 card
+NaN draws 1 card
+NaN uses Sloppy Labwork to archive a card  and discard Sinder
+NaN uses Chronus to reap with Chronus
+nan26 uses Terrance Surefoot to move 1 Æmber  from Terrance Surefoot to the pool
+NaN uses Titan Engineer to make Titan Engineer fight Naja
+Titan Engineer's ward token prevents the damage dealt by Naja and is discarded
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 2 card  s to their maximum of 6
+NaN uses Snarette to capture 1 Æmber  from their opponent , placing it on Snarette
+End of turn 5
+nan26: 3 Æmber  (0 keys) NaN: 5 Æmber  (0 keys)
+TURN 5 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 7 Æmber
+House phase - nan26
+nan26 chooses geistoid  as their active house this turn
+nan26 moves all the cards  in their archives to their hand
+Main phase - nan26
+nan26 plays A Ghost in the Sun
+nan26 gains an Æmber  due to A Ghost in the Sun's bonus icon
+nan26 plays Parabyte
+nan26 deals 1 damage to Citizen Shrix due to Parabyte's bonus icon
+nan26 uses Parabyte to capture 1 Æmber  from their opponent , placing it on Yandylinx
+nan26 uses Wellstring to reap with Wellstring
+nan26 uses Wellstring to deal 3 damage to Citizen Shrix
+nan26 plays In Here Somewhere…
+nan26 gains an Æmber  due to In Here Somewhere…'s bonus icon
+nan26 uses In Here Somewhere… to archive 2 cards  from their discard pile
+nan26 uses In Here Somewhere… to archive In Here Somewhere… and Stratowise
+nan26 plays In Here Somewhere…
+nan26 gains an Æmber  due to In Here Somewhere…'s bonus icon
+nan26 uses In Here Somewhere… to archive 2 cards  from their discard pile
+nan26 uses In Here Somewhere… to archive In Here Somewhere… and A Ghost in the Sun
+nan26 plays In Here Somewhere…
+nan26 gains an Æmber  due to In Here Somewhere…'s bonus icon
+nan26 uses In Here Somewhere… to archive 2 cards  from their discard pile
+nan26 uses In Here Somewhere… to archive In Here Somewhere… and Raise Your Glass
+nan26 plays Crepuscular Rays
+nan26 gains an Æmber  due to Crepuscular Rays's bonus icon
+nan26 uses Crepuscular Rays to take all Æmber  from Yandylinx and destroy it
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 2 card  s to their maximum of 6
+ nan26 declares Check!
+End of turn 5
+nan26: 11 Æmber  (0 keys) NaN: 4 Æmber  (0 keys)
+TURN 6 - NaN
+NaN uses Novu Dynamo to discard Chronus and gain 1 Æmber
+Key phase - NaN
+NaN does not forge a key. They have 5 amber. The current cost is 8 Æmber
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN plays Wail of the Damned
+NaN uses Wail of the Damned to destroy Thero Centurion
+NaN plays Impspector
+NaN plays Dominator Bauble
+NaN draws a card  due to Dominator Bauble's bonus icon
+NaN uses Chronus to archive a card
+NaN plays Bonesaw
+NaN uses Snarette to move all Æmber  from Snarette to the common pool
+NaN uses Angwish to reap with Angwish
+nan26 uses Terrance Surefoot to move 1 Æmber  from Terrance Surefoot to the pool
+NaN uses Bonesaw to reap with Bonesaw
+nan26 uses Terrance Surefoot to move 1 Æmber  from Terrance Surefoot to the pool
+NaN plays Skixuno
+NaN uses Skixuno to destroy each other creature
+NaN uses Cornicen Octavia to remove its ward token
+NaN uses Impspector to purge a card  at random from nan26's hand
+nan26 purges Armored Spikes at random
+NaN played Skixuno which has Omega, ending this step
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 6 card  s to their maximum of 6
+ NaN declares Check!
+End of turn 6
+nan26: 15 Æmber  (0 keys) NaN: 7 Æmber  (0 keys)
+TURN 6 - nan26
+Key phase - nan26
+nan26 forges the red key  , paying 6 Æmber
+House phase - nan26
+nan26 chooses brobnar  as their active house this turn
+Main phase - nan26
+nan26 plays Rowdy Skald
+nan26 plays Brunx and Bongle
+nan26 plays Eruption
+nan26 uses Eruption to exalt Eruption 3 times
+nan26 plays Cacophonous Riot
+nan26 gains an Æmber  due to Cacophonous Riot's bonus icon
+nan26 uses Cacophonous Riot to ready and enrage Rowdy Skald, Eruption, and Brunx and Bongle
+nan26 uses Rowdy Skald to make Rowdy Skald fight Skixuno
+nan26 uses Brunx and Bongle to make Brunx and Bongle fight Cornicen Octavia
+nan26 uses Brunx and Bongle to ready Brunx and Bongle
+nan26 uses Brunx and Bongle to reap with Brunx and Bongle
+nan26 uses Eruption to make Eruption fight Skixuno
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 5 card  s to their maximum of 6
+ nan26 declares Check!
+End of turn 6
+nan26: 11 Æmber  (1 key) NaN: 10 Æmber  (0 keys)
+TURN 7 - NaN
+Key phase - NaN
+NaN forges the blue key  , paying 6 Æmber
+House phase - NaN
+NaN chooses saurian  as their active house this turn
+NaN moves all the cards  in their archives to their hand
+Main phase - NaN
+NaN plays High Priest Torvus
+NaN plays Citizen Shrix
+NaN uses Citizen Shrix to exalt Citizen Shrix and steal 1 Æmber
+NaN plays Thero Centurion
+NaN uses Thero Centurion to capture 1 Æmber  from their opponent , placing it on Thero Centurion
+NaN plays Sagittarii’s Gaze
+NaN gains an Æmber  due to Sagittarii’s Gaze's bonus icon
+NaN uses Sagittarii’s Gaze to exalt Brunx and Bongle
+NaN plays Siren Horn attaching it to Thero Centurion
+NaN gains an Æmber  due to Siren Horn's bonus icon
+NaN plays City-State Interest
+NaN uses City-State Interest to make each friendly creature capture 1 Æmber
+NaN plays Defense Initiative
+NaN uses Defense Initiative to ward High Priest Torvus
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+NaN's deck has run out of cards, so they shuffle
+ NaN declares Check!
+End of turn 7
+nan26: 6 Æmber  (1 key) NaN: 7 Æmber  (1 key)
+TURN 7 - nan26
+Key phase - nan26
+nan26 forges the blue key  , paying 6 Æmber
+House phase - nan26
+nan26 chooses geistoid  as their active house this turn
+nan26 moves all the cards  in their archives to their hand
+Main phase - nan26
+nan26 plays In Here Somewhere…
+nan26 gains an Æmber  due to In Here Somewhere…'s bonus icon
+nan26 captures an Æmber  on Brunx and Bongle due to In Here Somewhere…'s bonus icon
+nan26 uses In Here Somewhere… to archive 2 cards  from their discard pile
+nan26 uses In Here Somewhere… to archive In Here Somewhere… and Crepuscular Rays
+nan26 plays In Here Somewhere…
+nan26 gains an Æmber  due to In Here Somewhere…'s bonus icon
+nan26 uses In Here Somewhere… to archive 2 cards  from their discard pile
+nan26 uses In Here Somewhere… to archive Parabyte and In Here Somewhere…
+nan26 plays A Ghost in the Sun
+nan26 gains an Æmber  due to A Ghost in the Sun's bonus icon
+nan26 uses A Ghost in the Sun to put a creature into play from their discard for each key NaN has forged
+nan26 uses A Ghost in the Sun to put Naja into play
+nan26 plays In Here Somewhere…
+nan26 gains an Æmber  due to In Here Somewhere…'s bonus icon
+nan26 uses In Here Somewhere… to archive 2 cards  from their discard pile
+nan26 uses In Here Somewhere… to archive In Here Somewhere… and A Ghost in the Sun
+nan26 plays Stratowise
+nan26 plays Crepuscular Rays
+nan26 gains an Æmber  due to Crepuscular Rays's bonus icon
+nan26 uses Crepuscular Rays to take all Æmber  from Brunx and Bongle and destroy it
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+ nan26 declares Check!
+End of turn 7
+nan26: 7 Æmber  (2 keys) NaN: 6 Æmber  (1 key)
+TURN 8 - NaN
+Key phase - NaN
+NaN forges the yellow key  , paying 6 Æmber
+House phase - NaN
+NaN chooses saurian  as their active house this turn
+Main phase - NaN
+NaN uses Thero Centurion to reap with Thero Centurion
+NaN uses Citizen Shrix to reap with Citizen Shrix
+NaN uses Citizen Shrix to exalt Citizen Shrix and steal 1 Æmber
+NaN uses High Priest Torvus to reap with High Priest Torvus
+NaN uses High Priest Torvus to exalt High Priest Torvus
+ NaN is attempting to switch manual mode on
+ nan26 allows enabling manual mode
+ NaN switches manual mode on
+ NaN manually changed their active house to logos
+ NaN switches manual mode off
+NaN discards Novu Dynamo
+NaN plays Auto-Encoder
+NaN plays Mutagenic Serum
+NaN gains an Æmber  due to Mutagenic Serum's bonus icon
+ NaN is attempting to switch manual mode on
+ nan26 allows enabling manual mode
+ NaN switches manual mode on
+ NaN manually moves Novu Dynamo from their discard to their play area
+ NaN switches manual mode off
+NaN uses Novu Dynamo to reap with Novu Dynamo
+NaN uses Fission Bloom to resolve the bonus icons of the next card  played an additional time
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+ NaN declares Check!
+End of turn 8
+nan26: 6 Æmber  (2 keys) NaN: 6 Æmber  (2 keys)
+TURN 8 - nan26
+Key phase - nan26
+nan26 forges the yellow key  , paying 6 Æmber
+ nan26 has won the game

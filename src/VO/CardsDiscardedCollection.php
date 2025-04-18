@@ -4,10 +4,10 @@ namespace AdnanMula\KeyforgeGameLogParser\VO;
 
 use AdnanMula\KeyforgeGameLogParser\VO\Shared\Collection;
 
-/** @extends Collection<CardsDrawn> */
-final class CardsDrawnCollection extends Collection
+/** @extends Collection<CardsDiscarded> */
+final class CardsDiscardedCollection extends Collection
 {
-    public function __construct(CardsDrawn ...$items)
+    public function __construct(CardsDiscarded ...$items)
     {
         parent::__construct(...$items);
     }
@@ -16,7 +16,7 @@ final class CardsDrawnCollection extends Collection
     {
         return array_reduce(
             $this->items(),
-            static fn (int $c, CardsDrawn $s): int => $c + $s->amount,
+            static fn (int $c, CardsDiscarded $s): int => $c + $s->amount,
             0,
         );
     }

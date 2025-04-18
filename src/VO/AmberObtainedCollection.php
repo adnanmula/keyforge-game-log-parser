@@ -11,4 +11,13 @@ final class AmberObtainedCollection extends Collection
     {
         parent::__construct(...$steps);
     }
+
+    public function total(): int
+    {
+        return array_reduce(
+            $this->items(),
+            static fn (int $c, AmberObtained $s): int => $c + $s->amberAmount,
+            0,
+        );
+    }
 }

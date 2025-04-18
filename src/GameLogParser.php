@@ -3,26 +3,29 @@
 namespace AdnanMula\KeyforgeGameLogParser;
 
 use AdnanMula\KeyforgeGameLogParser\VO\AmberObtained;
+use AdnanMula\KeyforgeGameLogParser\VO\CardsDiscarded;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsDrawn;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsPlayed;
 use AdnanMula\KeyforgeGameLogParser\VO\HouseChosen;
 use AdnanMula\KeyforgeGameLogParser\VO\KeyForged;
+use AdnanMula\KeyforgeGameLogParser\VO\Shared\Source;
 use AdnanMula\KeyforgeGameLogParser\VO\Shared\Turn;
 use AdnanMula\KeyforgeGameLogParser\VO\Shared\TurnMoment;
 use Symfony\Component\DomCrawler\Crawler;
 
 final class GameLogParser
 {
-    public function execute(string $log, $parseType = ParseType::PLAIN): Game
+    public function execute(string|array $log, ParseType $parseType = ParseType::PLAIN): Game
     {
         $messages = $this->messages($log, $parseType);
         [$player1, $player2] = $this->extractPlayerInfo(...$messages);
-        $game = new Game($player1, $player2, 1, []);
+        $game = new Game($player1, $player2, 1, $messages);
 
         foreach ($messages as $message) {
             $this->checkLength($game, $message);
             $this->checkFirstTurn($game, $message);
             $this->checkCardsDrawn($game, $message);
+            $this->checkCardsDiscarded($game, $message);
             $this->checkCardsPlayed($game, $message);
             $this->checkKeysForged($game, $message);
             $this->checkAmber($game, $message);
@@ -34,10 +37,20 @@ final class GameLogParser
         return $game;
     }
 
-    private function messages(string $log, ParseType $parseType): array
+    private function messages(string|array $log, ParseType $parseType): array
     {
         if (ParseType::PLAIN === $parseType) {
-            $messages = explode(PHP_EOL, $log);
+            if (false === is_string($log)) {
+                throw new \InvalidArgumentException('Log must be an string when using plain or html type');
+            }
+
+            $messages = explode(\PHP_EOL, $log);
+        } elseif (ParseType::ARRAY === $parseType) {
+            if (false === is_array($log)) {
+                throw new \InvalidArgumentException('Log must be an array when using array type');
+            }
+
+            $messages = $log;
         } else {
             $crawler = new Crawler($log);
             $htmlMessages = $crawler->filter('div.message:not(.chat-bubble)');
@@ -62,7 +75,11 @@ final class GameLogParser
                 continue;
             }
 
-            if (preg_match("/(Key|Draw|Ready|Main)\s*phase -/", $message)) {
+            if (preg_match("/manually/", $message)) {
+                continue;
+            }
+
+            if (preg_match("/(Key|Draw|Ready|Main|House)\s*phase -/", $message)) {
                 continue;
             }
 
@@ -78,6 +95,10 @@ final class GameLogParser
                 continue;
             }
 
+            if (preg_match("/declares check/i", $message)) {
+                continue;
+            }
+
             $filteredMessages[] = $message;
         }
 
@@ -85,7 +106,7 @@ final class GameLogParser
     }
 
     /** @return array<Player> */
-    public function extractPlayerInfo(string ...$messages): array
+    private function extractPlayerInfo(string ...$messages): array
     {
         $playerName1 = null;
         $playerName2 = null;
@@ -119,7 +140,7 @@ final class GameLogParser
     {
         $matches = [];
 
-        if (preg_match('/Turn (\d+) -/', $message, $matches)) {
+        if (preg_match('/Turn (\d+) -/i', $message, $matches)) {
             $game->updateLength(max($game->length, (int) $matches[1]));
         }
     }
@@ -148,6 +169,47 @@ final class GameLogParser
         if (preg_match($pattern, $message, $matches)) {
             $game->player($matches[1])?->cardsDrawn->add(
                 new CardsDrawn(new Turn($game->length, TurnMoment::BETWEEN), (int) $matches[2]),
+            );
+        }
+    }
+
+    private function checkCardsDiscarded(Game $game, string $message): void
+    {
+        $player1 = $game->player1->escapedName();
+        $player2 = $game->player2->escapedName();
+
+        $player = null;
+        $discardCount = 0;
+        $source = Source::PLAYER;
+        $matches = [];
+
+        $pattern1 = "/($player1|$player2) uses .*? to discard the top (\d+) cards/i";
+        $pattern2 = "/($player1|$player2) uses .*? to discard (.+?)(?:$| and| to| at| from)/i";
+        $pattern3 = "/($player1|$player2) discards (.+?)(?:$| and| to| due| at)/i";
+        $pattern4 = "/($player1|$player2) uses .*? to discard a card.*?from ($player1|$player2)'s hand/i";
+
+        if (preg_match($pattern1, $message, $matches)) {
+            $player = $matches[1];
+            $discardCount = (int) $matches[2];
+        } elseif (preg_match($pattern2, $message, $matches)) {
+            $player = $matches[1];
+            /** @var array $cards */
+            $cards = preg_split('/\s*(?:,|\band\b)\s*/i', $matches[2]);
+            $discardCount = count(array_filter(array_map('trim', $cards)));
+        } elseif (preg_match($pattern3, $message, $matches)) {
+            $player = $matches[1];
+            /** @var array $cards */
+            $cards = preg_split('/\s*(?:,|\band\b)\s*/i', $matches[2]);
+            $discardCount = count(array_filter(array_map('trim', $cards)));
+        } elseif (preg_match($pattern4, $message, $matches)) {
+            $player = $matches[2];
+            $discardCount = 1;
+            $source = Source::OPPONENT;
+        }
+
+        if ($player !== null && $discardCount > 0) {
+            $game->player($player)?->cardsDiscarded->add(
+                new CardsDiscarded(new Turn($game->length, TurnMoment::BETWEEN), $source, $discardCount),
             );
         }
     }

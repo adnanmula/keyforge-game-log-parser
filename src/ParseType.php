@@ -5,5 +5,6 @@ namespace AdnanMula\KeyforgeGameLogParser;
 enum ParseType
 {
     case PLAIN;
+    case ARRAY;
     case HTML;
 }

@@ -45,6 +45,7 @@ class Collection implements Iterator, Countable, JsonSerializable
         $this->position = 0;
     }
 
+    /** @return array<T> */
     public function items(): array
     {
         return $this->items;

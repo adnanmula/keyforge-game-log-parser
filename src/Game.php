@@ -37,6 +37,44 @@ final class Game implements \JsonSerializable
         return null;
     }
 
+    public function loser(): ?Player
+    {
+        if ($this->player1->isWinner) {
+            return $this->player2;
+        }
+
+        if ($this->player2->isWinner) {
+            return $this->player1;
+        }
+
+        return null;
+    }
+
+    public function totalAmberObtained(): int
+    {
+        return $this->player1->amberObtained->total() + $this->player2->amberObtained->total();
+    }
+
+    public function totalCardsPlayed(): int
+    {
+        return $this->player1->cardsPlayed->total() + $this->player2->cardsPlayed->total();
+    }
+
+    public function totalCardsDrawn(): int
+    {
+        return $this->player1->cardsDrawn->total() + $this->player2->cardsDrawn->total();
+    }
+
+    public function totalCardsDiscarded(): int
+    {
+        return $this->player1->cardsDiscarded->total() + $this->player2->cardsDiscarded->total();
+    }
+
+    public function totalKeysForged(): int
+    {
+        return $this->player1->keysForged->count() + $this->player2->keysForged->count();
+    }
+
     public function updateLength(int $value): self
     {
         $this->length = $value;
