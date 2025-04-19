@@ -7,13 +7,13 @@ use JsonSerializable;
 final readonly class Turn implements JsonSerializable
 {
     public function __construct(
-        private int $turn,
+        private int $value,
         private TurnMoment $moment,
     ) {}
 
-    public function turn(): int
+    public function value(): int
     {
-        return $this->turn;
+        return $this->value;
     }
 
     public function moment(): TurnMoment
@@ -24,7 +24,7 @@ final readonly class Turn implements JsonSerializable
     public function jsonSerialize(): array
     {
         return [
-            'turn' => $this->turn,
+            'value' => $this->value,
             'moment' => $this->moment->name,
         ];
     }

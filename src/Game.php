@@ -2,6 +2,8 @@
 
 namespace AdnanMula\KeyforgeGameLogParser;
 
+use AdnanMula\KeyforgeGameLogParser\VO\AmberObtainedCollection;
+
 final class Game implements \JsonSerializable
 {
     public function __construct(
@@ -50,10 +52,40 @@ final class Game implements \JsonSerializable
         return null;
     }
 
-    public function totalAmberObtained(): int
+    public function first(): ?Player
     {
-        return $this->player1->amberObtained->total() + $this->player2->amberObtained->total();
+        if ($this->player1->isFirst) {
+            return $this->player1;
+        }
+
+        if ($this->player2->isFirst) {
+            return $this->player2;
+        }
+
+        return null;
     }
+
+    public function amberObtained(): AmberObtainedCollection
+    {
+        $result = new AmberObtainedCollection();
+
+        $result->add(
+            ...$this->player1->amberObtained->items(),
+            ...$this->player2->amberObtained->items(),
+        );
+
+        $firstPlayer = $this->first()?->name;
+
+        if (null === $firstPlayer) {
+            $firstPlayer = $this->player1->name;
+        }
+
+        $result->reorderByTurn($firstPlayer);
+
+        return $result;
+    }
+
+
 
     public function totalCardsPlayed(): int
     {

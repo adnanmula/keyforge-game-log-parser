@@ -2,8 +2,8 @@
 
 namespace AdnanMula\KeyforgeGameLogParser\VO\Shared;
 
-enum Source
+enum Source: string
 {
-    case PLAYER;
-    case OPPONENT;
+    case PLAYER = 'PLAYER';
+    case OPPONENT = 'OPPONENT';
 }

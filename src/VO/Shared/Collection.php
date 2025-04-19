@@ -51,10 +51,20 @@ class Collection implements Iterator, Countable, JsonSerializable
         return $this->items;
     }
 
-    /** @param T $item */
-    public function add($item): static
+    /** @param array<T> $items */
+    public function add(...$items): static
     {
-        $this->items[] = $item;
+        foreach ($items as $item) {
+            $this->items[] = $item;
+        }
+
+        return $this;
+    }
+
+    public function empty(): static
+    {
+        $this->items = [];
+        $this->rewind();
 
         return $this;
     }
@@ -74,6 +84,62 @@ class Collection implements Iterator, Countable, JsonSerializable
     public function count(): int
     {
         return count($this->items);
+    }
+
+    public function reorderByTurn(string $firstPlayer): static
+    {
+        if (0 === $this->count()) {
+            return $this;
+        }
+
+        $grouped = [];
+
+        foreach ($this->jsonSerialize() as $item) {
+            $turn = $item['turn']['value'];
+            $grouped[$turn][] = $item;
+        }
+
+        ksort($grouped);
+
+        $resultItems = [];
+
+        foreach ($grouped as $items) {
+            $player1 = [];
+            $player2 = [];
+
+            foreach ($items as $item) {
+                if ($item['player'] === $firstPlayer) {
+                    $player1[$item['turn']['moment']] = $item;
+                } else {
+                    $player2[$item['turn']['moment']] = $item;
+                }
+            }
+
+            if (array_key_exists(TurnMoment::START->name, $player1)) {
+                $resultItems[] = $player1[TurnMoment::START->name];
+            }
+
+            if (array_key_exists(TurnMoment::END->name, $player1)) {
+                $resultItems[] = $player1[TurnMoment::END->name];
+            }
+            if (array_key_exists(TurnMoment::START->name, $player2)) {
+                $resultItems[] = $player2[TurnMoment::START->name];
+            }
+            if (array_key_exists(TurnMoment::END->name, $player2)) {
+                $resultItems[] = $player2[TurnMoment::END->name];
+            }
+        }
+
+        /** @var class-string<T> $itemClass */
+        $itemClass = $this->items[0]::class;
+
+        $this->empty();
+
+        foreach ($resultItems as $item) {
+            $this->add($itemClass::fromArray($item));
+        }
+
+        return $this;
     }
 
     public function jsonSerialize(): array

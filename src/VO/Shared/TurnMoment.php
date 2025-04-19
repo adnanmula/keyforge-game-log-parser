@@ -2,9 +2,9 @@
 
 namespace AdnanMula\KeyforgeGameLogParser\VO\Shared;
 
-enum TurnMoment
+enum TurnMoment: string
 {
-    case START;
-    case BETWEEN;
-    case END;
+    case START = 'START';
+    case BETWEEN = 'BETWEEN';
+    case END = 'END';
 }

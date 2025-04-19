@@ -168,7 +168,7 @@ final class GameLogParser
 
         if (preg_match($pattern, $message, $matches)) {
             $game->player($matches[1])?->cardsDrawn->add(
-                new CardsDrawn(new Turn($game->length, TurnMoment::BETWEEN), (int) $matches[2]),
+                new CardsDrawn($matches[1], new Turn($game->length, TurnMoment::BETWEEN), (int) $matches[2]),
             );
         }
     }
@@ -209,7 +209,7 @@ final class GameLogParser
 
         if ($player !== null && $discardCount > 0) {
             $game->player($player)?->cardsDiscarded->add(
-                new CardsDiscarded(new Turn($game->length, TurnMoment::BETWEEN), $source, $discardCount),
+                new CardsDiscarded($player, new Turn($game->length, TurnMoment::BETWEEN), $source, $discardCount),
             );
         }
     }
@@ -228,7 +228,7 @@ final class GameLogParser
             $card = $matches[2];
 
             $game->player($player)?->cardsPlayed->add(
-                new CardsPlayed(new Turn($game->length, TurnMoment::BETWEEN), [$card]),
+                new CardsPlayed($player, new Turn($game->length, TurnMoment::BETWEEN), [$card]),
             );
         }
     }
@@ -244,7 +244,7 @@ final class GameLogParser
 
         if (preg_match($pattern, $message, $matches)) {
             $game->player($matches[1])?->keysForged->add(
-                new KeyForged(new Turn($game->length, TurnMoment::BETWEEN), $matches[2], (int) $matches[3], 0),
+                new KeyForged($matches[1], new Turn($game->length, TurnMoment::BETWEEN), $matches[2], (int) $matches[3], 0),
             );
         }
     }
@@ -260,17 +260,17 @@ final class GameLogParser
 
         if (preg_match($pattern, $message, $matches)) {
             $player1Last = $game->player($matches[1])?->amberObtained->last();
-            $turnMoment1 = $player1Last?->turn->turn() !== $game->length ? TurnMoment::START : TurnMoment::END;
+            $turnMoment1 = $player1Last?->turn()->value() !== $game->length ? TurnMoment::START : TurnMoment::END;
 
             $game->player($matches[1])?->amberObtained->add(
-                new AmberObtained(new Turn($game->length, $turnMoment1), (int) $matches[3], (int) $matches[2]),
+                new AmberObtained($matches[1], new Turn($game->length, $turnMoment1), (int) $matches[3], (int) $matches[2]),
             );
 
             $player2Last = $game->player($matches[4])?->amberObtained->last();
-            $turnMoment2 = $player2Last?->turn->turn() !== $game->length ? TurnMoment::START : TurnMoment::END;
+            $turnMoment2 = $player2Last?->turn()->value() !== $game->length ? TurnMoment::START : TurnMoment::END;
 
             $game->player($matches[4])?->amberObtained->add(
-                new AmberObtained(new Turn($game->length, $turnMoment2), (int) $matches[6], (int) $matches[5]),
+                new AmberObtained($matches[4], new Turn($game->length, $turnMoment2), (int) $matches[6], (int) $matches[5]),
             );
         }
     }
@@ -308,7 +308,7 @@ final class GameLogParser
 
         if (preg_match($pattern, $message, $matches)) {
             $game->player($matches[1])?->housesPlayed->add(
-                new HouseChosen(new Turn($game->length, TurnMoment::START), $matches[2]),
+                new HouseChosen($matches[1], new Turn($game->length, TurnMoment::START), $matches[2]),
             );
         }
     }

@@ -16,7 +16,7 @@ final class AmberObtainedCollection extends Collection
     {
         return array_reduce(
             $this->items(),
-            static fn (int $c, AmberObtained $s): int => $c + $s->amberAmount,
+            static fn (int $c, AmberObtained $s): int => $c + $s->value(),
             0,
         );
     }

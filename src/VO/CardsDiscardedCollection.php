@@ -16,7 +16,7 @@ final class CardsDiscardedCollection extends Collection
     {
         return array_reduce(
             $this->items(),
-            static fn (int $c, CardsDiscarded $s): int => $c + $s->amount,
+            static fn (int $c, CardsDiscarded $s): int => $c + $s->value(),
             0,
         );
     }

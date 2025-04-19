@@ -6,4 +6,8 @@ use JsonSerializable;
 
 interface Item extends JsonSerializable
 {
+    public static function fromArray(array $array): self;
+    public function player(): string;
+    public function turn(): Turn;
+    public function value(): int|string|array;
 }
