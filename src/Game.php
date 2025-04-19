@@ -3,6 +3,8 @@
 namespace AdnanMula\KeyforgeGameLogParser;
 
 use AdnanMula\KeyforgeGameLogParser\VO\AmberObtainedCollection;
+use AdnanMula\KeyforgeGameLogParser\VO\CardsPlayedCollection;
+use AdnanMula\KeyforgeGameLogParser\VO\KeyForgedCollection;
 
 final class Game implements \JsonSerializable
 {
@@ -85,11 +87,44 @@ final class Game implements \JsonSerializable
         return $result;
     }
 
-
-
-    public function totalCardsPlayed(): int
+    public function cardsPlayed(): CardsPlayedCollection
     {
-        return $this->player1->cardsPlayed->total() + $this->player2->cardsPlayed->total();
+        $result = new CardsPlayedCollection();
+
+        $result->add(
+            ...$this->player1->cardsPlayed->items(),
+            ...$this->player2->cardsPlayed->items(),
+        );
+
+        $firstPlayer = $this->first()?->name;
+
+        if (null === $firstPlayer) {
+            $firstPlayer = $this->player1->name;
+        }
+
+        $result->reorderByTurn($firstPlayer);
+
+        return $result;
+    }
+
+    public function keysForged(): KeyForgedCollection
+    {
+        $result = new KeyForgedCollection();
+
+        $result->add(
+            ...$this->player1->keysForged->items(),
+            ...$this->player2->keysForged->items(),
+        );
+
+        $firstPlayer = $this->first()?->name;
+
+        if (null === $firstPlayer) {
+            $firstPlayer = $this->player1->name;
+        }
+
+        $result->reorderByTurn($firstPlayer);
+
+        return $result;
     }
 
     public function totalCardsDrawn(): int
@@ -100,11 +135,6 @@ final class Game implements \JsonSerializable
     public function totalCardsDiscarded(): int
     {
         return $this->player1->cardsDiscarded->total() + $this->player2->cardsDiscarded->total();
-    }
-
-    public function totalKeysForged(): int
-    {
-        return $this->player1->keysForged->count() + $this->player2->keysForged->count();
     }
 
     public function updateLength(int $value): self

@@ -45,7 +45,7 @@ final readonly class CardsPlayed implements Item
     {
         return [
             'player' => $this->player,
-            'turn' => $this->turn,
+            'turn' => $this->turn->jsonSerialize(),
             'value' => $this->value,
         ];
     }

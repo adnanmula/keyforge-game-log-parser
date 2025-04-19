@@ -107,26 +107,33 @@ class Collection implements Iterator, Countable, JsonSerializable
             $player1 = [];
             $player2 = [];
 
+            $gameLength = 1;
             foreach ($items as $item) {
+                $gameLength = max($gameLength, $item['turn']['value']);
+
                 if ($item['player'] === $firstPlayer) {
-                    $player1[$item['turn']['moment']] = $item;
+                    $player1[$item['turn']['value']][$item['turn']['moment']][] = $item;
                 } else {
-                    $player2[$item['turn']['moment']] = $item;
+                    $player2[$item['turn']['value']][$item['turn']['moment']][] = $item;
                 }
             }
 
-            if (array_key_exists(TurnMoment::START->name, $player1)) {
-                $resultItems[] = $player1[TurnMoment::START->name];
-            }
+            $moments = [TurnMoment::START->name, TurnMoment::BETWEEN->name, TurnMoment::END->name];
+            $players = [$player1, $player2];
 
-            if (array_key_exists(TurnMoment::END->name, $player1)) {
-                $resultItems[] = $player1[TurnMoment::END->name];
-            }
-            if (array_key_exists(TurnMoment::START->name, $player2)) {
-                $resultItems[] = $player2[TurnMoment::START->name];
-            }
-            if (array_key_exists(TurnMoment::END->name, $player2)) {
-                $resultItems[] = $player2[TurnMoment::END->name];
+            for ($i = 1; $i <= $gameLength; $i++) {
+                foreach ($players as $player) {
+                    foreach ($moments as $moment) {
+                        if (false === array_key_exists($i, $player)
+                            || false === array_key_exists($moment, $player[$i])) {
+                            continue;
+                        }
+
+                        foreach ($player[$i][$moment] as $item) {
+                            $resultItems[] = $item;
+                        }
+                    }
+                }
             }
         }
 
