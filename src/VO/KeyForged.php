@@ -2,6 +2,7 @@
 
 namespace AdnanMula\KeyforgeGameLogParser\VO;
 
+use AdnanMula\KeyforgeGameLogParser\VO\Shared\Event;
 use AdnanMula\KeyforgeGameLogParser\VO\Shared\Item;
 use AdnanMula\KeyforgeGameLogParser\VO\Shared\Turn;
 use AdnanMula\KeyforgeGameLogParser\VO\Shared\TurnMoment;
@@ -23,11 +24,17 @@ final readonly class KeyForged implements Item
             new Turn(
                 $array['turn']['value'],
                 TurnMoment::from($array['turn']['moment']),
+                $array['turn']['occurredOn'],
             ),
             $array['value'],
             $array['amber_cost'],
             $array['amber_remaining'],
         );
+    }
+
+    public function type(): Event
+    {
+        return Event::KEY_FORGED;
     }
 
     public function player(): string
@@ -59,6 +66,7 @@ final readonly class KeyForged implements Item
     {
         return [
             'player' => $this->player,
+            'type' => $this->type()->name,
             'turn' => $this->turn->jsonSerialize(),
             'value' => $this->value,
             'amber_cost' => $this->amberCost,

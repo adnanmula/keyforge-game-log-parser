@@ -8,6 +8,7 @@ use AdnanMula\KeyforgeGameLogParser\VO\CardsDrawnCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsPlayedCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\HouseChosenCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\KeyForgedCollection;
+use AdnanMula\KeyforgeGameLogParser\VO\Timeline;
 
 final class Player implements \JsonSerializable
 {
@@ -49,6 +50,23 @@ final class Player implements \JsonSerializable
         $this->hasConceded = $value;
 
         return $this;
+    }
+
+    public function timeline(): Timeline
+    {
+        $timeline = new Timeline();
+
+        $timeline->add(
+            ...$this->cardsPlayed->items(),
+            ...$this->keysForged->items(),
+            ...$this->cardsDiscarded->items(),
+            ...$this->cardsDrawn->items(),
+            ...$this->amberObtained->items(),
+        );
+
+        $timeline->reorder();
+
+        return $timeline;
     }
 
     public function jsonSerialize(): array

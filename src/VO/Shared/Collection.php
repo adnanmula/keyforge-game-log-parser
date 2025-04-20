@@ -86,65 +86,22 @@ class Collection implements Iterator, Countable, JsonSerializable
         return count($this->items);
     }
 
-    public function reorderByTurn(string $firstPlayer): static
+    public function reorder(): static
     {
         if (0 === $this->count()) {
             return $this;
         }
 
-        $grouped = [];
+        $events = $this->items();
 
-        foreach ($this->jsonSerialize() as $item) {
-            $turn = $item['turn']['value'];
-            $grouped[$turn][] = $item;
-        }
-
-        ksort($grouped);
-
-        $resultItems = [];
-
-        foreach ($grouped as $items) {
-            $player1 = [];
-            $player2 = [];
-
-            $gameLength = 1;
-            foreach ($items as $item) {
-                $gameLength = max($gameLength, $item['turn']['value']);
-
-                if ($item['player'] === $firstPlayer) {
-                    $player1[$item['turn']['value']][$item['turn']['moment']][] = $item;
-                } else {
-                    $player2[$item['turn']['value']][$item['turn']['moment']][] = $item;
-                }
-            }
-
-            $moments = [TurnMoment::START->name, TurnMoment::BETWEEN->name, TurnMoment::END->name];
-            $players = [$player1, $player2];
-
-            for ($i = 1; $i <= $gameLength; $i++) {
-                foreach ($players as $player) {
-                    foreach ($moments as $moment) {
-                        if (false === array_key_exists($i, $player)
-                            || false === array_key_exists($moment, $player[$i])) {
-                            continue;
-                        }
-
-                        foreach ($player[$i][$moment] as $item) {
-                            $resultItems[] = $item;
-                        }
-                    }
-                }
-            }
-        }
-
-        /** @var class-string<T> $itemClass */
-        $itemClass = $this->items[0]::class;
+        usort(
+            $events,
+            static fn ($a, $b): int => $a->turn()->occurredOn() <=> $b->turn()->occurredOn(),
+        );
 
         $this->empty();
 
-        foreach ($resultItems as $item) {
-            $this->add($itemClass::fromArray($item));
-        }
+        $this->add(...$events);
 
         return $this;
     }

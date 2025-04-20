@@ -21,17 +21,17 @@ final class GameLogParser
         [$player1, $player2] = $this->extractPlayerInfo(...$messages);
         $game = new Game($player1, $player2, 1, $messages);
 
-        foreach ($messages as $message) {
+        foreach ($messages as $index => $message) {
             $this->checkLength($game, $message);
             $this->checkFirstTurn($game, $message);
-            $this->checkCardsDrawn($game, $message);
-            $this->checkCardsDiscarded($game, $message);
-            $this->checkCardsPlayed($game, $message);
-            $this->checkKeysForged($game, $message);
-            $this->checkAmber($game, $message);
+            $this->checkCardsDrawn($game, $index, $message);
+            $this->checkCardsDiscarded($game, $index, $message);
+            $this->checkCardsPlayed($game, $index, $message);
+            $this->checkKeysForged($game, $index, $message);
+            $this->checkAmber($game, $index, $message);
             $this->checkWinner($game, $message);
             $this->checkConcede($game, $message);
-            $this->checkHouses($game, $message);
+            $this->checkHouses($game, $index, $message);
         }
 
         return $game;
@@ -157,7 +157,7 @@ final class GameLogParser
         }
     }
 
-    private function checkCardsDrawn(Game $game, string $message): void
+    private function checkCardsDrawn(Game $game, int $index, string $message): void
     {
         $matches = [];
 
@@ -168,12 +168,12 @@ final class GameLogParser
 
         if (preg_match($pattern, $message, $matches)) {
             $game->player($matches[1])?->cardsDrawn->add(
-                new CardsDrawn($matches[1], new Turn($game->length, TurnMoment::BETWEEN), (int) $matches[2]),
+                new CardsDrawn($matches[1], new Turn($game->length, TurnMoment::BETWEEN, $index), (int) $matches[2]),
             );
         }
     }
 
-    private function checkCardsDiscarded(Game $game, string $message): void
+    private function checkCardsDiscarded(Game $game, int $index, string $message): void
     {
         $player1 = $game->player1->escapedName();
         $player2 = $game->player2->escapedName();
@@ -209,12 +209,12 @@ final class GameLogParser
 
         if ($player !== null && $discardCount > 0) {
             $game->player($player)?->cardsDiscarded->add(
-                new CardsDiscarded($player, new Turn($game->length, TurnMoment::BETWEEN), $source, $discardCount),
+                new CardsDiscarded($player, new Turn($game->length, TurnMoment::BETWEEN, $index), $source, $discardCount),
             );
         }
     }
 
-    private function checkCardsPlayed(Game $game, string $message): void
+    private function checkCardsPlayed(Game $game, int $index, string $message): void
     {
         $matches = [];
 
@@ -225,15 +225,15 @@ final class GameLogParser
 
         if (preg_match($pattern, $message, $matches)) {
             $player = $matches[1];
-            $card = $matches[2];
+            $card = trim($matches[2]);
 
             $game->player($player)?->cardsPlayed->add(
-                new CardsPlayed($player, new Turn($game->length, TurnMoment::BETWEEN), [$card]),
+                new CardsPlayed($player, new Turn($game->length, TurnMoment::BETWEEN, $index), [$card]),
             );
         }
     }
 
-    private function checkKeysForged(Game $game, string $message): void
+    private function checkKeysForged(Game $game, int $index, string $message): void
     {
         $matches = [];
 
@@ -244,12 +244,12 @@ final class GameLogParser
 
         if (preg_match($pattern, $message, $matches)) {
             $game->player($matches[1])?->keysForged->add(
-                new KeyForged($matches[1], new Turn($game->length, TurnMoment::BETWEEN), $matches[2], (int) $matches[3], 0),
+                new KeyForged($matches[1], new Turn($game->length, TurnMoment::BETWEEN, $index), $matches[2], (int) $matches[3], 0),
             );
         }
     }
 
-    private function checkAmber(Game $game, string $message): void
+    private function checkAmber(Game $game, int $index, string $message): void
     {
         $matches = [];
 
@@ -263,14 +263,14 @@ final class GameLogParser
             $turnMoment1 = $player1Last?->turn()->value() !== $game->length ? TurnMoment::START : TurnMoment::END;
 
             $game->player($matches[1])?->amberObtained->add(
-                new AmberObtained($matches[1], new Turn($game->length, $turnMoment1), (int) $matches[3], (int) $matches[2]),
+                new AmberObtained($matches[1], new Turn($game->length, $turnMoment1, $index), (int) $matches[3], (int) $matches[2]),
             );
 
             $player2Last = $game->player($matches[4])?->amberObtained->last();
             $turnMoment2 = $player2Last?->turn()->value() !== $game->length ? TurnMoment::START : TurnMoment::END;
 
             $game->player($matches[4])?->amberObtained->add(
-                new AmberObtained($matches[4], new Turn($game->length, $turnMoment2), (int) $matches[6], (int) $matches[5]),
+                new AmberObtained($matches[4], new Turn($game->length, $turnMoment2, $index), (int) $matches[6], (int) $matches[5]),
             );
         }
     }
@@ -299,7 +299,7 @@ final class GameLogParser
         }
     }
 
-    private function checkHouses(Game $game, string $message): void
+    private function checkHouses(Game $game, int $index, string $message): void
     {
         $player1 = $game->player1->escapedName();
         $player2 = $game->player2->escapedName();
@@ -308,7 +308,7 @@ final class GameLogParser
 
         if (preg_match($pattern, $message, $matches)) {
             $game->player($matches[1])?->housesPlayed->add(
-                new HouseChosen($matches[1], new Turn($game->length, TurnMoment::START), $matches[2]),
+                new HouseChosen($matches[1], new Turn($game->length, TurnMoment::START, $index), $matches[2]),
             );
         }
     }

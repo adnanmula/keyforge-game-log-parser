@@ -2,6 +2,7 @@
 
 namespace AdnanMula\KeyforgeGameLogParser\VO;
 
+use AdnanMula\KeyforgeGameLogParser\VO\Shared\Event;
 use AdnanMula\KeyforgeGameLogParser\VO\Shared\Item;
 use AdnanMula\KeyforgeGameLogParser\VO\Shared\Source;
 use AdnanMula\KeyforgeGameLogParser\VO\Shared\Turn;
@@ -23,10 +24,16 @@ final readonly class CardsDiscarded implements Item
             new Turn(
                 $array['turn']['value'],
                 TurnMoment::from($array['turn']['moment']),
+                $array['turn']['occurredOn'],
             ),
             Source::from($array['source']),
             $array['value'],
         );
+    }
+
+    public function type(): Event
+    {
+        return Event::CARDS_DISCARDED;
     }
 
     public function player(): string
@@ -53,6 +60,7 @@ final readonly class CardsDiscarded implements Item
     {
         return [
             'player' => $this->player,
+            'type' => $this->type()->name,
             'turn' => $this->turn,
             'source' => $this->source->name,
             'value' => $this->value,

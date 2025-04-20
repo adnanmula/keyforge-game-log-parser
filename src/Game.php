@@ -5,6 +5,7 @@ namespace AdnanMula\KeyforgeGameLogParser;
 use AdnanMula\KeyforgeGameLogParser\VO\AmberObtainedCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsPlayedCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\KeyForgedCollection;
+use AdnanMula\KeyforgeGameLogParser\VO\Timeline;
 
 final class Game implements \JsonSerializable
 {
@@ -76,13 +77,7 @@ final class Game implements \JsonSerializable
             ...$this->player2->amberObtained->items(),
         );
 
-        $firstPlayer = $this->first()?->name;
-
-        if (null === $firstPlayer) {
-            $firstPlayer = $this->player1->name;
-        }
-
-        $result->reorderByTurn($firstPlayer);
+        $result->reorder();
 
         return $result;
     }
@@ -96,13 +91,7 @@ final class Game implements \JsonSerializable
             ...$this->player2->cardsPlayed->items(),
         );
 
-        $firstPlayer = $this->first()?->name;
-
-        if (null === $firstPlayer) {
-            $firstPlayer = $this->player1->name;
-        }
-
-        $result->reorderByTurn($firstPlayer);
+        $result->reorder();
 
         return $result;
     }
@@ -116,13 +105,7 @@ final class Game implements \JsonSerializable
             ...$this->player2->keysForged->items(),
         );
 
-        $firstPlayer = $this->first()?->name;
-
-        if (null === $firstPlayer) {
-            $firstPlayer = $this->player1->name;
-        }
-
-        $result->reorderByTurn($firstPlayer);
+        $result->reorder();
 
         return $result;
     }
@@ -142,6 +125,20 @@ final class Game implements \JsonSerializable
         $this->length = $value;
 
         return $this;
+    }
+
+    public function timeline(): Timeline
+    {
+        $timeline = new Timeline();
+
+        $timeline->add(
+            ...$this->player1->timeline()->items(),
+            ...$this->player2->timeline()->items(),
+        );
+
+        $timeline->reorder();
+
+        return $timeline;
     }
 
     public function jsonSerialize(): array
