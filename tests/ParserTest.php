@@ -25,9 +25,9 @@ class ParserTest extends TestCase
         self::assertTrue($game->player2->isFirst);
         self::assertFalse($game->player2->isWinner);
         self::assertEquals(125, $game->amberObtained()->total());
-        self::assertEquals(61, $game->totalCardsDrawn());
+        self::assertEquals(61, $game->cardsDrawn()->total());
         self::assertEquals(58, $game->cardsPlayed()->total());
-        self::assertEquals(10, $game->totalCardsDiscarded());
+        self::assertEquals(10, $game->cardsDiscarded()->total());
         self::assertEquals(5, $game->keysForged()->count());
     }
 }

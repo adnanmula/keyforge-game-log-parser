@@ -12,8 +12,9 @@ final readonly class AmberObtained implements Item
     public function __construct(
         private string $player,
         private Turn $turn,
-        private int $keys,
         private int $value,
+        private int $keys,
+        private int $delta,
     ) {}
 
     public static function fromArray(array $array): self
@@ -25,8 +26,9 @@ final readonly class AmberObtained implements Item
                 TurnMoment::from($array['turn']['moment']),
                 $array['turn']['occurredOn'],
             ),
-            $array['keys'],
             $array['value'],
+            $array['keys'],
+            $array['delta'],
         );
     }
 
@@ -45,14 +47,19 @@ final readonly class AmberObtained implements Item
         return $this->turn;
     }
 
+    public function value(): int
+    {
+        return $this->value;
+    }
+
     public function keys(): int
     {
         return $this->keys;
     }
 
-    public function value(): int
+    public function delta(): int
     {
-        return $this->value;
+        return $this->delta;
     }
 
     public function jsonSerialize(): array
@@ -61,8 +68,9 @@ final readonly class AmberObtained implements Item
             'player' => $this->player,
             'type' => $this->type()->name,
             'turn' => $this->turn->jsonSerialize(),
-            'keys' => $this->keys,
             'value' => $this->value,
+            'keys' => $this->keys,
+            'delta' => $this->delta,
         ];
     }
 }

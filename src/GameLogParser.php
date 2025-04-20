@@ -24,14 +24,14 @@ final class GameLogParser
         foreach ($messages as $index => $message) {
             $this->checkLength($game, $message);
             $this->checkFirstTurn($game, $message);
+            $this->checkKeysForged($game, $index, $message);
+            $this->checkHouses($game, $index, $message);
             $this->checkCardsDrawn($game, $index, $message);
             $this->checkCardsDiscarded($game, $index, $message);
             $this->checkCardsPlayed($game, $index, $message);
-            $this->checkKeysForged($game, $index, $message);
             $this->checkAmber($game, $index, $message);
             $this->checkWinner($game, $message);
             $this->checkConcede($game, $message);
-            $this->checkHouses($game, $index, $message);
         }
 
         return $game;
@@ -259,18 +259,50 @@ final class GameLogParser
         $pattern = "/($player1|$player2):\s+(\d+)\s+Æmber\s+\((\d+) keys?\)\s+($player1|$player2):\s+(\d+)\s+Æmber\s+\((\d+) keys?\)/";
 
         if (preg_match($pattern, $message, $matches)) {
-            $player1Last = $game->player($matches[1])?->amberObtained->last();
+            $currentPlayer1 = $game->player($matches[1]);
+            $player1Last = $currentPlayer1?->amberObtained->last();
             $turnMoment1 = $player1Last?->turn()->value() !== $game->length ? TurnMoment::START : TurnMoment::END;
+            $adjustKeyForged1 = 0;
+
+            if (null !== $currentPlayer1) {
+                foreach ($currentPlayer1->keysForged->items() as $keyForged) {
+                    if ($keyForged->turn()->value() === $game->length) {
+                        $adjustKeyForged1 += $keyForged->amberCost();
+                    }
+                }
+            }
 
             $game->player($matches[1])?->amberObtained->add(
-                new AmberObtained($matches[1], new Turn($game->length, $turnMoment1, $index), (int) $matches[3], (int) $matches[2]),
+                new AmberObtained(
+                    $matches[1],
+                    new Turn($game->length, $turnMoment1, $index),
+                    (int) $matches[2],
+                    (int) $matches[3],
+                    (int) $matches[2] - ($player1Last?->value() ?? 0) + $adjustKeyForged1,
+                ),
             );
 
-            $player2Last = $game->player($matches[4])?->amberObtained->last();
+            $currentPlayer2 = $game->player($matches[4]);
+            $player2Last = $currentPlayer2?->amberObtained->last();
             $turnMoment2 = $player2Last?->turn()->value() !== $game->length ? TurnMoment::START : TurnMoment::END;
+            $adjustKeyForged2 = 0;
+
+            if (null !== $currentPlayer2) {
+                foreach ($currentPlayer2->keysForged->items() as $keyForged) {
+                    if ($keyForged->turn()->value() === $game->length) {
+                        $adjustKeyForged2 += $keyForged->amberCost();
+                    }
+                }
+            }
 
             $game->player($matches[4])?->amberObtained->add(
-                new AmberObtained($matches[4], new Turn($game->length, $turnMoment2, $index), (int) $matches[6], (int) $matches[5]),
+                new AmberObtained(
+                    $matches[4],
+                    new Turn($game->length, $turnMoment2, $index),
+                    (int) $matches[5],
+                    (int) $matches[6],
+                    (int) $matches[5] - ($player1Last?->value() ?? 0) + $adjustKeyForged2,
+                ),
             );
         }
     }
