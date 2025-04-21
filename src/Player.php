@@ -23,7 +23,7 @@ final class Player implements \JsonSerializable
         public CardsDrawnCollection $cardsDrawn = new CardsDrawnCollection(),
         public CardsDiscardedCollection $cardsDiscarded = new CardsDiscardedCollection(),
         public CardsPlayedCollection $cardsPlayed = new CardsPlayedCollection(),
-        public HouseChosenCollection $housesPlayed = new HouseChosenCollection(),
+        public HouseChosenCollection $housesChosen = new HouseChosenCollection(),
     ) {}
 
     public function escapedName(): string
@@ -57,11 +57,12 @@ final class Player implements \JsonSerializable
         $timeline = new Timeline();
 
         $timeline->add(
-            ...$this->cardsPlayed->items(),
             ...$this->keysForged->items(),
-            ...$this->cardsDiscarded->items(),
-            ...$this->cardsDrawn->items(),
+            ...$this->housesChosen->items(),
             ...$this->amberObtained->items(),
+            ...$this->cardsDrawn->items(),
+            ...$this->cardsPlayed->items(),
+            ...$this->cardsDiscarded->items(),
         );
 
         $timeline->reorder();
@@ -83,6 +84,7 @@ final class Player implements \JsonSerializable
             'cards_played' => $this->cardsPlayed->jsonSerialize(),
             'cards_drawn' => $this->cardsDrawn->jsonSerialize(),
             'cards_discarded' => $this->cardsDiscarded->jsonSerialize(),
+            'house_chosen' => $this->housesChosen->jsonSerialize(),
         ];
     }
 }

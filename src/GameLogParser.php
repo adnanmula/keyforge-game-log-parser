@@ -301,7 +301,7 @@ final class GameLogParser
                     new Turn($game->length, $turnMoment2, $index),
                     (int) $matches[5],
                     (int) $matches[6],
-                    (int) $matches[5] - ($player1Last?->value() ?? 0) + $adjustKeyForged2,
+                    (int) $matches[5] - ($player2Last?->value() ?? 0) + $adjustKeyForged2,
                 ),
             );
         }
@@ -339,7 +339,7 @@ final class GameLogParser
         $pattern = "/($player1|$player2)\s+chooses\s+(\w*)\s+as their active house this turn\s*$/";
 
         if (preg_match($pattern, $message, $matches)) {
-            $game->player($matches[1])?->housesPlayed->add(
+            $game->player($matches[1])?->housesChosen->add(
                 new HouseChosen($matches[1], new Turn($game->length, TurnMoment::START, $index), $matches[2]),
             );
         }
