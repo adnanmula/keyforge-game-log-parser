@@ -35,7 +35,7 @@ final class AmberStolen implements Item
 
     public function type(): Event
     {
-        return Event::REAP;
+        return Event::AMBER_STOLEN;
     }
 
     public function player(): string
