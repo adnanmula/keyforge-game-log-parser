@@ -363,7 +363,7 @@ final class GameLogParser
             $value = trim($matches[3]);
             $target = trim($matches[4]);
 
-            $game->player($player)?->fightCollection->add(
+            $game->player($player)?->fights->add(
                 new Fight($player, new Turn($game->length, TurnMoment::BETWEEN, $index), Source::PLAYER, $trigger, $target, $value),
             );
         }
@@ -383,7 +383,7 @@ final class GameLogParser
             $card = trim($matches[2]);
             $card2 = trim($matches[3]);
 
-            $game->player($player)?->reapCollection->add(
+            $game->player($player)?->reaps->add(
                 new Reap($player, new Turn($game->length, TurnMoment::BETWEEN, $index), Source::PLAYER, $card, $card2),
             );
         }

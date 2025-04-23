@@ -162,8 +162,8 @@ final class Game implements \JsonSerializable
         $result = new FightCollection();
 
         $result->add(
-            ...$this->player1->fightCollection->items(),
-            ...$this->player2->fightCollection->items(),
+            ...$this->player1->fights->items(),
+            ...$this->player2->fights->items(),
         );
 
         $result->reorder();
@@ -176,8 +176,8 @@ final class Game implements \JsonSerializable
         $result = new ReapCollection();
 
         $result->add(
-            ...$this->player1->reapCollection->items(),
-            ...$this->player2->reapCollection->items(),
+            ...$this->player1->reaps->items(),
+            ...$this->player2->reaps->items(),
         );
 
         $result->reorder();

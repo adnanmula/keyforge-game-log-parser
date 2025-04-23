@@ -27,8 +27,8 @@ final class Player implements \JsonSerializable
         public CardsDiscardedCollection $cardsDiscarded = new CardsDiscardedCollection(),
         public CardsPlayedCollection $cardsPlayed = new CardsPlayedCollection(),
         public HouseChosenCollection $housesChosen = new HouseChosenCollection(),
-        public ReapCollection $reapCollection = new ReapCollection(),
-        public FightCollection $fightCollection = new FightCollection(),
+        public ReapCollection $reaps = new ReapCollection(),
+        public FightCollection $fights = new FightCollection(),
         public AmberStolenCollection $amberStolen = new AmberStolenCollection(),
     ) {}
 
@@ -69,8 +69,8 @@ final class Player implements \JsonSerializable
             ...$this->cardsDrawn->items(),
             ...$this->cardsPlayed->items(),
             ...$this->cardsDiscarded->items(),
-            ...$this->reapCollection->items(),
-            ...$this->fightCollection->items(),
+            ...$this->reaps->items(),
+            ...$this->fights->items(),
             ...$this->amberStolen->items(),
         );
 
@@ -94,8 +94,8 @@ final class Player implements \JsonSerializable
             'cards_drawn' => $this->cardsDrawn->jsonSerialize(),
             'cards_discarded' => $this->cardsDiscarded->jsonSerialize(),
             'house_chosen' => $this->housesChosen->jsonSerialize(),
-            'reaps' => $this->reapCollection->jsonSerialize(),
-            'fights' => $this->fightCollection->jsonSerialize(),
+            'reaps' => $this->reaps->jsonSerialize(),
+            'fights' => $this->fights->jsonSerialize(),
             'amber_stolen' => $this->amberStolen->jsonSerialize(),
         ];
     }
