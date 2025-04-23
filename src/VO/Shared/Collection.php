@@ -22,7 +22,7 @@ class Collection implements Iterator, Countable, JsonSerializable
 
     public function current(): ?Item
     {
-        return $this->steps[$this->position] ?? null;
+        return $this->items[$this->position] ?? null;
     }
 
     public function next(): void
@@ -73,6 +73,12 @@ class Collection implements Iterator, Countable, JsonSerializable
     public function first()
     {
         return $this->items[0] ?? null;
+    }
+
+    /** @return ?T $item */
+    public function at(int $index)
+    {
+        return $this->items[$index] ?? null;
     }
 
     /** @return ?T $item */

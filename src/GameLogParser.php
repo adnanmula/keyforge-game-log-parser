@@ -6,8 +6,10 @@ use AdnanMula\KeyforgeGameLogParser\VO\AmberObtained;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsDiscarded;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsDrawn;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsPlayed;
+use AdnanMula\KeyforgeGameLogParser\VO\Fight;
 use AdnanMula\KeyforgeGameLogParser\VO\HouseChosen;
 use AdnanMula\KeyforgeGameLogParser\VO\KeyForged;
+use AdnanMula\KeyforgeGameLogParser\VO\Reap;
 use AdnanMula\KeyforgeGameLogParser\VO\Shared\Source;
 use AdnanMula\KeyforgeGameLogParser\VO\Shared\Turn;
 use AdnanMula\KeyforgeGameLogParser\VO\Shared\TurnMoment;
@@ -25,11 +27,13 @@ final class GameLogParser
             $this->checkLength($game, $message);
             $this->checkFirstTurn($game, $message);
             $this->checkKeysForged($game, $index, $message);
+            $this->checkAmber($game, $index, $message);
             $this->checkHouses($game, $index, $message);
             $this->checkCardsDrawn($game, $index, $message);
             $this->checkCardsDiscarded($game, $index, $message);
             $this->checkCardsPlayed($game, $index, $message);
-            $this->checkAmber($game, $index, $message);
+            $this->checkReap($game, $index, $message);
+            $this->checkFight($game, $index, $message);
             $this->checkWinner($game, $message);
             $this->checkConcede($game, $message);
         }
@@ -157,6 +161,94 @@ final class GameLogParser
         }
     }
 
+    private function checkKeysForged(Game $game, int $index, string $message): void
+    {
+        $matches = [];
+
+        $player1 = $game->player1->escapedName();
+        $player2 = $game->player2->escapedName();
+
+        $pattern = "/^($player1|$player2)\s+forges the\s+([^\s]+)\s+key\s*,\s*paying\s+(\d+)\s+Æmber/";
+
+        if (preg_match($pattern, $message, $matches)) {
+            $game->player($matches[1])?->keysForged->add(
+                new KeyForged($matches[1], new Turn($game->length, TurnMoment::BETWEEN, $index), $matches[2], (int) $matches[3], 0),
+            );
+        }
+    }
+
+    private function checkAmber(Game $game, int $index, string $message): void
+    {
+        $matches = [];
+
+        $player1 = $game->player1->escapedName();
+        $player2 = $game->player2->escapedName();
+
+        $pattern = "/($player1|$player2):\s+(\d+)\s+Æmber\s+\((\d+) keys?\)\s+($player1|$player2):\s+(\d+)\s+Æmber\s+\((\d+) keys?\)/";
+
+        if (preg_match($pattern, $message, $matches)) {
+            $currentPlayer1 = $game->player($matches[1]);
+            $player1Last = $currentPlayer1?->amberObtained->last();
+            $turnMoment1 = $player1Last?->turn()->value() !== $game->length ? TurnMoment::START : TurnMoment::END;
+            $adjustKeyForged1 = 0;
+
+            if (null !== $currentPlayer1) {
+                foreach ($currentPlayer1->keysForged->items() as $keyForged) {
+                    if ($keyForged->turn()->value() === $game->length) {
+                        $adjustKeyForged1 += $keyForged->amberCost();
+                    }
+                }
+            }
+
+            $game->player($matches[1])?->amberObtained->add(
+                new AmberObtained(
+                    $matches[1],
+                    new Turn($game->length, $turnMoment1, $index),
+                    (int) $matches[2],
+                    (int) $matches[3],
+                    (int) $matches[2] - ($player1Last?->value() ?? 0) + $adjustKeyForged1,
+                ),
+            );
+
+            $currentPlayer2 = $game->player($matches[4]);
+            $player2Last = $currentPlayer2?->amberObtained->last();
+            $turnMoment2 = $player2Last?->turn()->value() !== $game->length ? TurnMoment::START : TurnMoment::END;
+            $adjustKeyForged2 = 0;
+
+            if (null !== $currentPlayer2) {
+                foreach ($currentPlayer2->keysForged->items() as $keyForged) {
+                    if ($keyForged->turn()->value() === $game->length) {
+                        $adjustKeyForged2 += $keyForged->amberCost();
+                    }
+                }
+            }
+
+            $game->player($matches[4])?->amberObtained->add(
+                new AmberObtained(
+                    $matches[4],
+                    new Turn($game->length, $turnMoment2, $index),
+                    (int) $matches[5],
+                    (int) $matches[6],
+                    (int) $matches[5] - ($player2Last?->value() ?? 0) + $adjustKeyForged2,
+                ),
+            );
+        }
+    }
+
+    private function checkHouses(Game $game, int $index, string $message): void
+    {
+        $player1 = $game->player1->escapedName();
+        $player2 = $game->player2->escapedName();
+
+        $pattern = "/($player1|$player2)\s+chooses\s+(\w*)\s+as their active house this turn\s*$/";
+
+        if (preg_match($pattern, $message, $matches)) {
+            $game->player($matches[1])?->housesChosen->add(
+                new HouseChosen($matches[1], new Turn($game->length, TurnMoment::START, $index), $matches[2]),
+            );
+        }
+    }
+
     private function checkCardsDrawn(Game $game, int $index, string $message): void
     {
         $matches = [];
@@ -233,76 +325,43 @@ final class GameLogParser
         }
     }
 
-    private function checkKeysForged(Game $game, int $index, string $message): void
+    private function checkFight(Game $game, int $index, string $message): void
     {
         $matches = [];
 
         $player1 = $game->player1->escapedName();
         $player2 = $game->player2->escapedName();
 
-        $pattern = "/^($player1|$player2)\s+forges the\s+([^\s]+)\s+key\s*,\s*paying\s+(\d+)\s+Æmber/";
+        $pattern = "/^($player1|$player2)\s+uses\s+(.+)\s+to make\s+(.+)fight(.+)\s*$/";
 
         if (preg_match($pattern, $message, $matches)) {
-            $game->player($matches[1])?->keysForged->add(
-                new KeyForged($matches[1], new Turn($game->length, TurnMoment::BETWEEN, $index), $matches[2], (int) $matches[3], 0),
+            $player = $matches[1];
+            $trigger = trim($matches[2]);
+            $value = trim($matches[3]);
+            $target = trim($matches[4]);
+
+            $game->player($player)?->fightCollection->add(
+                new Fight($player, new Turn($game->length, TurnMoment::BETWEEN, $index), Source::PLAYER, $trigger, $target, $value),
             );
         }
     }
 
-    private function checkAmber(Game $game, int $index, string $message): void
+    private function checkReap(Game $game, int $index, string $message): void
     {
         $matches = [];
 
         $player1 = $game->player1->escapedName();
         $player2 = $game->player2->escapedName();
 
-        $pattern = "/($player1|$player2):\s+(\d+)\s+Æmber\s+\((\d+) keys?\)\s+($player1|$player2):\s+(\d+)\s+Æmber\s+\((\d+) keys?\)/";
+        $pattern = "/^($player1|$player2)\s+uses\s+(.+)\s+to reap with\s+(.+)\s*$/";
 
         if (preg_match($pattern, $message, $matches)) {
-            $currentPlayer1 = $game->player($matches[1]);
-            $player1Last = $currentPlayer1?->amberObtained->last();
-            $turnMoment1 = $player1Last?->turn()->value() !== $game->length ? TurnMoment::START : TurnMoment::END;
-            $adjustKeyForged1 = 0;
+            $player = $matches[1];
+            $card = trim($matches[2]);
+            $card2 = trim($matches[3]);
 
-            if (null !== $currentPlayer1) {
-                foreach ($currentPlayer1->keysForged->items() as $keyForged) {
-                    if ($keyForged->turn()->value() === $game->length) {
-                        $adjustKeyForged1 += $keyForged->amberCost();
-                    }
-                }
-            }
-
-            $game->player($matches[1])?->amberObtained->add(
-                new AmberObtained(
-                    $matches[1],
-                    new Turn($game->length, $turnMoment1, $index),
-                    (int) $matches[2],
-                    (int) $matches[3],
-                    (int) $matches[2] - ($player1Last?->value() ?? 0) + $adjustKeyForged1,
-                ),
-            );
-
-            $currentPlayer2 = $game->player($matches[4]);
-            $player2Last = $currentPlayer2?->amberObtained->last();
-            $turnMoment2 = $player2Last?->turn()->value() !== $game->length ? TurnMoment::START : TurnMoment::END;
-            $adjustKeyForged2 = 0;
-
-            if (null !== $currentPlayer2) {
-                foreach ($currentPlayer2->keysForged->items() as $keyForged) {
-                    if ($keyForged->turn()->value() === $game->length) {
-                        $adjustKeyForged2 += $keyForged->amberCost();
-                    }
-                }
-            }
-
-            $game->player($matches[4])?->amberObtained->add(
-                new AmberObtained(
-                    $matches[4],
-                    new Turn($game->length, $turnMoment2, $index),
-                    (int) $matches[5],
-                    (int) $matches[6],
-                    (int) $matches[5] - ($player2Last?->value() ?? 0) + $adjustKeyForged2,
-                ),
+            $game->player($player)?->reapCollection->add(
+                new Reap($player, new Turn($game->length, TurnMoment::BETWEEN, $index), Source::PLAYER, $card, $card2),
             );
         }
     }
@@ -328,20 +387,6 @@ final class GameLogParser
 
         if (preg_match($pattern, $message, $matches)) {
             $game->player($matches[1])?->updateHasConceded(true);
-        }
-    }
-
-    private function checkHouses(Game $game, int $index, string $message): void
-    {
-        $player1 = $game->player1->escapedName();
-        $player2 = $game->player2->escapedName();
-
-        $pattern = "/($player1|$player2)\s+chooses\s+(\w*)\s+as their active house this turn\s*$/";
-
-        if (preg_match($pattern, $message, $matches)) {
-            $game->player($matches[1])?->housesChosen->add(
-                new HouseChosen($matches[1], new Turn($game->length, TurnMoment::START, $index), $matches[2]),
-            );
         }
     }
 }

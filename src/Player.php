@@ -6,8 +6,10 @@ use AdnanMula\KeyforgeGameLogParser\VO\AmberObtainedCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsDiscardedCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsDrawnCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsPlayedCollection;
+use AdnanMula\KeyforgeGameLogParser\VO\FightCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\HouseChosenCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\KeyForgedCollection;
+use AdnanMula\KeyforgeGameLogParser\VO\ReapCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\Timeline;
 
 final class Player implements \JsonSerializable
@@ -24,6 +26,8 @@ final class Player implements \JsonSerializable
         public CardsDiscardedCollection $cardsDiscarded = new CardsDiscardedCollection(),
         public CardsPlayedCollection $cardsPlayed = new CardsPlayedCollection(),
         public HouseChosenCollection $housesChosen = new HouseChosenCollection(),
+        public ReapCollection $reapCollection = new ReapCollection(),
+        public FightCollection $fightCollection = new FightCollection(),
     ) {}
 
     public function escapedName(): string
@@ -63,6 +67,8 @@ final class Player implements \JsonSerializable
             ...$this->cardsDrawn->items(),
             ...$this->cardsPlayed->items(),
             ...$this->cardsDiscarded->items(),
+            ...$this->reapCollection->items(),
+            ...$this->fightCollection->items(),
         );
 
         $timeline->reorder();
@@ -85,6 +91,8 @@ final class Player implements \JsonSerializable
             'cards_drawn' => $this->cardsDrawn->jsonSerialize(),
             'cards_discarded' => $this->cardsDiscarded->jsonSerialize(),
             'house_chosen' => $this->housesChosen->jsonSerialize(),
+            'reaps' => $this->reapCollection->jsonSerialize(),
+            'fights' => $this->fightCollection->jsonSerialize(),
         ];
     }
 }
