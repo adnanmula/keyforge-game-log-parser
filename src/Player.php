@@ -10,6 +10,7 @@ use AdnanMula\KeyforgeGameLogParser\VO\FightCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\HouseChosenCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\KeyForgedCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\ReapCollection;
+use AdnanMula\KeyforgeGameLogParser\VO\AmberStolenCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\Timeline;
 
 final class Player implements \JsonSerializable
@@ -28,6 +29,7 @@ final class Player implements \JsonSerializable
         public HouseChosenCollection $housesChosen = new HouseChosenCollection(),
         public ReapCollection $reapCollection = new ReapCollection(),
         public FightCollection $fightCollection = new FightCollection(),
+        public AmberStolenCollection $amberStolen = new AmberStolenCollection(),
     ) {}
 
     public function escapedName(): string
@@ -69,6 +71,7 @@ final class Player implements \JsonSerializable
             ...$this->cardsDiscarded->items(),
             ...$this->reapCollection->items(),
             ...$this->fightCollection->items(),
+            ...$this->amberStolen->items(),
         );
 
         $timeline->reorder();
@@ -93,6 +96,7 @@ final class Player implements \JsonSerializable
             'house_chosen' => $this->housesChosen->jsonSerialize(),
             'reaps' => $this->reapCollection->jsonSerialize(),
             'fights' => $this->fightCollection->jsonSerialize(),
+            'amber_stolen' => $this->amberStolen->jsonSerialize(),
         ];
     }
 }

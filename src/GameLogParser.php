@@ -13,6 +13,7 @@ use AdnanMula\KeyforgeGameLogParser\VO\Reap;
 use AdnanMula\KeyforgeGameLogParser\VO\Shared\Source;
 use AdnanMula\KeyforgeGameLogParser\VO\Shared\Turn;
 use AdnanMula\KeyforgeGameLogParser\VO\Shared\TurnMoment;
+use AdnanMula\KeyforgeGameLogParser\VO\AmberStolen;
 use Symfony\Component\DomCrawler\Crawler;
 
 final class GameLogParser
@@ -32,6 +33,7 @@ final class GameLogParser
             $this->checkCardsDrawn($game, $index, $message);
             $this->checkCardsDiscarded($game, $index, $message);
             $this->checkCardsPlayed($game, $index, $message);
+            $this->checkAmberStolen($game, $index, $message);
             $this->checkReap($game, $index, $message);
             $this->checkFight($game, $index, $message);
             $this->checkWinner($game, $message);
@@ -321,6 +323,27 @@ final class GameLogParser
 
             $game->player($player)?->cardsPlayed->add(
                 new CardsPlayed($player, new Turn($game->length, TurnMoment::BETWEEN, $index), [$card]),
+            );
+        }
+    }
+
+    private function checkAmberStolen(Game $game, int $index, string $message): void
+    {
+        $matches = [];
+
+        $player1 = $game->player1->escapedName();
+        $player2 = $game->player2->escapedName();
+
+        $pattern = "/^($player1|$player2)\s+uses\s+(.+)\s+to steal\s+(\d+)\s+Æmber\s*from\s*($player1|$player2)\s*$/";
+
+        if (preg_match($pattern, $message, $matches)) {
+            $player = $matches[1];
+            $card = trim($matches[2]);
+            $value = (int) $matches[3];
+            //$target = $matches[4];
+
+            $game->player($player)?->amberStolen->add(
+                new AmberStolen($player, new Turn($game->length, TurnMoment::BETWEEN, $index), Source::PLAYER, $card, $value),
             );
         }
     }

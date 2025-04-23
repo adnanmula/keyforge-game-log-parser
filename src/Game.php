@@ -6,7 +6,10 @@ use AdnanMula\KeyforgeGameLogParser\VO\AmberObtainedCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsDiscardedCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsDrawnCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsPlayedCollection;
+use AdnanMula\KeyforgeGameLogParser\VO\FightCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\KeyForgedCollection;
+use AdnanMula\KeyforgeGameLogParser\VO\ReapCollection;
+use AdnanMula\KeyforgeGameLogParser\VO\AmberStolenCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\Timeline;
 
 final class Game implements \JsonSerializable
@@ -133,6 +136,48 @@ final class Game implements \JsonSerializable
         $result->add(
             ...$this->player1->keysForged->items(),
             ...$this->player2->keysForged->items(),
+        );
+
+        $result->reorder();
+
+        return $result;
+    }
+
+    public function amberStolen(): AmberStolenCollection
+    {
+        $result = new AmberStolenCollection();
+
+        $result->add(
+            ...$this->player1->amberStolen->items(),
+            ...$this->player2->amberStolen->items(),
+        );
+
+        $result->reorder();
+
+        return $result;
+    }
+
+    public function fights(): FightCollection
+    {
+        $result = new FightCollection();
+
+        $result->add(
+            ...$this->player1->fightCollection->items(),
+            ...$this->player2->fightCollection->items(),
+        );
+
+        $result->reorder();
+
+        return $result;
+    }
+
+    public function reaps(): ReapCollection
+    {
+        $result = new ReapCollection();
+
+        $result->add(
+            ...$this->player1->reapCollection->items(),
+            ...$this->player2->reapCollection->items(),
         );
 
         $result->reorder();

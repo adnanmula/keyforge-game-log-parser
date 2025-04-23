@@ -1,0 +1,868 @@
+NaN brings Eunice la Exasperante de la Marisma to The Crucible
+nan26 brings Olivia la Férrea, Sabia del Reino to The Crucible
+NaN won the flip and is first player
+ NaN has connected to the game server
+ nan26 has connected to the game server
+NaN is shuffling their deck
+NaN draws 6 card  s to their maximum of 6
+nan26 is shuffling their deck
+nan26 draws 6 card  s to their maximum of 6
+NaN draws 1 card
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+Main phase - NaN
+NaN plays Tautau Vapors
+NaN uses Tautau Vapors to draw 2 cards  and archive 1 card
+NaN draws 2 card  s
+Ready phase - NaN
+Draw phase - NaN
+End of turn 1
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 1 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses shadows  as their active house this turn
+Main phase - nan26
+nan26 plays Sneklifter
+nan26 plays Faygin
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 2 card  s to their maximum of 6
+End of turn 1
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 2 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+Main phase - NaN
+NaN plays Reassembling Automaton
+NaN plays Eyegor
+NaN uses Eyegor to to look at the top 3 cards  of their deck
+NaN adds a card  to their hand and discards the other 2
+NaN plays Tautau Vapors
+NaN uses Tautau Vapors to draw 2 cards  and archive 1 card
+NaN draws 2 card  s
+NaN plays Tautau Vapors
+NaN uses Tautau Vapors to draw 2 cards  and archive 1 card
+NaN draws 2 card  s
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 1 card  to their maximum of 6
+End of turn 2
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 2 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses untamed  as their active house this turn
+Main phase - nan26
+nan26 plays Nocturnal Maneuver
+nan26 gains an Æmber  due to Nocturnal Maneuver's bonus icon
+nan26 uses Nocturnal Maneuver
+nan26 plays Grasping Vines
+nan26 gains an Æmber  due to Grasping Vines's bonus icon
+nan26 uses Grasping Vines
+nan26 plays Ancient Bear
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+End of turn 2
+NaN: 0 Æmber  (0 keys) nan26: 2 Æmber  (0 keys)
+TURN 3 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN discards Infurnace
+NaN plays Misery Exploit
+NaN plays Festering Touch
+NaN gains an Æmber  due to Festering Touch's bonus icon
+NaN uses Festering Touch to deal 1 damage to Sneklifter and Ancient Bear
+NaN plays Malison
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+End of turn 3
+NaN: 1 Æmber  (0 keys) nan26: 2 Æmber  (0 keys)
+TURN 3 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 2 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+nan26 plays Control the Weak
+nan26 gains an Æmber  due to Control the Weak's bonus icon
+nan26 chooses house shadows
+nan26 uses Control the Weak to force NaN to choose shadows  as their active house on their next turn
+nan26 plays Charette
+nan26 uses Charette to capture 3 Æmber  from their opponent , placing it on Charette
+nan26 plays Hand of Dis
+nan26 uses Hand of Dis to destroy Reassembling Automaton
+NaN uses Reassembling Automaton to heal all damage from Reassembling Automaton, exhaust it and move it to a flank
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+End of turn 3
+NaN: 0 Æmber  (0 keys) nan26: 3 Æmber  (0 keys)
+TURN 4 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses shadows  as their active house this turn
+Main phase - NaN
+NaN plays Into the Night
+ NaN uses Into the Night to stop all non-Shadows creatures from fighting until the start of their next turn
+NaN plays Hit and Run
+NaN uses Hit and Run to deal 2 damage to Faygin
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 1 card  to their maximum of 6
+End of turn 4
+NaN: 0 Æmber  (0 keys) nan26: 3 Æmber  (0 keys)
+TURN 4 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses shadows  as their active house this turn
+Main phase - nan26
+nan26 plays Hidden Stash
+nan26 gains an Æmber  due to Hidden Stash's bonus icon
+nan26 uses Hidden Stash to archive a card
+nan26 plays Umbra
+nan26 uses Faygin to reap with Faygin
+nan26 uses Sneklifter to reap with Sneklifter
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+ nan26 declares Check!
+End of turn 4
+NaN: 0 Æmber  (0 keys) nan26: 6 Æmber  (0 keys)
+TURN 5 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+Main phase - NaN
+NaN plays Eyegor
+NaN uses Eyegor to to look at the top 3 cards  of their deck
+NaN adds a card  to their hand and discards the other 2
+NaN plays Positron Bolt
+NaN gains an Æmber  due to Positron Bolt's bonus icon
+NaN uses Positron Bolt to deal 3 damage to Umbra, 2 damage to Charette and 1 damage to Ancient Bear
+NaN plays Ganymede Archivist
+NaN plays Wormhole Technician
+NaN plays Titan Guardian
+NaN uses Reassembling Automaton to reap with Reassembling Automaton
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+End of turn 5
+NaN: 2 Æmber  (0 keys) nan26: 6 Æmber  (0 keys)
+TURN 5 - nan26
+Key phase - nan26
+nan26 forges the blue key  , paying 6 Æmber
+House phase - nan26
+nan26 chooses shadows  as their active house this turn
+Main phase - nan26
+nan26 plays Urchin
+nan26 uses Urchin to steal 1 Æmber  from NaN
+nan26 uses Faygin to reap with Faygin
+nan26 uses Faygin to return Urchin to their hand
+nan26 plays Urchin
+nan26 uses Urchin to steal 1 Æmber  from NaN
+nan26 uses Sneklifter to reap with Sneklifter
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 1 card  to their maximum of 6
+End of turn 5
+NaN: 0 Æmber  (0 keys) nan26: 4 Æmber  (1 key)
+TURN 6 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN discards Infurnace
+NaN plays Library of the Damned
+NaN plays Greater Oxtet
+NaN plays Borr Nit
+NaN uses Malison to reap with Malison
+Ready phase - NaN
+NaN readies their cards
+NaN uses Greater Oxtet to purge Kymoor Eclipse
+Draw phase - NaN
+NaN draws 5 card  s to their maximum of 6
+End of turn 6
+NaN: 1 Æmber  (0 keys) nan26: 4 Æmber  (1 key)
+TURN 6 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 4 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+nan26 plays Charette
+nan26 uses Charette to capture 3 Æmber  from their opponent , placing it on Charette
+nan26 plays Tolas
+nan26 plays Flame-Wreathed attaching it to Charette
+nan26 gains an Æmber  due to Flame-Wreathed's bonus icon
+nan26 uses Charette to reap with Charette
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+ nan26 declares Check!
+End of turn 6
+NaN: 0 Æmber  (0 keys) nan26: 6 Æmber  (1 key)
+TURN 7 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+Main phase - NaN
+NaN plays EDAI “Edie” 4x4
+NaN uses EDAI “Edie” 4x4 to archive a card
+NaN plays Babbling Bibliophile
+NaN uses Reassembling Automaton to reap with Reassembling Automaton
+NaN uses Eyegor to reap with Eyegor
+NaN uses Wormhole Technician to reap with Wormhole Technician
+NaN uses Wormhole Technician to reveal Festering Touch, which is not a Logos  card, so it gets archived
+NaN uses Titan Guardian to reap with Titan Guardian
+Ready phase - NaN
+NaN readies their cards
+NaN uses Greater Oxtet to purge Breaker Hill
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+NaN's deck has run out of cards, so they shuffle
+End of turn 7
+NaN: 4 Æmber  (0 keys) nan26: 6 Æmber  (1 key)
+TURN 7 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 6 amber. The current cost is 11 Æmber
+House phase - nan26
+nan26 chooses shadows  as their active house this turn
+Main phase - nan26
+nan26 uses Urchin to reap with Urchin
+nan26 uses Faygin to reap with Faygin
+nan26 uses Faygin to return Urchin to their hand
+nan26 uses Sneklifter to reap with Sneklifter
+nan26 plays One Last Job
+nan26 gains an Æmber  due to One Last Job's bonus icon
+nan26 uses One Last Job to purge each friendly shadows  creature and steal that much Æmber  from NaN
+nan26 plays Urchin
+nan26 uses Urchin to steal 1 Æmber  from NaN
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 1 card  to their maximum of 6
+ nan26 declares Check!
+End of turn 7
+NaN: 1 Æmber  (0 keys) nan26: 13 Æmber  (1 key)
+TURN 8 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+Main phase - NaN
+NaN plays Tautau Vapors
+NaN uses Tautau Vapors to draw 2 cards  and archive 1 card
+NaN draws 2 card  s
+NaN plays Titan Guardian
+NaN uses Wormhole Technician to reap with Wormhole Technician
+NaN uses Wormhole Technician to reveal Infurnace, which is not a Logos  card, so it gets archived
+NaN uses Ganymede Archivist to reap with Ganymede Archivist
+NaN uses Ganymede Archivist to archive a card
+NaN uses Titan Guardian to reap with Titan Guardian
+NaN uses Babbling Bibliophile to reap with Babbling Bibliophile
+NaN uses Babbling Bibliophile to draw 2 cards
+NaN draws 2 card  s
+NaN uses EDAI “Edie” 4x4 to reap with EDAI “Edie” 4x4
+NaN plays Tautau Vapors
+NaN uses Tautau Vapors to draw 2 cards  and archive 1 card
+NaN draws 2 card  s
+NaN uses Reassembling Automaton to reap with Reassembling Automaton
+Ready phase - NaN
+NaN readies their cards
+NaN uses Greater Oxtet to purge Symon
+Draw phase - NaN
+NaN draws 1 card  to their maximum of 6
+ NaN declares Check!
+End of turn 8
+NaN: 7 Æmber  (0 keys) nan26: 13 Æmber  (1 key)
+TURN 8 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 13 amber. The current cost is 15 Æmber
+House phase - nan26
+nan26 chooses shadows  as their active house this turn
+Main phase - nan26
+nan26 plays Urchin
+nan26 uses Urchin to steal 1 Æmber  from NaN
+nan26 uses Urchin to reap with Urchin
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 1 card  to their maximum of 6
+ nan26 declares Check!
+End of turn 8
+NaN: 6 Æmber  (0 keys) nan26: 15 Æmber  (1 key)
+TURN 9 - NaN
+Key phase - NaN
+NaN forges the red key  , paying 6 Æmber
+House phase - NaN
+NaN chooses shadows  as their active house this turn
+NaN moves all the cards  in their archives to their hand
+Main phase - NaN
+NaN plays Too Much to Protect
+NaN gains an Æmber  due to Too Much to Protect's bonus icon
+NaN uses Too Much to Protect to steal 9 Æmber  from nan26
+NaN plays Trust No One
+NaN uses Trust No One to steal 1 Æmber  from nan26
+NaN plays Trust No One
+NaN uses Trust No One to steal 1 Æmber  from nan26
+NaN plays Customs Office
+NaN discards Hit and Run
+NaN plays Yantzee Gang
+NaN plays Into the Night
+ NaN uses Into the Night to stop all non-Shadows creatures from fighting until the start of their next turn
+NaN plays Subtle Maul
+Ready phase - NaN
+NaN readies their cards
+NaN uses Greater Oxtet to purge Misery Exploit
+Draw phase - NaN
+ NaN declares Check!
+End of turn 9
+NaN: 12 Æmber  (1 key) nan26: 4 Æmber  (1 key)
+TURN 9 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 4 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses untamed  as their active house this turn
+nan26 moves all the cards  in their archives to their hand
+Main phase - nan26
+nan26 plays Halacor
+nan26 plays Lost in the Woods
+nan26 gains an Æmber  due to Lost in the Woods's bonus icon
+nan26 uses Lost in the Woods to shuffle Urchin and Urchin and EDAI “Edie” 4x4 and Greater Oxtet into their owner's deck
+nan26 plays Grasping Vines
+nan26 gains an Æmber  due to Grasping Vines's bonus icon
+nan26 uses Grasping Vines
+nan26 uses Ancient Bear to reap with Ancient Bear
+nan26 plays Witch of the Eye
+nan26 plays Key Charge
+nan26 uses Key Charge to make nan26 lose 1 Æmber
+nan26 forges the red key  , paying 6 Æmber
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 4 card  s to their maximum of 6
+End of turn 9
+NaN: 12 Æmber  (1 key) nan26: 0 Æmber  (2 keys)
+TURN 10 - NaN
+Key phase - NaN
+NaN forges the blue key  , paying 6 Æmber
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+ NaN declares Check!
+End of turn 10
+NaN: 6 Æmber  (2 keys) nan26: 0 Æmber  (2 keys)
+TURN 10 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+nan26 plays Dust Imp
+nan26 plays Mind Barb
+nan26 gains an Æmber  due to Mind Barb's bonus icon
+nan26 uses Mind Barb to discard a card  at random from NaN's hand
+NaN discards Exhume at random
+nan26 plays Hand of Dis
+nan26 uses Hand of Dis to destroy Halacor
+nan26 uses Tolas to make NaN gain 1 Æmber
+nan26 uses Tolas to reap with Tolas
+nan26 uses Charette to reap with Charette
+NaN uses Urchin to steal 1 Æmber  from nan26
+nan26 uses Nerve Blast to steal 1 Æmber  from NaN
+NaN uses Urchin to steal 1 Æmber  from nan26
+nan26 uses Umbra to steal 1 Æmber  from NaN
+NaN uses Snufflegator to steal 1 Æmber  from nan26
+NaN uses Snufflegator to steal 1 Æmber  from nan26
+NaN uses Too Much to Protect to steal 10 Æmber  from nan26
+NaN uses Urchin to steal 1 Æmber  from nan26
+NaN uses Nerve Blast to steal 1 Æmber  from nan26
+NaN uses Dodger to steal 1 Æmber  from nan26
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+End of turn 10
+NaN: 7 Æmber  (2 keys) nan26: 3 Æmber  (2 keys)
+TURN 11 - NaN
+Key phase - NaN
+NaN forges the yellow key  , paying 6 Æmber
+NaN brings Octavio, Bribón de lo Ignoto Precavido to The Crucible
+nan26 brings Olivia la Férrea, Sabia del Reino to The Crucible
+NaN won the flip and is first player
+ nan26 has connected to the game server
+ NaN has connected to the game server
+NaN is shuffling their deck
+NaN draws 6 card  s to their maximum of 6
+nan26 is shuffling their deck
+nan26 draws 6 card  s to their maximum of 6
+NaN draws 1 card
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses skyborn  as their active house this turn
+Main phase - NaN
+NaN plays Flint’s Map
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+End of turn 1
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 1 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses shadows  as their active house this turn
+Main phase - nan26
+nan26 plays Urchin
+nan26 plays Umbra
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+End of turn 1
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 2 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+Main phase - NaN
+NaN plays Titan Sentry
+NaN chooses option ' Opponent's '
+NaN uses Titan Sentry to archive a card  at random
+NaN uses Flint’s Map to search their deck and discard for a card
+NaN archives Flint’s Stash
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 1 card  to their maximum of 6
+End of turn 2
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 2 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses shadows  as their active house this turn
+Main phase - nan26
+nan26 discards Oubliette
+nan26 uses Umbra to reap with Umbra
+nan26 uses Urchin to reap with Urchin
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 2 card  s to their maximum of 6
+End of turn 2
+NaN: 0 Æmber  (0 keys) nan26: 2 Æmber  (0 keys)
+TURN 3 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses skyborn  as their active house this turn
+Main phase - NaN
+NaN plays Treasure Island
+NaN uses Flint’s Map to search their deck and discard for a card
+NaN archives Flint’s Legend
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 1 card  to their maximum of 6
+End of turn 3
+NaN: 0 Æmber  (0 keys) nan26: 2 Æmber  (0 keys)
+TURN 3 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 2 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses shadows  as their active house this turn
+Main phase - nan26
+nan26 uses Umbra to make Umbra fight Titan Sentry
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+End of turn 3
+NaN: 0 Æmber  (0 keys) nan26: 2 Æmber  (0 keys)
+TURN 4 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+Main phase - NaN
+NaN plays Placeholder
+NaN gains an Æmber  due to Placeholder's bonus icon
+NaN uses Placeholder to move Urchin to a flank and deal 2 damage to it
+NaN uses Titan Sentry to reap with Titan Sentry
+NaN chooses option ' Opponent's '
+NaN uses Titan Sentry to archive a card  at random
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 1 card  to their maximum of 6
+End of turn 4
+NaN: 2 Æmber  (0 keys) nan26: 2 Æmber  (0 keys)
+TURN 4 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 2 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses shadows  as their active house this turn
+Main phase - nan26
+nan26 uses Umbra to make Umbra fight Titan Sentry
+nan26 uses Umbra to steal 1 Æmber  from NaN
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 1 card  to their maximum of 6
+End of turn 4
+NaN: 1 Æmber  (0 keys) nan26: 3 Æmber  (0 keys)
+TURN 5 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses skyborn  as their active house this turn
+Main phase - NaN
+NaN discards Bux Bastian
+NaN uses Bux Bastian to exalt Umbra
+NaN plays Seeker Missiles
+NaN gains an Æmber  due to Seeker Missiles's bonus icon
+NaN discards Harvest Skimmer due to Seeker Missiles's bonus icon
+NaN uses Seeker Missiles to deal 2 damage to a creature for each Skyborn  flank creature
+NaN uses Flint’s Map to search their deck and discard for a card
+NaN doesn't take anything
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+End of turn 5
+NaN: 2 Æmber  (0 keys) nan26: 3 Æmber  (0 keys)
+TURN 5 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+nan26 plays Fear
+nan26 uses Fear to return Titan Sentry to their hand
+nan26 plays Hand of Dis
+nan26 plays Flame-Wreathed attaching it to Umbra
+nan26 gains an Æmber  due to Flame-Wreathed's bonus icon
+nan26 plays Tocsin
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 4 card  s to their maximum of 6
+End of turn 5
+NaN: 2 Æmber  (0 keys) nan26: 4 Æmber  (0 keys)
+TURN 6 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 2 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+NaN moves all the cards  in their archives to their hand
+Main phase - NaN
+NaN plays Connectome Transfer
+NaN gains an Æmber  due to Connectome Transfer's bonus icon
+NaN uses Connectome Transfer to archive Umbra and Tocsin
+NaN plays Titan Sentry
+NaN chooses option ' Opponent's '
+NaN uses Titan Sentry to archive a card  at random
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+End of turn 6
+NaN: 4 Æmber  (0 keys) nan26: 4 Æmber  (0 keys)
+TURN 6 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 4 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses shadows  as their active house this turn
+Main phase - nan26
+nan26 plays Bad Penny
+nan26 plays Sneklifter
+nan26 uses Sneklifter to take control of Treasure Island
+nan26 plays Urchin
+nan26 uses Urchin to steal 1 Æmber  from NaN
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 4 card  s to their maximum of 6
+End of turn 6
+NaN: 3 Æmber  (0 keys) nan26: 5 Æmber  (0 keys)
+TURN 7 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses skyborn  as their active house this turn
+Main phase - NaN
+NaN plays Flint’s Stash
+NaN plays Flint’s Legend
+NaN gains an Æmber  due to Flint’s Legend's bonus icon
+NaN captures an Æmber  on Titan Sentry due to Flint’s Legend's bonus icon
+NaN uses Flint’s Legend to move one Æmber  from their pool to Treasure Island
+NaN plays Bosun Creen
+NaN uses Flint’s Map to search their deck and discard for a card
+NaN archives Flint’s Legend
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 2 card  s to their maximum of 6
+End of turn 7
+NaN: 4 Æmber  (0 keys) nan26: 3 Æmber  (0 keys)
+TURN 7 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+nan26 plays Mind Barb
+nan26 gains an Æmber  due to Mind Barb's bonus icon
+nan26 uses Mind Barb to discard a card  at random from NaN's hand
+NaN discards Empyrean Charge at random
+nan26 plays Dust Imp
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 2 card  s to their maximum of 6
+End of turn 7
+NaN: 4 Æmber  (0 keys) nan26: 4 Æmber  (0 keys)
+TURN 8 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 4 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses geistoid  as their active house this turn
+Main phase - NaN
+NaN plays Stratowise
+NaN gains an Æmber  due to Stratowise's bonus icon
+NaN plays Energy Vampirism
+NaN gains an Æmber  due to Energy Vampirism's bonus icon
+NaN uses Energy Vampirism to capture 1 Æmber  onto Bad Penny from its own side and then deal 1 D for each Æmber  on Bad Penny to a creature
+nan26 uses Bad Penny to return Bad Penny to their hand
+NaN plays Parabyte
+NaN uses Parabyte to capture 1 Æmber  from their opponent , placing it on Bosun Creen
+NaN uses Flint’s Map to search their deck and discard for a card
+NaN doesn't take anything
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+ NaN declares Check!
+End of turn 8
+NaN: 7 Æmber  (0 keys) nan26: 2 Æmber  (0 keys)
+TURN 8 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 2 amber. The current cost is 8 Æmber
+House phase - nan26
+nan26 chooses untamed  as their active house this turn
+Main phase - nan26
+nan26 plays Ancient Bear
+nan26 plays Snufflegator
+nan26 plays Grasping Vines
+nan26 gains an Æmber  due to Grasping Vines's bonus icon
+nan26 uses Grasping Vines to return Flint’s Stash and Flint’s Map to their hand
+nan26 plays Lost in the Woods
+nan26 gains an Æmber  due to Lost in the Woods's bonus icon
+nan26 uses Lost in the Woods to shuffle Urchin and Sneklifter and Titan Sentry and Bosun Creen into their owner's deck
+nan26 plays Key Charge
+nan26 uses Key Charge to make nan26 lose 1 Æmber
+nan26 uses 1 Æmber  from Treasure Island to forge a key
+nan26 forges the blue key  , paying 6 Æmber
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 4 card  s to their maximum of 6
+End of turn 8
+NaN: 7 Æmber  (0 keys) nan26: 0 Æmber  (1 key)
+TURN 9 - NaN
+Key phase - NaN
+NaN forges the blue key  , paying 6 Æmber
+House phase - NaN
+NaN chooses skyborn  as their active house this turn
+NaN moves all the cards  in their archives to their hand
+Main phase - NaN
+NaN plays Flint’s Map
+NaN plays Flint’s Stash
+NaN plays Prop Dusting
+NaN uses Prop Dusting to destroy Snufflegator
+nan26 uses Snufflegator to gain 2 Æmber
+NaN plays Navigator Ketarr
+NaN plays Prop Dusting
+NaN uses Prop Dusting to destroy Dust Imp
+nan26 uses Dust Imp to gain 2 Æmber
+nan26 uses Dust Imp to gain 2 Æmber
+NaN plays Flint’s Legend
+NaN gains an Æmber  due to Flint’s Legend's bonus icon
+NaN captures an Æmber  on Navigator Ketarr due to Flint’s Legend's bonus icon
+NaN uses Flint’s Legend to move one Æmber  from their pool to Treasure Island
+NaN plays Seeker Missiles
+NaN gains an Æmber  due to Seeker Missiles's bonus icon
+NaN uses Seeker Missiles to deal 2 damage to a creature for each Skyborn  flank creature
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+End of turn 9
+NaN: 3 Æmber  (1 key) nan26: 4 Æmber  (1 key)
+TURN 9 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 4 amber. The current cost is 7 Æmber
+House phase - nan26
+nan26 chooses shadows  as their active house this turn
+nan26 moves all the cards  in their archives to their hand
+Main phase - nan26
+nan26 plays Bad Penny
+nan26 plays Bad Penny
+nan26 plays Umbra
+nan26 plays Hidden Stash
+nan26 gains an Æmber  due to Hidden Stash's bonus icon
+nan26 uses Hidden Stash to archive a card
+nan26 plays One Last Job
+nan26 gains an Æmber  due to One Last Job's bonus icon
+nan26 uses One Last Job to purge each friendly shadows  creature and steal that much Æmber  from NaN
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 1 card  to their maximum of 6
+ nan26 declares Check!
+End of turn 9
+NaN: 0 Æmber  (1 key) nan26: 9 Æmber  (1 key)
+TURN 10 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+Main phase - NaN
+NaN plays Information Exchange
+NaN discards Bosun Creen due to Information Exchange's bonus icon
+NaN uses Bosun Creen to move Ancient Bear to a flank
+NaN uses Information Exchange to steal 2 Æmber  from nan26
+NaN plays Sloppy Labwork
+NaN gains an Æmber  due to Sloppy Labwork's bonus icon
+NaN uses Sloppy Labwork to archive a card  and discard Tangler
+NaN uses Tangler to stun Ancient Bear
+NaN uses Flint’s Map to search their deck and discard for a card
+NaN archives Flint’s Legend
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 5 card  s to their maximum of 6
+End of turn 10
+NaN: 3 Æmber  (1 key) nan26: 7 Æmber  (1 key)
+TURN 10 - nan26
+Key phase - nan26
+nan26 uses 1 Æmber  from Treasure Island to forge a key
+nan26 forges the yellow key  , paying 7 Æmber
+House phase - nan26
+nan26 chooses shadows  as their active house this turn
+Main phase - nan26
+nan26 plays Bait and Switch
+nan26 uses Bait and Switch to steal 1 Æmber  from NaN
+nan26 plays Urchin
+nan26 uses Urchin to steal 1 Æmber  from NaN
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 2 card  s to their maximum of 6
+End of turn 10
+NaN: 1 Æmber  (1 key) nan26: 3 Æmber  (2 keys)
+TURN 11 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+Main phase - NaN
+NaN plays Code Monkey
+NaN uses Code Monkey to gain 2 Æmber
+NaN plays Skippy the Glorious
+NaN uses Skippy the Glorious to archive the top card  of their deck
+NaN uses Flint’s Map to search their deck and discard for a card
+NaN doesn't take anything
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 2 card  s to their maximum of 6
+End of turn 11
+NaN: 3 Æmber  (1 key) nan26: 3 Æmber  (2 keys)
+TURN 11 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+nan26 moves all the cards  in their archives to their hand
+Main phase - nan26
+nan26 plays Arise!
+nan26 chooses house dis
+nan26 uses Arise! to return Dust Imp to their hand
+nan26 plays Dust Imp
+nan26 plays Charette
+nan26 uses Charette to capture 3 Æmber  from their opponent , placing it on Charette
+nan26 plays Hand of Dis
+nan26 uses Hand of Dis to destroy Dust Imp
+nan26 uses Dust Imp to gain 2 Æmber
+nan26 plays Tocsin
+nan26 plays Control the Weak
+nan26 gains an Æmber  due to Control the Weak's bonus icon
+nan26 chooses house logos
+nan26 uses Control the Weak to force NaN to choose logos  as their active house on their next turn
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+nan26's chains are reduced by 1 to 0
+ nan26 declares Check!
+End of turn 11
+NaN: 0 Æmber  (1 key) nan26: 6 Æmber  (2 keys)
+TURN 12 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+NaN moves all the cards  in their archives to their hand
+Main phase - NaN
+NaN plays Titan Sentry
+NaN chooses option ' Opponent's '
+NaN uses Titan Sentry to archive a card  at random
+NaN plays Skippy the Glorious
+NaN uses Skippy the Glorious to archive the top card  of their deck
+NaN uses Skippy the Glorious to reap with Skippy the Glorious
+NaN uses Skippy the Glorious to archive the top card  of their deck
+NaN plays Articulated Ren
+NaN uses Code Monkey to reap with Code Monkey
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN uses Articulated Ren to exhaust Navigator Ketarr
+NaN draws 1 card
+End of turn 12
+NaN: 2 Æmber  (1 key) nan26: 6 Æmber  (2 keys)
+TURN 12 - nan26
+Key phase - nan26
+nan26 forges the red key  , paying 6 Æmber
+ NaN has won the game

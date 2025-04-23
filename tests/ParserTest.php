@@ -54,4 +54,20 @@ class ParserTest extends TestCase
         self::assertEquals(0, $game->cardsDiscarded()->total());
         self::assertEquals(0, $game->keysForged()->count());
     }
+
+    public function test3(): void
+    {
+        $log = file_get_contents('tests/data/plain_3.txt');
+
+        if (false === $log) {
+            self::markTestIncomplete();
+        }
+
+        $parser = new GameLogParser();
+        $game = $parser->execute($log, ParseType::PLAIN);
+
+        self::assertEquals(40, $game->amberStolen()->total());
+        self::assertEquals(2, $game->fights()->count());
+        self::assertEquals(29, $game->reaps()->count());
+    }
 }
