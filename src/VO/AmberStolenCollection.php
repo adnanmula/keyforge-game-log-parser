@@ -20,4 +20,16 @@ final class AmberStolenCollection extends Collection
             0,
         );
     }
+
+    public function toArrayByTurn(): array
+    {
+        $result = [];
+
+        foreach ($this->items() as $item) {
+            $turn = $item->turn()->value();
+            $result[$turn] = ($result[$turn] ?? 0) + $item->value();
+        }
+
+        return $result;
+    }
 }

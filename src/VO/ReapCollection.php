@@ -11,4 +11,16 @@ final class ReapCollection extends Collection
     {
         parent::__construct(...$item);
     }
+
+    public function amountToArrayByTurn(): array
+    {
+        $result = [];
+
+        foreach ($this->items() as $item) {
+            $turn = $item->turn()->value();
+            $result[$turn] = ($result[$turn] ?? 0) + 1;
+        }
+
+        return $result;
+    }
 }
