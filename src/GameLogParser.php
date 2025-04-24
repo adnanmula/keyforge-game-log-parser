@@ -347,20 +347,38 @@ final class GameLogParser
     private function checkAmberStolen(Game $game, int $index, string $message): void
     {
         $matches = [];
+        $matches2 = [];
+        $matches3 = [];
 
         $player1 = $game->player1->escapedName();
         $player2 = $game->player2->escapedName();
 
         $pattern = "/^($player1|$player2)\s+uses\s+(.+)\s+to steal\s+(\d+)\s+Æmber\s*from\s*($player1|$player2)\s*$/";
+        $pattern2 = "/^($player1|$player2)\s+uses\s+(.+)\s+to steal\s+(\d+)\s+Æmber\s*$/";
+        $pattern3 = "/^($player1|$player2)\s+uses\s+(.+)\s+to\s+(.*)\s+and steal an Æmber\s*$/";
 
         if (preg_match($pattern, $message, $matches)) {
             $player = $matches[1];
             $card = trim($matches[2]);
             $value = (int) $matches[3];
-            //$target = $matches[4];
 
             $game->player($player)?->amberStolen->add(
                 new AmberStolen($player, new Turn($game->length, TurnMoment::BETWEEN, $index), Source::PLAYER, $card, $value),
+            );
+        } elseif (preg_match($pattern2, $message, $matches2)) {
+            $player = $matches2[1];
+            $card = trim($matches2[2]);
+            $value = (int) $matches2[3];
+
+            $game->player($player)?->amberStolen->add(
+                new AmberStolen($player, new Turn($game->length, TurnMoment::BETWEEN, $index), Source::PLAYER, $card, $value),
+            );
+        } elseif (preg_match($pattern3, $message, $matches3)) {
+            $player = $matches3[1];
+            $card = trim($matches3[2]);
+
+            $game->player($player)?->amberStolen->add(
+                new AmberStolen($player, new Turn($game->length, TurnMoment::BETWEEN, $index), Source::PLAYER, $card, 1),
             );
         }
     }
