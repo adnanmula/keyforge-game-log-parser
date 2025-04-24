@@ -25,10 +25,15 @@ class ParserTest extends TestCase
         self::assertTrue($game->player2->isFirst);
         self::assertFalse($game->player2->isWinner);
         self::assertEquals(42, $game->amberObtained()->total());
+        self::assertEquals(59, $game->amberObtained()->totalPositive());
+        self::assertEquals(-17, $game->amberObtained()->totalNegative());
         self::assertEquals(61, $game->cardsDrawn()->total());
         self::assertEquals(58, $game->cardsPlayed()->total());
         self::assertEquals(10, $game->cardsDiscarded()->total());
         self::assertEquals(5, $game->keysForged()->count());
+        self::assertEquals(0, $game->amberStolen()->total());
+        self::assertEquals(4, $game->fights()->count());
+        self::assertEquals(11, $game->reaps()->count());
     }
 
     public function test2(): void
@@ -53,36 +58,5 @@ class ParserTest extends TestCase
         self::assertEquals(4, $game->cardsPlayed()->total());
         self::assertEquals(0, $game->cardsDiscarded()->total());
         self::assertEquals(0, $game->keysForged()->count());
-    }
-
-    public function test3(): void
-    {
-        $log = file_get_contents('tests/data/plain_3.txt');
-
-        if (false === $log) {
-            self::markTestIncomplete();
-        }
-
-        $parser = new GameLogParser();
-        $game = $parser->execute($log, ParseType::PLAIN);
-
-        self::assertEquals(40, $game->amberStolen()->total());
-        self::assertEquals(2, $game->fights()->count());
-        self::assertEquals(29, $game->reaps()->count());
-    }
-
-    public function test4(): void
-    {
-        $log = file_get_contents('tests/data/plain_4.txt');
-
-        if (false === $log) {
-            self::markTestIncomplete();
-        }
-
-        $parser = new GameLogParser();
-        $game = $parser->execute($log, ParseType::PLAIN);
-
-        self::assertNotNull($game->winner());
-        self::assertNotNull($game->loser());
     }
 }

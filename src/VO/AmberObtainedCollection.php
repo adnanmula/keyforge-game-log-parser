@@ -20,4 +20,22 @@ final class AmberObtainedCollection extends Collection
             0,
         );
     }
+
+    public function totalPositive(): int
+    {
+        return array_reduce(
+            $this->items(),
+            static fn (int $c, AmberObtained $s): int => $s->delta() > 0 ? $c + $s->delta() : $c,
+            0,
+        );
+    }
+
+    public function totalNegative(): int
+    {
+        return array_reduce(
+            $this->items(),
+            static fn (int $c, AmberObtained $s): int => $s->delta() < 0 ? $c + $s->delta() : $c,
+            0,
+        );
+    }
 }
