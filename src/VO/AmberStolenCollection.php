@@ -21,7 +21,7 @@ final class AmberStolenCollection extends Collection
         );
     }
 
-    public function toArrayByTurn(): array
+    public function amountToArrayByTurn(?int $turns = null): array
     {
         $result = [];
 
@@ -30,6 +30,21 @@ final class AmberStolenCollection extends Collection
             $result[$turn] = ($result[$turn] ?? 0) + $item->value();
         }
 
+        if (null !== $turns) {
+            $result = $this->fillMissingTurns($result, $turns);
+        }
+
         return $result;
+    }
+
+    private function fillMissingTurns(array $data, int $turns): array
+    {
+        $filled = [];
+
+        for ($i = 1; $i <= $turns; $i++) {
+            $filled[$i] = $data[$i] ?? 0;
+        }
+
+        return $filled;
     }
 }
