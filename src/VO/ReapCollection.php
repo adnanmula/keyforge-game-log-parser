@@ -12,7 +12,7 @@ final class ReapCollection extends Collection
         parent::__construct(...$item);
     }
 
-    public function amountToArrayByTurn(): array
+    public function amountToArrayByTurn(?int $turns = null): array
     {
         $result = [];
 
@@ -21,6 +21,21 @@ final class ReapCollection extends Collection
             $result[$turn] = ($result[$turn] ?? 0) + 1;
         }
 
+        if (null !== $turns) {
+            $result = $this->fillMissingTurns($result, $turns);
+        }
+
         return $result;
+    }
+
+    private function fillMissingTurns(array $data, int $turns): array
+    {
+        $filled = [];
+
+        for ($i = 1; $i <= $turns; $i++) {
+            $filled[$i] = $data[$i] ?? 0;
+        }
+
+        return $filled;
     }
 }
