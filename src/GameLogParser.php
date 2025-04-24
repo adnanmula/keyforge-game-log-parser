@@ -69,10 +69,6 @@ final class GameLogParser
         $filteredMessages = [];
 
         foreach ($messages as $message) {
-            if (preg_match("/has connected to the game server\s*$/", $message)) {
-                continue;
-            }
-
             if (preg_match("/is shuffling their deck\s*$/", $message)) {
                 continue;
             }
@@ -133,7 +129,28 @@ final class GameLogParser
         }
 
         if (null === $playerName1 || null === $playerName2 || null === $deck1 || null === $deck2) {
-            throw new \Exception('Malformed or incomplete log');
+            $deck1 = 'Unknown';
+            $deck2 = 'Unknown';
+
+            foreach ($messages as $message) {
+                $matches = [];
+
+                if (preg_match('/^\s*(\w+)\s+has connected to the game server\s*$/u', $message, $matches)) {
+                    if (null === $playerName1) {
+                        $playerName1 = trim($matches[1]);
+                    } else {
+                        $playerName2 = trim($matches[1]);
+                    }
+                }
+
+                if (null !== $playerName1 && null !== $playerName2) {
+                    break;
+                }
+            }
+
+            if (null === $playerName1 || null === $playerName2) {
+                throw new \Exception('Malformed or incomplete log');
+            }
         }
 
         return [
