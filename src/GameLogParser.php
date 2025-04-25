@@ -27,8 +27,8 @@ final class GameLogParser
         foreach ($messages as $index => $message) {
             $this->checkLength($game, $message);
             $this->checkFirstTurn($game, $message);
-            $this->checkKeysForged($game, $index, $message);
             $this->checkAmber($game, $index, $message);
+            $this->checkKeysForged($game, $index, $message);
             $this->checkHouses($game, $index, $message);
             $this->checkCardsDrawn($game, $index, $message);
             $this->checkCardsDiscarded($game, $index, $message);
@@ -190,8 +190,12 @@ final class GameLogParser
         $pattern = "/^($player1|$player2)\s+forges the\s+([^\s]+)\s+key\s*,\s*paying\s+(\d+)\s+Æmber/";
 
         if (preg_match($pattern, $message, $matches)) {
+            $currentAmber = $game->player($matches[1])?->amberObtained?->last()?->value() ?? 0;
+            $cost = (int) $matches[3];
+            $remaining = max(0, $currentAmber - $cost);
+
             $game->player($matches[1])?->keysForged->add(
-                new KeyForged($matches[1], new Turn($game->length, TurnMoment::BETWEEN, $index), $matches[2], (int) $matches[3], 0),
+                new KeyForged($matches[1], new Turn($game->length, TurnMoment::BETWEEN, $index), $matches[2], (int) $matches[3], $remaining),
             );
         }
     }
