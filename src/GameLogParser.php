@@ -6,6 +6,7 @@ use AdnanMula\KeyforgeGameLogParser\VO\AmberObtained;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsDiscarded;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsDrawn;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsPlayed;
+use AdnanMula\KeyforgeGameLogParser\VO\ExtraTurn;
 use AdnanMula\KeyforgeGameLogParser\VO\Fight;
 use AdnanMula\KeyforgeGameLogParser\VO\HouseChosen;
 use AdnanMula\KeyforgeGameLogParser\VO\KeyForged;
@@ -36,6 +37,7 @@ final class GameLogParser
             $this->checkAmberStolen($game, $index, $message);
             $this->checkReap($game, $index, $message);
             $this->checkFight($game, $index, $message);
+            $this->checkExtraTurn($game, $index, $message);
             $this->checkWinner($game, $message);
             $this->checkConcede($game, $message);
         }
@@ -404,6 +406,25 @@ final class GameLogParser
 
             $game->player($player)?->fights->add(
                 new Fight($player, new Turn($game->length, TurnMoment::BETWEEN, $index), Source::PLAYER, $trigger, $target, $value),
+            );
+        }
+    }
+
+    private function checkExtraTurn(Game $game, int $index, string $message): void
+    {
+        $matches = [];
+
+        $player1 = $game->player1->escapedName();
+        $player2 = $game->player2->escapedName();
+
+        $pattern = "/($player1|$player2)\s+uses\s+(.+)\s+to take another turn after this one\s*(.*)\s*$/";
+
+        if (preg_match($pattern, $message, $matches)) {
+            $player = $matches[1];
+            $trigger = trim($matches[2]);
+
+            $game->player($player)?->extraTurns->add(
+                new ExtraTurn($player, new Turn($game->length, TurnMoment::BETWEEN, $index), Source::PLAYER, $trigger),
             );
         }
     }

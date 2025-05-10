@@ -13,4 +13,5 @@ enum Event: string
     case FIGHT = 'FIGHT';
     case REAP = 'REAP';
     case AMBER_STOLEN = 'AMBER_STOLEN';
+    case EXTRA_TURN = 'EXTRA_TURN';
 }

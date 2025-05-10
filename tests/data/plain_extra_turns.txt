@@ -1,0 +1,441 @@
+NaN brings Ivran Coldzel from the Exolinguist’s Field to The Crucible
+nan26 brings C. García, la Rabiosa to The Crucible
+NaN won the flip and is first player
+ nan26 has connected to the game server
+ NaN has connected to the game server
+NaN is shuffling their deck
+NaN draws 6 card  s to their maximum of 6
+nan26 is shuffling their deck
+nan26 draws 6 card  s to their maximum of 6
+NaN draws 1 card
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses geistoid  as their active house this turn
+Main phase - NaN
+NaN plays Haunted House
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+End of turn 1
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 1 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses ekwidon  as their active house this turn
+Main phase - nan26
+nan26 plays Forbidden Tome
+nan26 discards Kaupe due to Forbidden Tome's bonus icon
+nan26 plays Ravening Morphazoid
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+End of turn 1
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 2 - NaN
+NaN uses Haunted House to discard Awful Atoll
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses geistoid  as their active house this turn
+Main phase - NaN
+NaN discards Infiltrator
+NaN plays Ancestral Timekeeper
+NaN plays Harvest Skimmer
+NaN uses Haunted House without effect
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+NaN uses Ancestral Timekeeper to place 1 time on Ancestral Timekeeper
+End of turn 2
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 2 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses staralliance  as their active house this turn
+Main phase - nan26
+nan26 plays Shakedown Sullivan
+nan26 plays Helmsman Spears
+nan26 plays Rogue Operation
+nan26 uses Rogue Operation to discard Echoing Deathknell and Bonded Auctioneer
+nan26 plays Essence Entangler attaching it to Ravening Morphazoid
+nan26 gains an Æmber  due to Essence Entangler's bonus icon
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 4 card  s to their maximum of 6
+End of turn 2
+NaN: 0 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 3 - NaN
+NaN uses Haunted House to discard Eldritch Synan
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses geistoid  as their active house this turn
+Main phase - NaN
+NaN plays Tick-Tock
+NaN plays Tick-Tock
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 2 card  s to their maximum of 6
+NaN uses Ancestral Timekeeper to place 1 time on Ancestral Timekeeper, Tick-Tock, and Tick-Tock
+NaN uses Tick-Tock to place 1 time on Ancestral Timekeeper, Tick-Tock, and Tick-Tock
+NaN uses Tick-Tock to place 1 time on Ancestral Timekeeper, Tick-Tock, and Tick-Tock
+NaN uses Tick-Tock to archive Tick-Tock
+End of turn 3
+NaN: 0 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 3 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses unfathomable  as their active house this turn
+Main phase - nan26
+nan26 discards Tendrils from Beyond
+nan26 discards Wrath or Ruin
+nan26 plays Kiri Giltspine
+nan26 plays Gatewatcher
+nan26 plays Hukaru Icefin
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 5 card  s to their maximum of 6
+End of turn 3
+NaN: 0 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 4 - NaN
+NaN uses Haunted House to discard Tangler
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses ekwidon  as their active house this turn
+Main phase - NaN
+NaN plays Tutor Bin-Rillo
+NaN uses Tutor Bin-Rillo to discard Immersioneer, Mnemoleech, and Covetous Hema
+NaN uses Immersioneer to return Eldritch Synan, Infiltrator, and Awful Atoll to their owner's deck
+nan26 draws 1 card
+NaN uses Haunted House without effect
+NaN discards Grisly Exchange
+NaN discards Hoaxpitality
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 6 card  s to their maximum of 6
+NaN uses Tick-Tock to place 1 time on Ancestral Timekeeper and Tick-Tock
+NaN uses Tick-Tock to archive Tick-Tock
+NaN uses Ancestral Timekeeper to place 1 time on Ancestral Timekeeper
+End of turn 4
+NaN: 0 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 4 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses unfathomable  as their active house this turn
+Main phase - nan26
+nan26 discards Tendrils from Beyond
+nan26 discards Echo Guardian
+nan26 discards Tangimangi
+nan26 uses Gatewatcher to make Gatewatcher fight Tutor Bin-Rillo
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 7
+End of turn 4
+NaN: 0 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 5 - NaN
+NaN uses Haunted House to discard Wikolia
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses geistoid  as their active house this turn
+NaN moves all the cards  in their archives to their hand
+Main phase - NaN
+NaN plays Chronometer
+NaN plays Tick-Tock
+NaN plays Tick-Tock
+NaN plays Veil of Ectoplasm
+NaN uses Veil of Ectoplasm to capture 1 Æmber  on a friendly creature for each Geistoid  creature in your discard pile
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 2 card  s to their maximum of 6
+NaN uses Chronometer to place 1 time on Tick-Tock, Ancestral Timekeeper, Chronometer, and Tick-Tock
+NaN uses Ancestral Timekeeper to place 1 time on Tick-Tock, Ancestral Timekeeper, Chronometer, and Tick-Tock
+NaN uses Tick-Tock to place 1 time on Tick-Tock, Ancestral Timekeeper, Chronometer, and Tick-Tock
+NaN uses Tick-Tock to archive Tick-Tock
+NaN uses Tick-Tock to place 1 time on Ancestral Timekeeper, Chronometer, and Tick-Tock
+NaN uses Tick-Tock to archive Tick-Tock
+End of turn 5
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 5 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses staralliance  as their active house this turn
+Main phase - nan26
+nan26 discards Rogue Operation
+nan26 discards Into the Warp
+nan26 discards Unprepared
+nan26 discards Scout Pete
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 4 card  s to their maximum of 7
+End of turn 5
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 6 - NaN
+NaN uses Haunted House to discard Addlefish
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses geistoid  as their active house this turn
+NaN moves all the cards  in their archives to their hand
+Main phase - NaN
+NaN plays Chronometer
+NaN plays Tick-Tock
+NaN plays Tick-Tock
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 2 card  s to their maximum of 7
+NaN uses Ancestral Timekeeper to place 1 time on Chronometer, Ancestral Timekeeper, Chronometer, Tick-Tock, and Tick-Tock
+NaN uses Tick-Tock to place 1 time on Chronometer, Ancestral Timekeeper, Chronometer, Tick-Tock, and Tick-Tock
+NaN uses Tick-Tock to place 1 time on Chronometer, Ancestral Timekeeper, Chronometer, Tick-Tock, and Tick-Tock
+NaN uses Tick-Tock to archive Tick-Tock
+NaN uses Chronometer to place 1 time on Chronometer, Ancestral Timekeeper, Chronometer, and Tick-Tock
+NaN uses Chronometer to purge Unprepared
+NaN uses Chronometer to place 1 time on Chronometer, Ancestral Timekeeper, and Tick-Tock
+End of turn 6
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 6 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses ekwidon  as their active house this turn
+Main phase - nan26
+nan26 plays Tachyon Manifold
+nan26 discards Covetous Hema due to Tachyon Manifold's bonus icon
+nan26 plays Uncommon Currency
+nan26 discards Midyear Festivities
+nan26 plays Belligerent Guard
+nan26 uses Belligerent Guard to draw 1 card
+NaN draws 1 card
+nan26 plays Belligerent Guard
+nan26 uses Belligerent Guard to draw 1 card
+NaN draws 1 card
+nan26 uses Belligerent Guard to reap with Belligerent Guard
+nan26 uses Belligerent Guard to reap with Belligerent Guard
+nan26 uses Ravening Morphazoid to reap with Ravening Morphazoid
+nan26 uses Ravening Morphazoid to draw 1 card
+nan26 draws 1 card
+nan26 uses Ravening Morphazoid to discard PYR*0
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 6 card  s to their maximum of 7
+End of turn 6
+NaN: 0 Æmber  (0 keys) nan26: 3 Æmber  (0 keys)
+TURN 7 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses geistoid  as their active house this turn
+NaN moves all the cards  in their archives to their hand
+Main phase - NaN
+NaN plays Tick-Tock
+NaN uses Tick-Tock to reap with Tick-Tock
+nan26 uses Kiri Giltspine to apply a lasting effect to Tick-Tock
+NaN uses Harvest Skimmer to reap with Harvest Skimmer
+NaN uses Harvest Skimmer to discard Awful Atoll
+nan26 uses Kiri Giltspine to apply a lasting effect to Harvest Skimmer
+NaN uses Haunted House to gain 1 Æmber
+NaN uses Ancestral Timekeeper to reap with Ancestral Timekeeper
+nan26 uses Kiri Giltspine to apply a lasting effect to Ancestral Timekeeper
+NaN uses Chronometer to reap with Chronometer
+nan26 uses Kiri Giltspine to apply a lasting effect to Chronometer
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN uses Tick-Tock to place 1 time on Chronometer, Ancestral Timekeeper, Tick-Tock, and Tick-Tock
+NaN uses Tick-Tock to place 1 time on Chronometer, Ancestral Timekeeper, Tick-Tock, and Tick-Tock
+NaN uses Tick-Tock to archive Tick-Tock and Chronometer
+NaN uses Chronometer to place 1 time on Chronometer, Ancestral Timekeeper, and Tick-Tock
+NaN uses Chronometer to purge Awful Atoll
+NaN uses Ancestral Timekeeper to place 1 time on Ancestral Timekeeper and Tick-Tock
+NaN uses Ancestral Timekeeper to take another turn after this one
+End of turn 7
+NaN: 5 Æmber  (0 keys) nan26: 3 Æmber  (0 keys)
+TURN 7 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 5 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses unfathomable  as their active house this turn
+Main phase - NaN
+NaN plays Echoing Deathknell
+NaN uses Echoing Deathknell to deal damage to Harvest Skimmer, Tick-Tock, Hukaru Icefin, Ravening Morphazoid, Shakedown Sullivan, Helmsman Spears, Kiri Giltspine, Belligerent Guard, and Belligerent Guard
+NaN plays Echo Guardian
+NaN plays Arcane Transmitter
+NaN gains an Æmber  due to Arcane Transmitter's bonus icon
+NaN discards Tendrils from Beyond
+NaN plays Eldritch Synan
+NaN uses Haunted House to gain 1 Æmber
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 7
+NaN uses Tick-Tock to place 1 time on Tick-Tock
+NaN uses Tick-Tock to archive Tick-Tock and Veil of Ectoplasm
+ NaN declares Check!
+End of turn 7
+NaN: 7 Æmber  (0 keys) nan26: 3 Æmber  (0 keys)
+TURN 7 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses ekwidon  as their active house this turn
+Main phase - nan26
+nan26 uses Belligerent Guard to reap with Belligerent Guard
+nan26 uses Belligerent Guard to reap with Belligerent Guard
+nan26 uses Ravening Morphazoid to reap with Ravening Morphazoid
+nan26 uses Ravening Morphazoid to draw 1 card
+nan26 draws 1 card
+nan26 uses Ravening Morphazoid to discard Essence Entangler
+nan26 uses Essence Entangler to remove 1 Æmber  from Kiri Giltspine
+nan26 plays Generous Offer
+nan26 uses Generous Offer to destroy Kiri Giltspine
+nan26 plays Generous Offer
+nan26 uses Generous Offer to destroy Helmsman Spears
+nan26 plays Historian Li-Darkin
+nan26 uses Uncommon Currency to swap control of Haunted House and Uncommon Currency
+nan26 uses Haunted House to gain 1 Æmber
+ nan26 uses Tachyon Manifold to take another turn after this one and purge Tachyon Manifold
+NaN draws 10 card  s
+NaN's deck has run out of cards, so they shuffle
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 7
+nan26's deck has run out of cards, so they shuffle
+ nan26 declares Check!
+End of turn 7
+NaN: 3 Æmber  (0 keys) nan26: 11 Æmber  (0 keys)
+TURN 7 - nan26
+nan26 uses Haunted House to discard Kaupe
+Key phase - nan26
+nan26 forges the blue key  , paying 6 Æmber
+House phase - nan26
+nan26 chooses ekwidon  as their active house this turn
+Main phase - nan26
+nan26 uses Ravening Morphazoid to reap with Ravening Morphazoid
+nan26 uses Ravening Morphazoid to draw 1 card
+nan26 draws 1 card
+nan26 uses Ravening Morphazoid to discard Tendrils from Beyond
+nan26 uses Belligerent Guard to reap with Belligerent Guard
+nan26 uses Belligerent Guard to reap with Belligerent Guard
+nan26 uses Historian Li-Darkin to reap with Historian Li-Darkin
+nan26 uses Historian Li-Darkin to return Tendrils from Beyond to their hand
+nan26 plays Generous Offer
+nan26 uses Generous Offer to destroy Hukaru Icefin
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+ nan26 declares Check!
+End of turn 7
+NaN: 1 Æmber  (0 keys) nan26: 11 Æmber  (1 key)
+TURN 8 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses ekwidon  as their active house this turn
+Main phase - NaN
+NaN plays Permanent Record
+NaN uses Permanent Record to exhaust Echo Guardian
+NaN uses Permanent Record to steal 2 Æmber
+NaN plays Gemcoat Vendor
+NaN plays Iron Heidy
+NaN plays The Old Tinker
+NaN plays Incarnation Pod
+NaN gains an Æmber  due to Incarnation Pod's bonus icon
+NaN plays Tutor Bin-Rillo
+NaN uses Tutor Bin-Rillo to discard Tendrils from Beyond, Echoing Deathknell, and Wikolia
+nan26 draws 1 card
+NaN plays Tutor Bin-Rillo
+NaN uses Tutor Bin-Rillo to discard Covetous Hema, Arcane Transmitter, and Infiltrator
+NaN uses Arcane Transmitter to return Infiltrator, Arcane Transmitter, Covetous Hema, Wikolia, Echoing Deathknell, Tendrils from Beyond, and Permanent Record to their owner's deck
+nan26 draws 1 card
+NaN plays Incarnation Pod
+NaN gains an Æmber  due to Incarnation Pod's bonus icon
+NaN discards Trade Secrets
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+End of turn 8
+NaN: 5 Æmber  (0 keys) nan26: 9 Æmber  (1 key)
+TURN 8 - nan26
+nan26 uses Haunted House to discard Into the Warp
+Key phase - nan26
+nan26 forges the red key  , paying 6 Æmber
+House phase - nan26
+nan26 chooses ekwidon  as their active house this turn
+Main phase - nan26
+nan26 uses Belligerent Guard to reap with Belligerent Guard
+nan26 uses Belligerent Guard to reap with Belligerent Guard
+nan26 uses Ravening Morphazoid to reap with Ravening Morphazoid
+nan26 uses Ravening Morphazoid to draw 1 card
+nan26 draws 1 card
+nan26 uses Ravening Morphazoid to discard Echoing Deathknell
+nan26 uses Historian Li-Darkin to reap with Historian Li-Darkin
+nan26 uses Historian Li-Darkin to return Echoing Deathknell and Trade Secrets to their hand
+nan26 plays Midyear Festivities
+nan26 gains an Æmber  due to Midyear Festivities's bonus icon
+nan26 uses Midyear Festivities to return all Æmber  from Historian Li-Darkin, Ravening Morphazoid, Shakedown Sullivan, Belligerent Guard, Belligerent Guard, Tutor Bin-Rillo, Tutor Bin-Rillo, The Old Tinker, and Iron Heidy to their controller's pool
+nan26 uses Midyear Festivities to destroy Historian Li-Darkin, Ravening Morphazoid, Shakedown Sullivan, Belligerent Guard, Belligerent Guard, Tutor Bin-Rillo, Tutor Bin-Rillo, The Old Tinker, and Iron Heidy
+nan26 uses Haunted House to gain 1 Æmber
+nan26 plays De-escalation
+nan26 uses De-escalation to destroy all creatures and have NaN archive the top 3 cards  of their deck
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+ nan26 declares Check!
+End of turn 8
+NaN: 5 Æmber  (0 keys) nan26: 10 Æmber  (2 keys)
+TURN 9 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 5 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses geistoid  as their active house this turn
+NaN moves all the cards  in their archives to their hand
+Main phase - NaN
+NaN plays Tick-Tock
+NaN plays Tick-Tock
+NaN plays Tick-Tock
+NaN plays Chronometer
+NaN plays Chronometer
+NaN plays Tangler
+NaN plays Synchronizer
+NaN gains an Æmber  due to Synchronizer's bonus icon
+NaN discards Infiltrator
+NaN plays Veil of Ectoplasm
+NaN uses Veil of Ectoplasm to capture 1 Æmber  on a friendly creature for each Geistoid  creature in your discard pile
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 2 card  s to their maximum of 7
+NaN uses Tick-Tock to place 1 time on Chronometer, Tick-Tock, Tick-Tock, Tick-Tock, and Chronometer
+NaN uses Tick-Tock to place 1 time on Chronometer, Tick-Tock, Tick-Tock, Tick-Tock, and Chronometer
+NaN uses Tick-Tock to place 1 time on Chronometer, Tick-Tock, Tick-Tock, Tick-Tock, and Chronometer
+NaN uses Tick-Tock to place 2 time on Synchronizer
+NaN uses Tick-Tock to archive Tick-Tock, Veil of Ectoplasm, and Infiltrator
+NaN uses Chronometer to place 1 time on Chronometer, Tick-Tock, Tick-Tock, and Chronometer
+NaN uses Chronometer to place 1 time on Chronometer, Tick-Tock, Tick-Tock, and Chronometer
+ NaN declares Check!
+End of turn 9
+NaN: 6 Æmber  (0 keys) nan26: 9 Æmber  (2 keys)
+TURN 9 - nan26
+Key phase - nan26
+nan26 forges the yellow key  , paying 6 Æmber
+ nan26 has won the game

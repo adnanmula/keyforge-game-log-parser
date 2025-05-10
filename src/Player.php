@@ -6,6 +6,7 @@ use AdnanMula\KeyforgeGameLogParser\VO\AmberObtainedCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsDiscardedCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsDrawnCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsPlayedCollection;
+use AdnanMula\KeyforgeGameLogParser\VO\ExtraTurnCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\FightCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\HouseChosenCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\KeyForgedCollection;
@@ -16,20 +17,21 @@ use AdnanMula\KeyforgeGameLogParser\VO\Timeline;
 final class Player implements \JsonSerializable
 {
     public function __construct(
-        public string $name,
-        public string $deck,
-        public bool $isFirst = false,
-        public bool $isWinner = false,
-        public bool $hasConceded = false,
-        public AmberObtainedCollection $amberObtained = new AmberObtainedCollection(),
-        public KeyForgedCollection $keysForged = new KeyForgedCollection(),
-        public CardsDrawnCollection $cardsDrawn = new CardsDrawnCollection(),
-        public CardsDiscardedCollection $cardsDiscarded = new CardsDiscardedCollection(),
-        public CardsPlayedCollection $cardsPlayed = new CardsPlayedCollection(),
-        public HouseChosenCollection $housesChosen = new HouseChosenCollection(),
-        public ReapCollection $reaps = new ReapCollection(),
-        public FightCollection $fights = new FightCollection(),
-        public AmberStolenCollection $amberStolen = new AmberStolenCollection(),
+        private(set) string $name,
+        private(set) string $deck,
+        private(set) bool $isFirst = false,
+        private(set) bool $isWinner = false,
+        private(set) bool $hasConceded = false,
+        private(set) AmberObtainedCollection $amberObtained = new AmberObtainedCollection(),
+        private(set) KeyForgedCollection $keysForged = new KeyForgedCollection(),
+        private(set) CardsDrawnCollection $cardsDrawn = new CardsDrawnCollection(),
+        private(set) CardsDiscardedCollection $cardsDiscarded = new CardsDiscardedCollection(),
+        private(set) CardsPlayedCollection $cardsPlayed = new CardsPlayedCollection(),
+        private(set) HouseChosenCollection $housesChosen = new HouseChosenCollection(),
+        private(set) ReapCollection $reaps = new ReapCollection(),
+        private(set) FightCollection $fights = new FightCollection(),
+        private(set) AmberStolenCollection $amberStolen = new AmberStolenCollection(),
+        private(set) ExtraTurnCollection $extraTurns = new ExtraTurnCollection(),
     ) {}
 
     public function escapedName(): string
@@ -72,6 +74,7 @@ final class Player implements \JsonSerializable
             ...$this->reaps->items(),
             ...$this->fights->items(),
             ...$this->amberStolen->items(),
+            ...$this->extraTurns->items(),
         );
 
         $timeline->reorder();
@@ -97,6 +100,7 @@ final class Player implements \JsonSerializable
             'reaps' => $this->reaps->jsonSerialize(),
             'fights' => $this->fights->jsonSerialize(),
             'amber_stolen' => $this->amberStolen->jsonSerialize(),
+            'extra_turns' => $this->extraTurns->jsonSerialize(),
         ];
     }
 }

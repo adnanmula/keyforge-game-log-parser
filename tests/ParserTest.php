@@ -2,22 +2,15 @@
 
 namespace AdnanMula\KeyforgeGameLogParser\Tests;
 
+use AdnanMula\KeyforgeGameLogParser\Game;
 use AdnanMula\KeyforgeGameLogParser\GameLogParser;
-use AdnanMula\KeyforgeGameLogParser\ParseType;
 use PHPUnit\Framework\TestCase;
 
 class ParserTest extends TestCase
 {
     public function test1(): void
     {
-        $log = file_get_contents('tests/data/plain_1.txt');
-
-        if (false === $log) {
-            self::markTestIncomplete();
-        }
-
-        $parser = new GameLogParser();
-        $game = $parser->execute($log, ParseType::PLAIN);
+        $game = $this->getLog('plain_1');
 
         self::assertEquals(8, $game->length);
         self::assertFalse($game->player1->isFirst);
@@ -38,14 +31,7 @@ class ParserTest extends TestCase
 
     public function test2(): void
     {
-        $log = file_get_contents('tests/data/plain_2.txt');
-
-        if (false === $log) {
-            self::markTestIncomplete();
-        }
-
-        $parser = new GameLogParser();
-        $game = $parser->execute($log, ParseType::PLAIN);
+        $game = $this->getLog('plain_2');
 
         self::assertEquals(3, $game->length);
         self::assertTrue($game->player1->isFirst);
@@ -58,5 +44,31 @@ class ParserTest extends TestCase
         self::assertEquals(4, $game->cardsPlayed()->total());
         self::assertEquals(0, $game->cardsDiscarded()->total());
         self::assertEquals(0, $game->keysForged()->count());
+    }
+
+    public function testExtraTurns(): void
+    {
+        $game = $this->getLog('plain_extra_turns');
+
+        self::assertEquals(1, $game->player1->extraTurns->total());
+        self::assertEquals('Ancestral Timekeeper', $game->player1->extraTurns->at(0)->trigger());
+        self::assertEquals(1, $game->player2->extraTurns->total());
+        self::assertEquals('Tachyon Manifold', $game->player2->extraTurns->at(0)->trigger());
+        self::assertEquals(2, $game->extraTurns()->total());
+        self::assertEquals('Ancestral Timekeeper', $game->extraTurns()->at(0)->trigger());
+        self::assertEquals('Tachyon Manifold', $game->extraTurns()->at(1)->trigger());
+    }
+
+    private function getLog(string $file): Game
+    {
+        $log = file_get_contents('tests/data/' . $file . '.txt');
+
+        if (false === $log) {
+            self::markTestIncomplete();
+        }
+
+        $parser = new GameLogParser();
+
+        return $parser->execute($log);
     }
 }

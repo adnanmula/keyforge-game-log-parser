@@ -6,6 +6,7 @@ use AdnanMula\KeyforgeGameLogParser\VO\AmberObtainedCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsDiscardedCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsDrawnCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsPlayedCollection;
+use AdnanMula\KeyforgeGameLogParser\VO\ExtraTurnCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\FightCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\KeyForgedCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\ReapCollection;
@@ -15,10 +16,10 @@ use AdnanMula\KeyforgeGameLogParser\VO\Timeline;
 final class Game implements \JsonSerializable
 {
     public function __construct(
-        public Player $player1,
-        public Player $player2,
-        public int $length,
-        public array $rawLog,
+        private(set) Player $player1,
+        private(set) Player $player2,
+        private(set) int $length,
+        private(set) array $rawLog,
     ) {}
 
     public function player(string $name): ?Player
@@ -178,6 +179,20 @@ final class Game implements \JsonSerializable
         $result->add(
             ...$this->player1->reaps->items(),
             ...$this->player2->reaps->items(),
+        );
+
+        $result->reorder();
+
+        return $result;
+    }
+
+    public function extraTurns(): ExtraTurnCollection
+    {
+        $result = new ExtraTurnCollection();
+
+        $result->add(
+            ...$this->player1->extraTurns->items(),
+            ...$this->player2->extraTurns->items(),
         );
 
         $result->reorder();
