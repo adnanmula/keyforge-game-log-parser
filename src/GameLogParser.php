@@ -310,12 +310,12 @@ final class GameLogParser
             $discardCount = (int) $matches[2];
         } elseif (preg_match($pattern2, $message, $matches)) {
             $player = $matches[1];
-            /** @var array $cards */
+            /** @var list<string> $cards */
             $cards = preg_split('/\s*(?:,|\band\b)\s*/i', $matches[2]);
             $discardCount = count(array_filter(array_map('trim', $cards)));
         } elseif (preg_match($pattern3, $message, $matches)) {
             $player = $matches[1];
-            /** @var array $cards */
+            /** @var list<string> $cards */
             $cards = preg_split('/\s*(?:,|\band\b)\s*/i', $matches[2]);
             $discardCount = count(array_filter(array_map('trim', $cards)));
         } elseif (preg_match($pattern4, $message, $matches)) {

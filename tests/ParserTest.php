@@ -51,12 +51,12 @@ class ParserTest extends TestCase
         $game = $this->getLog('plain_extra_turns');
 
         self::assertEquals(1, $game->player1->extraTurns->total());
-        self::assertEquals('Ancestral Timekeeper', $game->player1->extraTurns->at(0)->trigger());
+        self::assertEquals('Ancestral Timekeeper', $game->player1->extraTurns->at(0)?->trigger());
         self::assertEquals(1, $game->player2->extraTurns->total());
-        self::assertEquals('Tachyon Manifold', $game->player2->extraTurns->at(0)->trigger());
+        self::assertEquals('Tachyon Manifold', $game->player2->extraTurns->at(0)?->trigger());
         self::assertEquals(2, $game->extraTurns()->total());
-        self::assertEquals('Ancestral Timekeeper', $game->extraTurns()->at(0)->trigger());
-        self::assertEquals('Tachyon Manifold', $game->extraTurns()->at(1)->trigger());
+        self::assertEquals('Ancestral Timekeeper', $game->extraTurns()->at(0)?->trigger());
+        self::assertEquals('Tachyon Manifold', $game->extraTurns()->at(1)?->trigger());
     }
 
     private function getLog(string $file): Game

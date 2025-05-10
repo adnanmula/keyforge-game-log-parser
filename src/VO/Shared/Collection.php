@@ -7,7 +7,7 @@ use Iterator;
 use JsonSerializable;
 
 /**
- * @template T
+ * @template T of Item
  * @implements Iterator<int, T>
  */
 class Collection implements Iterator, Countable, JsonSerializable
@@ -102,7 +102,7 @@ class Collection implements Iterator, Countable, JsonSerializable
 
         usort(
             $events,
-            static fn ($a, $b): int => $a->turn()->occurredOn() <=> $b->turn()->occurredOn(),
+            static fn (Item $a, Item $b): int => $a->turn()->occurredOn() <=> $b->turn()->occurredOn(),
         );
 
         $this->empty();
