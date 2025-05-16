@@ -23,11 +23,12 @@ final class GameLogParser
     {
         $messages = $this->messages($log, $parseType);
         [$player1, $player2] = $this->extractPlayerInfo(...$messages);
-        $game = new Game($player1, $player2, 1, $messages);
+        $game = new Game($player1, $player2, 0, $messages);
 
         foreach ($messages as $index => $message) {
-            $this->checkLength($game, $message);
             $this->checkFirstTurn($game, $message);
+            $this->checkTurnOne($game, $message);
+            $this->checkLength($game, $message);
             $this->checkAmber($game, $index, $message);
             $this->checkKeysForged($game, $index, $message);
             $this->checkHouses($game, $index, $message);
@@ -83,7 +84,7 @@ final class GameLogParser
                 continue;
             }
 
-            if (preg_match("/(Key|Draw|Ready|Main|House)\s*phase -/", $message)) {
+            if (preg_match("/(Draw|Ready|Main|House)\s*phase -/", $message)) {
                 continue;
             }
 
@@ -159,6 +160,21 @@ final class GameLogParser
             new Player(name: $playerName1, deck: $deck1),
             new Player(name: $playerName2, deck: $deck2),
         ];
+    }
+
+    private function checkTurnOne(Game $game, string $message): void
+    {
+        if ($game->length > 0 || null === $game->first()) {
+            return;
+        }
+
+        $playerGoingFirst = $game->first()->escapedName();
+
+        $pattern = "/^Key phase - $playerGoingFirst/";
+
+        if (preg_match($pattern, $message)) {
+            $game->updateLength(1);
+        }
     }
 
     private function checkLength(Game $game, string $message): void

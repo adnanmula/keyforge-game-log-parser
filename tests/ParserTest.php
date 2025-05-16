@@ -27,6 +27,12 @@ class ParserTest extends TestCase
         self::assertEquals(0, $game->amberStolen()->total());
         self::assertEquals(4, $game->fights()->count());
         self::assertEquals(11, $game->reaps()->count());
+        self::assertEquals(0, $game->timeline()->at(0)?->turn()->value());
+        self::assertEquals(0, $game->timeline()->at(1)?->turn()->value());
+        self::assertEquals(0, $game->timeline()->at(2)?->turn()->value());
+        self::assertEquals(1, $game->timeline()->at(3)?->turn()->value());
+        self::assertEquals(1, $game->timeline()->at(4)?->turn()->value());
+        self::assertEquals(8, $game->timeline()->last()?->turn()->value());
     }
 
     public function test2(): void
