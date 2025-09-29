@@ -112,6 +112,16 @@ class Collection implements Iterator, Countable, JsonSerializable
         return $this;
     }
 
+    public function filter(Event ...$events): static
+    {
+        $items = array_filter(
+            $this->items,
+            static fn (Item $item): bool => in_array($item->type(), $events, true),
+        );
+
+        return new static(...$items);
+    }
+
     public function jsonSerialize(): array
     {
         return array_map(

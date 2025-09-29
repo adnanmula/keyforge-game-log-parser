@@ -6,4 +6,5 @@ enum Source: string
 {
     case PLAYER = 'PLAYER';
     case OPPONENT = 'OPPONENT';
+    case UNKNOWN = 'UNKNOWN';
 }

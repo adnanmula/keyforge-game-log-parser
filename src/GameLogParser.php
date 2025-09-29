@@ -7,14 +7,18 @@ use AdnanMula\KeyforgeGameLogParser\VO\CardsDiscarded;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsDrawn;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsPlayed;
 use AdnanMula\KeyforgeGameLogParser\VO\ExtraTurn;
+use AdnanMula\KeyforgeGameLogParser\VO\FateResolved;
 use AdnanMula\KeyforgeGameLogParser\VO\Fight;
 use AdnanMula\KeyforgeGameLogParser\VO\HouseChosen;
 use AdnanMula\KeyforgeGameLogParser\VO\KeyForged;
+use AdnanMula\KeyforgeGameLogParser\VO\ProphecyActivated;
+use AdnanMula\KeyforgeGameLogParser\VO\ProphecyFulfilled;
 use AdnanMula\KeyforgeGameLogParser\VO\Reap;
 use AdnanMula\KeyforgeGameLogParser\VO\Shared\Source;
 use AdnanMula\KeyforgeGameLogParser\VO\Shared\Turn;
 use AdnanMula\KeyforgeGameLogParser\VO\Shared\TurnMoment;
 use AdnanMula\KeyforgeGameLogParser\VO\AmberStolen;
+use AdnanMula\KeyforgeGameLogParser\VO\TokenCreated;
 use Symfony\Component\DomCrawler\Crawler;
 
 final class GameLogParser
@@ -39,6 +43,8 @@ final class GameLogParser
             $this->checkReap($game, $index, $message);
             $this->checkFight($game, $index, $message);
             $this->checkExtraTurn($game, $index, $message);
+            $this->checkTokens($game, $index, $message);
+            $this->checkProphecies($game, $index, $message);
             $this->checkWinner($game, $message);
             $this->checkConcede($game, $message);
         }
@@ -461,6 +467,64 @@ final class GameLogParser
 
             $game->player($player)?->reaps->add(
                 new Reap($player, new Turn($game->length, TurnMoment::BETWEEN, $index), Source::PLAYER, $card, $card2),
+            );
+        }
+    }
+
+    private function checkTokens(Game $game, int $index, string $message): void
+    {
+        $matches = [];
+
+        $player1 = $game->player1->escapedName();
+        $player2 = $game->player2->escapedName();
+
+        $pattern = "/^($player1|$player2)\s+uses\s+(.+)\s+to make a token creature\s*.*$$/";
+
+        if (preg_match($pattern, $message, $matches)) {
+            $player = $matches[1];
+            $card = trim($matches[2]);
+
+            $game->player($player)?->cardsUsed->add(
+                new TokenCreated($player, new Turn($game->length, TurnMoment::BETWEEN, $index), $card),
+            );
+        }
+    }
+
+    private function checkProphecies(Game $game, int $index, string $message): void
+    {
+        $matches = [];
+
+        $player1 = $game->player1->escapedName();
+        $player2 = $game->player2->escapedName();
+
+        $patternFate = "/^($player1|$player2)\s+resolves the fate effect of\s+(.+)$/";
+        $patternActivate = "/^($player1|$player2)\s+activates their prophecy\s+(.+)$/";
+        $patternFulfilled = "/^($player1|$player2)\s+uses\s+(.+)\s+to fulfill its prophecy$/";
+
+        if (preg_match($patternFate, $message, $matches)) {
+            $player = $matches[1];
+            $card = trim($matches[2]);
+
+            $game->player($player)?->propheciesTimeline->add(
+                new FateResolved($player, new Turn($game->length, TurnMoment::BETWEEN, $index), $card),
+            );
+        }
+
+        if (preg_match($patternActivate, $message, $matches)) {
+            $player = $matches[1];
+            $card = trim($matches[2]);
+
+            $game->player($player)?->propheciesTimeline->add(
+                new ProphecyActivated($player, new Turn($game->length, TurnMoment::BETWEEN, $index), $card),
+            );
+        }
+
+        if (preg_match($patternFulfilled, $message, $matches)) {
+            $player = $matches[1];
+            $card = trim($matches[2]);
+
+            $game->player($player)?->propheciesTimeline->add(
+                new ProphecyFulfilled($player, new Turn($game->length, TurnMoment::BETWEEN, $index), $card),
             );
         }
     }

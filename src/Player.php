@@ -6,10 +6,12 @@ use AdnanMula\KeyforgeGameLogParser\VO\AmberObtainedCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsDiscardedCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsDrawnCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\CardsPlayedCollection;
+use AdnanMula\KeyforgeGameLogParser\VO\CardsUsedTimeline;
 use AdnanMula\KeyforgeGameLogParser\VO\ExtraTurnCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\FightCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\HouseChosenCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\KeyForgedCollection;
+use AdnanMula\KeyforgeGameLogParser\VO\PropheciesTimeline;
 use AdnanMula\KeyforgeGameLogParser\VO\ReapCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\AmberStolenCollection;
 use AdnanMula\KeyforgeGameLogParser\VO\Timeline;
@@ -32,6 +34,8 @@ final class Player implements \JsonSerializable
         private(set) FightCollection $fights = new FightCollection(),
         private(set) AmberStolenCollection $amberStolen = new AmberStolenCollection(),
         private(set) ExtraTurnCollection $extraTurns = new ExtraTurnCollection(),
+        private(set) PropheciesTimeline $propheciesTimeline = new PropheciesTimeline(),
+        private(set) CardsUsedTimeline $cardsUsed = new CardsUsedTimeline(),
     ) {}
 
     public function escapedName(): string
@@ -75,6 +79,8 @@ final class Player implements \JsonSerializable
             ...$this->fights->items(),
             ...$this->amberStolen->items(),
             ...$this->extraTurns->items(),
+            ...$this->propheciesTimeline->items(),
+            ...$this->cardsUsed->items(),
         );
 
         $timeline->reorder();
@@ -101,6 +107,8 @@ final class Player implements \JsonSerializable
             'fights' => $this->fights->jsonSerialize(),
             'amber_stolen' => $this->amberStolen->jsonSerialize(),
             'extra_turns' => $this->extraTurns->jsonSerialize(),
+            'prophecies_timeline' => $this->propheciesTimeline->jsonSerialize(),
+            'card_used' => $this->cardsUsed->jsonSerialize(),
         ];
     }
 }

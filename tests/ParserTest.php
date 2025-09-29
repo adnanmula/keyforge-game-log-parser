@@ -4,6 +4,7 @@ namespace AdnanMula\KeyforgeGameLogParser\Tests;
 
 use AdnanMula\KeyforgeGameLogParser\Game;
 use AdnanMula\KeyforgeGameLogParser\GameLogParser;
+use AdnanMula\KeyforgeGameLogParser\VO\Shared\Event;
 use PHPUnit\Framework\TestCase;
 
 class ParserTest extends TestCase
@@ -63,6 +64,26 @@ class ParserTest extends TestCase
         self::assertEquals(2, $game->extraTurns()->total());
         self::assertEquals('Ancestral Timekeeper', $game->extraTurns()->at(0)?->trigger());
         self::assertEquals('Tachyon Manifold', $game->extraTurns()->at(1)?->trigger());
+    }
+
+    public function testTokens(): void
+    {
+        $game = $this->getLog('plain_3');
+
+        self::assertEquals(8, $game->player1->cardsUsed->filter(Event::TOKEN_CREATED)->count());
+        self::assertEquals(0, $game->player2->cardsUsed->filter(Event::TOKEN_CREATED)->count());
+    }
+
+    public function testProphecies(): void
+    {
+        $game = $this->getLog('plain_4');
+
+        self::assertEquals(11, $game->player1->propheciesTimeline->filter(Event::PROPHECY_ACTIVATED)->count());
+        self::assertEquals(10, $game->player2->propheciesTimeline->filter(Event::PROPHECY_ACTIVATED)->count());
+        self::assertEquals(10, $game->player1->propheciesTimeline->filter(Event::PROPHECY_FULFILLED)->count());
+        self::assertEquals(9, $game->player2->propheciesTimeline->filter(Event::PROPHECY_FULFILLED)->count());
+        self::assertEquals(10, $game->player1->propheciesTimeline->filter(Event::FATE_RESOLVED)->count());
+        self::assertEquals(9, $game->player2->propheciesTimeline->filter(Event::FATE_RESOLVED)->count());
     }
 
     private function getLog(string $file): Game
