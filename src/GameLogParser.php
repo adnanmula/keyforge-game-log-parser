@@ -2,23 +2,20 @@
 
 namespace AdnanMula\KeyforgeGameLogParser;
 
-use AdnanMula\KeyforgeGameLogParser\VO\AmberObtained;
-use AdnanMula\KeyforgeGameLogParser\VO\CardsDiscarded;
-use AdnanMula\KeyforgeGameLogParser\VO\CardsDrawn;
-use AdnanMula\KeyforgeGameLogParser\VO\CardsPlayed;
-use AdnanMula\KeyforgeGameLogParser\VO\ExtraTurn;
-use AdnanMula\KeyforgeGameLogParser\VO\FateResolved;
-use AdnanMula\KeyforgeGameLogParser\VO\Fight;
-use AdnanMula\KeyforgeGameLogParser\VO\HouseChosen;
-use AdnanMula\KeyforgeGameLogParser\VO\KeyForged;
-use AdnanMula\KeyforgeGameLogParser\VO\ProphecyActivated;
-use AdnanMula\KeyforgeGameLogParser\VO\ProphecyFulfilled;
-use AdnanMula\KeyforgeGameLogParser\VO\Reap;
-use AdnanMula\KeyforgeGameLogParser\VO\Shared\Source;
-use AdnanMula\KeyforgeGameLogParser\VO\Shared\Turn;
-use AdnanMula\KeyforgeGameLogParser\VO\Shared\TurnMoment;
-use AdnanMula\KeyforgeGameLogParser\VO\AmberStolen;
-use AdnanMula\KeyforgeGameLogParser\VO\TokenCreated;
+use AdnanMula\KeyforgeGameLogParser\Event\AmberObtained;
+use AdnanMula\KeyforgeGameLogParser\Event\AmberStolen;
+use AdnanMula\KeyforgeGameLogParser\Event\CardsDiscarded;
+use AdnanMula\KeyforgeGameLogParser\Event\CardsDrawn;
+use AdnanMula\KeyforgeGameLogParser\Event\CardsPlayed;
+use AdnanMula\KeyforgeGameLogParser\Event\ExtraTurn;
+use AdnanMula\KeyforgeGameLogParser\Event\FateResolved;
+use AdnanMula\KeyforgeGameLogParser\Event\Fight;
+use AdnanMula\KeyforgeGameLogParser\Event\HouseChosen;
+use AdnanMula\KeyforgeGameLogParser\Event\KeyForged;
+use AdnanMula\KeyforgeGameLogParser\Event\ProphecyActivated;
+use AdnanMula\KeyforgeGameLogParser\Event\ProphecyFulfilled;
+use AdnanMula\KeyforgeGameLogParser\Event\Reap;
+use AdnanMula\KeyforgeGameLogParser\Event\TokenCreated;
 use Symfony\Component\DomCrawler\Crawler;
 
 final class GameLogParser
@@ -214,11 +211,11 @@ final class GameLogParser
         $pattern = "/^($player1|$player2)\s+forges the\s+([^\s]+)\s+key\s*,\s*paying\s+(\d+)\s+Æmber/";
 
         if (preg_match($pattern, $message, $matches)) {
-            $currentAmber = $game->player($matches[1])?->amberObtained?->last()?->value() ?? 0;
+            $currentAmber = $game->player($matches[1])?->timeline->filter(EventType::AMBER_OBTAINED)?->last()?->value() ?? 0;
             $cost = (int) $matches[3];
             $remaining = max(0, $currentAmber - $cost);
 
-            $game->player($matches[1])?->keysForged->add(
+            $game->player($matches[1])?->timeline->add(
                 new KeyForged($matches[1], new Turn($game->length, TurnMoment::BETWEEN, $index), $matches[2], (int) $matches[3], $remaining),
             );
         }
@@ -235,19 +232,20 @@ final class GameLogParser
 
         if (preg_match($pattern, $message, $matches)) {
             $currentPlayer1 = $game->player($matches[1]);
-            $player1Last = $currentPlayer1?->amberObtained->last();
+            $player1Last = $currentPlayer1?->timeline->filter(EventType::AMBER_OBTAINED)->last();
             $turnMoment1 = $player1Last?->turn()->value() !== $game->length ? TurnMoment::START : TurnMoment::END;
             $adjustKeyForged1 = 0;
 
             if (null !== $currentPlayer1) {
-                foreach ($currentPlayer1->keysForged->items() as $keyForged) {
+                /** @var KeyForged $keyForged */
+                foreach ($currentPlayer1->timeline->filter(EventType::KEY_FORGED)->items() as $keyForged) {
                     if ($keyForged->turn()->value() === $game->length) {
                         $adjustKeyForged1 += $keyForged->amberCost();
                     }
                 }
             }
 
-            $game->player($matches[1])?->amberObtained->add(
+            $game->player($matches[1])?->timeline->add(
                 new AmberObtained(
                     $matches[1],
                     new Turn($game->length, $turnMoment1, $index),
@@ -258,19 +256,20 @@ final class GameLogParser
             );
 
             $currentPlayer2 = $game->player($matches[4]);
-            $player2Last = $currentPlayer2?->amberObtained->last();
+            $player2Last = $currentPlayer2?->timeline->filter(EventType::AMBER_OBTAINED)->last();
             $turnMoment2 = $player2Last?->turn()->value() !== $game->length ? TurnMoment::START : TurnMoment::END;
             $adjustKeyForged2 = 0;
 
             if (null !== $currentPlayer2) {
-                foreach ($currentPlayer2->keysForged->items() as $keyForged) {
+                /** @var KeyForged $keyForged */
+                foreach ($currentPlayer2->timeline->filter(EventType::KEY_FORGED)->items() as $keyForged) {
                     if ($keyForged->turn()->value() === $game->length) {
                         $adjustKeyForged2 += $keyForged->amberCost();
                     }
                 }
             }
 
-            $game->player($matches[4])?->amberObtained->add(
+            $game->player($matches[4])?->timeline->add(
                 new AmberObtained(
                     $matches[4],
                     new Turn($game->length, $turnMoment2, $index),
@@ -290,7 +289,7 @@ final class GameLogParser
         $pattern = "/($player1|$player2)\s+chooses\s+(\w*)\s+as their active house this turn\s*$/";
 
         if (preg_match($pattern, $message, $matches)) {
-            $game->player($matches[1])?->housesChosen->add(
+            $game->player($matches[1])?->timeline->add(
                 new HouseChosen($matches[1], new Turn($game->length, TurnMoment::START, $index), $matches[2]),
             );
         }
@@ -306,7 +305,7 @@ final class GameLogParser
         $pattern = "/^($player1|$player2)\s+draws\s+(\d+)\s+card/";
 
         if (preg_match($pattern, $message, $matches)) {
-            $game->player($matches[1])?->cardsDrawn->add(
+            $game->player($matches[1])?->timeline->add(
                 new CardsDrawn($matches[1], new Turn($game->length, TurnMoment::BETWEEN, $index), (int) $matches[2]),
             );
         }
@@ -347,7 +346,7 @@ final class GameLogParser
         }
 
         if ($player !== null && $discardCount > 0) {
-            $game->player($player)?->cardsDiscarded->add(
+            $game->player($player)?->timeline->add(
                 new CardsDiscarded($player, new Turn($game->length, TurnMoment::BETWEEN, $index), $source, $discardCount),
             );
         }
@@ -366,7 +365,7 @@ final class GameLogParser
             $player = $matches[1];
             $card = trim($matches[2]);
 
-            $game->player($player)?->cardsPlayed->add(
+            $game->player($player)?->timeline->add(
                 new CardsPlayed($player, new Turn($game->length, TurnMoment::BETWEEN, $index), [$card]),
             );
         }
@@ -390,7 +389,7 @@ final class GameLogParser
             $card = trim($matches[2]);
             $value = (int) $matches[3];
 
-            $game->player($player)?->amberStolen->add(
+            $game->player($player)?->timeline->add(
                 new AmberStolen($player, new Turn($game->length, TurnMoment::BETWEEN, $index), Source::PLAYER, $card, $value),
             );
         } elseif (preg_match($pattern2, $message, $matches2)) {
@@ -398,14 +397,14 @@ final class GameLogParser
             $card = trim($matches2[2]);
             $value = (int) $matches2[3];
 
-            $game->player($player)?->amberStolen->add(
+            $game->player($player)?->timeline->add(
                 new AmberStolen($player, new Turn($game->length, TurnMoment::BETWEEN, $index), Source::PLAYER, $card, $value),
             );
         } elseif (preg_match($pattern3, $message, $matches3)) {
             $player = $matches3[1];
             $card = trim($matches3[2]);
 
-            $game->player($player)?->amberStolen->add(
+            $game->player($player)?->timeline->add(
                 new AmberStolen($player, new Turn($game->length, TurnMoment::BETWEEN, $index), Source::PLAYER, $card, 1),
             );
         }
@@ -426,7 +425,7 @@ final class GameLogParser
             $value = trim($matches[3]);
             $target = trim($matches[4]);
 
-            $game->player($player)?->fights->add(
+            $game->player($player)?->timeline->add(
                 new Fight($player, new Turn($game->length, TurnMoment::BETWEEN, $index), Source::PLAYER, $trigger, $target, $value),
             );
         }
@@ -445,8 +444,8 @@ final class GameLogParser
             $player = $matches[1];
             $trigger = trim($matches[2]);
 
-            $game->player($player)?->extraTurns->add(
-                new ExtraTurn($player, new Turn($game->length, TurnMoment::BETWEEN, $index), Source::PLAYER, $trigger),
+            $game->player($player)?->timeline->add(
+                new ExtraTurn($player, new Turn($game->length, TurnMoment::BETWEEN, $index), $trigger),
             );
         }
     }
@@ -465,7 +464,7 @@ final class GameLogParser
             $card = trim($matches[2]);
             $card2 = trim($matches[3]);
 
-            $game->player($player)?->reaps->add(
+            $game->player($player)?->timeline->add(
                 new Reap($player, new Turn($game->length, TurnMoment::BETWEEN, $index), Source::PLAYER, $card, $card2),
             );
         }
@@ -484,7 +483,7 @@ final class GameLogParser
             $player = $matches[1];
             $card = trim($matches[2]);
 
-            $game->player($player)?->cardsUsed->add(
+            $game->player($player)?->timeline->add(
                 new TokenCreated($player, new Turn($game->length, TurnMoment::BETWEEN, $index), $card),
             );
         }
@@ -505,7 +504,7 @@ final class GameLogParser
             $player = $matches[1];
             $card = trim($matches[2]);
 
-            $game->player($player)?->propheciesTimeline->add(
+            $game->player($player)?->timeline->add(
                 new FateResolved($player, new Turn($game->length, TurnMoment::BETWEEN, $index), $card),
             );
         }
@@ -514,7 +513,7 @@ final class GameLogParser
             $player = $matches[1];
             $card = trim($matches[2]);
 
-            $game->player($player)?->propheciesTimeline->add(
+            $game->player($player)?->timeline->add(
                 new ProphecyActivated($player, new Turn($game->length, TurnMoment::BETWEEN, $index), $card),
             );
         }
@@ -523,7 +522,7 @@ final class GameLogParser
             $player = $matches[1];
             $card = trim($matches[2]);
 
-            $game->player($player)?->propheciesTimeline->add(
+            $game->player($player)?->timeline->add(
                 new ProphecyFulfilled($player, new Turn($game->length, TurnMoment::BETWEEN, $index), $card),
             );
         }

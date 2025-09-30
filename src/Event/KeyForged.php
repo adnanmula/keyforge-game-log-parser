@@ -1,23 +1,26 @@
 <?php declare(strict_types=1);
 
-namespace AdnanMula\KeyforgeGameLogParser\VO;
+namespace AdnanMula\KeyforgeGameLogParser\Event;
 
-use AdnanMula\KeyforgeGameLogParser\VO\Shared\Event;
-use AdnanMula\KeyforgeGameLogParser\VO\Shared\Item;
-use AdnanMula\KeyforgeGameLogParser\VO\Shared\Turn;
-use AdnanMula\KeyforgeGameLogParser\VO\Shared\TurnMoment;
+use AdnanMula\KeyforgeGameLogParser\Event;
+use AdnanMula\KeyforgeGameLogParser\EventType;
+use AdnanMula\KeyforgeGameLogParser\Source;
+use AdnanMula\KeyforgeGameLogParser\Turn;
+use AdnanMula\KeyforgeGameLogParser\TurnMoment;
 
-final readonly class KeyForged implements Item
+final readonly class KeyForged extends Event
 {
     public function __construct(
-        private string $player,
-        private Turn $turn,
-        private string $value,
+        string $player,
+        Turn $turn,
+        string $value,
         private int $amberCost,
         private int $amberRemaining,
-    ) {}
+    ) {
+        parent::__construct($player, $turn, Source::UNKNOWN, $value);
+    }
 
-    public static function fromArray(array $array): self
+    public static function fromArray(array $array): static
     {
         return new self(
             $array['player'],
@@ -32,19 +35,9 @@ final readonly class KeyForged implements Item
         );
     }
 
-    public function type(): Event
+    public function type(): EventType
     {
-        return Event::KEY_FORGED;
-    }
-
-    public function player(): string
-    {
-        return $this->player;
-    }
-
-    public function turn(): Turn
-    {
-        return $this->turn;
+        return EventType::KEY_FORGED;
     }
 
     public function value(): string
@@ -65,10 +58,7 @@ final readonly class KeyForged implements Item
     public function jsonSerialize(): array
     {
         return [
-            'player' => $this->player,
-            'type' => $this->type()->name,
-            'turn' => $this->turn->jsonSerialize(),
-            'value' => $this->value,
+            ...$this->jsonSerialize(),
             'amber_cost' => $this->amberCost,
             'amber_remaining' => $this->amberRemaining,
         ];

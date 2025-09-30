@@ -2,17 +2,6 @@
 
 namespace AdnanMula\KeyforgeGameLogParser;
 
-use AdnanMula\KeyforgeGameLogParser\VO\AmberObtainedCollection;
-use AdnanMula\KeyforgeGameLogParser\VO\CardsDiscardedCollection;
-use AdnanMula\KeyforgeGameLogParser\VO\CardsDrawnCollection;
-use AdnanMula\KeyforgeGameLogParser\VO\CardsPlayedCollection;
-use AdnanMula\KeyforgeGameLogParser\VO\ExtraTurnCollection;
-use AdnanMula\KeyforgeGameLogParser\VO\FightCollection;
-use AdnanMula\KeyforgeGameLogParser\VO\KeyForgedCollection;
-use AdnanMula\KeyforgeGameLogParser\VO\ReapCollection;
-use AdnanMula\KeyforgeGameLogParser\VO\AmberStolenCollection;
-use AdnanMula\KeyforgeGameLogParser\VO\Timeline;
-
 final class Game implements \JsonSerializable
 {
     public function __construct(
@@ -74,132 +63,6 @@ final class Game implements \JsonSerializable
         return null;
     }
 
-    public function amberObtained(): AmberObtainedCollection
-    {
-        $result = new AmberObtainedCollection();
-
-        $result->add(
-            ...$this->player1->amberObtained->items(),
-            ...$this->player2->amberObtained->items(),
-        );
-
-        $result->reorder();
-
-        return $result;
-    }
-
-    public function cardsPlayed(): CardsPlayedCollection
-    {
-        $result = new CardsPlayedCollection();
-
-        $result->add(
-            ...$this->player1->cardsPlayed->items(),
-            ...$this->player2->cardsPlayed->items(),
-        );
-
-        $result->reorder();
-
-        return $result;
-    }
-
-    public function cardsDrawn(): CardsDrawnCollection
-    {
-        $result = new CardsDrawnCollection();
-
-        $result->add(
-            ...$this->player1->cardsDrawn->items(),
-            ...$this->player2->cardsDrawn->items(),
-        );
-
-        $result->reorder();
-
-        return $result;
-    }
-
-    public function cardsDiscarded(): CardsDiscardedCollection
-    {
-        $result = new CardsDiscardedCollection();
-
-        $result->add(
-            ...$this->player1->cardsDiscarded->items(),
-            ...$this->player2->cardsDiscarded->items(),
-        );
-
-        $result->reorder();
-
-        return $result;
-    }
-
-    public function keysForged(): KeyForgedCollection
-    {
-        $result = new KeyForgedCollection();
-
-        $result->add(
-            ...$this->player1->keysForged->items(),
-            ...$this->player2->keysForged->items(),
-        );
-
-        $result->reorder();
-
-        return $result;
-    }
-
-    public function amberStolen(): AmberStolenCollection
-    {
-        $result = new AmberStolenCollection();
-
-        $result->add(
-            ...$this->player1->amberStolen->items(),
-            ...$this->player2->amberStolen->items(),
-        );
-
-        $result->reorder();
-
-        return $result;
-    }
-
-    public function fights(): FightCollection
-    {
-        $result = new FightCollection();
-
-        $result->add(
-            ...$this->player1->fights->items(),
-            ...$this->player2->fights->items(),
-        );
-
-        $result->reorder();
-
-        return $result;
-    }
-
-    public function reaps(): ReapCollection
-    {
-        $result = new ReapCollection();
-
-        $result->add(
-            ...$this->player1->reaps->items(),
-            ...$this->player2->reaps->items(),
-        );
-
-        $result->reorder();
-
-        return $result;
-    }
-
-    public function extraTurns(): ExtraTurnCollection
-    {
-        $result = new ExtraTurnCollection();
-
-        $result->add(
-            ...$this->player1->extraTurns->items(),
-            ...$this->player2->extraTurns->items(),
-        );
-
-        $result->reorder();
-
-        return $result;
-    }
-
     public function updateLength(int $value): self
     {
         $this->length = $value;
@@ -209,16 +72,16 @@ final class Game implements \JsonSerializable
 
     public function timeline(): Timeline
     {
-        $timeline = new Timeline();
+        $tl = new Timeline();
 
-        $timeline->add(
-            ...$this->player1->timeline()->items(),
-            ...$this->player2->timeline()->items(),
+        $tl->add(
+            ...$this->player1->timeline->items(),
+            ...$this->player2->timeline->items(),
         );
 
-        $timeline->reorder();
+        $tl->reorder();
 
-        return $timeline;
+        return $tl;
     }
 
     public function jsonSerialize(): array

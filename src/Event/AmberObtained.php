@@ -1,23 +1,26 @@
 <?php declare(strict_types=1);
 
-namespace AdnanMula\KeyforgeGameLogParser\VO;
+namespace AdnanMula\KeyforgeGameLogParser\Event;
 
-use AdnanMula\KeyforgeGameLogParser\VO\Shared\Event;
-use AdnanMula\KeyforgeGameLogParser\VO\Shared\Item;
-use AdnanMula\KeyforgeGameLogParser\VO\Shared\Turn;
-use AdnanMula\KeyforgeGameLogParser\VO\Shared\TurnMoment;
+use AdnanMula\KeyforgeGameLogParser\Event;
+use AdnanMula\KeyforgeGameLogParser\EventType;
+use AdnanMula\KeyforgeGameLogParser\Source;
+use AdnanMula\KeyforgeGameLogParser\Turn;
+use AdnanMula\KeyforgeGameLogParser\TurnMoment;
 
-final readonly class AmberObtained implements Item
+final readonly class AmberObtained extends Event
 {
     public function __construct(
-        private string $player,
-        private Turn $turn,
-        private int $value,
+        string $player,
+        Turn $turn,
+        int $value,
         private int $keys,
         private int $delta,
-    ) {}
+    ) {
+        parent::__construct($player, $turn, Source::UNKNOWN, $value);
+    }
 
-    public static function fromArray(array $array): self
+    public static function fromArray(array $array): static
     {
         return new self(
             $array['player'],
@@ -32,19 +35,9 @@ final readonly class AmberObtained implements Item
         );
     }
 
-    public function type(): Event
+    public function type(): EventType
     {
-        return Event::AMBER_OBTAINED;
-    }
-
-    public function player(): string
-    {
-        return $this->player;
-    }
-
-    public function turn(): Turn
-    {
-        return $this->turn;
+        return EventType::AMBER_OBTAINED;
     }
 
     public function value(): int
@@ -65,10 +58,7 @@ final readonly class AmberObtained implements Item
     public function jsonSerialize(): array
     {
         return [
-            'player' => $this->player,
-            'type' => $this->type()->name,
-            'turn' => $this->turn->jsonSerialize(),
-            'value' => $this->value,
+            ...$this->jsonSerialize(),
             'keys' => $this->keys,
             'delta' => $this->delta,
         ];

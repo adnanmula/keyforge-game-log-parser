@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace AdnanMula\KeyforgeGameLogParser\VO\Shared;
+namespace AdnanMula\KeyforgeGameLogParser;
 
-enum Event: string
+enum EventType: string
 {
     case AMBER_OBTAINED = 'AMBER_OBTAINED';
     case CARDS_DISCARDED = 'CARDS_DISCARDED';

@@ -1,36 +1,30 @@
 <?php declare(strict_types=1);
 
-namespace AdnanMula\KeyforgeGameLogParser\VO;
+namespace AdnanMula\KeyforgeGameLogParser;
 
-use AdnanMula\KeyforgeGameLogParser\VO\Shared\Event;
-use AdnanMula\KeyforgeGameLogParser\VO\Shared\Item;
-use AdnanMula\KeyforgeGameLogParser\VO\Shared\Turn;
-use AdnanMula\KeyforgeGameLogParser\VO\Shared\TurnMoment;
-
-final readonly class HouseChosen implements Item
+abstract readonly class Event
 {
-    public function __construct(
-        private string $player,
-        private Turn $turn,
-        private string $value,
+    protected function __construct(
+        protected string $player,
+        protected Turn $turn,
+        protected Source $source,
+        protected int|string|array $value,
     ) {}
 
-    public static function fromArray(array $array): self
+    abstract public function type(): EventType;
+
+    public static function fromArray(array $array): static
     {
-        return new self(
+        return new static(
             $array['player'],
             new Turn(
                 $array['turn']['value'],
                 TurnMoment::from($array['turn']['moment']),
                 $array['turn']['occurredOn'],
             ),
+            Source::from($array['source'] ?? Source::UNKNOWN->value),
             $array['value'],
         );
-    }
-
-    public function type(): Event
-    {
-        return Event::HOUSE_CHOSEN;
     }
 
     public function player(): string
@@ -43,7 +37,12 @@ final readonly class HouseChosen implements Item
         return $this->turn;
     }
 
-    public function value(): string
+    public function source(): Source
+    {
+        return $this->source;
+    }
+
+    public function value(): int|string|array
     {
         return $this->value;
     }
@@ -53,6 +52,7 @@ final readonly class HouseChosen implements Item
         return [
             'player' => $this->player,
             'type' => $this->type()->name,
+            'source' => $this->source->value,
             'turn' => $this->turn->jsonSerialize(),
             'value' => $this->value,
         ];
