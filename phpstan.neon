@@ -1,5 +1,5 @@
 parameters:
-    level: 6
+    level: 9
     reportUnmatchedIgnoredErrors: false
     paths:
         - src
@@ -9,3 +9,5 @@ parameters:
             identifier: missingType.iterableValue
         -
             identifier: new.static
+        -
+            identifier: binaryOp.invalid

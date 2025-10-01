@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace AdnanMula\KeyforgeGameLogParser;
+namespace AdnanMula\KeyforgeGameLogParser\Event;
 
-enum TurnMoment: string
+enum Moment: string
 {
     case START = 'START';
     case BETWEEN = 'BETWEEN';

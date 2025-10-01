@@ -1,12 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace AdnanMula\KeyforgeGameLogParser;
+namespace AdnanMula\KeyforgeGameLogParser\Game;
 
-use AdnanMula\KeyforgeGameLogParser\Event\AmberObtained;
-use AdnanMula\KeyforgeGameLogParser\Event\AmberStolen;
-use AdnanMula\KeyforgeGameLogParser\Event\CardsDiscarded;
-use AdnanMula\KeyforgeGameLogParser\Event\CardsDrawn;
-use AdnanMula\KeyforgeGameLogParser\Event\CardsPlayed;
+use AdnanMula\KeyforgeGameLogParser\Event\Event;
+use AdnanMula\KeyforgeGameLogParser\Event\EventType;
 
 final class Timeline extends Collection
 {
@@ -17,24 +14,18 @@ final class Timeline extends Collection
 
     public function totalCardsDrawn(): int
     {
-        /** @var array<CardsDrawn> $events */
-        $events = $this->filter(EventType::CARDS_DRAWN)->items();
-
         return array_reduce(
-            $events,
-            static fn (int $c, CardsDrawn $s): int => $c + $s->value(),
+            $this->filter(EventType::CARDS_DRAWN)->items(),
+            static fn (int $c, Event $s): int => $c + $s->value(),
             0,
         );
     }
 
     public function totalCardsDiscarded(): int
     {
-        /** @var array<CardsDiscarded> $events */
-        $events = $this->filter(EventType::CARDS_DISCARDED)->items();
-
         return array_reduce(
-            $events,
-            static fn (int $c, CardsDiscarded $s): int => $c + $s->value(),
+            $this->filter(EventType::CARDS_DISCARDED)->items(),
+            static fn (int $c, Event $s): int => $c + $s->value(),
             0,
         );
     }
@@ -46,60 +37,45 @@ final class Timeline extends Collection
 
     public function totalAmberObtained(): int
     {
-        /** @var array<AmberObtained> $events */
-        $events = $this->filter(EventType::AMBER_OBTAINED)->items();
-
         return array_reduce(
-            $events,
-            static fn (int $c, AmberObtained $s): int => $c + $s->delta(),
+            $this->filter(EventType::AMBER_OBTAINED)->items(),
+            static fn (int $c, Event $s): int => $c + $s->payload['delta'],
             0,
         );
     }
 
     public function totalAmberObtainedPositive(): int
     {
-        /** @var array<AmberObtained> $events */
-        $events = $this->filter(EventType::AMBER_OBTAINED)->items();
-
         return array_reduce(
-            $events,
-            static fn (int $c, AmberObtained $s): int => $s->delta() > 0 ? $c + $s->delta() : $c,
+            $this->filter(EventType::AMBER_OBTAINED)->items(),
+            static fn (int $c, Event $s): int => $s->payload['delta'] > 0 ? $c + $s->payload['delta'] : $c,
             0,
         );
     }
 
     public function totalAmberObtainedNegative(): int
     {
-        /** @var array<AmberObtained> $events */
-        $events = $this->filter(EventType::AMBER_OBTAINED)->items();
-
         return array_reduce(
-            $events,
-            static fn (int $c, AmberObtained $s): int => $s->delta() < 0 ? $c + $s->delta() : $c,
+            $this->filter(EventType::AMBER_OBTAINED)->items(),
+            static fn (int $c, Event $s): int => $s->payload['delta'] < 0 ? $c + $s->payload['delta'] : $c,
             0,
         );
     }
 
     public function totalAmberStolen(): int
     {
-        /** @var array<AmberStolen> $events */
-        $events = $this->filter(EventType::AMBER_STOLEN)->items();
-
         return array_reduce(
-            $events,
-            static fn (int $c, AmberStolen $s): int => $c + $s->value(),
+            $this->filter(EventType::AMBER_STOLEN)->items(),
+            static fn (int $c, Event $s): int => $c + $s->value(),
             0,
         );
     }
 
     public function totalCardsPlayed(): int
     {
-        /** @var array<CardsPlayed> $events */
-        $events = $this->filter(EventType::CARDS_PLAYED)->items();
-
         return array_reduce(
-            $events,
-            static fn (int $c, CardsPlayed $s): int => $c + count($s->value()),
+            $this->filter(EventType::CARDS_PLAYED)->items(),
+            static fn (int $c, Event $s): int => $c + count((array) $s->value()),
             0,
         );
     }

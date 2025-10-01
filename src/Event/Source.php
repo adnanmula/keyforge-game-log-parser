@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace AdnanMula\KeyforgeGameLogParser;
+namespace AdnanMula\KeyforgeGameLogParser\Event;
 
 enum Source: string
 {

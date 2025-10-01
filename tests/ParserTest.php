@@ -2,9 +2,8 @@
 
 namespace AdnanMula\KeyforgeGameLogParser\Tests;
 
-use AdnanMula\KeyforgeGameLogParser\Event\ExtraTurn;
-use AdnanMula\KeyforgeGameLogParser\EventType;
-use AdnanMula\KeyforgeGameLogParser\Game;
+use AdnanMula\KeyforgeGameLogParser\Event\EventType;
+use AdnanMula\KeyforgeGameLogParser\Game\Game;
 use AdnanMula\KeyforgeGameLogParser\GameLogParser;
 use PHPUnit\Framework\TestCase;
 
@@ -59,23 +58,18 @@ class ParserTest extends TestCase
     {
         $game = $this->getLog('plain_extra_turns');
 
-        /** @var ?ExtraTurn $extraTurn1 */
         $extraTurn1 = $game->player1->timeline->filter(EventType::EXTRA_TURN)->at(0);
-        /** @var ?ExtraTurn $extraTurn2 */
         $extraTurn2 = $game->player2->timeline->filter(EventType::EXTRA_TURN)->at(0);
-        /** @var ?ExtraTurn $extraTurn3 */
         $extraTurn3 = $game->timeline()->filter(EventType::EXTRA_TURN)->at(0);
-        /** @var ?ExtraTurn $extraTurn4 */
         $extraTurn4 = $game->timeline()->filter(EventType::EXTRA_TURN)->at(1);
 
-
         self::assertEquals(1, $game->player1->timeline->totalExtraTurns());
-        self::assertEquals('Ancestral Timekeeper', $extraTurn1?->trigger());
+        self::assertEquals('Ancestral Timekeeper', $extraTurn1?->payload()['trigger'] ?? null);
         self::assertEquals(1, $game->player2->timeline->totalExtraTurns());
-        self::assertEquals('Tachyon Manifold', $extraTurn2?->trigger());
+        self::assertEquals('Tachyon Manifold', $extraTurn2?->payload()['trigger'] ?? null);
         self::assertEquals(2, $game->timeline()->totalExtraTurns());
-        self::assertEquals('Ancestral Timekeeper', $extraTurn3?->trigger());
-        self::assertEquals('Tachyon Manifold', $extraTurn4?->trigger());
+        self::assertEquals('Ancestral Timekeeper', $extraTurn3?->payload()['trigger'] ?? null);
+        self::assertEquals('Tachyon Manifold', $extraTurn4?->payload()['trigger'] ?? null);
     }
 
     public function testTokens(): void

@@ -1,7 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace AdnanMula\KeyforgeGameLogParser;
+namespace AdnanMula\KeyforgeGameLogParser\Game;
 
+use AdnanMula\KeyforgeGameLogParser\Event\Event;
+use AdnanMula\KeyforgeGameLogParser\Event\EventType;
 use Countable;
 use Iterator;
 use JsonSerializable;
