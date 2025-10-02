@@ -342,7 +342,7 @@ final class GameLogParser
         $player1 = $game->player1->escapedName();
         $player2 = $game->player2->escapedName();
 
-        $pattern = "/^($player1|$player2)'s\s+chains are reduced by\s+(\d+)\s+to\s+(\d+)$/";
+        $pattern = "/^($player1|$player2)'s\s+chains are reduced by\s+(\d+)\s+to\s+(\d+)\s*$/";
 
         if (preg_match($pattern, $message, $matches)) {
             $game->player($matches[1])?->timeline->add(
@@ -366,8 +366,8 @@ final class GameLogParser
         $player1 = $game->player1->escapedName();
         $player2 = $game->player2->escapedName();
 
-        $pattern1 = "/^($player1|$player2)\s+changed tide\s+to High$/";
-        $pattern2 = "/^($player1|$player2)\s+uses (.*)\s+to raise the tide$/";
+        $pattern1 = "/^($player1|$player2)\s+changed tide\s+to High\s*$/";
+        $pattern2 = "/^($player1|$player2)\s+uses (.*)\s+to raise the tide\s*$/";
 
         if (preg_match($pattern1, $message, $matches)) {
             $game->player($matches[1])?->timeline->add(
@@ -448,7 +448,7 @@ final class GameLogParser
         $player1 = $game->player1->escapedName();
         $player2 = $game->player2->escapedName();
 
-        $pattern = "/^($player1|$player2)\s+plays\s+(.+)$/";
+        $pattern = "/^($player1|$player2)\s+plays\s+(.+)\s*$/";
 
         if (preg_match($pattern, $message, $matches)) {
             $player = $matches[1];
@@ -610,11 +610,13 @@ final class GameLogParser
     private function checkTokens(Game $game, int $index, string $message): void
     {
         $matches = [];
+        $matches2 = [];
 
         $player1 = $game->player1->escapedName();
         $player2 = $game->player2->escapedName();
 
-        $pattern = "/^($player1|$player2)\s+uses\s+(.+)\s+to make a token creature\s*.*$$/";
+        $pattern = "/^($player1|$player2)\s+uses\s+(.+)\s+to make a token creature\s*.*\s*$/";
+        $pattern2 = "/^($player1|$player2)\s+uses\s+(.+)\s+to make\s+(\d+)\s+token creatures\s*.*\s*$/";
 
         if (preg_match($pattern, $message, $matches)) {
             $player = $matches[1];
@@ -630,6 +632,24 @@ final class GameLogParser
                 ),
             );
         }
+
+        if (preg_match($pattern2, $message, $matches2)) {
+            $player = $matches2[1];
+            $card = trim($matches2[2]);
+            $amount = (int) $matches2[3];
+
+            for ($i = 0; $i < $amount; ++$i) {
+                $game->player($player)?->timeline->add(
+                    new Event(
+                        EventType::TOKEN_CREATED,
+                        $player,
+                        new Turn($game->length, Moment::BETWEEN, $index),
+                        Source::UNKNOWN,
+                        $card,
+                    ),
+                );
+            }
+        }
     }
 
     private function checkProphecies(Game $game, int $index, string $message): void
@@ -639,9 +659,9 @@ final class GameLogParser
         $player1 = $game->player1->escapedName();
         $player2 = $game->player2->escapedName();
 
-        $patternFate = "/^($player1|$player2)\s+resolves the fate effect of\s+(.+)$/";
-        $patternActivate = "/^($player1|$player2)\s+activates their prophecy\s+(.+)$/";
-        $patternFulfilled = "/^($player1|$player2)\s+uses\s+(.+)\s+to fulfill its prophecy$/";
+        $patternFate = "/^($player1|$player2)\s+resolves the fate effect of\s+(.+)\s*$/";
+        $patternActivate = "/^($player1|$player2)\s+activates their prophecy\s+(.+)\s*$/";
+        $patternFulfilled = "/^($player1|$player2)\s+uses\s+(.+)\s+to fulfill its prophecy\s*$/";
 
         if (preg_match($patternFate, $message, $matches)) {
             $player = $matches[1];
