@@ -2,7 +2,9 @@
 
 namespace AdnanMula\KeyforgeGameLogParser\Event;
 
-readonly class Event
+use JsonSerializable;
+
+readonly class Event implements JsonSerializable
 {
     public function __construct(
         private(set) EventType $type,

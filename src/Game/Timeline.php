@@ -7,11 +7,6 @@ use AdnanMula\KeyforgeGameLogParser\Event\EventType;
 
 final class Timeline extends Collection
 {
-    public function __construct(Event ...$item)
-    {
-        parent::__construct(...$item);
-    }
-
     public function totalCardsDrawn(): int
     {
         return array_reduce(
@@ -76,6 +71,24 @@ final class Timeline extends Collection
         return array_reduce(
             $this->filter(EventType::CARDS_PLAYED)->items(),
             static fn (int $c, Event $s): int => $c + count((array) $s->value()),
+            0,
+        );
+    }
+
+    public function totalByValue(EventType ...$types): int
+    {
+        return array_reduce(
+            $this->filter(...$types)->items(),
+            static fn (int $c, Event $s): int => $c + $s->value(),
+            0,
+        );
+    }
+
+    public function totalByPayloadValue(string $key, EventType ...$types): int
+    {
+        return array_reduce(
+            $this->filter(...$types)->items(),
+            static fn (int $c, Event $s): int => $c + ($s->payload()[$key] ?? 0),
             0,
         );
     }

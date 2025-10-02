@@ -1,0 +1,418 @@
+NaN brings Das widerspenstige „Scheusal“ Zacharias to The Crucible
+nan26 brings "Mustard" Tingting Armour to The Crucible
+NaN won the flip and is first player
+ nan26 has connected to the game server
+ NaN has connected to the game server
+NaN is shuffling their deck
+NaN draws 6 card  s to their maximum of 6
+nan26 is shuffling their deck
+nan26 draws 6 card  s to their maximum of 6
+NaN draws 1 card
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses unfathomable  as their active house this turn
+Main phase - NaN
+NaN plays Echo Pearl
+NaN gains an Æmber  due to Echo Pearl's bonus icon
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 1 card  to their maximum of 6
+End of turn 1
+NaN: 1 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 1 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses logos  as their active house this turn
+Main phase - nan26
+nan26 plays Mechabuoy
+nan26 gains an Æmber  due to Mechabuoy's bonus icon
+nan26 plays Austeralis Seaborg
+nan26 plays PI Sweven
+nan26 plays PI Sweven
+nan26 changed tide  to High
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+nan26's chains are reduced by 1 to 2
+End of turn 1
+NaN: 1 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 2 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses unfathomable  as their active house this turn
+Main phase - NaN
+NaN plays Frigorific Rod
+NaN gains an Æmber  due to Frigorific Rod's bonus icon
+NaN plays Storm Surge
+ NaN uses Storm Surge to prevent opponent from readying cards  during the ready card  step of their next turn
+NaN plays Seabringer Kekoa
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+End of turn 2
+NaN: 2 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 2 - nan26
+nan26 uses Mechabuoy to gain 1 Æmber
+Key phase - nan26
+nan26 does not forge a key. They have 2 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses logos  as their active house this turn
+Main phase - nan26
+nan26 uses PI Sweven to reap with PI Sweven
+nan26 uses PI Sweven to draw 3 cards
+nan26 draws 3 card  s
+nan26 uses PI Sweven to reap with PI Sweven
+nan26 uses PI Sweven to draw 3 cards
+nan26 draws 3 card  s
+nan26 uses Austeralis Seaborg to reap with Austeralis Seaborg
+nan26 uses Austeralis Seaborg to deal 2 damage to Seabringer Kekoa
+nan26 discards Think Twice
+nan26 discards Eureka!
+nan26 plays Mind Bullets
+nan26 uses Mind Bullets to deal 1 damage to Seabringer Kekoa, PI Sweven, PI Sweven, and Austeralis Seaborg
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+End of turn 2
+NaN: 2 Æmber  (0 keys) nan26: 5 Æmber  (0 keys)
+TURN 3 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 2 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+Main phase - NaN
+NaN plays Talmage Steelheart
+NaN uses Talmage Steelheart to place 1 +1 power counter on Talmage Steelheart
+NaN plays Old Egad
+NaN plays Captain Kresage
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+End of turn 3
+NaN: 2 Æmber  (0 keys) nan26: 5 Æmber  (0 keys)
+TURN 3 - nan26
+nan26 uses Mechabuoy to gain 1 Æmber
+Key phase - nan26
+nan26 forges the blue key  , paying 6 Æmber
+House phase - nan26
+nan26 chooses sanctum  as their active house this turn
+Main phase - nan26
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+End of turn 3
+NaN: 2 Æmber  (0 keys) nan26: 0 Æmber  (1 key)
+TURN 4 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 2 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses shadows  as their active house this turn
+Main phase - NaN
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+End of turn 4
+NaN: 2 Æmber  (0 keys) nan26: 0 Æmber  (1 key)
+TURN 4 - nan26
+nan26 uses Mechabuoy to gain 1 Æmber
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses logos  as their active house this turn
+Main phase - nan26
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+End of turn 4
+NaN: 2 Æmber  (0 keys) nan26: 1 Æmber  (1 key)
+TURN 5 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 2 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses unfathomable  as their active house this turn
+Main phase - NaN
+NaN plays Pour-tal
+NaN gains an Æmber  due to Pour-tal's bonus icon
+NaN uses Pour-tal to raise the tide
+NaN plays Pour-tal
+NaN gains an Æmber  due to Pour-tal's bonus icon
+NaN uses Pour-tal to archive itself
+NaN uses Seabringer Kekoa to make Seabringer Kekoa fight PI Sweven
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 2 card  s to their maximum of 6
+End of turn 5
+NaN: 4 Æmber  (0 keys) nan26: 1 Æmber  (1 key)
+TURN 5 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses logos  as their active house this turn
+Main phase - nan26
+nan26 uses Austeralis Seaborg to reap with Austeralis Seaborg
+nan26 uses Austeralis Seaborg to deal 2 damage to Seabringer Kekoa
+NaN uses Seabringer Kekoa to raise the tide
+nan26 uses Austeralis Seaborg to raise the tide
+nan26 uses PI Sweven to reap with PI Sweven
+nan26 uses PI Sweven to draw 3 cards
+nan26 draws 3 card  s
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+End of turn 5
+NaN: 4 Æmber  (0 keys) nan26: 3 Æmber  (1 key)
+TURN 6 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 4 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses shadows  as their active house this turn
+Main phase - NaN
+NaN changed tide  to High
+NaN plays Walk the Plank
+NaN uses Walk the Plank to steal 1 Æmber  from nan26
+NaN plays One-Eyed Willa
+NaN plays Jackie Tar
+NaN plays One-Eyed Willa
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+NaN's chains are reduced by 1 to 2
+End of turn 6
+NaN: 5 Æmber  (0 keys) nan26: 2 Æmber  (1 key)
+TURN 6 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 2 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses sanctum  as their active house this turn
+Main phase - nan26
+nan26 plays The Vaultkeeper
+nan26 plays Lærie of the Lake
+nan26 plays Urien the Circumspect
+nan26 plays Staunch Knight
+nan26 plays Marshal Ewer
+nan26 uses Marshal Ewer to raise the tide
+nan26 plays Staunch Knight
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26's chains are reduced by 1 to 1
+End of turn 6
+NaN: 5 Æmber  (0 keys) nan26: 2 Æmber  (1 key)
+TURN 7 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 5 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+Main phase - NaN
+NaN plays Eureka!
+NaN gains an Æmber  due to Eureka!'s bonus icon
+NaN uses Eureka! to gain 2 Æmber
+NaN plays Talmage Steelheart
+NaN uses Talmage Steelheart to place 2 +1 power counters on Talmage Steelheart
+NaN uses Old Egad to reap with Old Egad
+NaN uses Captain Kresage to reap with Captain Kresage
+NaN uses Talmage Steelheart to reap with Talmage Steelheart
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+NaN's chains are reduced by 1 to 1
+ NaN declares Check!
+End of turn 7
+NaN: 11 Æmber  (0 keys) nan26: 2 Æmber  (1 key)
+TURN 7 - nan26
+nan26 uses Mechabuoy to gain 1 Æmber
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses staralliance  as their active house this turn
+Main phase - nan26
+nan26 plays CXO Taber
+nan26 plays Universal Translator attaching it to Urien the Circumspect
+nan26 gains an Æmber  due to Universal Translator's bonus icon
+nan26 plays Stunner attaching it to Urien the Circumspect
+nan26 gains an Æmber  due to Stunner's bonus icon
+nan26 plays Lieutenant Valmart
+nan26 uses Lieutenant Valmart to increase key cost by 3 during NaN's next turn
+nan26 plays Zap
+nan26 gains an Æmber  due to Zap's bonus icon
+nan26 uses Zap to deal 1 damage to a creature for each house represented among creatures in play
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 5 card  s to their maximum of 6
+nan26's chains are reduced by 1 to 0
+ nan26 declares Check!
+End of turn 7
+NaN: 11 Æmber  (0 keys) nan26: 6 Æmber  (1 key)
+TURN 8 - NaN
+Key phase - NaN
+NaN forges the blue key  , paying 9 Æmber
+House phase - NaN
+NaN chooses shadows  as their active house this turn
+Main phase - NaN
+NaN plays Gas-Pipes Malone
+NaN plays Scooped
+NaN gains an Æmber  due to Scooped's bonus icon
+NaN uses Scooped to deal 2 damage to Gas-Pipes Malone
+NaN uses Scooped to capture 1 Æmber  from NaN on Gas-Pipes Malone
+NaN plays Kerwollop
+NaN uses Kerwollop to deal damage to One-Eyed Willa, Captain Kresage, Old Egad, Talmage Steelheart, Talmage Steelheart, Gas-Pipes Malone, Staunch Knight, Urien the Circumspect, Lærie of the Lake, The Vaultkeeper, PI Sweven, Austeralis Seaborg, Marshal Ewer, Staunch Knight, CXO Taber, and Lieutenant Valmart
+NaN gains Æmber  for each creature destroyed this way
+NaN uses One-Eyed Willa to make One-Eyed Willa fight Urien the Circumspect
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+NaN's chains are reduced by 1 to 0
+End of turn 8
+NaN: 3 Æmber  (1 key) nan26: 7 Æmber  (1 key)
+TURN 8 - nan26
+nan26 uses Mechabuoy to gain 1 Æmber
+Key phase - nan26
+nan26 forges the red key  , paying 6 Æmber
+House phase - nan26
+nan26 chooses logos  as their active house this turn
+Main phase - nan26
+nan26 plays Mechabuoy
+nan26 gains an Æmber  due to Mechabuoy's bonus icon
+nan26 plays Think Twice
+nan26 uses Think Twice to do several things
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+End of turn 8
+NaN: 3 Æmber  (1 key) nan26: 3 Æmber  (2 keys)
+TURN 9 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses unfathomable  as their active house this turn
+NaN moves all the cards  in their archives to their hand
+Main phase - NaN
+NaN changed tide  to High
+NaN plays Pour-tal
+NaN gains an Æmber  due to Pour-tal's bonus icon
+NaN uses Pour-tal to archive itself
+NaN plays Rakuzel’s Chant
+NaN gains an Æmber  due to Rakuzel’s Chant's bonus icon
+NaN draws a card  due to Rakuzel’s Chant's bonus icon
+NaN uses Rakuzel’s Chant to exhaust Captain Kresage, Old Egad, Talmage Steelheart, Talmage Steelheart, Staunch Knight, Urien the Circumspect, Lærie of the Lake, The Vaultkeeper, PI Sweven, Austeralis Seaborg, Marshal Ewer, Staunch Knight, CXO Taber, and Lieutenant Valmart
+NaN plays Portalmonger
+NaN plays Pour-tal
+NaN gains an Æmber  due to Pour-tal's bonus icon
+NaN uses Pour-tal to archive itself
+NaN plays Wikolia
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 1 card  to their maximum of 6
+NaN's chains are reduced by 1 to 2
+ NaN declares Check!
+End of turn 9
+NaN: 6 Æmber  (1 key) nan26: 3 Æmber  (2 keys)
+TURN 9 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 10 Æmber
+House phase - nan26
+nan26 chooses sanctum  as their active house this turn
+Main phase - nan26
+nan26 plays Taxing Journey
+nan26 gains an Æmber  due to Taxing Journey's bonus icon
+nan26 uses Taxing Journey to capture 1 Æmber  from their opponent , placing it on Austeralis Seaborg
+nan26 plays Trial by Water
+nan26 gains an Æmber  due to Trial by Water's bonus icon
+ nan26 uses Trial by Water to prevent raising the tide  until the start of their next turn
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 2 card  s to their maximum of 6
+End of turn 9
+NaN: 4 Æmber  (1 key) nan26: 5 Æmber  (2 keys)
+TURN 10 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 4 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+Main phase - NaN
+NaN uses Captain Kresage to reap with Captain Kresage
+NaN uses Old Egad to reap with Old Egad
+NaN uses Talmage Steelheart to reap with Talmage Steelheart
+NaN uses Talmage Steelheart to reap with Talmage Steelheart
+NaN plays Bilgewarden
+NaN plays Infomorph
+NaN plays Positron Bolt
+NaN gains an Æmber  due to Positron Bolt's bonus icon
+NaN uses Positron Bolt to deal 3 damage to Lieutenant Valmart, 2 damage to CXO Taber and 1 damage to Staunch Knight
+NaN uses Echo Pearl to destroy Echo Pearl
+NaN uses Echo Pearl to exhaust, stun and enrage Urien the Circumspect
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+NaN's chains are reduced by 1 to 1
+ NaN declares Check!
+End of turn 10
+NaN: 9 Æmber  (1 key) nan26: 5 Æmber  (2 keys)
+TURN 10 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 5 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses staralliance  as their active house this turn
+Main phase - nan26
+nan26 plays Sci. Officer Qincan
+nan26 plays Sci. Officer Qincan
+nan26 plays Æmber-vac attaching it to Urien the Circumspect
+nan26 uses Æmber-vac to raise the tide
+nan26 plays Light of the Archons attaching it to Urien the Circumspect
+nan26 gains an Æmber  due to Light of the Archons's bonus icon
+nan26 plays Unity or Discord
+nan26 chooses option ' Use a non-Star Alliance creature '
+nan26 uses Unity or Discord to use Austeralis Seaborg
+nan26 uses Austeralis Seaborg to reap with Austeralis Seaborg
+nan26 uses Austeralis Seaborg to deal 2 damage to Bilgewarden
+nan26 uses Austeralis Seaborg to raise the tide
+nan26 uses CXO Taber to reap with CXO Taber
+nan26 uses CXO Taber to allow them to play or use one non staralliance  card  this turn
+nan26 uses Lærie of the Lake to reap with Lærie of the Lake
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 5 card  s to their maximum of 6
+ nan26 declares Check!
+End of turn 10
+NaN: 9 Æmber  (1 key) nan26: 9 Æmber  (2 keys)
+TURN 11 - NaN
+Key phase - NaN
+NaN forges the red key  , paying 6 Æmber
+House phase - NaN
+NaN chooses shadows  as their active house this turn
+nan26 uses Sci. Officer Qincan to steal 1 Æmber  from NaN
+nan26 uses Sci. Officer Qincan to steal 1 Æmber  from NaN
+Main phase - NaN
+NaN plays Cement Shoes
+NaN gains an Æmber  due to Cement Shoes's bonus icon
+NaN uses Cement Shoes to deal 2 damage to Sci. Officer Qincan
+NaN plays Trickle-Down Theory
+NaN uses Trickle-Down Theory to raise the tide
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 2 card  s to their maximum of 6
+NaN's chains are reduced by 1 to 0
+End of turn 11
+NaN: 2 Æmber  (2 keys) nan26: 11 Æmber  (2 keys)
+TURN 11 - nan26
+Key phase - nan26
+nan26 forges the yellow key  , paying 10 Æmber
+ nan26 has won the game

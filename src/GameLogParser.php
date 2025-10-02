@@ -27,11 +27,13 @@ final class GameLogParser
             $this->checkKeysForged($game, $index, $message);
             $this->checkHouses($game, $index, $message);
             $this->checkCardsDrawn($game, $index, $message);
+            $this->checkChains($game, $index, $message);
             $this->checkCardsDiscarded($game, $index, $message);
             $this->checkCardsPlayed($game, $index, $message);
             $this->checkAmberStolen($game, $index, $message);
             $this->checkReap($game, $index, $message);
             $this->checkFight($game, $index, $message);
+            $this->checkTide($game, $index, $message);
             $this->checkExtraTurn($game, $index, $message);
             $this->checkTokens($game, $index, $message);
             $this->checkProphecies($game, $index, $message);
@@ -328,6 +330,65 @@ final class GameLogParser
                     new Turn($game->length, Moment::BETWEEN, $index),
                     Source::UNKNOWN,
                     (int) $matches[2],
+                ),
+            );
+        }
+    }
+
+    private function checkChains(Game $game, int $index, string $message): void
+    {
+        $matches = [];
+
+        $player1 = $game->player1->escapedName();
+        $player2 = $game->player2->escapedName();
+
+        $pattern = "/^($player1|$player2)'s\s+chains are reduced by\s+(\d+)\s+to\s+(\d+)$/";
+
+        if (preg_match($pattern, $message, $matches)) {
+            $game->player($matches[1])?->timeline->add(
+                new Event(
+                    EventType::CHAINS_REDUCED,
+                    $matches[1],
+                    new Turn($game->length, Moment::BETWEEN, $index),
+                    Source::PLAYER,
+                    (int) $matches[2],
+                    ['currentChains' => (int) $matches[3]],
+                ),
+            );
+        }
+    }
+
+    private function checkTide(Game $game, int $index, string $message): void
+    {
+        $matches = [];
+        $matches2 = [];
+
+        $player1 = $game->player1->escapedName();
+        $player2 = $game->player2->escapedName();
+
+        $pattern1 = "/^($player1|$player2)\s+changed tide\s+to High$/";
+        $pattern2 = "/^($player1|$player2)\s+uses (.*)\s+to raise the tide$/";
+
+        if (preg_match($pattern1, $message, $matches)) {
+            $game->player($matches[1])?->timeline->add(
+                new Event(
+                    EventType::TIDE_RAISED,
+                    $matches[1],
+                    new Turn($game->length, Moment::BETWEEN, $index),
+                    Source::PLAYER,
+                    'manual',
+                ),
+            );
+        }
+
+        if (preg_match($pattern2, $message, $matches2)) {
+            $game->player($matches2[1])?->timeline->add(
+                new Event(
+                    EventType::TIDE_RAISED,
+                    $matches2[1],
+                    new Turn($game->length, Moment::BETWEEN, $index),
+                    Source::PLAYER,
+                    $matches2[2],
                 ),
             );
         }

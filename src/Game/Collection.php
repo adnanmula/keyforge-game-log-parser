@@ -14,7 +14,7 @@ class Collection implements Iterator, Countable, JsonSerializable
     private array $items;
     private int $position = 0;
 
-    protected function __construct(Event ...$items)
+    final public function __construct(Event ...$items)
     {
         $this->items = $items;
     }
