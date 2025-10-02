@@ -128,7 +128,7 @@ final class Timeline extends Collection
     {
         $filled = [];
 
-        for ($i = 1; $i <= $turns; $i++) {
+        for ($i = 1; $i <= $turns; ++$i) {
             $filled[$i] = $data[$i] ?? 0;
         }
 

@@ -4,9 +4,9 @@ namespace AdnanMula\KeyforgeGameLogParser;
 
 use AdnanMula\KeyforgeGameLogParser\Event\Event;
 use AdnanMula\KeyforgeGameLogParser\Event\EventType;
+use AdnanMula\KeyforgeGameLogParser\Event\Moment;
 use AdnanMula\KeyforgeGameLogParser\Event\Source;
 use AdnanMula\KeyforgeGameLogParser\Event\Turn;
-use AdnanMula\KeyforgeGameLogParser\Event\Moment;
 use AdnanMula\KeyforgeGameLogParser\Game\Game;
 use AdnanMula\KeyforgeGameLogParser\Game\Player;
 use Symfony\Component\DomCrawler\Crawler;
