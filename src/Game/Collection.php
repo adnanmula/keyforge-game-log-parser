@@ -1,26 +1,25 @@
 <?php declare(strict_types=1);
 
-namespace AdnanMula\KeyforgeGameLogParser\VO\Shared;
+namespace AdnanMula\KeyforgeGameLogParser\Game;
 
+use AdnanMula\KeyforgeGameLogParser\Event\Event;
+use AdnanMula\KeyforgeGameLogParser\Event\EventType;
 use Countable;
 use Iterator;
 use JsonSerializable;
 
-/**
- * @template T of Item
- * @implements Iterator<int, T>
- */
+/** @implements Iterator<int, Event> */
 class Collection implements Iterator, Countable, JsonSerializable
 {
     private array $items;
     private int $position = 0;
 
-    protected function __construct(Item ...$items)
+    final public function __construct(Event ...$items)
     {
         $this->items = $items;
     }
 
-    public function current(): ?Item
+    public function current(): ?Event
     {
         return $this->items[$this->position] ?? null;
     }
@@ -45,14 +44,13 @@ class Collection implements Iterator, Countable, JsonSerializable
         $this->position = 0;
     }
 
-    /** @return array<T> */
+    /** @return array<Event> */
     public function items(): array
     {
         return $this->items;
     }
 
-    /** @param array<T> $items */
-    public function add(...$items): static
+    public function add(Event ...$items): static
     {
         foreach ($items as $item) {
             $this->items[] = $item;
@@ -69,19 +67,19 @@ class Collection implements Iterator, Countable, JsonSerializable
         return $this;
     }
 
-    /** @return ?T $item */
+    /** @return ?Event $item */
     public function first()
     {
         return $this->items[0] ?? null;
     }
 
-    /** @return ?T $item */
+    /** @return ?Event $item */
     public function at(int $index)
     {
         return $this->items[$index] ?? null;
     }
 
-    /** @return ?T $item */
+    /** @return ?Event $item */
     public function last()
     {
         return $this->count() > 0 ? end($this->items) : null;
@@ -102,7 +100,7 @@ class Collection implements Iterator, Countable, JsonSerializable
 
         usort(
             $events,
-            static fn (Item $a, Item $b): int => $a->turn()->occurredOn() <=> $b->turn()->occurredOn(),
+            static fn (Event $a, Event $b): int => $a->turn()->occurredOn() <=> $b->turn()->occurredOn(),
         );
 
         $this->empty();
@@ -110,6 +108,16 @@ class Collection implements Iterator, Countable, JsonSerializable
         $this->add(...$events);
 
         return $this;
+    }
+
+    public function filter(EventType ...$events): static
+    {
+        $items = array_filter(
+            $this->items,
+            static fn (Event $item): bool => in_array($item->type(), $events, true),
+        );
+
+        return new static(...$items);
     }
 
     public function jsonSerialize(): array

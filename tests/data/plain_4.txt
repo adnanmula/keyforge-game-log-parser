@@ -1,0 +1,619 @@
+Guere brings L’Abruti de Luwold to The Crucible
+NaN brings Sai “Underrated” Brink to The Crucible
+NaN won the flip and is first player
+ Guere has connected to the game server
+ NaN has connected to the game server
+Guere
+hello gl hf
+Guere is shuffling their deck
+Guere draws 6 card  s to their maximum of 6
+NaN is shuffling their deck
+NaN draws 6 card  s to their maximum of 6
+NaN draws 1 card
+NaN
+gl
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN plays Carrion Wyrm
+NaN activates their prophecy Look How Far You’ve Come
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 1 card  to their maximum of 6
+End of turn 1
+Guere: 0 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 1 - Guere
+Key phase - Guere
+Guere does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - Guere
+Guere chooses untamed  as their active house this turn
+Main phase - Guere
+Guere plays Lost in the Woods
+Guere gains an Æmber  due to Lost in the Woods's bonus icon
+Guere uses Lost in the Woods to shuffle Carrion Wyrm into their owner's deck
+Guere plays Æmbermancy
+Guere gains an Æmber  due to Æmbermancy's bonus icon
+Guere activates their prophecy Heads, I Win
+Ready phase - Guere
+Draw phase - Guere
+Guere draws 4 card  s to their maximum of 6
+End of turn 1
+Guere: 2 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 2 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses staralliance  as their active house this turn
+Main phase - NaN
+NaN plays Scout Pete
+NaN deals 1 damage to Scout Pete due to Scout Pete's bonus icon
+Choose to keep or discard top of deck.
+NaN plays DAL-33-T3R
+Guere uses Heads, I Win to fulfill its prophecy
+Guere resolves the fate effect of Prince Bufo
+NaN plays Kaju Zhan
+NaN activates their prophecy Overreach
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+End of turn 2
+Guere: 2 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 2 - Guere
+Key phase - Guere
+Guere does not forge a key. They have 2 amber. The current cost is 6 Æmber
+House phase - Guere
+Guere chooses logos  as their active house this turn
+Main phase - Guere
+Guere plays Reassembly Required
+Guere gains an Æmber  due to Reassembly Required's bonus icon
+Guere uses Reassembly Required to archive DAL-33-T3R
+Guere plays Reassembly Required
+Guere gains an Æmber  due to Reassembly Required's bonus icon
+Guere uses Reassembly Required to archive Kaju Zhan
+Guere plays Professor Scruples
+Guere gains an Æmber  due to Professor Scruples's bonus icon
+NaN uses Look How Far You’ve Come to fulfill its prophecy
+ NaN uses DAL-33-T3R to purge Professor Scruples
+NaN resolves the fate effect of DAL-33-T3R
+Guere activates their prophecy Fate Laughs at Your Plans
+Ready phase - Guere
+Draw phase - Guere
+Guere draws 4 card  s to their maximum of 6
+End of turn 2
+Guere: 5 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 3 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses staralliance  as their active house this turn
+NaN moves all the cards  in their archives to their hand
+Guere uses Fate Laughs at Your Plans to fulfill its prophecy
+Guere resolves the fate effect of Future Booster
+Main phase - NaN
+NaN uses Scout Pete to reap with Scout Pete
+Choose to keep or discard top of deck.
+NaN activates their prophecy Look How Far You’ve Come
+NaN plays Lay of the Land
+NaN gains an Æmber  due to Lay of the Land's bonus icon
+NaN uses Lay of the Land to look at the top 3 cards  of their deck, rearrange them in any order, and draw 1 card
+NaN draws 1 card
+NaN plays Navigator Ali
+NaN uses Navigator Ali to look at the top 3 cards  of their deck and rearrange them in any order
+NaN plays Kaju Zhan
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 1 card  to their maximum of 6
+End of turn 3
+Guere: 5 Æmber  (0 keys) NaN: 2 Æmber  (0 keys)
+TURN 3 - Guere
+Key phase - Guere
+Guere does not forge a key. They have 5 amber. The current cost is 6 Æmber
+House phase - Guere
+Guere chooses staralliance  as their active house this turn
+Main phase - Guere
+Guere plays Into the Warp
+Guere draws a card  due to Into the Warp's bonus icon
+Guere uses Into the Warp to discard the top card  of each player's deck
+Guere uses Into the Warp to discard Navigator Ali
+Guere uses Into the Warp to discard Parasitic Arachnoid
+Guere uses Into the Warp to discard Navigator Ali and Parasitic Arachnoid and destroy Kaju Zhan, Scout Pete, and Navigator Ali
+Guere plays Bridge Officer Zaro
+Guere gains an Æmber  due to Bridge Officer Zaro's bonus icon
+NaN uses Look How Far You’ve Come to fulfill its prophecy
+ NaN uses DAL-33-T3R to purge Bridge Officer Zaro
+NaN resolves the fate effect of DAL-33-T3R
+Guere plays Sil-A-T8
+Guere activates their prophecy Heads, I Win
+Ready phase - Guere
+Guere readies their cards
+Draw phase - Guere
+Guere draws 3 card  s to their maximum of 6
+ Guere declares Check!
+End of turn 3
+Guere: 6 Æmber  (0 keys) NaN: 2 Æmber  (0 keys)
+TURN 4 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 2 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses shadows  as their active house this turn
+Main phase - NaN
+NaN plays Miasma
+NaN gains an Æmber  due to Miasma's bonus icon
+NaN uses Miasma to make Guere skip their key step next turn
+NaN activates their prophecy Look How Far You’ve Come
+NaN plays Predatory Lending
+NaN gains an Æmber  due to Predatory Lending's bonus icon
+NaN uses Predatory Lending to exalt and enrage Sil-A-T8
+NaN plays Predatory Lending
+NaN gains an Æmber  due to Predatory Lending's bonus icon
+NaN uses Predatory Lending to exalt and enrage Sil-A-T8
+NaN plays Predatory Lending
+NaN gains an Æmber  due to Predatory Lending's bonus icon
+NaN uses Predatory Lending to exalt and enrage Sil-A-T8
+Ready phase - NaN
+Draw phase - NaN
+NaN draws 5 card  s to their maximum of 6
+ NaN declares Check!
+End of turn 4
+Guere: 6 Æmber  (0 keys) NaN: 6 Æmber  (0 keys)
+TURN 4 - Guere
+House phase - Guere
+Guere chooses logos  as their active house this turn
+Main phase - Guere
+Guere plays Cutthroat Research
+Guere gains an Æmber  due to Cutthroat Research's bonus icon
+Guere draws a card  due to Cutthroat Research's bonus icon
+Guere plays Exotic Pivot
+Guere draws a card  due to Exotic Pivot's bonus icon
+Guere uses Exotic Pivot
+Guere uses Exotic Pivot to discard Strategic Feint
+Guere uses Exotic Pivot to steal 3 Æmber  from NaN
+Guere plays Wild Wormhole
+Guere gains an Æmber  due to Wild Wormhole's bonus icon
+Guere uses Wild Wormhole to play Warfaline
+Guere plays Warfaline
+NaN uses Look How Far You’ve Come to fulfill its prophecy
+ NaN uses Strategic Feint
+NaN uses Strategic Feint to discard Duck, Duck, Superb Duck
+ NaN uses Strategic Feint to prevent playing action cards  for the remainder of the turn
+NaN resolves the fate effect of Strategic Feint
+Guere chooses option ' Mine '
+Guere uses Warfaline to shuffle Duck, Duck, Superb Duck, Exotic Pivot, Strategic Feint, Cutthroat Research, and Into the Warp into Guere's deck
+Guere activates their prophecy Outlook Not So Good
+Ready phase - Guere
+Guere readies their cards
+Draw phase - Guere
+Guere draws 2 card  s to their maximum of 6
+ Guere declares Check!
+End of turn 4
+Guere: 11 Æmber  (0 keys) NaN: 3 Æmber  (0 keys)
+TURN 5 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses shadows  as their active house this turn
+Guere uses Outlook Not So Good to fulfill its prophecy
+Guere resolves the fate effect of Warfaline
+Main phase - NaN
+NaN plays Hoodwink
+NaN uses Hoodwink to reveal A Gift of Æmber, Gleaming the Cube, Infinity Strop, Shaffles, and Disabled Security
+NaN plays Disabled Security
+NaN gains an Æmber  due to Disabled Security's bonus icon
+NaN uses Disabled Security
+NaN uses Disabled Security to discard Parallel Thinking, Code Monkey, and Jackpot Greene
+NaN uses Disabled Security to play Parallel Thinking
+NaN plays Parallel Thinking
+NaN chooses option ' Opponent's Deck '
+NaN uses Parallel Thinking
+NaN uses Parallel Thinking to discard Lay of the Land and Strategic Feint
+NaN uses Parallel Thinking to steal 2 Æmber  from Guere
+NaN activates their prophecy Look How Far You’ve Come
+Ready phase - NaN
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+ NaN declares Check!
+End of turn 5
+Guere: 5 Æmber  (0 keys) NaN: 10 Æmber  (0 keys)
+TURN 5 - Guere
+Key phase - Guere
+Guere does not forge a key. They have 5 amber. The current cost is 6 Æmber
+House phase - Guere
+Guere chooses staralliance  as their active house this turn
+Main phase - Guere
+Guere plays Scout Pete
+NaN uses Look How Far You’ve Come to fulfill its prophecy
+ NaN uses Gleaming the Cube
+NaN uses Gleaming the Cube to discard Into the Warp
+NaN chooses house staralliance
+ NaN uses Gleaming the Cube to change the active house to staralliance
+NaN resolves the fate effect of Gleaming the Cube
+Choose to keep or discard top of deck.
+Guere plays Precision Striker
+Guere uses Precision Striker
+Guere uses Precision Striker to discard Navigator Ali, We Can ALL Win, and Skorpeon
+Guere uses Precision Striker to put Skorpeon on the bottom of NaN's deck
+Guere uses Sil-A-T8 to reap with Sil-A-T8
+NaN uses Overreach to fulfill its prophecy
+NaN resolves the fate effect of Dark Minion
+Guere uses Sil-A-T8 to ready 1 non-Robot creature
+Guere uses Sil-A-T8 to ready Scout Pete
+Guere uses Scout Pete to reap with Scout Pete
+Choose to keep or discard top of deck.
+Guere activates their prophecy Outlook Not So Good
+Ready phase - Guere
+Guere readies their cards
+Draw phase - Guere
+Guere draws 3 card  s to their maximum of 6
+ Guere declares Check!
+End of turn 5
+Guere: 7 Æmber  (0 keys) NaN: 10 Æmber  (0 keys)
+TURN 6 - NaN
+Key phase - NaN
+NaN forges the red key  , paying 6 Æmber
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Guere uses Outlook Not So Good to fulfill its prophecy
+Guere resolves the fate effect of Came Back Wrong
+Main phase - NaN
+NaN plays Shaffles
+NaN plays Infinity Strop
+NaN gains an Æmber  due to Infinity Strop's bonus icon
+NaN uses Infinity Strop to deal 2 damage to Sil-A-T8
+NaN uses Infinity Strop to deal 4 damage to each creature that shares a house with Sil-A-T8
+NaN plays Dark Minion
+Guere uses Heads, I Win to fulfill its prophecy
+ Guere uses Unstable Dale to deal 3 damage to each friendly creature
+NaN uses Dark Minion to deal 1 damage to Warfaline
+Guere resolves the fate effect of Unstable Dale
+NaN plays A Gift of Æmber
+NaN gains an Æmber  due to A Gift of Æmber's bonus icon
+NaN uses A Gift of Æmber
+Ready phase - NaN
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+ NaN declares Check!
+End of turn 6
+Guere: 7 Æmber  (0 keys) NaN: 9 Æmber  (1 key)
+TURN 6 - Guere
+Key phase - Guere
+Guere forges the red key  , paying 6 Æmber
+House phase - Guere
+Guere chooses logos  as their active house this turn
+Main phase - Guere
+Guere plays Interdimensional Graft
+Guere gains an Æmber  due to Interdimensional Graft's bonus icon
+Guere uses Interdimensional Graft to take any remaining Æmber  from NaN if they forge a key next turn
+Guere plays Exotic Pivot
+Guere draws a card  due to Exotic Pivot's bonus icon
+Guere uses Exotic Pivot
+Guere uses Exotic Pivot to discard Prince Bufo
+Guere uses Exotic Pivot to steal 3 Æmber  from NaN
+Guere activates their prophecy Outlook Not So Good
+Ready phase - Guere
+Guere readies their cards
+Draw phase - Guere
+Guere draws 2 card  s to their maximum of 6
+End of turn 6
+Guere: 5 Æmber  (1 key) NaN: 6 Æmber  (1 key)
+TURN 7 - NaN
+Key phase - NaN
+NaN forges the blue key  , paying 6 Æmber
+House phase - NaN
+NaN chooses shadows  as their active house this turn
+Guere uses Outlook Not So Good to fulfill its prophecy
+Guere resolves the fate effect of Future Booster
+Main phase - NaN
+NaN plays Cover Fire
+NaN uses Cover Fire to make Guere lose half their Æmber  and steal 1 Æmber
+NaN plays Ox Sarbane
+NaN activates their prophecy Look How Far You’ve Come
+NaN plays Cover Fire
+NaN uses Cover Fire to make Guere lose half their Æmber  and steal 1 Æmber
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+End of turn 7
+Guere: 0 Æmber  (1 key) NaN: 2 Æmber  (2 keys)
+TURN 7 - Guere
+Key phase - Guere
+Guere does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - Guere
+Guere chooses untamed  as their active house this turn
+Main phase - Guere
+Guere uses Warfaline to reap with Warfaline
+Guere uses Warfaline to exhaust Warfaline
+Guere plays Chonkers
+NaN uses Look How Far You’ve Come to fulfill its prophecy
+NaN resolves the fate effect of Recovery Operation
+Guere uses Chonkers to place 1 +1 power counter on Chonkers
+Guere plays Æmbermancy
+Guere gains an Æmber  due to Æmbermancy's bonus icon
+Guere uses Æmbermancy to remove 3 power counters from Chonkers
+Guere removes Chonkers tokens 1 using Æmbermancy's ability
+Guere plays Invigorating Shower
+Guere gains an Æmber  due to Invigorating Shower's bonus icon
+Guere chooses house logos
+Guere uses Invigorating Shower to return Exotic Pivot, Interdimensional Graft, Unstable Dale, Parallel Thinking, Code Monkey, Wild Wormhole, Reassembly Required, and Reassembly Required to their owner's deck
+Guere activates their prophecy Heads, I Win
+Guere plays Untrum’s Serenity
+Guere uses Untrum’s Serenity to destroy each creature and artifact, discard nothing from their archives and Duck, Duck, Superb Duck from their hand, discard nothing from NaN's archives and They Tell No Tales, Ifraneye, Carrion Wyrm, Lifeward, Mickey the Carver, and Event Horizon from NaN's hand, then refill hands
+Guere uses Untrum’s Serenity to discard Duck, Duck, Superb Duck, They Tell No Tales, Ifraneye, Carrion Wyrm, Lifeward, Mickey the Carver, and Event Horizon
+Guere draws 6 card  s to their maximum of 6
+NaN draws 6 card  s to their maximum of 6
+NaN's deck has run out of cards, so they shuffle
+Guere played Untrum’s Serenity which has Omega, ending this step
+Ready phase - Guere
+Draw phase - Guere
+End of turn 7
+Guere: 4 Æmber  (1 key) NaN: 2 Æmber  (2 keys)
+TURN 8 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 2 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN plays Skorpeon
+NaN plays Carrion Wyrm
+Guere uses Heads, I Win to fulfill its prophecy
+Guere resolves the fate effect of Reassembly Required
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 2 card  s to their maximum of 6
+End of turn 8
+Guere: 4 Æmber  (1 key) NaN: 2 Æmber  (2 keys)
+TURN 8 - Guere
+Key phase - Guere
+Guere does not forge a key. They have 4 amber. The current cost is 6 Æmber
+House phase - Guere
+Guere chooses logos  as their active house this turn
+Main phase - Guere
+Guere plays Code Monkey
+Guere draws a card  due to Code Monkey's bonus icon
+Guere activates their prophecy Heads, I Win
+Guere plays Parallel Thinking
+Guere chooses option ' Opponent's Deck '
+Guere uses Parallel Thinking
+Guere uses Parallel Thinking to discard Gleaming the Cube and Disabled Security
+Guere uses Parallel Thinking to steal 2 Æmber  from NaN
+Ready phase - Guere
+Guere readies their cards
+Draw phase - Guere
+Guere draws 2 card  s to their maximum of 6
+ Guere declares Check!
+End of turn 8
+Guere: 6 Æmber  (1 key) NaN: 0 Æmber  (2 keys)
+TURN 9 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses shadows  as their active house this turn
+Main phase - NaN
+NaN plays Bandit Culver
+NaN plays Miasma
+NaN gains an Æmber  due to Miasma's bonus icon
+NaN uses Miasma to make Guere skip their key step next turn
+NaN plays Hock
+NaN gains an Æmber  due to Hock's bonus icon
+NaN plays Predatory Lending
+NaN gains an Æmber  due to Predatory Lending's bonus icon
+NaN uses Predatory Lending to exalt and enrage Code Monkey
+NaN activates their prophecy Look How Far You’ve Come
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 5 card  s to their maximum of 6
+End of turn 9
+Guere: 6 Æmber  (1 key) NaN: 3 Æmber  (2 keys)
+TURN 9 - Guere
+House phase - Guere
+Guere chooses logos  as their active house this turn
+Main phase - Guere
+Guere plays Interdimensional Graft
+Guere gains an Æmber  due to Interdimensional Graft's bonus icon
+Guere uses Interdimensional Graft to take any remaining Æmber  from NaN if they forge a key next turn
+Guere plays Reassembly Required
+Guere gains an Æmber  due to Reassembly Required's bonus icon
+Guere uses Reassembly Required to archive Code Monkey
+Guere activates their prophecy Outlook Not So Good
+Ready phase - Guere
+Draw phase - Guere
+Guere draws 3 card  s to their maximum of 6
+Guere's deck has run out of cards, so they shuffle
+ Guere declares Check!
+End of turn 9
+Guere: 8 Æmber  (1 key) NaN: 4 Æmber  (2 keys)
+TURN 10 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 4 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses shadows  as their active house this turn
+Main phase - NaN
+NaN plays Cover Fire
+NaN uses Cover Fire to make Guere lose half their Æmber  and steal 1 Æmber
+NaN uses Bandit Culver to reap with Bandit Culver
+NaN plays Predatory Lending
+NaN gains an Æmber  due to Predatory Lending's bonus icon
+NaN activates their prophecy Wounds Into Wisdom
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+ NaN declares Check!
+End of turn 10
+Guere: 3 Æmber  (1 key) NaN: 7 Æmber  (2 keys)
+TURN 10 - Guere
+Key phase - Guere
+Guere does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - Guere
+Guere chooses logos  as their active house this turn
+Guere moves all the cards  in their archives to their hand
+Main phase - Guere
+Guere plays Reassembly Required
+Guere gains an Æmber  due to Reassembly Required's bonus icon
+Guere uses Reassembly Required to archive Bandit Culver
+Guere plays Reassembly Required
+Guere gains an Æmber  due to Reassembly Required's bonus icon
+Guere uses Reassembly Required to archive Carrion Wyrm
+Guere plays Code Monkey
+Guere draws a card  due to Code Monkey's bonus icon
+NaN uses Look How Far You’ve Come to fulfill its prophecy
+NaN resolves the fate effect of Infinity Strop
+Guere plays Cutthroat Research
+Guere gains an Æmber  due to Cutthroat Research's bonus icon
+Guere draws a card  due to Cutthroat Research's bonus icon
+Guere plays Exotic Pivot
+Guere draws a card  due to Exotic Pivot's bonus icon
+Guere uses Exotic Pivot
+Guere uses Exotic Pivot to discard Future Booster
+Guere uses Exotic Pivot to steal 3 Æmber  from NaN
+Guere plays Wild Wormhole
+Guere gains an Æmber  due to Wild Wormhole's bonus icon
+Guere uses Wild Wormhole to play Strategic Feint
+Guere plays Strategic Feint
+Guere gains an Æmber  due to Strategic Feint's bonus icon
+Guere discards Jackpot Greene due to Strategic Feint's bonus icon
+Guere uses Strategic Feint to deal 1 damage to Skorpeon
+NaN uses Wounds Into Wisdom to fulfill its prophecy
+ NaN uses DAL-33-T3R to purge Code Monkey
+NaN resolves the fate effect of DAL-33-T3R
+Ready phase - Guere
+Draw phase - Guere
+Guere draws 3 card  s to their maximum of 6
+Guere uses Heads, I Win to flip Heads, I Win to Fate Laughs at Your Plans
+ Guere declares Check!
+End of turn 10
+Guere: 11 Æmber  (1 key) NaN: 4 Æmber  (2 keys)
+TURN 11 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 4 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses shadows  as their active house this turn
+Guere uses Outlook Not So Good to fulfill its prophecy
+ Guere uses Prince Bufo to forge a key at current cost
+Guere forges the blue key  , paying 6 Æmber
+Guere resolves the fate effect of Prince Bufo
+NaN moves all the cards  in their archives to their hand
+Guere uses Fate Laughs at Your Plans to fulfill its prophecy
+ Guere uses Unstable Dale to deal 3 damage to each friendly creature
+Guere resolves the fate effect of Unstable Dale
+Main phase - NaN
+NaN plays Bandit Culver
+NaN plays Mickey the Carver
+NaN activates their prophecy Treat Each Action as Your Last
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 1 card  to their maximum of 6
+End of turn 11
+Guere: 5 Æmber  (2 keys) NaN: 4 Æmber  (2 keys)
+TURN 11 - Guere
+Key phase - Guere
+Guere does not forge a key. They have 5 amber. The current cost is 6 Æmber
+House phase - Guere
+Guere chooses staralliance  as their active house this turn
+NaN uses Mickey the Carver to steal 1 Æmber  from Guere
+Main phase - Guere
+Guere plays Lay of the Land
+Guere gains an Æmber  due to Lay of the Land's bonus icon
+Guere uses Lay of the Land to look at the top 3 cards  of their deck, rearrange them in any order, and draw 1 card
+Guere draws 1 card
+Guere plays Into the Warp
+NaN uses Treat Each Action as Your Last to fulfill its prophecy
+ NaN uses Strategic Feint
+NaN uses Strategic Feint to discard Prince Bufo
+ NaN uses Strategic Feint to prevent playing creature cards  for the remainder of the turn
+NaN resolves the fate effect of Strategic Feint
+Guere uses Into the Warp to discard the top card  of each player's deck
+Guere uses Into the Warp to discard Invigorating Shower
+Guere uses Into the Warp to discard Navigator Ali
+Guere plays Into the Warp
+Guere draws a card  due to Into the Warp's bonus icon
+Guere uses Into the Warp to discard the top card  of each player's deck
+Guere uses Into the Warp to discard Untrum’s Serenity
+Guere uses Into the Warp to discard Ifraneye
+Guere discards Scout Pete
+Guere activates their prophecy Heads, I Win
+Ready phase - Guere
+Draw phase - Guere
+Guere draws 3 card  s to their maximum of 6
+End of turn 11
+Guere: 5 Æmber  (2 keys) NaN: 5 Æmber  (2 keys)
+TURN 12 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 5 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses staralliance  as their active house this turn
+NaN uses Mickey the Carver to steal 1 Æmber  from Guere
+Main phase - NaN
+NaN activates their prophecy Look How Far You’ve Come
+NaN plays Recovery Operation
+NaN uses Recovery Operation
+NaN uses Recovery Operation to discard Dark Minion, They Tell No Tales, and Scout Pete
+NaN uses Recovery Operation to put They Tell No Tales on top of their deck
+NaN uses Recovery Operation to put Dark Minion on top of their deck
+NaN uses Recovery Operation to put Scout Pete on top of their deck
+NaN plays Navigator Ali
+NaN uses Navigator Ali to look at the top 3 cards  of their deck and rearrange them in any order
+NaN plays Kaju Zhan
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+ NaN declares Check!
+End of turn 12
+Guere: 4 Æmber  (2 keys) NaN: 6 Æmber  (2 keys)
+TURN 12 - Guere
+Key phase - Guere
+Guere does not forge a key. They have 4 amber. The current cost is 6 Æmber
+House phase - Guere
+Guere chooses logos  as their active house this turn
+NaN uses Mickey the Carver to steal 1 Æmber  from Guere
+Main phase - Guere
+Guere plays Duck, Duck, Superb Duck
+Guere chooses option ' Gain 2 '
+Guere uses Duck, Duck, Superb Duck to gain 2 Æmber
+Guere plays Interdimensional Graft
+Guere gains an Æmber  due to Interdimensional Graft's bonus icon
+Guere uses Interdimensional Graft to take any remaining Æmber  from NaN if they forge a key next turn
+Guere plays Parallel Thinking
+Guere chooses option ' Opponent's Deck '
+Guere uses Parallel Thinking
+Guere uses Parallel Thinking to discard Ox Sarbane and Shaffles
+Guere uses Parallel Thinking to steal 2 Æmber  from NaN
+Guere activates their prophecy Outlook Not So Good
+Ready phase - Guere
+Draw phase - Guere
+Guere draws 4 card  s to their maximum of 6
+ Guere declares Check!
+End of turn 12
+Guere: 8 Æmber  (2 keys) NaN: 5 Æmber  (2 keys)
+TURN 13 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 5 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses dis  as their active house this turn
+NaN uses Mickey the Carver to steal 1 Æmber  from Guere
+Guere uses Outlook Not So Good to fulfill its prophecy
+Guere resolves the fate effect of Warfaline
+Main phase - NaN
+NaN discards Dark Minion
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 1 card  to their maximum of 6
+ NaN declares Check!
+End of turn 13
+Guere: 7 Æmber  (2 keys) NaN: 6 Æmber  (2 keys)
+TURN 13 - Guere
+Key phase - Guere
+Guere forges the yellow key  , paying 6 Æmber
+ Guere has won the game
+NaN
+gg

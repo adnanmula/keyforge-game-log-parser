@@ -1,0 +1,437 @@
+NaN brings Precisely Aromatic Gracchus to The Crucible
+Gorlami brings The Bulwark that Screams about Vaults to The Crucible
+Gorlami won the flip and is first player
+ NaN has connected to the game server
+ Gorlami has connected to the game server
+NaN
+hi, gl
+Gorlami
+glhf
+NaN is shuffling their deck
+NaN draws 6 card  s to their maximum of 6
+Gorlami is shuffling their deck
+Gorlami draws 6 card  s to their maximum of 6
+Gorlami draws 1 card 
+Key phase - Gorlami
+Gorlami does not forge a key. They have 0 amber. The current cost is 6 Æmber 
+House phase - Gorlami
+Gorlami chooses logos  as their active house this turn
+Main phase - Gorlami
+Gorlami plays Professor Sutterkin
+Ready phase - Gorlami
+Gorlami readies their cards 
+Draw phase - Gorlami
+Gorlami draws 1 card  to their maximum of 6
+End of turn 1
+NaN: 0 Æmber  (0 keys) Gorlami: 0 Æmber  (0 keys)
+TURN 1 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber 
+House phase - NaN
+NaN chooses logos  as their active house this turn
+Main phase - NaN
+NaN plays Bouncing Deathquark
+NaN uses Bouncing Deathquark to destroy Professor Sutterkin
+NaN plays Titan Outpost
+NaN gains an Æmber  due to Titan Outpost's bonus icon
+NaN plays Golis Artificer
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+End of turn 1
+NaN: 1 Æmber  (0 keys) Gorlami: 0 Æmber  (0 keys)
+TURN 2 - Gorlami
+Key phase - Gorlami
+Gorlami does not forge a key. They have 0 amber. The current cost is 6 Æmber 
+House phase - Gorlami
+Gorlami chooses saurian  as their active house this turn
+Main phase - Gorlami
+Gorlami plays Pale Into Insignificance
+Gorlami gains an Æmber  due to Pale Into Insignificance's bonus icon
+Gorlami uses Pale Into Insignificance to destroy Golis Artificer
+Gorlami plays Exile
+Gorlami gains an Æmber  due to Exile's bonus icon
+Gorlami plays Gargantodon
+Gorlami gains an Æmber  due to Gargantodon's bonus icon
+Ready phase - Gorlami
+Gorlami readies their cards 
+Draw phase - Gorlami
+Gorlami draws 3 card  s to their maximum of 6
+End of turn 2
+NaN: 1 Æmber  (0 keys) Gorlami: 3 Æmber  (0 keys)
+TURN 2 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 1 amber. The current cost is 6 Æmber 
+House phase - NaN
+NaN chooses untamed  as their active house this turn
+Main phase - NaN
+NaN plays Warfaline
+NaN chooses option ' Mine '
+NaN uses Warfaline to shuffle Golis Artificer and Bouncing Deathquark into NaN's deck
+NaN plays Niffle Ape
+NaN plays Flaxia
+NaN uses Flaxia to gain 2 Æmber 
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+End of turn 2
+NaN: 3 Æmber  (0 keys) Gorlami: 3 Æmber  (0 keys)
+TURN 3 - Gorlami
+Key phase - Gorlami
+Gorlami does not forge a key. They have 3 amber. The current cost is 6 Æmber 
+House phase - Gorlami
+Gorlami chooses saurian  as their active house this turn
+Main phase - Gorlami
+Gorlami exhausts Gargantodon to remove its stun
+Gorlami plays Stomp
+Gorlami gains an Æmber  due to Stomp's bonus icon
+Gorlami uses Stomp to deal 5 damage to Niffle Ape
+Gorlami uses Stomp to exalt Gargantodon
+Gorlami plays Ostracize
+Gorlami deals 1 damage to Warfaline due to Ostracize's bonus icon
+Gorlami uses Ostracize to make Gorlami lose 1 Æmber 
+Gorlami plays Philophosaurus
+Ready phase - Gorlami
+Gorlami readies their cards 
+Draw phase - Gorlami
+Gorlami draws 3 card  s to their maximum of 6
+End of turn 3
+NaN: 3 Æmber  (0 keys) Gorlami: 3 Æmber  (0 keys)
+TURN 3 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 3 amber. The current cost is 6 Æmber 
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN discards Arise!
+NaN plays Mark of Dis
+NaN gains an Æmber  due to Mark of Dis's bonus icon
+NaN uses Mark of Dis to deal 2 damage to Philophosaurus
+NaN plays Three Fates
+NaN gains an Æmber  due to Three Fates's bonus icon
+NaN uses Three Fates to destroy Philophosaurus, Gargantodon, and Warfaline
+NaN plays The Forsaken
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+ NaN declares Check!
+End of turn 3
+NaN: 6 Æmber  (0 keys) Gorlami: 3 Æmber  (0 keys)
+TURN 4 - Gorlami
+Key phase - Gorlami
+Gorlami does not forge a key. They have 3 amber. The current cost is 6 Æmber 
+House phase - Gorlami
+Gorlami chooses saurian  as their active house this turn
+Main phase - Gorlami
+Gorlami plays Dark Centurion
+Ready phase - Gorlami
+Gorlami readies their cards 
+Draw phase - Gorlami
+Gorlami draws 1 card  to their maximum of 6
+End of turn 4
+NaN: 6 Æmber  (0 keys) Gorlami: 3 Æmber  (0 keys)
+TURN 4 - NaN
+Key phase - NaN
+NaN forges the red key  , paying 6 Æmber 
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN plays Streke
+NaN plays Gate Warden
+NaN uses Gate Warden to make a token creature
+NaN uses The Forsaken to reap with The Forsaken
+NaN plays Skullion
+NaN uses Skullion to sacrifice Catena Fiend
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+End of turn 4
+NaN: 1 Æmber  (1 key) Gorlami: 3 Æmber  (0 keys)
+TURN 5 - Gorlami
+Key phase - Gorlami
+Gorlami does not forge a key. They have 3 amber. The current cost is 6 Æmber 
+House phase - Gorlami
+Gorlami chooses logos  as their active house this turn
+Main phase - Gorlami
+Gorlami plays Articulated Ren
+Gorlami draws a card  due to Articulated Ren's bonus icon
+Gorlami plays Phase Shift
+Gorlami uses Phase Shift to allow them to play one non-Logos card  this turn
+Gorlami plays Webstur
+Gorlami draws a card  due to Webstur's bonus icon
+Gorlami plays EDAI “Edie” 4x4
+Gorlami uses EDAI “Edie” 4x4 to archive a card 
+Gorlami plays Phase Shift
+Gorlami uses Phase Shift to allow them to play one non-Logos card  this turn
+Gorlami plays Snippy
+Gorlami uses Snippy to deal 2 damage to Streke
+Ready phase - Gorlami
+Gorlami readies their cards 
+Draw phase - Gorlami
+Gorlami draws 5 card  s to their maximum of 6
+Gorlami uses Articulated Ren to exhaust Dark Centurion
+Gorlami draws 1 card 
+End of turn 5
+NaN: 1 Æmber  (1 key) Gorlami: 3 Æmber  (0 keys)
+TURN 5 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 1 amber. The current cost is 7 Æmber 
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN plays Shadow of Dis
+NaN gains an Æmber  due to Shadow of Dis's bonus icon
+NaN draws a card  due to Shadow of Dis's bonus icon
+ NaN uses Shadow of Dis to blank Gorlami's creatures text boxes
+NaN plays Codex of True Names
+NaN uses Skullion to make Skullion fight Dark Centurion
+NaN uses Gate Warden to reap with Gate Warden
+NaN uses The Forsaken to reap with The Forsaken
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 1 card  to their maximum of 6
+End of turn 5
+NaN: 4 Æmber  (1 key) Gorlami: 3 Æmber  (0 keys)
+TURN 6 - Gorlami
+Key phase - Gorlami
+Gorlami does not forge a key. They have 3 amber. The current cost is 6 Æmber 
+House phase - Gorlami
+Gorlami chooses logos  as their active house this turn
+Main phase - Gorlami
+Gorlami plays Eureka!
+Gorlami gains an Æmber  due to Eureka!'s bonus icon
+Gorlami captures an Æmber  on Webstur due to Eureka!'s bonus icon
+Gorlami uses Eureka! to gain 2 Æmber 
+Gorlami uses Articulated Ren to reap with Articulated Ren
+Gorlami uses EDAI “Edie” 4x4 to reap with EDAI “Edie” 4x4
+Ready phase - Gorlami
+Gorlami readies their cards 
+Draw phase - Gorlami
+Gorlami draws 2 card  s to their maximum of 6
+ Gorlami declares Check!
+End of turn 6
+NaN: 3 Æmber  (1 key) Gorlami: 8 Æmber  (0 keys)
+TURN 6 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 3 amber. The current cost is 9 Æmber 
+House phase - NaN
+NaN chooses logos  as their active house this turn
+Main phase - NaN
+NaN uses Titan Outpost to return Gate Warden to the bottom of their owner's deck
+NaN uses Titan Outpost to make a token creature
+NaN uses Titan Outpost to archive a card 
+NaN plays Auto-Vac 5150
+NaN plays Library Card
+NaN plays Standardized Testing
+NaN uses Standardized Testing to destroy EDAI “Edie” 4x4, Webstur, Articulated Ren, and Snippy
+NaN plays Golis Artificer
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 5 card  s to their maximum of 6
+End of turn 6
+NaN: 4 Æmber  (1 key) Gorlami: 8 Æmber  (0 keys)
+TURN 7 - Gorlami
+Key phase - Gorlami
+Gorlami forges the blue key  , paying 6 Æmber 
+House phase - Gorlami
+Gorlami chooses geistoid  as their active house this turn
+Gorlami moves all the cards  in their archives to their hand
+Main phase - Gorlami
+Gorlami plays Boo!
+Gorlami gains an Æmber  due to Boo!'s bonus icon
+Gorlami chooses option ' Mine '
+Gorlami uses Boo! to discard the top 10 cards  of Gorlami's deck
+Gorlami uses Boo! to discard Phantasmal Visit, Honors Keysis, Faust the Great, Archimedes, Be Our Geist, Amphora Captura, Faust the Great, Snippy, Phase Shift, and Dysania
+Gorlami plays Portal Guardian
+Gorlami plays Be Our Geist
+Gorlami gains an Æmber  due to Be Our Geist's bonus icon
+Gorlami captures an Æmber  on Portal Guardian due to Be Our Geist's bonus icon
+Gorlami uses Be Our Geist to play Dysania
+Gorlami plays Dysania
+Gorlami deals 1 damage to Golis Artificer due to Dysania's bonus icon
+Gorlami uses Dysania to discard all cards  in NaN's archives, and gain 1 Æmber 
+Gorlami uses Dysania to discard Song of Spring
+Gorlami plays Memette
+Gorlami uses Memette to archive Be Our Geist
+Ready phase - Gorlami
+Gorlami readies their cards 
+Draw phase - Gorlami
+Gorlami draws 1 card  to their maximum of 6
+End of turn 7
+NaN: 3 Æmber  (1 key) Gorlami: 5 Æmber  (1 key)
+TURN 7 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 3 amber. The current cost is 6 Æmber 
+House phase - NaN
+NaN chooses logos  as their active house this turn
+Main phase - NaN
+NaN uses Library Card to purge Library Card and then draw a card  after playing a card  for the remainder of the turn
+NaN plays Auto-Autopsy 2.1
+NaN gains an Æmber  due to Auto-Autopsy 2.1's bonus icon
+NaN uses Library Card to draw 1 card 
+NaN draws 1 card 
+NaN uses Auto-Autopsy 2.1 to make a token creature
+NaN plays Rocket Boots attaching it to Golis Artificer
+NaN uses Library Card to draw 1 card 
+NaN draws 1 card 
+NaN plays EDAI “Edie” 4x4
+NaN uses Library Card to draw 1 card 
+NaN draws 1 card 
+NaN uses EDAI “Edie” 4x4 to archive a card 
+NaN uses Auto-Vac 5150 to conditionally do something
+NaN uses Auto-Vac 5150 to discard Song of Spring
+NaN plays Hypothesize
+NaN uses Library Card to draw 1 card 
+NaN draws 1 card 
+NaN uses Hypothesize to make a token creature and archive Hypothesize
+NaN plays EDAI “Edie” 4x4
+NaN uses Library Card to draw 1 card 
+NaN draws 1 card 
+NaN uses EDAI “Edie” 4x4 to archive a card 
+NaN plays Bouncing Deathquark
+NaN uses Library Card to draw 1 card 
+NaN draws 1 card 
+NaN uses Bouncing Deathquark to destroy Portal Guardian and Skullion
+Gorlami uses Portal Guardian to capture 2 Æmber  from their opponent , placing it on Memette
+NaN uses Bouncing Deathquark to destroy Memette and The Forsaken
+Gorlami uses Memette to archive Portal Guardian
+NaN uses Golis Artificer to reap with Golis Artificer
+NaN uses Golis Artificer to make a token creature
+NaN uses Golis Artificer to ready Golis Artificer
+NaN uses Golis Artificer to reap with Golis Artificer
+NaN uses Golis Artificer to make a token creature
+NaN uses Titan Outpost to return Catena Fiend to the bottom of their owner's deck
+NaN uses Titan Outpost to make a token creature
+NaN uses Titan Outpost to archive a card 
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+NaN's deck has run out of cards, so they shuffle
+ NaN declares Check!
+End of turn 7
+NaN: 7 Æmber  (1 key) Gorlami: 5 Æmber  (1 key)
+TURN 8 - Gorlami
+Key phase - Gorlami
+Gorlami does not forge a key. They have 5 amber. The current cost is 15 Æmber 
+House phase - Gorlami
+Gorlami
+thinking
+NaN
+no problem
+Gorlami chooses logos  as their active house this turn
+Gorlami moves all the cards  in their archives to their hand
+Main phase - Gorlami
+Gorlami plays Binate Rupture
+Gorlami uses Binate Rupture to make both players gain Æmber  equal to the Æmber  in their pool
+Gorlami plays Interdimensional Graft
+Gorlami gains an Æmber  due to Interdimensional Graft's bonus icon
+Gorlami uses Interdimensional Graft to take any remaining Æmber  from NaN if they forge a key next turn
+Gorlami uses Dysania to make Dysania fight EDAI “Edie” 4x4
+Ready phase - Gorlami
+Gorlami readies their cards 
+Draw phase - Gorlami
+End of turn 8
+NaN: 14 Æmber  (1 key) Gorlami: 11 Æmber  (1 key)
+TURN 8 - NaN
+Key phase - NaN
+NaN forges the blue key  , paying 6 Æmber 
+NaN uses Interdimensional Graft to transfer 8 Æmber  from NaN
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN uses Catena Fiend to make Catena Fiend fight Dysania
+NaN uses Catena Fiend to steal 1 Æmber  from Gorlami
+NaN uses Catena Fiend to deal 3 damage to Catena Fiend
+NaN uses Catena Fiend to reap with Catena Fiend
+NaN uses Catena Fiend to reap with Catena Fiend
+NaN uses Catena Fiend to reap with Catena Fiend
+NaN uses Catena Fiend to reap with Catena Fiend
+NaN plays Levy of Souls
+NaN gains an Æmber  due to Levy of Souls's bonus icon
+NaN plays Angwish
+NaN plays Etaromme
+NaN uses Auto-Autopsy 2.1 to destroy Catena Fiend
+NaN uses Auto-Autopsy 2.1 to gain 1 Æmber 
+ paguro has joined the game as a spectator
+NaN discards Three Fates
+NaN plays Arise!
+NaN chooses house dis 
+NaN uses Arise! to return Gate Warden to their hand
+NaN plays Gate Warden
+NaN uses Gate Warden to make a token creature
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+NaN's chains are reduced by 1 to 0
+ NaN declares Check!
+End of turn 8
+NaN: 7 Æmber  (2 keys) Gorlami: 18 Æmber  (1 key)
+TURN 9 - Gorlami
+Key phase - Gorlami
+Gorlami forges the yellow key  , paying 9 Æmber 
+House phase - Gorlami
+Gorlami chooses geistoid  as their active house this turn
+Main phase - Gorlami
+ paguro has left the game
+Gorlami plays Portal Guardian
+Gorlami plays Be Our Geist
+Gorlami gains an Æmber  due to Be Our Geist's bonus icon
+Gorlami captures an Æmber  on Portal Guardian due to Be Our Geist's bonus icon
+Gorlami uses Be Our Geist to play Dysania
+Gorlami plays Dysania
+Gorlami deals 1 damage to Golis Artificer due to Dysania's bonus icon
+Gorlami uses Dysania to discard all cards  in NaN's archives, and gain 3 Æmber 
+Gorlami uses Dysania to discard Hypothesize, Survival of the Richest, and Warfaline
+Gorlami plays Well of Memory
+Gorlami uses Well of Memory to purge Philophosaurus, Tricerian Legionary, and Hallowed Eve Festival
+Gorlami uses Well of Memory to return Be Our Geist, Snippy, and Phantasmal Visit to their hand
+Gorlami plays Phantasmal Visit
+Gorlami gains an Æmber  due to Phantasmal Visit's bonus icon
+Gorlami uses Phantasmal Visit to exhaust Angwish
+Gorlami uses Phantasmal Visit to stun Angwish
+Gorlami uses Phantasmal Visit to archive Phantasmal Visit
+Gorlami discards Snippy
+Gorlami uses Snippy to destroy Catena Fiend
+Gorlami plays Be Our Geist
+Gorlami gains an Æmber  due to Be Our Geist's bonus icon
+Gorlami captures an Æmber  on Dysania due to Be Our Geist's bonus icon
+Gorlami uses Be Our Geist to play Webstur
+Gorlami plays Webstur
+Gorlami draws a card  due to Webstur's bonus icon
+Gorlami discards Echofly
+Gorlami uses Echofly to archive Be Our Geist
+Ready phase - Gorlami
+Gorlami readies their cards 
+Draw phase - Gorlami
+Gorlami draws 6 card  s to their maximum of 6
+Gorlami's deck has run out of cards, so they shuffle
+ Gorlami declares Check!
+End of turn 9
+NaN: 5 Æmber  (2 keys) Gorlami: 15 Æmber  (2 keys)
+TURN 9 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 5 amber. The current cost is 6 Æmber 
+House phase - NaN
+NaN chooses untamed  as their active house this turn
+Main phase - NaN
+NaN plays Song of Spring
+NaN gains an Æmber  due to Song of Spring's bonus icon
+NaN uses Song of Spring to return to their owner's deck
+NaN plays Keyfrog
+NaN gains an Æmber  due to Keyfrog's bonus icon
+NaN uses Auto-Autopsy 2.1 to destroy Keyfrog
+NaN uses Keyfrog to forge the undefined key
+NaN forges the yellow key  , paying 6 Æmber 
+ NaN has won the game
+Gorlami
+ggwp!
+NaN
+gg

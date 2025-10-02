@@ -2,37 +2,39 @@
 
 namespace AdnanMula\KeyforgeGameLogParser\Tests;
 
-use AdnanMula\KeyforgeGameLogParser\Game;
+use AdnanMula\KeyforgeGameLogParser\Event\EventType;
+use AdnanMula\KeyforgeGameLogParser\Game\Game;
 use AdnanMula\KeyforgeGameLogParser\GameLogParser;
 use PHPUnit\Framework\TestCase;
 
-class ParserTest extends TestCase
+final class ParserTest extends TestCase
 {
     public function test1(): void
     {
         $game = $this->getLog('plain_1');
+        $timeline = $game->timeline();
 
         self::assertEquals(8, $game->length);
         self::assertFalse($game->player1->isFirst);
         self::assertTrue($game->player1->isWinner);
         self::assertTrue($game->player2->isFirst);
         self::assertFalse($game->player2->isWinner);
-        self::assertEquals(42, $game->amberObtained()->total());
-        self::assertEquals(59, $game->amberObtained()->totalPositive());
-        self::assertEquals(-17, $game->amberObtained()->totalNegative());
-        self::assertEquals(61, $game->cardsDrawn()->total());
-        self::assertEquals(58, $game->cardsPlayed()->total());
-        self::assertEquals(10, $game->cardsDiscarded()->total());
-        self::assertEquals(5, $game->keysForged()->count());
-        self::assertEquals(0, $game->amberStolen()->total());
-        self::assertEquals(4, $game->fights()->count());
-        self::assertEquals(11, $game->reaps()->count());
-        self::assertEquals(0, $game->timeline()->at(0)?->turn()->value());
-        self::assertEquals(0, $game->timeline()->at(1)?->turn()->value());
-        self::assertEquals(0, $game->timeline()->at(2)?->turn()->value());
-        self::assertEquals(1, $game->timeline()->at(3)?->turn()->value());
-        self::assertEquals(1, $game->timeline()->at(4)?->turn()->value());
-        self::assertEquals(8, $game->timeline()->last()?->turn()->value());
+        self::assertEquals(42, $timeline->totalAmberObtained());
+        self::assertEquals(59, $timeline->totalAmberObtainedPositive());
+        self::assertEquals(-17, $timeline->totalAmberObtainedNegative());
+        self::assertEquals(61, $timeline->totalByValue(EventType::CARDS_DRAWN));
+        self::assertEquals(58, $timeline->totalCardsPlayed());
+        self::assertEquals(10, $timeline->totalByValue(EventType::CARDS_DISCARDED));
+        self::assertEquals(5, $timeline->filter(EventType::KEY_FORGED)->count());
+        self::assertEquals(0, $timeline->totalByValue(EventType::AMBER_STOLEN));
+        self::assertEquals(4, $timeline->filter(EventType::FIGHT)->count());
+        self::assertEquals(11, $timeline->filter(EventType::REAP)->count());
+        self::assertEquals(0, $timeline->at(0)?->turn()->value());
+        self::assertEquals(0, $timeline->at(1)?->turn()->value());
+        self::assertEquals(0, $timeline->at(2)?->turn()->value());
+        self::assertEquals(1, $timeline->at(3)?->turn()->value());
+        self::assertEquals(1, $timeline->at(4)?->turn()->value());
+        self::assertEquals(8, $timeline->last()?->turn()->value());
     }
 
     public function test2(): void
@@ -45,24 +47,102 @@ class ParserTest extends TestCase
         self::assertFalse($game->player2->isFirst);
         self::assertFalse($game->player2->isWinner);
 
-        self::assertEquals(4, $game->amberObtained()->total());
-        self::assertEquals(15, $game->cardsDrawn()->total());
-        self::assertEquals(4, $game->cardsPlayed()->total());
-        self::assertEquals(0, $game->cardsDiscarded()->total());
-        self::assertEquals(0, $game->keysForged()->count());
+        self::assertEquals(4, $game->timeline()->totalAmberObtained());
+        self::assertEquals(15, $game->timeline()->totalCardsDrawn());
+        self::assertEquals(4, $game->timeline()->totalCardsPlayed());
+        self::assertEquals(0, $game->timeline()->totalCardsDiscarded());
+        self::assertEquals(0, $game->timeline()->filter(EventType::KEY_FORGED)->count());
     }
 
     public function testExtraTurns(): void
     {
         $game = $this->getLog('plain_extra_turns');
 
-        self::assertEquals(1, $game->player1->extraTurns->total());
-        self::assertEquals('Ancestral Timekeeper', $game->player1->extraTurns->at(0)?->trigger());
-        self::assertEquals(1, $game->player2->extraTurns->total());
-        self::assertEquals('Tachyon Manifold', $game->player2->extraTurns->at(0)?->trigger());
-        self::assertEquals(2, $game->extraTurns()->total());
-        self::assertEquals('Ancestral Timekeeper', $game->extraTurns()->at(0)?->trigger());
-        self::assertEquals('Tachyon Manifold', $game->extraTurns()->at(1)?->trigger());
+        $extraTurn1 = $game->player1->timeline->filter(EventType::EXTRA_TURN)->at(0);
+        $extraTurn2 = $game->player2->timeline->filter(EventType::EXTRA_TURN)->at(0);
+        $extraTurn3 = $game->timeline()->filter(EventType::EXTRA_TURN)->at(0);
+        $extraTurn4 = $game->timeline()->filter(EventType::EXTRA_TURN)->at(1);
+
+        self::assertEquals(1, $game->player1->timeline->totalExtraTurns());
+        self::assertEquals('Ancestral Timekeeper', $extraTurn1?->payload()['trigger'] ?? null);
+        self::assertEquals(1, $game->player2->timeline->totalExtraTurns());
+        self::assertEquals('Tachyon Manifold', $extraTurn2?->payload()['trigger'] ?? null);
+        self::assertEquals(2, $game->timeline()->totalExtraTurns());
+        self::assertEquals('Ancestral Timekeeper', $extraTurn3?->payload()['trigger'] ?? null);
+        self::assertEquals('Tachyon Manifold', $extraTurn4?->payload()['trigger'] ?? null);
+    }
+
+    public function testTokens(): void
+    {
+        $game = $this->getLog('plain_3');
+
+        self::assertEquals(8, $game->player1->timeline->filter(EventType::TOKEN_CREATED)->count());
+        self::assertEquals(0, $game->player2->timeline->filter(EventType::TOKEN_CREATED)->count());
+    }
+
+    public function testChains(): void
+    {
+        $game = $this->getLog('plain_3');
+
+        self::assertEquals(1, $game->player1->timeline->filter(EventType::CHAINS_REDUCED)->count());
+        self::assertEquals(0, $game->player1->timeline->filter(EventType::CHAINS_REDUCED)->at(0)?->payload()['currentChains']);
+        self::assertEquals(0, $game->player2->timeline->filter(EventType::CHAINS_REDUCED)->count());
+        self::assertEquals(1, $game->timeline()->filter(EventType::CHAINS_REDUCED)->count());
+
+        $game2 = $this->getLog('plain_5');
+
+        $player1Events = $game2->player1->timeline->filter(EventType::CHAINS_REDUCED);
+        $player2Events = $game2->player2->timeline->filter(EventType::CHAINS_REDUCED);
+
+        self::assertEquals(6, $player1Events->count());
+        self::assertEquals(3, $player2Events->count());
+        self::assertEquals(9, $game2->timeline()->filter(EventType::CHAINS_REDUCED)->count());
+
+        self::assertEquals(2, $player1Events->at(0)?->payload()['currentChains']);
+        self::assertEquals(1, $player1Events->at(1)?->payload()['currentChains']);
+        self::assertEquals(0, $player1Events->at(2)?->payload()['currentChains']);
+        self::assertEquals(2, $player1Events->at(3)?->payload()['currentChains']);
+        self::assertEquals(1, $player1Events->at(4)?->payload()['currentChains']);
+        self::assertEquals(0, $player1Events->at(5)?->payload()['currentChains']);
+
+        self::assertEquals(2, $player2Events->at(0)?->payload()['currentChains']);
+        self::assertEquals(1, $player2Events->at(1)?->payload()['currentChains']);
+        self::assertEquals(0, $player2Events->at(2)?->payload()['currentChains']);
+    }
+
+    public function testProphecies(): void
+    {
+        $game = $this->getLog('plain_4');
+
+        self::assertEquals(11, $game->player1->timeline->filter(EventType::PROPHECY_ACTIVATED)->count());
+        self::assertEquals(10, $game->player2->timeline->filter(EventType::PROPHECY_ACTIVATED)->count());
+        self::assertEquals(10, $game->player1->timeline->filter(EventType::PROPHECY_FULFILLED)->count());
+        self::assertEquals(9, $game->player2->timeline->filter(EventType::PROPHECY_FULFILLED)->count());
+        self::assertEquals(10, $game->player1->timeline->filter(EventType::FATE_RESOLVED)->count());
+        self::assertEquals(9, $game->player2->timeline->filter(EventType::FATE_RESOLVED)->count());
+    }
+
+    public function testTides(): void
+    {
+        $game = $this->getLog('plain_5');
+
+        $player1Timeline = $game->player1->timeline->filter(EventType::TIDE_RAISED);
+        $player2Timeline = $game->player2->timeline->filter(EventType::TIDE_RAISED);
+        $gameTimeline = $game->timeline()->filter(EventType::TIDE_RAISED);
+
+        self::assertEquals(5, $player1Timeline->count());
+        self::assertEquals(5, $player2Timeline->count());
+        self::assertEquals(10, $gameTimeline->count());
+
+        self::assertEquals('Pour-tal', $player1Timeline->at(0)?->value);
+        self::assertEquals('manual', $player2Timeline->at(0)?->value);
+
+        self::assertEquals('manual', $gameTimeline->at(0)?->value);
+        self::assertEquals(1, $gameTimeline->at(0)?->turn()->value());
+        self::assertEquals(24, $gameTimeline->at(0)?->turn()->occurredOn());
+        self::assertEquals('Pour-tal', $gameTimeline->at(1)?->value);
+        self::assertEquals(5, $gameTimeline->at(1)?->turn()->value());
+        self::assertEquals(90, $gameTimeline->at(1)?->turn()->occurredOn());
     }
 
     private function getLog(string $file): Game

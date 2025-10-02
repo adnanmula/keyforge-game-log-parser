@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace AdnanMula\KeyforgeGameLogParser\VO\Shared;
+namespace AdnanMula\KeyforgeGameLogParser\Event;
 
 use JsonSerializable;
 
@@ -8,7 +8,7 @@ final readonly class Turn implements JsonSerializable
 {
     public function __construct(
         private int $value,
-        private TurnMoment $moment,
+        private Moment $moment,
         private int $occurredOn,
     ) {}
 
@@ -17,7 +17,7 @@ final readonly class Turn implements JsonSerializable
         return $this->value;
     }
 
-    public function moment(): TurnMoment
+    public function moment(): Moment
     {
         return $this->moment;
     }
@@ -31,7 +31,7 @@ final readonly class Turn implements JsonSerializable
     {
         return [
             'value' => $this->value,
-            'moment' => $this->moment->name,
+            'moment' => $this->moment->value,
             'occurredOn' => $this->occurredOn,
         ];
     }
