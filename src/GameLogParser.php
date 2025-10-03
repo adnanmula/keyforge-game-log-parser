@@ -49,7 +49,7 @@ final class GameLogParser
     {
         if (ParseType::PLAIN === $parseType) {
             if (false === is_string($log)) {
-                throw new \InvalidArgumentException('Log must be an string when using plain or html type');
+                throw new \InvalidArgumentException('Log must be a string when using plain type');
             }
 
             $messages = explode(\PHP_EOL, $log);
@@ -60,17 +60,27 @@ final class GameLogParser
 
             $messages = $log;
         } else {
+            if (false === is_string($log)) {
+                throw new \InvalidArgumentException('Log must be a string when using html type');
+            }
+
             $crawler = new Crawler($log);
             $htmlMessages = $crawler->filter('div.message:not(.chat-bubble)');
             $messages = [];
             foreach ($htmlMessages as $htmlMessage) {
-                $messages[] = $htmlMessage->textContent;
+                $messages[] = trim($htmlMessage->textContent);
             }
         }
 
         $filteredMessages = [];
 
         foreach ($messages as $message) {
+            $message = trim($message);
+
+            if ('' === $message) {
+                continue;
+            }
+
             if (preg_match("/is shuffling their deck\s*$/", $message)) {
                 continue;
             }
@@ -108,52 +118,54 @@ final class GameLogParser
     /** @return array<Player> */
     private function extractPlayerInfo(string ...$messages): array
     {
-        $playerName1 = null;
-        $playerName2 = null;
-        $deck1 = null;
-        $deck2 = null;
+        $players = [];
 
-        $pattern = '/^(\w+)\s+brings\s+(.*?)\s+to The Crucible\s*$/u';
-        $matches = [];
+        $pattern = '/^\s*(.+?)\s+brings\s+(.+?)\s+to The Crucible\s*$/u';
 
-        if (preg_match($pattern, $messages[0], $matches)) {
-            $playerName1 = $matches[1];
-            $deck1 = $matches[2];
+        foreach ($messages as $message) {
+            $matches = [];
+
+            if (preg_match($pattern, $message, $matches)) {
+                $name = trim($matches[1]);
+                $deck = trim($matches[2]);
+
+                if ('' !== $name && false === array_key_exists($name, $players)) {
+                    $players[$name] = $deck;
+                }
+            }
+
+            if (count($players) >= 2) {
+                break;
+            }
         }
 
-        if (preg_match($pattern, $messages[1], $matches)) {
-            $playerName2 = $matches[1];
-            $deck2 = $matches[2];
-        }
-
-        if (null === $playerName1 || null === $playerName2 || null === $deck1 || null === $deck2) {
-            $deck1 = 'Unknown';
-            $deck2 = 'Unknown';
-
+        if (count($players) < 2) {
             foreach ($messages as $message) {
                 $matches = [];
 
-                if (preg_match('/^\s*(\w+)\s+has connected to the game server\s*$/u', $message, $matches)) {
-                    if (null === $playerName1) {
-                        $playerName1 = trim($matches[1]);
-                    } else {
-                        $playerName2 = trim($matches[1]);
+                if (preg_match('/^\s*(.+?)\s+has connected to the game server\s*$/u', $message, $matches)) {
+                    $name = trim($matches[1]);
+
+                    if ('' !== $name && false === array_key_exists($name, $players)) {
+                        $players[$name] = 'Unknown';
                     }
                 }
 
-                if (null !== $playerName1 && null !== $playerName2) {
+                if (count($players) >= 2) {
                     break;
                 }
             }
+        }
 
-            if (null === $playerName1 || null === $playerName2) {
-                throw new \Exception('Malformed or incomplete log');
-            }
+        $names = array_keys($players);
+
+        if (count($names) < 2) {
+            throw new \Exception('Malformed or incomplete log');
         }
 
         return [
-            new Player(name: $playerName1, deck: $deck1),
-            new Player(name: $playerName2, deck: $deck2),
+            new Player(name: $names[0], deck: $players[$names[0]] ?? 'Unknown'),
+            new Player(name: $names[1], deck: $players[$names[1]] ?? 'Unknown'),
         ];
     }
 
