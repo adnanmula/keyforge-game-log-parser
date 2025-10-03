@@ -38,7 +38,7 @@ final class GameLogParser
             $this->checkTokens($game, $index, $message);
             $this->checkProphecies($game, $index, $message);
             $this->checkWinner($game, $message);
-            $this->checkConcede($game, $message);
+            $this->checkConcede($game, $index, $message);
         }
 
         return $game;
@@ -338,6 +338,9 @@ final class GameLogParser
     private function checkChains(Game $game, int $index, string $message): void
     {
         $matches = [];
+        $matches2 = [];
+        $matches3 = [];
+        $matches4 = [];
 
         $player1 = $game->player1->escapedName();
         $player2 = $game->player2->escapedName();
@@ -356,6 +359,83 @@ final class GameLogParser
                 ),
             );
         }
+
+        $pattern2 = "/^($player1|$player2)\s+uses\s+(.*)\s+to increase their chains by\s+(\d+)\s*$/";
+
+        if (preg_match($pattern2, $message, $matches2)) {
+            $game->player($matches2[1])?->timeline->add(
+                new Event(
+                    EventType::CHAINS_ADDED,
+                    $matches2[1],
+                    new Turn($game->length, Moment::BETWEEN, $index),
+                    Source::PLAYER,
+                    (int) $matches2[3],
+                    ['trigger' => $matches2[2]],
+                ),
+            );
+        }
+
+        $pattern3 = "/^($player1|$player2)\s+uses\s+(.*)\s+to give\s+($player1|$player2)\s+(\d+)\s*chains\s*$/";
+
+        if (preg_match($pattern3, $message, $matches3)) {
+            $game->player($matches3[3])?->timeline->add(
+                new Event(
+                    EventType::CHAINS_ADDED,
+                    $matches3[3],
+                    new Turn($game->length, Moment::BETWEEN, $index),
+                    Source::OPPONENT,
+                    (int) $matches3[4],
+                    ['trigger' => $matches3[2]],
+                ),
+            );
+        }
+
+        $chainData = [
+            'Ballcano' => 2,
+            "Coward’s End" => 3,
+            'Power of Fire' => 1,
+            'Arise!' => 1,
+            'Grim Reminder' => 1,
+            'Gateway to Dis' => 3,
+            'Market Crash' => 2,
+            'Shell of a Ghost' => 2,
+            'Effervescent Principle' => 1,
+            'Extinction' => 1,
+            'Kaboom!' => 3,
+            'Phosphorus Stars' => 2,
+            'Crushing Charge' => 1,
+            'Catch and Release' => 2,
+            'Mælstrom' => 2,
+            'Save the Pack' => 1,
+            'Quintrino Warp' => 1,
+            'Axiom of Grisk' => 2,
+            'Krrrzzzaaap!!!' => 1,
+            'They Tell No Tales' => 2,
+        ];
+
+        $player1 = $game->player1->escapedName();
+        $player2 = $game->player2->escapedName();
+
+        $pattern4 = "/^($player1|$player2)\s+plays\s+(.+)\s*$/";
+
+        if (preg_match($pattern4, $message, $matches4)) {
+            $player = $matches4[1];
+            $card = trim($matches4[2]);
+            $chains = $chainData[$card] ?? 0;
+
+            if ($chains > 0) {
+                $game->player($player)?->timeline->add(
+                    new Event(
+                        EventType::CHAINS_ADDED,
+                        $player,
+                        new Turn($game->length, Moment::BETWEEN, $index),
+                        Source::PLAYER,
+                        $chains,
+                        ['trigger' => $card],
+                    ),
+                );
+            }
+        }
     }
 
     private function checkTide(Game $game, int $index, string $message): void
@@ -367,7 +447,7 @@ final class GameLogParser
         $player2 = $game->player2->escapedName();
 
         $pattern1 = "/^($player1|$player2)\s+changed tide\s+to High\s*$/";
-        $pattern2 = "/^($player1|$player2)\s+uses (.*)\s+to raise the tide\s*$/";
+        $pattern2 = "/^($player1|$player2)\s+uses\s+(.*)\s+to raise the tide\s*$/";
 
         if (preg_match($pattern1, $message, $matches)) {
             $game->player($matches[1])?->timeline->add(
@@ -721,7 +801,7 @@ final class GameLogParser
         }
     }
 
-    private function checkConcede(Game $game, string $message): void
+    private function checkConcede(Game $game, int $index, string $message): void
     {
         $player1 = $game->player1->escapedName();
         $player2 = $game->player2->escapedName();
@@ -729,7 +809,19 @@ final class GameLogParser
         $pattern = "/($player1|$player2) concedes\s*$/";
 
         if (preg_match($pattern, $message, $matches)) {
-            $game->player($matches[1])?->updateHasConceded(true);
+            $player = $matches[1];
+
+            $game->player($player)?->updateHasConceded(true);
+
+            $game->player($player)?->timeline->add(
+                new Event(
+                    EventType::PLAYER_CONCEDED,
+                    $player,
+                    new Turn($game->length, Moment::BETWEEN, $index),
+                    Source::PLAYER,
+                    '',
+                ),
+            );
         }
     }
 }

@@ -22,4 +22,5 @@ enum EventType: string
     case TIDE_RAISED = 'TIDE_RAISED';
     case CHAINS_ADDED = 'CHAINS_ADDED';
     case CHAINS_REDUCED = 'CHAINS_REDUCED';
+    case PLAYER_CONCEDED = 'PLAYER_CONCEDED';
 }
