@@ -3,7 +3,7 @@
 namespace AdnanMula\KeyforgeGameLogParser\Tests;
 
 use AdnanMula\KeyforgeGameLogParser\Game\Game;
-use AdnanMula\KeyforgeGameLogParser\GameLogParser;
+use AdnanMula\KeyforgeGameLogParser\Parser\GameLogParser;
 
 trait GetTestData
 {

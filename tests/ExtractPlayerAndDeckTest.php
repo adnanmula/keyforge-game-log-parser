@@ -2,8 +2,8 @@
 
 namespace AdnanMula\KeyforgeGameLogParser\Tests;
 
-use AdnanMula\KeyforgeGameLogParser\GameLogParser;
-use AdnanMula\KeyforgeGameLogParser\ParseType;
+use AdnanMula\KeyforgeGameLogParser\Parser\GameLogParser;
+use AdnanMula\KeyforgeGameLogParser\Parser\ParseType;
 use PHPUnit\Framework\TestCase;
 
 final class ExtractPlayerAndDeckTest extends TestCase

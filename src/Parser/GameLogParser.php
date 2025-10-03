@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace AdnanMula\KeyforgeGameLogParser;
+namespace AdnanMula\KeyforgeGameLogParser\Parser;
 
 use AdnanMula\KeyforgeGameLogParser\Event\Event;
 use AdnanMula\KeyforgeGameLogParser\Event\EventType;
@@ -8,15 +8,13 @@ use AdnanMula\KeyforgeGameLogParser\Event\Moment;
 use AdnanMula\KeyforgeGameLogParser\Event\Source;
 use AdnanMula\KeyforgeGameLogParser\Event\Turn;
 use AdnanMula\KeyforgeGameLogParser\Game\Game;
-use AdnanMula\KeyforgeGameLogParser\Game\Player;
-use Symfony\Component\DomCrawler\Crawler;
 
 final class GameLogParser
 {
     public function execute(string|array $log, ParseType $parseType = ParseType::PLAIN): Game
     {
-        $messages = $this->messages($log, $parseType);
-        [$player1, $player2] = $this->extractPlayerInfo(...$messages);
+        $messages = new LogPreprocessor()->execute($log, $parseType);
+        [$player1, $player2] = new LogPlayerExtractor()->execute(...$messages);
         $game = new Game($player1, $player2, 0, $messages);
 
         foreach ($messages as $index => $message) {
@@ -43,130 +41,6 @@ final class GameLogParser
         }
 
         return $game;
-    }
-
-    private function messages(string|array $log, ParseType $parseType): array
-    {
-        if (ParseType::PLAIN === $parseType) {
-            if (false === is_string($log)) {
-                throw new \InvalidArgumentException('Log must be a string when using plain type');
-            }
-
-            $messages = explode(\PHP_EOL, $log);
-        } elseif (ParseType::ARRAY === $parseType) {
-            if (false === is_array($log)) {
-                throw new \InvalidArgumentException('Log must be an array when using array type');
-            }
-
-            $messages = $log;
-        } else {
-            if (false === is_string($log)) {
-                throw new \InvalidArgumentException('Log must be a string when using html type');
-            }
-
-            $crawler = new Crawler($log);
-            $htmlMessages = $crawler->filter('div.message:not(.chat-bubble)');
-            $messages = [];
-            foreach ($htmlMessages as $htmlMessage) {
-                $messages[] = trim($htmlMessage->textContent);
-            }
-        }
-
-        $filteredMessages = [];
-
-        foreach ($messages as $message) {
-            $message = trim($message);
-
-            if ('' === $message) {
-                continue;
-            }
-
-            if (preg_match("/is shuffling their deck\s*$/", $message)) {
-                continue;
-            }
-
-            if (preg_match("/manual mode/", $message)) {
-                continue;
-            }
-
-            if (preg_match("/manually/", $message)) {
-                continue;
-            }
-
-            if (preg_match("/(Draw|Ready|Main|House)\s*phase -/", $message)) {
-                continue;
-            }
-
-            if (preg_match("/^End of turn/", $message)) {
-                continue;
-            }
-
-            if (preg_match("/readies their\s*cards/", $message)) {
-                continue;
-            }
-
-            if (preg_match("/mutes spectators/", $message)) {
-                continue;
-            }
-
-            $filteredMessages[] = $message;
-        }
-
-        return $filteredMessages;
-    }
-
-    /** @return array<Player> */
-    private function extractPlayerInfo(string ...$messages): array
-    {
-        $players = [];
-
-        $pattern = '/^\s*(.+?)\s+brings\s+(.+?)\s+to The Crucible\s*$/u';
-
-        foreach ($messages as $message) {
-            $matches = [];
-
-            if (preg_match($pattern, $message, $matches)) {
-                $name = trim($matches[1]);
-                $deck = trim($matches[2]);
-
-                if ('' !== $name && false === array_key_exists($name, $players)) {
-                    $players[$name] = $deck;
-                }
-            }
-
-            if (count($players) >= 2) {
-                break;
-            }
-        }
-
-        if (count($players) < 2) {
-            foreach ($messages as $message) {
-                $matches = [];
-
-                if (preg_match('/^\s*(.+?)\s+has connected to the game server\s*$/u', $message, $matches)) {
-                    $name = trim($matches[1]);
-
-                    if ('' !== $name && false === array_key_exists($name, $players)) {
-                        $players[$name] = 'Unknown';
-                    }
-                }
-
-                if (count($players) >= 2) {
-                    break;
-                }
-            }
-        }
-
-        $names = array_keys($players);
-
-        if (count($names) < 2) {
-            throw new \Exception('Malformed or incomplete log');
-        }
-
-        return [
-            new Player(name: $names[0], deck: $players[$names[0]] ?? 'Unknown'),
-            new Player(name: $names[1], deck: $players[$names[1]] ?? 'Unknown'),
-        ];
     }
 
     private function checkTurnOne(Game $game, string $message): void

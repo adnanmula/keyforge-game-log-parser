@@ -17,9 +17,9 @@ composer require adnanmula/keyforge-game-log-parser
 ```php
 <?php
 
-use AdnanMula\KeyforgeGameLogParser\GameLogParser;
-use AdnanMula\KeyforgeGameLogParser\ParseType;
 use AdnanMula\KeyforgeGameLogParser\Event\EventType;
+use AdnanMula\KeyforgeGameLogParser\Parser\GameLogParser;
+use AdnanMula\KeyforgeGameLogParser\Parser\ParseType;
 
 $log = file_get_contents('path/to/log.txt');
 
@@ -41,8 +41,8 @@ You can parse logs provided in 3 different formats via `ParseType`:
 ```php
 <?php
 
-use AdnanMula\KeyforgeGameLogParser\GameLogParser;
-use AdnanMula\KeyforgeGameLogParser\ParseType;
+use AdnanMula\KeyforgeGameLogParser\Parser\GameLogParser;
+use AdnanMula\KeyforgeGameLogParser\Parser\ParseType;
 
 $parser = new GameLogParser();
 
@@ -96,8 +96,7 @@ $checks = $game->timeline()->filter(EventType::CHECK_DECLARED)->items();
 // Player-specific timeline queries
 $p1Checks = $game->player1->timeline->filter(EventType::CHECK_DECLARED)->items();
 $p2Keys   = $game->player2->timeline->filter(EventType::KEY_FORGED)->items();
-
-$winnerName = $game->winner()?->name;
+$reapsAndFights   = $game->player2->timeline->filter(EventType::REAP, EventType::FIGHT)->items();
 
 etc...
 ```
