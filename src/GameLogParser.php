@@ -39,6 +39,7 @@ final class GameLogParser
             $this->checkProphecies($game, $index, $message);
             $this->checkWinner($game, $message);
             $this->checkConcede($game, $index, $message);
+            $this->checkCheck($game, $index, $message);
         }
 
         return $game;
@@ -95,10 +96,6 @@ final class GameLogParser
             }
 
             if (preg_match("/mutes spectators/", $message)) {
-                continue;
-            }
-
-            if (preg_match("/declares check/i", $message)) {
                 continue;
             }
 
@@ -818,6 +815,28 @@ final class GameLogParser
                     EventType::PLAYER_CONCEDED,
                     $player,
                     new Turn($game->length, Moment::BETWEEN, $index),
+                    Source::PLAYER,
+                    '',
+                ),
+            );
+        }
+    }
+
+    private function checkCheck(Game $game, int $index, string $message): void
+    {
+        $player1 = $game->player1->escapedName();
+        $player2 = $game->player2->escapedName();
+
+        $pattern = "/($player1|$player2)\s+declares\s+Check!\s*$/";
+
+        if (preg_match($pattern, $message, $matches)) {
+            $player = $matches[1];
+
+            $game->player($player)?->timeline->add(
+                new Event(
+                    EventType::CHECK_DECLARED,
+                    $player,
+                    new Turn($game->length, Moment::END, $index),
                     Source::PLAYER,
                     '',
                 ),
