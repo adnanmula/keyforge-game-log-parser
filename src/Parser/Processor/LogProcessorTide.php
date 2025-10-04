@@ -32,6 +32,17 @@ final class LogProcessorTide implements LogProcessor
                     'manual',
                 ),
             );
+
+            $game->player($matches[1])?->timeline->add(
+                new Event(
+                    EventType::CHAINS_ADDED,
+                    $matches[1],
+                    new Turn($game->length, Moment::BETWEEN, $index),
+                    Source::PLAYER,
+                    3,
+                    ['trigger' => 'Tide'],
+                ),
+            );
         }
 
         if (preg_match($pattern2, $message, $matches2)) {
