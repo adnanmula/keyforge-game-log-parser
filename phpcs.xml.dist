@@ -3,5 +3,7 @@
 <ruleset name="Project rules">
     <file>src</file>
     <file>tests</file>
-    <rule ref="vendor/adnanmula/coding-standard/src/ruleset.xml"/>
+    <rule ref="vendor/adnanmula/coding-standard/src/ruleset.xml">
+        <exclude name="SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter"/>
+    </rule>
 </ruleset>

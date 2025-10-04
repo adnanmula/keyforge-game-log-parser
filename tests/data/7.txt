@@ -1,0 +1,1065 @@
+nan26 brings Mrs. “Silver” Ultmore to The Crucible
+NaN brings Jaeger of Lavaland Theater to The Crucible
+NaN won the flip and is first player
+ nan26 has connected to the game server
+ NaN has connected to the game server
+nan26 is shuffling their deck
+nan26 draws 6 card  s to their maximum of 6
+NaN is shuffling their deck
+NaN draws 6 card  s to their maximum of 6
+NaN draws 1 card 
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber 
+House phase - NaN
+NaN chooses untamed  as their active house this turn
+Main phase - NaN
+NaN plays Save the Pack
+NaN uses Save the Pack to destroy each damaged creature and gain 1 chain
+Ready phase - NaN
+Draw phase - NaN
+End of turn 1
+nan26: 0 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 1 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses mars  as their active house this turn
+Main phase - nan26
+nan26 plays Mars Needs Æmber
+nan26 gains an Æmber  due to Mars Needs Æmber's bonus icon
+nan26 plays Tyxl Beambuckler
+nan26 uses Tyxl Beambuckler to deal 2 damage to Tyxl Beambuckler and move it to a flank
+nan26 plays Zysysyx Shockworm
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+End of turn 1
+nan26: 1 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 2 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber 
+House phase - NaN
+NaN chooses untamed  as their active house this turn
+Main phase - NaN
+NaN plays Tantadlin
+NaN plays Knoxx
+NaN plays Way of the Porcupine attaching it to Tantadlin
+NaN gains an Æmber  due to Way of the Porcupine's bonus icon
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 2 card  s to their maximum of 6
+NaN's chains are reduced by 1 to 0
+End of turn 2
+nan26: 1 Æmber  (0 keys) NaN: 1 Æmber  (0 keys)
+TURN 2 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses brobnar  as their active house this turn
+Main phase - nan26
+nan26 plays Screechbomb
+nan26 plays Coward’s End
+nan26 uses Coward’s End to destroy each undamaged creature
+nan26 plays Bingle Bangbang
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26 draws 2 card  s to their maximum of 6
+nan26's chains are reduced by 1 to 2
+End of turn 2
+nan26: 1 Æmber  (0 keys) NaN: 1 Æmber  (0 keys)
+TURN 3 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 1 amber. The current cost is 6 Æmber 
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN plays Poltergeist
+NaN gains an Æmber  due to Poltergeist's bonus icon
+NaN uses Poltergeist to use Screechbomb and destroy it
+NaN uses Screechbomb to sacrifice Screechbomb and make nan26 lose 2 Æmber 
+NaN plays Exhume
+NaN gains an Æmber  due to Exhume's bonus icon
+NaN uses Exhume to play Knoxx
+NaN plays Knoxx
+NaN plays Æmber Imp
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+End of turn 3
+nan26: 0 Æmber  (0 keys) NaN: 3 Æmber  (0 keys)
+TURN 3 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+nan26 plays Lash of Broken Dreams
+nan26 plays Banish
+nan26 gains an Æmber  due to Banish's bonus icon
+nan26 uses Banish to archive Knoxx
+nan26 plays Unlocked Gateway
+nan26 uses Unlocked Gateway to destroy Bingle Bangbang, Tyxl Beambuckler, and Æmber Imp
+nan26 played Unlocked Gateway which has Omega, ending this step
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+nan26's chains are reduced by 1 to 1
+End of turn 3
+nan26: 1 Æmber  (0 keys) NaN: 3 Æmber  (0 keys)
+TURN 4 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 3 amber. The current cost is 6 Æmber 
+House phase - NaN
+NaN chooses untamed  as their active house this turn
+NaN moves all the cards  in their archives to their hand
+Main phase - NaN
+NaN plays Rustgnawer
+NaN plays Marmo Swarm
+NaN plays Knoxx
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 2 card  s to their maximum of 6
+End of turn 4
+nan26: 1 Æmber  (0 keys) NaN: 3 Æmber  (0 keys)
+TURN 4 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses brobnar  as their active house this turn
+Main phase - nan26
+nan26 plays Coward’s End
+nan26 uses Coward’s End to destroy each undamaged creature
+nan26 plays 1-2 Punch
+nan26 gains an Æmber  due to 1-2 Punch's bonus icon
+nan26 plays Bingle Bangbang
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+nan26's chains are reduced by 1 to 3
+End of turn 4
+nan26: 2 Æmber  (0 keys) NaN: 3 Æmber  (0 keys)
+TURN 5 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 3 amber. The current cost is 6 Æmber 
+House phase - NaN
+NaN chooses mars  as their active house this turn
+Main phase - NaN
+NaN plays Mothergun
+NaN plays Æmber Conduction Unit
+NaN plays Mars Needs Æmber
+NaN gains an Æmber  due to Mars Needs Æmber's bonus icon
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+End of turn 5
+nan26: 2 Æmber  (0 keys) NaN: 4 Æmber  (0 keys)
+TURN 5 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 2 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses mars  as their active house this turn
+Main phase - nan26
+nan26 plays Exterminate! Exterminate!
+nan26 plays Ixxyxli Fixfinger
+nan26 plays Mindwarper
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+nan26's chains are reduced by 1 to 2
+End of turn 5
+nan26: 2 Æmber  (0 keys) NaN: 4 Æmber  (0 keys)
+TURN 6 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 4 amber. The current cost is 6 Æmber 
+House phase - NaN
+NaN chooses untamed  as their active house this turn
+Main phase - NaN
+NaN plays Persistence Hunting
+NaN gains an Æmber  due to Persistence Hunting's bonus icon
+NaN chooses house ekwidon 
+NaN uses Persistence Hunting
+NaN plays Marmo Swarm
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 2 card  s to their maximum of 6
+End of turn 6
+nan26: 2 Æmber  (0 keys) NaN: 5 Æmber  (0 keys)
+TURN 6 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 2 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+nan26 plays Pandemonium
+nan26 gains an Æmber  due to Pandemonium's bonus icon
+nan26 uses Pandemonium to cause each undamaged creature to capture 1 Æmber  from their opponent
+nan26 plays Neffru
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26 draws 2 card  s to their maximum of 6
+nan26's chains are reduced by 1 to 1
+End of turn 6
+nan26: 2 Æmber  (0 keys) NaN: 2 Æmber  (0 keys)
+TURN 7 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 2 amber. The current cost is 6 Æmber 
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN plays Library of the Damned
+NaN plays Charette
+NaN uses Charette to capture 3 Æmber  from their opponent , placing it on Charette
+NaN discards Banish
+NaN plays Misery Exploit
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+End of turn 7
+nan26: 0 Æmber  (0 keys) NaN: 2 Æmber  (0 keys)
+TURN 7 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses mars  as their active house this turn
+Main phase - nan26
+nan26 plays Hypnotic Command
+nan26 uses Hypnotic Command to force a enemy creature to capture 1 Æmber  for each mars  creature they control
+nan26 plays Uxlyx the Zookeeper
+nan26 plays Vezyma Thinkdrone
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+nan26's chains are reduced by 1 to 0
+End of turn 7
+nan26: 0 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 8 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber 
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN plays Binding Irons
+NaN uses Binding Irons to give nan26 3 chains
+NaN plays Binding Irons
+NaN uses Binding Irons to give nan26 3 chains
+NaN uses Library of the Damned to archive a card 
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+End of turn 8
+nan26: 0 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 8 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+nan26 plays Binding Irons
+nan26 uses Binding Irons to give NaN 3 chains
+nan26 plays Æmber Imp
+nan26 plays Bloodshard Imp
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+nan26's chains are reduced by 1 to 5
+End of turn 8
+nan26: 0 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 9 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber 
+House phase - NaN
+NaN chooses untamed  as their active house this turn
+NaN moves all the cards  in their archives to their hand
+Main phase - NaN
+NaN discards Piranha Monkeys
+NaN uses Mimicry to to copy Binding Irons
+NaN plays Mimicry
+NaN uses Mimicry to give nan26 3 chains
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN's chains are reduced by 1 to 2
+End of turn 9
+nan26: 0 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 9 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+nan26 plays Angwish
+nan26 plays Dust Imp
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26 draws 1 card  to their maximum of 6
+nan26's chains are reduced by 1 to 7
+End of turn 9
+nan26: 0 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 10 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber 
+House phase - NaN
+NaN chooses mars  as their active house this turn
+Main phase - NaN
+NaN plays Collector Worm
+NaN plays Collector Worm
+NaN plays Agent Hoo-man
+NaN discards Mars Needs Æmber
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+NaN's chains are reduced by 1 to 1
+End of turn 10
+nan26: 0 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 10 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses mars  as their active house this turn
+Main phase - nan26
+nan26 plays Killzord Mk. 9001 attaching it to Angwish
+nan26 plays Zysysyx Shockworm
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26 draws 2 card  s to their maximum of 6
+nan26's chains are reduced by 1 to 6
+End of turn 10
+nan26: 0 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 11 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber 
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN discards Red-Hot Armor
+NaN plays Tezmal
+NaN uses Library of the Damned to archive a card 
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+NaN's chains are reduced by 1 to 0
+End of turn 11
+nan26: 0 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 11 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+nan26 uses Angwish to make Angwish fight Collector Worm
+nan26 uses Neffru to make NaN gain 1 Æmber 
+nan26 uses Angwish to increase their chains by 1
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26's chains are reduced by 1 to 6
+End of turn 11
+nan26: 0 Æmber  (0 keys) NaN: 1 Æmber  (0 keys)
+TURN 12 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 1 amber. The current cost is 6 Æmber 
+House phase - NaN
+NaN chooses mars  as their active house this turn
+Main phase - NaN
+NaN plays Mindwarper
+NaN plays Skybooster Squadron
+NaN discards Phloxem Spike
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+NaN's deck has run out of cards, so they shuffle
+End of turn 12
+nan26: 0 Æmber  (0 keys) NaN: 1 Æmber  (0 keys)
+TURN 12 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+nan26 uses Angwish to make Angwish fight Tezmal
+nan26 uses Angwish to increase their chains by 1
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26's chains are reduced by 1 to 6
+End of turn 12
+nan26: 0 Æmber  (0 keys) NaN: 1 Æmber  (0 keys)
+TURN 13 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 1 amber. The current cost is 6 Æmber 
+House phase - NaN
+NaN chooses mars  as their active house this turn
+Main phase - NaN
+NaN plays Killzord Mk. 9001 attaching it to Collector Worm
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 1 card  to their maximum of 6
+End of turn 13
+nan26: 0 Æmber  (0 keys) NaN: 1 Æmber  (0 keys)
+TURN 13 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+nan26 uses Angwish to make Angwish fight Charette
+nan26 uses Neffru to make NaN gain 1 Æmber 
+nan26 uses Angwish to increase their chains by 1
+nan26 uses Bloodshard Imp to reap with Bloodshard Imp
+nan26 uses Bloodshard Imp to sacrifice Bloodshard Imp
+nan26 uses Neffru to make nan26 gain 1 Æmber 
+nan26 uses Æmber Imp to reap with Æmber Imp
+nan26 uses Æmber Imp to stun Æmber Imp
+nan26 uses Neffru to reap with Neffru
+nan26 uses Æmber Imp to stun Neffru
+nan26 uses Dust Imp to reap with Dust Imp
+nan26 uses Æmber Imp to stun Dust Imp
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26's chains are reduced by 1 to 6
+ nan26 declares Check!
+End of turn 13
+nan26: 7 Æmber  (0 keys) NaN: 2 Æmber  (0 keys)
+TURN 14 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 2 amber. The current cost is 6 Æmber 
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN plays Tezmal
+NaN plays Binding Irons
+NaN uses Binding Irons to give nan26 3 chains
+NaN plays Red-Hot Armor
+NaN gains an Æmber  due to Red-Hot Armor's bonus icon
+NaN uses Red-Hot Armor to remove enemy creatures' armor and deal damage equal to the amount of armor removed
+nan26 uses Neffru to make nan26 gain 1 Æmber 
+NaN uses Library of the Damned to archive a card 
+NaN uses Tezmal to reap with Tezmal
+NaN chooses house brobnar 
+NaN uses Tezmal to stop nan26 from choosing brobnar  as their active house
+nan26 uses Æmber Imp to stun Tezmal
+nan26 uses Zysysyx Shockworm to stun Tezmal
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+End of turn 14
+nan26: 8 Æmber  (0 keys) NaN: 5 Æmber  (0 keys)
+TURN 14 - nan26
+Key phase - nan26
+nan26 forges the red key  , paying 6 Æmber 
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+nan26 uses Angwish to make Angwish fight Tezmal
+nan26 uses Angwish to increase their chains by 1
+nan26 exhausts Dust Imp to remove its stun
+nan26 exhausts Neffru to remove its stun
+nan26 exhausts Æmber Imp to remove its stun
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26's chains are reduced by 1 to 9
+End of turn 14
+nan26: 2 Æmber  (1 key) NaN: 5 Æmber  (0 keys)
+TURN 15 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 5 amber. The current cost is 8 Æmber 
+House phase - NaN
+NaN chooses untamed  as their active house this turn
+Main phase - NaN
+NaN plays Knoxx
+NaN uses Mimicry to to copy Binding Irons
+NaN plays Mimicry
+NaN uses Mimicry to give nan26 3 chains
+NaN plays Way of the Porcupine attaching it to Collector Worm
+NaN gains an Æmber  due to Way of the Porcupine's bonus icon
+NaN plays Marmo Swarm
+NaN plays World Tree
+NaN uses Marmo Swarm to reap with Marmo Swarm
+nan26 uses Æmber Imp to stun Marmo Swarm
+nan26 uses Zysysyx Shockworm to stun Marmo Swarm
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 5 card  s to their maximum of 6
+End of turn 15
+nan26: 2 Æmber  (1 key) NaN: 7 Æmber  (0 keys)
+TURN 15 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 2 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses brobnar  as their active house this turn
+Main phase - nan26
+nan26 plays Little Rapscal
+nan26 plays Gauntlet of Command
+nan26 plays Groke
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+nan26's chains are reduced by 1 to 11
+End of turn 15
+nan26: 2 Æmber  (1 key) NaN: 7 Æmber  (0 keys)
+TURN 16 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 7 amber. The current cost is 8 Æmber 
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN uses Library of the Damned to archive a card 
+NaN plays Misery Exploit
+NaN uses Misery Exploit to gain 5 Æmber 
+NaN plays Exhume
+NaN gains an Æmber  due to Exhume's bonus icon
+NaN uses Exhume to play Charette
+NaN plays Charette
+NaN uses Charette to capture 3 Æmber  from their opponent , placing it on Charette
+NaN exhausts Tezmal to remove its stun
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+ NaN declares Check!
+End of turn 16
+nan26: 0 Æmber  (1 key) NaN: 13 Æmber  (0 keys)
+TURN 16 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+nan26 plays Old Yurk
+nan26 uses Old Yurk
+nan26 uses Old Yurk to discard 1-2 Punch and Culf the Quiet
+nan26 uses Angwish to make Angwish fight Mindwarper
+nan26 uses Angwish to increase their chains by 1
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+nan26's deck has run out of cards, so they shuffle
+nan26's chains are reduced by 1 to 11
+End of turn 16
+nan26: 0 Æmber  (1 key) NaN: 13 Æmber  (0 keys)
+TURN 17 - NaN
+Key phase - NaN
+NaN forges the blue key  , paying 8 Æmber 
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN plays Binding Irons
+NaN uses Binding Irons to give nan26 3 chains
+NaN uses Library of the Damned to archive a card 
+NaN discards Banish
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+End of turn 17
+nan26: 0 Æmber  (1 key) NaN: 5 Æmber  (1 key)
+TURN 17 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+nan26 discards Banish
+nan26 plays Tezmal
+nan26 uses Angwish to make Angwish fight Marmo Swarm
+nan26 uses Neffru to make NaN gain 1 Æmber 
+nan26 uses Angwish to increase their chains by 1
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26 draws 1 card  to their maximum of 6
+nan26's chains are reduced by 1 to 14
+End of turn 17
+nan26: 3 Æmber  (1 key) NaN: 6 Æmber  (1 key)
+TURN 18 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 6 amber. The current cost is 8 Æmber 
+House phase - NaN
+NaN chooses mars  as their active house this turn
+Main phase - NaN
+NaN plays Collector Worm
+NaN discards Mars Needs Æmber
+NaN discards Mars Needs Æmber
+NaN uses Collector Worm to make Collector Worm fight Little Rapscal
+NaN uses Collector Worm to increase their chains by 1
+NaN uses Collector Worm to archive Little Rapscal
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 2 card  s to their maximum of 6
+NaN's chains are reduced by 1 to 0
+End of turn 18
+nan26: 3 Æmber  (1 key) NaN: 6 Æmber  (1 key)
+TURN 18 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+nan26 uses Angwish to make Angwish fight Knoxx
+nan26 uses Angwish to increase their chains by 1
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26's chains are reduced by 1 to 14
+End of turn 18
+nan26: 3 Æmber  (1 key) NaN: 6 Æmber  (1 key)
+TURN 19 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 6 amber. The current cost is 8 Æmber 
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN uses Library of the Damned to archive a card 
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 2 card  s to their maximum of 6
+NaN's deck has run out of cards, so they shuffle
+End of turn 19
+nan26: 3 Æmber  (1 key) NaN: 6 Æmber  (1 key)
+TURN 19 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+nan26 uses Angwish to make Angwish fight Marmo Swarm
+nan26 uses Neffru to make NaN gain 1 Æmber 
+nan26 uses Angwish to increase their chains by 1
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26's chains are reduced by 1 to 14
+End of turn 19
+nan26: 3 Æmber  (1 key) NaN: 7 Æmber  (1 key)
+TURN 20 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 7 amber. The current cost is 8 Æmber 
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN discards Poltergeist
+NaN plays Æmber Imp
+NaN uses Library of the Damned to archive a card 
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+End of turn 20
+nan26: 3 Æmber  (1 key) NaN: 7 Æmber  (1 key)
+TURN 20 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+nan26 uses Angwish to make Angwish fight Tezmal
+nan26 uses Angwish to increase their chains by 1
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26's chains are reduced by 1 to 14
+End of turn 20
+nan26: 3 Æmber  (1 key) NaN: 7 Æmber  (1 key)
+TURN 21 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 7 amber. The current cost is 8 Æmber 
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN plays Binding Irons
+NaN uses Binding Irons to give nan26 3 chains
+NaN uses Library of the Damned to archive a card 
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 2 card  s to their maximum of 6
+End of turn 21
+nan26: 3 Æmber  (1 key) NaN: 7 Æmber  (1 key)
+TURN 21 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26's chains are reduced by 1 to 16
+End of turn 21
+nan26: 3 Æmber  (1 key) NaN: 7 Æmber  (1 key)
+TURN 22 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 7 amber. The current cost is 8 Æmber 
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN uses Library of the Damned to archive a card 
+NaN discards Exhume
+NaN discards Misery Exploit
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+End of turn 22
+nan26: 3 Æmber  (1 key) NaN: 7 Æmber  (1 key)
+TURN 22 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26's chains are reduced by 1 to 15
+End of turn 22
+nan26: 3 Æmber  (1 key) NaN: 7 Æmber  (1 key)
+TURN 23 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 7 amber. The current cost is 8 Æmber 
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN plays Binding Irons
+NaN uses Binding Irons to give nan26 3 chains
+NaN uses Library of the Damned to archive a card 
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 2 card  s to their maximum of 6
+NaN's deck has run out of cards, so they shuffle
+End of turn 23
+nan26: 3 Æmber  (1 key) NaN: 7 Æmber  (1 key)
+TURN 23 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26's chains are reduced by 1 to 17
+End of turn 23
+nan26: 3 Æmber  (1 key) NaN: 7 Æmber  (1 key)
+TURN 24 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 7 amber. The current cost is 8 Æmber 
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN uses Library of the Damned to archive a card 
+NaN discards Banish
+NaN discards Red-Hot Armor
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+End of turn 24
+nan26: 3 Æmber  (1 key) NaN: 7 Æmber  (1 key)
+TURN 24 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26's chains are reduced by 1 to 16
+End of turn 24
+nan26: 3 Æmber  (1 key) NaN: 7 Æmber  (1 key)
+TURN 25 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 7 amber. The current cost is 8 Æmber 
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN plays Binding Irons
+NaN uses Binding Irons to give nan26 3 chains
+NaN plays Binding Irons
+NaN uses Binding Irons to give nan26 3 chains
+NaN uses Library of the Damned to archive a card 
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+NaN's deck has run out of cards, so they shuffle
+End of turn 25
+nan26: 3 Æmber  (1 key) NaN: 7 Æmber  (1 key)
+TURN 25 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26's chains are reduced by 1 to 21
+End of turn 25
+nan26: 3 Æmber  (1 key) NaN: 7 Æmber  (1 key)
+TURN 26 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 7 amber. The current cost is 8 Æmber 
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN plays Binding Irons
+NaN uses Binding Irons to give nan26 3 chains
+NaN discards Misery Exploit
+NaN discards Poltergeist
+NaN uses Library of the Damned to archive a card 
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+NaN's deck has run out of cards, so they shuffle
+End of turn 26
+nan26: 3 Æmber  (1 key) NaN: 7 Æmber  (1 key)
+TURN 26 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26's chains are reduced by 1 to 23
+End of turn 26
+nan26: 3 Æmber  (1 key) NaN: 7 Æmber  (1 key)
+TURN 27 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 7 amber. The current cost is 8 Æmber 
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN uses Library of the Damned to archive a card 
+NaN plays Binding Irons
+NaN uses Binding Irons to give nan26 3 chains
+NaN discards Red-Hot Armor
+NaN discards Banish
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+NaN's deck has run out of cards, so they shuffle
+End of turn 27
+nan26: 3 Æmber  (1 key) NaN: 7 Æmber  (1 key)
+TURN 27 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses brobnar  as their active house this turn
+Main phase - nan26
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26's chains are reduced by 1 to 25
+End of turn 27
+nan26: 3 Æmber  (1 key) NaN: 7 Æmber  (1 key)
+TURN 28 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 7 amber. The current cost is 8 Æmber 
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN plays Binding Irons
+NaN uses Binding Irons to give nan26 3 chains
+NaN plays Binding Irons
+NaN uses Binding Irons to give nan26 3 chains
+NaN discards Misery Exploit
+NaN discards Banish
+NaN uses Library of the Damned to archive a card 
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 5 card  s to their maximum of 6
+NaN's deck has run out of cards, so they shuffle
+End of turn 28
+nan26: 3 Æmber  (1 key) NaN: 7 Æmber  (1 key)
+TURN 28 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses mars  as their active house this turn
+Main phase - nan26
+nan26 plays Tyxl Beambuckler
+nan26 uses Tyxl Beambuckler to deal 2 damage to Old Yurk and move it to a flank
+nan26 plays Custom Virus
+nan26 gains an Æmber  due to Custom Virus's bonus icon
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26's chains are reduced by 1 to 30
+End of turn 28
+nan26: 4 Æmber  (1 key) NaN: 7 Æmber  (1 key)
+TURN 29 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 7 amber. The current cost is 8 Æmber 
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN plays Binding Irons
+NaN uses Binding Irons to give nan26 3 chains
+NaN plays Binding Irons
+NaN uses Binding Irons to give nan26 3 chains
+NaN discards Banish
+NaN discards Misery Exploit
+NaN discards Red-Hot Armor
+NaN uses Library of the Damned to archive a card 
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 6 card  s to their maximum of 6
+NaN's deck has run out of cards, so they shuffle
+End of turn 29
+nan26: 4 Æmber  (1 key) NaN: 7 Æmber  (1 key)
+TURN 29 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 4 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses brobnar  as their active house this turn
+Main phase - nan26
+nan26 plays Grump Buggy
+nan26 gains an Æmber  due to Grump Buggy's bonus icon
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26's chains are reduced by 1 to 35
+End of turn 29
+nan26: 5 Æmber  (1 key) NaN: 7 Æmber  (1 key)
+TURN 30 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 7 amber. The current cost is 11 Æmber 
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN plays Binding Irons
+NaN uses Binding Irons to give nan26 3 chains
+NaN plays Binding Irons
+NaN uses Binding Irons to give nan26 3 chains
+NaN uses Library of the Damned to archive a card 
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+NaN's deck has run out of cards, so they shuffle
+End of turn 30
+nan26: 5 Æmber  (1 key) NaN: 7 Æmber  (1 key)
+TURN 30 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 5 amber. The current cost is 7 Æmber 
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26's chains are reduced by 1 to 40
+End of turn 30
+nan26: 5 Æmber  (1 key) NaN: 7 Æmber  (1 key)
+TURN 31 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 7 amber. The current cost is 11 Æmber 
+House phase - NaN
+NaN chooses mars  as their active house this turn
+NaN moves all the cards  in their archives to their hand
+Little Rapscal leaves the archives and will be returned its owner hand
+Main phase - NaN
+NaN uses Mindwarper to reap with Mindwarper
+nan26 uses Æmber Imp to stun Mindwarper
+nan26 uses Zysysyx Shockworm to stun Mindwarper
+NaN uses Æmber Imp to stun Mindwarper
+NaN uses Skybooster Squadron to reap with Skybooster Squadron
+nan26 uses Æmber Imp to stun Skybooster Squadron
+nan26 uses Zysysyx Shockworm to stun Skybooster Squadron
+NaN uses Skybooster Squadron to return Skybooster Squadron to their hand
+NaN uses Collector Worm to reap with Collector Worm
+nan26 uses Æmber Imp to stun Collector Worm
+nan26 uses Zysysyx Shockworm to stun Collector Worm
+NaN uses Æmber Imp to stun Collector Worm
+NaN uses Agent Hoo-man to reap with Agent Hoo-man
+nan26 uses Æmber Imp to stun Agent Hoo-man
+NaN uses Agent Hoo-man to stun Knoxx
+nan26 uses Zysysyx Shockworm to stun Agent Hoo-man
+NaN uses Æmber Imp to stun Agent Hoo-man
+NaN uses Collector Worm to reap with Collector Worm
+nan26 uses Æmber Imp to stun Collector Worm
+nan26 uses Zysysyx Shockworm to stun Collector Worm
+NaN uses Æmber Imp to stun Collector Worm
+NaN plays Key Abduction
+NaN gains an Æmber  due to Key Abduction's bonus icon
+NaN uses Key Abduction to return all mars  creatures to their owner's hand
+NaN forges the red key  , paying 0 Æmber 
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+ NaN declares Check!
+End of turn 31
+nan26: 5 Æmber  (1 key) NaN: 14 Æmber  (2 keys)
+TURN 31 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 5 amber. The current cost is 7 Æmber 
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+nan26 uses Tezmal to reap with Tezmal
+NaN uses Æmber Conduction Unit to stun Tezmal
+nan26 uses Æmber Imp to stun Tezmal
+nan26 chooses house mars 
+nan26 uses Tezmal to stop NaN from choosing mars  as their active house
+NaN uses Æmber Imp to stun Tezmal
+nan26 uses Angwish to make Angwish fight Charette
+nan26 uses Neffru to make NaN gain 1 Æmber 
+nan26 uses Angwish to increase their chains by 1
+nan26 uses Old Yurk to reap with Old Yurk
+nan26 uses Æmber Imp to stun Old Yurk
+NaN uses Æmber Imp to stun Old Yurk
+nan26 uses Lash of Broken Dreams to increase key cost by 3 during NaN's next turn
+nan26 uses Dust Imp to reap with Dust Imp
+nan26 uses Æmber Imp to stun Dust Imp
+NaN uses Æmber Imp to stun Dust Imp
+nan26 uses Neffru to reap with Neffru
+nan26 uses Æmber Imp to stun Neffru
+NaN uses Æmber Imp to stun Neffru
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+ nan26 declares Check!
+End of turn 31
+nan26: 11 Æmber  (1 key) NaN: 15 Æmber  (2 keys)
+TURN 32 - NaN
+Key phase - NaN
+NaN forges the yellow key  , paying 14 Æmber 
+ NaN has won the game
