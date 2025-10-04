@@ -10,6 +10,7 @@ use AdnanMula\KeyforgeGameLogParser\Parser\Processor\LogProcessorAmberStolen;
 use AdnanMula\KeyforgeGameLogParser\Parser\Processor\LogProcessorCardsDiscarded;
 use AdnanMula\KeyforgeGameLogParser\Parser\Processor\LogProcessorCardsDrawn;
 use AdnanMula\KeyforgeGameLogParser\Parser\Processor\LogProcessorCardsPlayed;
+use AdnanMula\KeyforgeGameLogParser\Parser\Processor\LogProcessorCardsUsed;
 use AdnanMula\KeyforgeGameLogParser\Parser\Processor\LogProcessorChains;
 use AdnanMula\KeyforgeGameLogParser\Parser\Processor\LogProcessorCheck;
 use AdnanMula\KeyforgeGameLogParser\Parser\Processor\LogProcessorConcede;
@@ -40,6 +41,7 @@ final class GameLogParser
             new LogProcessorCardsDiscarded(),
             new LogProcessorCardsDrawn(),
             new LogProcessorCardsPlayed(),
+            new LogProcessorCardsUsed(),
             new LogProcessorChains(),
             new LogProcessorCheck(),
             new LogProcessorConcede(),
