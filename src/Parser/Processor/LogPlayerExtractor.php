@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace AdnanMula\KeyforgeGameLogParser\Parser;
+namespace AdnanMula\KeyforgeGameLogParser\Parser\Processor;
 
 use AdnanMula\KeyforgeGameLogParser\Game\Player;
 
