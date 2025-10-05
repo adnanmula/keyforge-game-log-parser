@@ -8,6 +8,7 @@ use AdnanMula\KeyforgeGameLogParser\Event\Moment;
 use AdnanMula\KeyforgeGameLogParser\Event\Source;
 use AdnanMula\KeyforgeGameLogParser\Event\Turn;
 use AdnanMula\KeyforgeGameLogParser\Game\Game;
+use AdnanMula\KeyforgeGameLogParser\Game\Player;
 
 final class LogProcessorAmber implements LogProcessor
 {
@@ -21,62 +22,73 @@ final class LogProcessorAmber implements LogProcessor
         $pattern = "/($player1|$player2):\s+(\d+)\s+Æmber\s+\((\d+) keys?\)\s+($player1|$player2):\s+(\d+)\s+Æmber\s+\((\d+) keys?\)/";
 
         if (preg_match($pattern, $message, $matches)) {
-            $currentPlayer1 = $game->player($matches[1]);
-            $player1Last = $currentPlayer1?->timeline->filter(EventType::AMBER_OBTAINED)->last();
-            $turnMoment1 = $player1Last?->turn()->value() !== $game->length ? Moment::START : Moment::END;
-            $adjustKeyForged1 = 0;
-
-            if (null !== $currentPlayer1) {
-                foreach ($currentPlayer1->timeline->filter(EventType::KEY_FORGED)->items() as $keyForged) {
-                    if ($keyForged->turn()->value() === $game->length) {
-                        $adjustKeyForged1 += $keyForged->payload['amberCost'];
-                    }
-                }
-            }
-
-            $game->player($matches[1])?->timeline->add(
-                new Event(
-                    EventType::AMBER_OBTAINED,
-                    $matches[1],
-                    new Turn($game->length, $turnMoment1, $index),
-                    Source::UNKNOWN,
-                    (int) $matches[2],
-                    [
-                        'keys' => (int) $matches[3],
-                        'delta' => (int) $matches[2] - ($player1Last?->value() ?? 0) + $adjustKeyForged1,
-                    ],
-                ),
-            );
-
-
-            $currentPlayer2 = $game->player($matches[4]);
-            $player2Last = $currentPlayer2?->timeline->filter(EventType::AMBER_OBTAINED)->last();
-            $turnMoment2 = $player2Last?->turn()->value() !== $game->length ? Moment::START : Moment::END;
-            $adjustKeyForged2 = 0;
-
-            if (null !== $currentPlayer2) {
-                foreach ($currentPlayer2->timeline->filter(EventType::KEY_FORGED)->items() as $keyForged) {
-                    if ($keyForged->turn()->value() === $game->length) {
-                        $adjustKeyForged2 += $keyForged->payload['amberCost'];
-                    }
-                }
-            }
-
-            $game->player($matches[4])?->timeline->add(
-                new Event(
-                    EventType::AMBER_OBTAINED,
-                    $matches[4],
-                    new Turn($game->length, $turnMoment2, $index),
-                    Source::UNKNOWN,
-                    (int) $matches[5],
-                    [
-                        'keys' => (int) $matches[6],
-                        'delta' => (int) $matches[5] - ($player2Last?->value() ?? 0) + $adjustKeyForged2,
-                    ],
-                ),
-            );
+            $this->processPlayer($game, $index, $matches[1], (int) $matches[2], (int) $matches[3]);
+            $this->processPlayer($game, $index, $matches[4], (int) $matches[5], (int) $matches[6]);
         }
 
         return $game;
+    }
+
+    private function processPlayer(Game $game, int $index, string $playerName, int $amber, int $keys): void
+    {
+        $player = $game->player($playerName);
+
+        if (null === $player) {
+            return;
+        }
+
+        $lastEvent = $player->timeline->filter(EventType::AMBER_OBTAINED)->last();
+
+        $player->timeline->add(
+            new Event(
+                EventType::AMBER_OBTAINED,
+                $player->name,
+                new Turn(
+                    $game->length,
+                    $this->calculateTurn($game, $player, $lastEvent),
+                    $index,
+                ),
+                Source::UNKNOWN,
+                $amber,
+                [
+                    'keys' => $keys,
+                    'delta' => $amber - ($lastEvent?->value() ?? 0) + $this->totalSpentOnKeys($game, $player),
+                ],
+            ),
+        );
+    }
+
+    private function totalSpentOnKeys(Game $game, Player $player): int
+    {
+        $adjustKeyForged = 0;
+
+        foreach ($player->timeline->filter(EventType::KEY_FORGED)->items() as $keyForged) {
+            if ($keyForged->turn()->value() === $game->length) {
+                $adjustKeyForged += $keyForged->payload['amberCost'];
+            }
+        }
+
+        return $adjustKeyForged;
+    }
+
+    private function calculateTurn(Game $game, Player $player, ?Event $lastEvent): Moment
+    {
+        if (null === $lastEvent) {
+            if ($player->isFirst) {
+                return Moment::END;
+            }
+
+            return Moment::START;
+        }
+
+        if ($game->length === 1) {
+            if ($player->isFirst) {
+                return Moment::START;
+            }
+
+            return Moment::END;
+        }
+
+        return $lastEvent->turn()->moment() === Moment::START ? Moment::END : Moment::START;
     }
 }

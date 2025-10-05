@@ -8,7 +8,7 @@ final class TurnsTest extends TestCase
 {
     use GetTestData;
 
-    public function testAmber1(): void
+    public function testTurn1(): void
     {
         $game = $this->getLog('1');
         $timeline = $game->timeline();
@@ -23,7 +23,7 @@ final class TurnsTest extends TestCase
         self::assertEquals(8, $timeline->last()?->turn()->value());
     }
 
-    public function testAmber2(): void
+    public function testTurn2(): void
     {
         $game = $this->getLog('2');
         $timeline = $game->timeline();

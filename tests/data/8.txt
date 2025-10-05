@@ -1,0 +1,42 @@
+NaN brings Sai “Underrated” Brink to The Crucible
+nan26 brings Mrs. “Silver” Ultmore to The Crucible
+nan26 won the flip and is first player
+ nan26 has connected to the game server
+ NaN has connected to the game server
+NaN is shuffling their deck
+NaN draws 6 card  s to their maximum of 6
+nan26 is shuffling their deck
+nan26 draws 6 card  s to their maximum of 6
+nan26 draws 1 card
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses mars  as their active house this turn
+Main phase - nan26
+Ready phase - nan26
+Draw phase - nan26
+End of turn 1
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 1 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN discards Skorpeon
+NaN plays Ifraneye
+NaN deals 1 damage to Ifraneye due to Ifraneye's bonus icon
+NaN uses Ifraneye to discard Predatory Lending, Skorpeon and Event Horizon
+NaN discards Skorpeon due to Strategic Feint's bonus icon
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 6 card  s to their maximum of 6
+End of turn 1
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 2 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+ nan26 concedes
+ NaN has won the game

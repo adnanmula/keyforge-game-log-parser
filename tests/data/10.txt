@@ -1,0 +1,46 @@
+NaN brings Sai “Underrated” Brink to The Crucible
+nan26 brings Bjorn, Anciano de la Prisión Piadosa to The Crucible
+ nan26 has connected to the game server
+ NaN has connected to the game server
+nan26 chooses to go second
+NaN is shuffling their deck
+NaN draws 6 card  s to their maximum of 6
+nan26 is shuffling their deck
+nan26 draws 6 card  s to their maximum of 6
+NaN draws 1 card
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN plays Ifraneye
+NaN deals 1 damage to Ifraneye due to Ifraneye's bonus icon
+NaN uses Ifraneye
+NaN uses Ifraneye to discard Skorpeon, Parasitic Arachnoid, Hoodwink, They Tell No Tales, Dark Minion, and Predatory Lending
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 6 card  s to their maximum of 6
+End of turn 1
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 1 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses untamed  as their active house this turn
+Main phase - nan26
+Ready phase - nan26
+Draw phase - nan26
+End of turn 1
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 2 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN uses Ifraneye to reap with Ifraneye
+NaN uses Ifraneye to discard 2 cards  at random from nan26's hand
+nan26 discards Research Smoko and World Tree at random
+ nan26 concedes
+ NaN has won the game

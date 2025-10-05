@@ -1,0 +1,79 @@
+<?php declare(strict_types=1);
+
+namespace AdnanMula\KeyforgeGameLogParser\Tests;
+
+use AdnanMula\KeyforgeGameLogParser\Event\EventType;
+use PHPUnit\Framework\TestCase;
+
+final class CardsDiscardedTest extends TestCase
+{
+    use GetTestData;
+
+    public function testDiscard1(): void
+    {
+        $game = $this->getLog('8');
+
+        self::assertEquals(3, $game->timeline()->filter(EventType::CARDS_DISCARDED)->count());
+        self::assertEquals(4, $game->timeline()->filter(EventType::CARDS_DISCARDED)->totalCardsDiscarded());
+        self::assertEquals(4, $game->timeline()->filter(EventType::CARDS_DISCARDED)->totalByValue(EventType::CARDS_DISCARDED));
+
+        self::assertEquals(3, $game->player1->timeline->filter(EventType::CARDS_DISCARDED)->count());
+        self::assertEquals(4, $game->player1->timeline->filter(EventType::CARDS_DISCARDED)->totalCardsDiscarded());
+        self::assertEquals(4, $game->player1->timeline->filter(EventType::CARDS_DISCARDED)->totalByValue(EventType::CARDS_DISCARDED));
+
+        self::assertEquals(0, $game->player2->timeline->filter(EventType::CARDS_DISCARDED)->count());
+        self::assertEquals(0, $game->player2->timeline->filter(EventType::CARDS_DISCARDED)->totalCardsDiscarded());
+        self::assertEquals(0, $game->player2->timeline->filter(EventType::CARDS_DISCARDED)->totalByValue(EventType::CARDS_DISCARDED));
+    }
+
+    public function testDiscard2(): void
+    {
+        $game = $this->getLog('9');
+
+        self::assertEquals(15, $game->timeline()->filter(EventType::CARDS_DISCARDED)->count());
+        self::assertEquals(33, $game->timeline()->filter(EventType::CARDS_DISCARDED)->totalCardsDiscarded());
+        self::assertEquals(33, $game->timeline()->filter(EventType::CARDS_DISCARDED)->totalByValue(EventType::CARDS_DISCARDED));
+
+        self::assertEquals(15, $game->player1->timeline->filter(EventType::CARDS_DISCARDED)->count());
+        self::assertEquals(33, $game->player1->timeline->filter(EventType::CARDS_DISCARDED)->totalCardsDiscarded());
+        self::assertEquals(33, $game->player1->timeline->filter(EventType::CARDS_DISCARDED)->totalByValue(EventType::CARDS_DISCARDED));
+
+        self::assertEquals(0, $game->player2->timeline->filter(EventType::CARDS_DISCARDED)->count());
+        self::assertEquals(0, $game->player2->timeline->filter(EventType::CARDS_DISCARDED)->totalCardsDiscarded());
+        self::assertEquals(0, $game->player2->timeline->filter(EventType::CARDS_DISCARDED)->totalByValue(EventType::CARDS_DISCARDED));
+    }
+
+    public function testDiscard3(): void
+    {
+        $game = $this->getLog('10');
+
+        self::assertEquals(2, $game->timeline()->filter(EventType::CARDS_DISCARDED)->count());
+        self::assertEquals(7, $game->timeline()->filter(EventType::CARDS_DISCARDED)->totalCardsDiscarded());
+        self::assertEquals(7, $game->timeline()->filter(EventType::CARDS_DISCARDED)->totalByValue(EventType::CARDS_DISCARDED));
+
+        self::assertEquals(1, $game->player1->timeline->filter(EventType::CARDS_DISCARDED)->count());
+        self::assertEquals(6, $game->player1->timeline->filter(EventType::CARDS_DISCARDED)->totalCardsDiscarded());
+        self::assertEquals(6, $game->player1->timeline->filter(EventType::CARDS_DISCARDED)->totalByValue(EventType::CARDS_DISCARDED));
+
+        self::assertEquals(1, $game->player2->timeline->filter(EventType::CARDS_DISCARDED)->count());
+        self::assertEquals(1, $game->player2->timeline->filter(EventType::CARDS_DISCARDED)->totalCardsDiscarded());
+        self::assertEquals(1, $game->player2->timeline->filter(EventType::CARDS_DISCARDED)->totalByValue(EventType::CARDS_DISCARDED));
+    }
+
+    public function testDiscard4(): void
+    {
+        $game = $this->getLog('1');
+
+        self::assertEquals(4, $game->timeline()->filter(EventType::CARDS_DISCARDED)->count());
+        self::assertEquals(4, $game->timeline()->filter(EventType::CARDS_DISCARDED)->totalCardsDiscarded());
+        self::assertEquals(4, $game->timeline()->filter(EventType::CARDS_DISCARDED)->totalByValue(EventType::CARDS_DISCARDED));
+
+        self::assertEquals(2, $game->player1->timeline->filter(EventType::CARDS_DISCARDED)->count());
+        self::assertEquals(2, $game->player1->timeline->filter(EventType::CARDS_DISCARDED)->totalCardsDiscarded());
+        self::assertEquals(2, $game->player1->timeline->filter(EventType::CARDS_DISCARDED)->totalByValue(EventType::CARDS_DISCARDED));
+
+        self::assertEquals(2, $game->player2->timeline->filter(EventType::CARDS_DISCARDED)->count());
+        self::assertEquals(2, $game->player2->timeline->filter(EventType::CARDS_DISCARDED)->totalCardsDiscarded());
+        self::assertEquals(2, $game->player2->timeline->filter(EventType::CARDS_DISCARDED)->totalByValue(EventType::CARDS_DISCARDED));
+    }
+}

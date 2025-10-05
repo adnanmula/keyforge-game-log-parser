@@ -1,0 +1,113 @@
+NaN brings 战场不羁者阿尔忒姆斯 to The Crucible
+nan26 brings Mrs. “Silver” Ultmore to The Crucible
+nan26 won the flip and is first player
+ nan26 has connected to the game server
+ NaN has connected to the game server
+NaN is shuffling their deck
+NaN draws 6 card  s to their maximum of 6
+nan26 is shuffling their deck
+nan26 draws 6 card  s to their maximum of 6
+nan26 draws 1 card
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses brobnar  as their active house this turn
+Main phase - nan26
+Ready phase - nan26
+Draw phase - nan26
+End of turn 1
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 1 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses geistoid  as their active house this turn
+Main phase - NaN
+NaN plays Boo!
+NaN gains an Æmber  due to Boo!'s bonus icon
+NaN discards Blunderbore due to Boo!'s bonus icon
+NaN discards Fiery Jark due to Boo!'s bonus icon
+NaN chooses option ' Mine '
+NaN uses Boo! to discard the top 10 cards  of NaN's deck
+NaN uses Boo! to discard Fight to the End, Down To Size, Boo!, Ecto-Charge, Soul Vial, Kelping Hands, Boo!, Arcane Transmitter, Thing from the Deep, and Tendrils from Beyond
+NaN discards Hallowed Eve Festival
+Ready phase - NaN
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+End of turn 1
+NaN: 1 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 2 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+Ready phase - nan26
+Draw phase - nan26
+End of turn 2
+NaN: 1 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 2 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses unfathomable  as their active house this turn
+Main phase - NaN
+NaN discards Open the Seal
+NaN discards Trawler
+NaN discards Open the Seal
+NaN discards Beam of Forgetting
+Ready phase - NaN
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+End of turn 2
+NaN: 1 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 3 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses mars  as their active house this turn
+Main phase - nan26
+Ready phase - nan26
+Draw phase - nan26
+End of turn 3
+NaN: 1 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 3 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses brobnar  as their active house this turn
+Main phase - NaN
+NaN discards Rickety Cybergiant
+NaN discards Earthshaker
+NaN discards Tireless Crocag
+NaN discards Awakened Titan
+Ready phase - NaN
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+End of turn 3
+NaN: 1 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 4 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses mars  as their active house this turn
+Main phase - nan26
+Ready phase - nan26
+Draw phase - nan26
+End of turn 4
+NaN: 1 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 4 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses geistoid  as their active house this turn
+Main phase - NaN
+NaN plays Boo!
+NaN gains an Æmber  due to Boo!'s bonus icon
+NaN discards Lash Out due to Boo!'s bonus icon
+NaN discards Earthshaker due to Boo!'s bonus icon
+NaN chooses option ' Opponent's '
+NaN uses Boo! to discard the top 10 cards  of nan26's deck
+NaN uses Boo! to discard Custom Virus, Pandemonium, Culf the Quiet, Bloodshard Imp, Neffru, Bingle Bangbang, Hypnotic Command, Dust Imp, Screechbomb, and Banish
+ NaN concedes
+ nan26 has won the game

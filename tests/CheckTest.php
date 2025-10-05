@@ -9,7 +9,7 @@ final class CheckTest extends TestCase
 {
     use GetTestData;
 
-    public function testAmber1(): void
+    public function testCheck1(): void
     {
         $game = $this->getLog('1');
 
@@ -18,7 +18,7 @@ final class CheckTest extends TestCase
         self::assertEquals(3, $game->player2->timeline->filter(EventType::CHECK_DECLARED)->count());
     }
 
-    public function testAmber2(): void
+    public function testCheck2(): void
     {
         $game = $this->getLog('2');
 
