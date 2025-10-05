@@ -3,8 +3,9 @@
 namespace AdnanMula\KeyforgeGameLogParser\Event;
 
 use JsonSerializable;
+use Stringable;
 
-readonly class Event implements JsonSerializable
+readonly class Event implements JsonSerializable, Stringable
 {
     public function __construct(
         private(set) EventType $type,
@@ -55,5 +56,17 @@ readonly class Event implements JsonSerializable
             'value' => $this->value,
             'payload' => $this->payload,
         ];
+    }
+
+    public function __toString(): string
+    {
+        return sprintf(
+            '%s %s %s | %s | %s',
+            $this->turn->value(),
+            $this->turn->moment()->value,
+            $this->turn->occurredOn(),
+            $this->player,
+            $this->type->value,
+        );
     }
 }

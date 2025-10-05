@@ -38,16 +38,13 @@ final class LogProcessorAmber implements LogProcessor
         }
 
         $lastEvent = $player->timeline->filter(EventType::AMBER_OBTAINED)->last();
+        [$currentTurn, $currentMoment] = $this->calculateTurn($game, $player, $lastEvent);
 
         $player->timeline->add(
             new Event(
                 EventType::AMBER_OBTAINED,
                 $player->name,
-                new Turn(
-                    $game->length,
-                    $this->calculateTurn($game, $player, $lastEvent),
-                    $index,
-                ),
+                new Turn($currentTurn, $currentMoment, $index),
                 Source::UNKNOWN,
                 $amber,
                 [
@@ -71,24 +68,26 @@ final class LogProcessorAmber implements LogProcessor
         return $adjustKeyForged;
     }
 
-    private function calculateTurn(Game $game, Player $player, ?Event $lastEvent): Moment
+    private function calculateTurn(Game $game, Player $player, ?Event $lastEvent): array
     {
         if (null === $lastEvent) {
             if ($player->isFirst) {
-                return Moment::END;
+                return [$game->length, Moment::END];
             }
 
-            return Moment::START;
+            return [$game->length, Moment::START];
         }
 
         if ($game->length === 1) {
             if ($player->isFirst) {
-                return Moment::START;
+                return [$game->length+1, Moment::START];
             }
 
-            return Moment::END;
+            return [$game->length, Moment::END];
         }
 
-        return $lastEvent->turn()->moment() === Moment::START ? Moment::END : Moment::START;
+        return $lastEvent->turn()->moment() === Moment::START
+            ? [$game->length, Moment::END]
+            : [$game->length + ($player->isFirst ? 1 : 0), Moment::START];
     }
 }
