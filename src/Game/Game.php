@@ -72,16 +72,14 @@ final class Game implements \JsonSerializable
 
     public function timeline(): Timeline
     {
-        $tl = new Timeline();
+        $timeline = new Timeline();
 
-        $tl->add(
-            ...$this->player1->timeline->items(),
-            ...$this->player2->timeline->items(),
+        $timeline->merge(
+            $this->player1->timeline,
+            $this->player2->timeline,
         );
 
-        $tl->reorder();
-
-        return $tl;
+        return $timeline;
     }
 
     public function jsonSerialize(): array

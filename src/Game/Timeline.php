@@ -7,6 +7,17 @@ use AdnanMula\KeyforgeGameLogParser\Event\EventType;
 
 final class Timeline extends Collection
 {
+    public function merge(self ...$timelines): self
+    {
+        foreach ($timelines as $timeline) {
+            $this->add(...$timeline->items());
+        }
+
+        $this->reorder();
+
+        return $this;
+    }
+
     public function totalCardsDrawn(): int
     {
         return array_reduce(

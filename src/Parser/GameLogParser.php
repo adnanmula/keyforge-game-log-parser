@@ -35,7 +35,18 @@ final class GameLogParser
         [$player1, $player2] = new LogPlayerExtractor()->execute(...$messages);
         $game = new Game($player1, $player2, 0, $messages);
 
-        $processors = [
+        foreach ($messages as $index => $message) {
+            foreach ($this->processors() as $processor) {
+                $processor->execute($game, $index, $message);
+            }
+        }
+
+        return $game;
+    }
+
+    private function processors(): array
+    {
+        return [
             new LogProcessorAmber(),
             new LogProcessorAmberStolen(),
             new LogProcessorCardsDiscarded(),
@@ -58,13 +69,5 @@ final class GameLogParser
             new LogProcessorTurnOne(),
             new LogProcessorWinner(),
         ];
-
-        foreach ($messages as $index => $message) {
-            foreach ($processors as $processor) {
-                $processor->execute($game, $index, $message);
-            }
-        }
-
-        return $game;
     }
 }
