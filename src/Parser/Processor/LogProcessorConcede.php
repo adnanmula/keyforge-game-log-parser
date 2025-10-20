@@ -16,7 +16,7 @@ final class LogProcessorConcede implements LogProcessor
         $player1 = $game->player1->escapedName();
         $player2 = $game->player2->escapedName();
 
-        $pattern = "/($player1|$player2) concedes\s*$/";
+        $pattern = "/($player1|$player2) concedes$/";
 
         if (preg_match($pattern, $message, $matches)) {
             $player = $matches[1];

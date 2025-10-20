@@ -18,7 +18,7 @@ final class LogProcessorCardsPlayed implements LogProcessor
         $player1 = $game->player1->escapedName();
         $player2 = $game->player2->escapedName();
 
-        $pattern = "/^($player1|$player2)\s+plays\s+(.+)\s*$/";
+        $pattern = "/^($player1|$player2)\s+plays\s+(.+)$/";
 
         if (preg_match($pattern, $message, $matches)) {
             $player = $matches[1];

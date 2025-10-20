@@ -19,8 +19,8 @@ final class LogProcessorTide implements LogProcessor
         $player1 = $game->player1->escapedName();
         $player2 = $game->player2->escapedName();
 
-        $pattern1 = "/^($player1|$player2)\s+changed tide\s+to High\s*$/";
-        $pattern2 = "/^($player1|$player2)\s+uses\s+(.*)\s+to raise the tide\s*$/";
+        $pattern1 = "/^($player1|$player2)\s+changed tide\s+to High$/";
+        $pattern2 = "/^($player1|$player2)\s+uses\s+(.*)\s+to raise the tide$/";
 
         if (preg_match($pattern1, $message, $matches)) {
             $game->player($matches[1])?->timeline->add(

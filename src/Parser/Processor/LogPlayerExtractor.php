@@ -11,7 +11,7 @@ final class LogPlayerExtractor
     {
         $players = [];
 
-        $pattern = '/^\s*(.+?)\s+brings\s+(.+?)\s+to The Crucible\s*$/u';
+        $pattern = '/^\s*(.+?)\s+brings\s+(.+?)\s+to The Crucible$/u';
 
         foreach ($messages as $message) {
             $matches = [];
@@ -34,7 +34,7 @@ final class LogPlayerExtractor
             foreach ($messages as $message) {
                 $matches = [];
 
-                if (preg_match('/^\s*(.+?)\s+has connected to the game server\s*$/u', $message, $matches)) {
+                if (preg_match('/^\s*(.+?)\s+has connected to the game server$/u', $message, $matches)) {
                     $name = trim($matches[1]);
 
                     if ('' !== $name && false === array_key_exists($name, $players)) {

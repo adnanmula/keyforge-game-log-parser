@@ -19,7 +19,7 @@ final class CardUsedTest extends TestCase
         self::assertEquals(34, $game->player2->timeline->filter(EventType::CARD_USED)->count());
 
         self::assertEquals('Eclectic Inquiry', $events->at(0)?->value);
-        self::assertEquals('Archive the top two cards  of their deck', $events->at(0)?->payload['effect']);
+        self::assertEquals('Archive the top two cards of their deck', $events->at(0)?->payload['effect']);
         self::assertEquals('NaN', $events->at(0)?->player);
 
         self::assertEquals('Eldest Batchminder', $events->at(10)?->value);
@@ -27,7 +27,7 @@ final class CardUsedTest extends TestCase
         self::assertEquals('nan26', $events->at(10)?->player);
 
         self::assertEquals('Mindfire', $events->at(12)?->value);
-        self::assertEquals("Discard a card  at random from nan26's hand", $events->at(12)?->payload['effect']);
+        self::assertEquals("Discard a card at random from nan26's hand", $events->at(12)?->payload['effect']);
         self::assertEquals('NaN', $events->at(12)?->player);
     }
 

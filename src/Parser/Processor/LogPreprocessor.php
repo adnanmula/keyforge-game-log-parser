@@ -39,12 +39,13 @@ final class LogPreprocessor
 
         foreach ($messages as $message) {
             $message = trim($message);
+            $message = preg_replace('/\s+/', ' ', $message) ?? $message;
 
             if ('' === $message) {
                 continue;
             }
 
-            if (preg_match("/is shuffling their deck\s*$/", $message)) {
+            if (preg_match("/is shuffling their deck$/", $message)) {
                 continue;
             }
 
@@ -56,7 +57,7 @@ final class LogPreprocessor
                 continue;
             }
 
-            if (preg_match("/(Draw|Ready|Main|House)\s*phase -/", $message)) {
+            if (preg_match("/(Draw|Ready|Main|House) phase -/", $message)) {
                 continue;
             }
 
@@ -64,7 +65,7 @@ final class LogPreprocessor
                 continue;
             }
 
-            if (preg_match("/readies their\s*cards/", $message)) {
+            if (preg_match("/readies their cards$/", $message)) {
                 continue;
             }
 

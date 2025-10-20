@@ -16,7 +16,7 @@ final class LogProcessorHouses implements LogProcessor
         $player1 = $game->player1->escapedName();
         $player2 = $game->player2->escapedName();
 
-        $pattern = "/($player1|$player2)\s+chooses\s+(\w*)\s+as their active house this turn\s*$/";
+        $pattern = "/($player1|$player2)\s+chooses\s+(\w*)\s+as their active house this turn$/";
 
         if (preg_match($pattern, $message, $matches)) {
             $game->player($matches[1])?->timeline->add(

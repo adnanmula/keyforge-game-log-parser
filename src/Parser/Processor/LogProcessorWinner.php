@@ -12,7 +12,7 @@ final class LogProcessorWinner implements LogProcessor
         $player1 = $game->player1->escapedName();
         $player2 = $game->player2->escapedName();
 
-        $pattern = "/($player1|$player2) has won the game\s*$/";
+        $pattern = "/($player1|$player2) has won the game$/";
 
         if (preg_match($pattern, $message, $matches)) {
             $game->player($matches[1])?->updateIsWinner(true);

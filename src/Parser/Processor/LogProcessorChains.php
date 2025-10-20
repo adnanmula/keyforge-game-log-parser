@@ -21,7 +21,7 @@ final class LogProcessorChains implements LogProcessor
         $player1 = $game->player1->escapedName();
         $player2 = $game->player2->escapedName();
 
-        $pattern = "/^($player1|$player2)'s\s+chains are reduced by\s+(\d+)\s+to\s+(\d+)\s*$/";
+        $pattern = "/^($player1|$player2)'s\s+chains are reduced by\s+(\d+)\s+to\s+(\d+)$/";
 
         if (preg_match($pattern, $message, $matches)) {
             $game->player($matches[1])?->timeline->add(
@@ -36,7 +36,7 @@ final class LogProcessorChains implements LogProcessor
             );
         }
 
-        $pattern2 = "/^($player1|$player2)\s+uses\s+(.*)\s+to increase their chains by\s+(\d+)\s*$/";
+        $pattern2 = "/^($player1|$player2)\s+uses\s+(.*)\s+to increase their chains by\s+(\d+)$/";
 
         if (preg_match($pattern2, $message, $matches2)) {
             $game->player($matches2[1])?->timeline->add(
@@ -51,7 +51,7 @@ final class LogProcessorChains implements LogProcessor
             );
         }
 
-        $pattern3 = "/^($player1|$player2)\s+uses\s+(.*)\s+to give\s+($player1|$player2)\s+(\d+)\s*chains\s*$/";
+        $pattern3 = "/^($player1|$player2)\s+uses\s+(.*)\s+to give\s+($player1|$player2)\s+(\d+)\s*chains$/";
 
         if (preg_match($pattern3, $message, $matches3)) {
             $game->player($matches3[3])?->timeline->add(
@@ -92,7 +92,7 @@ final class LogProcessorChains implements LogProcessor
         $player1 = $game->player1->escapedName();
         $player2 = $game->player2->escapedName();
 
-        $pattern4 = "/^($player1|$player2)\s+plays\s+(.+)\s*$/";
+        $pattern4 = "/^($player1|$player2)\s+plays\s+(.+)$/";
 
         if (preg_match($pattern4, $message, $matches4)) {
             $player = $matches4[1];

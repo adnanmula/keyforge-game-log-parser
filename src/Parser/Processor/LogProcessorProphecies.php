@@ -18,9 +18,9 @@ final class LogProcessorProphecies implements LogProcessor
         $player1 = $game->player1->escapedName();
         $player2 = $game->player2->escapedName();
 
-        $patternFate = "/^($player1|$player2)\s+resolves the fate effect of\s+(.+)\s*$/";
-        $patternActivate = "/^($player1|$player2)\s+activates their prophecy\s+(.+)\s*$/";
-        $patternFulfilled = "/^($player1|$player2)\s+uses\s+(.+)\s+to fulfill its prophecy\s*$/";
+        $patternFate = "/^($player1|$player2)\s+resolves the fate effect of\s+(.+)$/";
+        $patternActivate = "/^($player1|$player2)\s+activates their prophecy\s+(.+)$/";
+        $patternFulfilled = "/^($player1|$player2)\s+uses\s+(.+)\s+to fulfill its prophecy$/";
 
         if (preg_match($patternFate, $message, $matches)) {
             $player = $matches[1];

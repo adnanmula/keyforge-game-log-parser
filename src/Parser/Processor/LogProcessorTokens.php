@@ -19,8 +19,8 @@ final class LogProcessorTokens implements LogProcessor
         $player1 = $game->player1->escapedName();
         $player2 = $game->player2->escapedName();
 
-        $pattern = "/^($player1|$player2)\s+uses\s+(.+)\s+to make a token creature\s*.*\s*$/";
-        $pattern2 = "/^($player1|$player2)\s+uses\s+(.+)\s+to make\s+(\d+)\s+token creatures\s*.*\s*$/";
+        $pattern = "/^($player1|$player2)\s+uses\s+(.+)\s+to make a token creature\s*.*$/";
+        $pattern2 = "/^($player1|$player2)\s+uses\s+(.+)\s+to make\s+(\d+)\s+token creatures\s*.*$/";
 
         if (preg_match($pattern, $message, $matches)) {
             $player = $matches[1];
