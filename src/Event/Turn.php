@@ -27,6 +27,27 @@ final readonly class Turn implements JsonSerializable
         return $this->occurredOn;
     }
 
+    public function compareTo(self $other): int
+    {
+        $cmp = $this->occurredOn <=> $other->occurredOn;
+
+        if ($cmp !== 0) {
+            return $cmp;
+        }
+
+        $cmp = $other->value <=> $this->value;
+
+        if ($cmp !== 0) {
+            return $cmp;
+        }
+
+        if ($this->moment === $other->moment) {
+            return 0;
+        }
+
+        return $this->moment === Moment::START ? -1 : 1;
+    }
+
     public function jsonSerialize(): array
     {
         return [

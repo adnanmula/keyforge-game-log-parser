@@ -100,7 +100,7 @@ class Collection implements Iterator, Countable, JsonSerializable
 
         usort(
             $events,
-            static fn (Event $a, Event $b): int => $a->turn()->occurredOn() <=> $b->turn()->occurredOn(),
+            static fn (Event $a, Event $b): int => $a->turn()->compareTo($b->turn()),
         );
 
         $this->empty();
