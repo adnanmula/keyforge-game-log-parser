@@ -1,0 +1,274 @@
+NaN brings Fletbeast, the Gas Master of the Theater to The Crucible
+nan26 brings A. Hu, Bandolero del Parque de la Juventud to The Crucible
+ nan26 has connected to the game server
+ NaN has connected to the game server
+nan26 chooses to randomize the first player
+NaN won the flip and is first player
+NaN is shuffling their deck
+NaN draws 6 card  s to their maximum of 6
+nan26 is shuffling their deck
+nan26 draws 6 card  s to their maximum of 6
+NaN draws 1 card
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN plays Embellish Imp
+NaN activates their prophecy The Early Bird
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 2 card  s to their maximum of 6
+End of turn 1
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 1 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses logos  as their active house this turn
+Main phase - nan26
+nan26 plays Scrambler Storm
+nan26 gains an Æmber  due to Scrambler Storm's bonus icon
+ nan26 uses Scrambler Storm to stop NaN from playing any actions on their next turn
+nan26 plays Reverse Time
+nan26 gains an Æmber  due to Reverse Time's bonus icon
+nan26 uses Reverse Time to swap their deck and discard pile, and shuffle their deck
+nan26 plays Dextre
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+nan26's deck has run out of cards, so they shuffle
+NaN uses The Early Bird to fulfill its prophecy
+NaN resolves the fate effect of Ragatha
+End of turn 1
+NaN: 0 Æmber  (0 keys) nan26: 2 Æmber  (0 keys)
+TURN 2 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN plays Atrocity
+NaN plays Carrion Wyrm
+NaN plays Dark Minion
+NaN uses Embellish Imp to reap with Embellish Imp
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+End of turn 2
+NaN: 1 Æmber  (0 keys) nan26: 2 Æmber  (0 keys)
+TURN 2 - nan26
+NaN uses Atrocity to discard Novu Archaeologist from their deck and deal 1 damage to Atrocity
+NaN uses Atrocity to discard Novu Archaeologist
+Key phase - nan26
+nan26 does not forge a key. They have 2 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses logos  as their active house this turn
+Main phase - nan26
+nan26 plays Scrambler Storm
+nan26 gains an Æmber  due to Scrambler Storm's bonus icon
+ nan26 uses Scrambler Storm to stop NaN from playing any actions on their next turn
+nan26 plays Titan Mechanic
+nan26 uses Dextre to reap with Dextre
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 2 card  s to their maximum of 6
+End of turn 2
+NaN: 1 Æmber  (0 keys) nan26: 4 Æmber  (0 keys)
+TURN 3 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 1 amber. The current cost is 5 Æmber
+House phase - NaN
+NaN chooses shadows  as their active house this turn
+Main phase - NaN
+NaN plays Deipno Spymaster
+NaN plays Fidgit
+NaN plays Bandit Culver
+NaN plays Urchin
+NaN uses Urchin to steal 1 Æmber  from nan26
+NaN activates their prophecy The Early Bird
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 5 card  s to their maximum of 6
+End of turn 3
+NaN: 2 Æmber  (0 keys) nan26: 3 Æmber  (0 keys)
+TURN 3 - nan26
+NaN uses Atrocity to discard Phase Shift from their deck and deal 1 damage to Atrocity
+NaN uses Atrocity to discard Phase Shift
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 5 Æmber
+House phase - nan26
+nan26 chooses logos  as their active house this turn
+Main phase - nan26
+nan26 plays Psychic Bug
+nan26 gains an Æmber  due to Psychic Bug's bonus icon
+nan26 uses Psychic Bug to reveal Hoodwink, Eater of the Dead, Predatory Lending, Agamignus, Dark Centurion, and Finishing Blow
+nan26 plays Help from Future Self
+nan26 gains an Æmber  due to Help from Future Self's bonus icon
+nan26 uses Help from Future Self to search for Timetraveller and shuffle discard into their deck
+nan26 takes Timetraveller into their hand
+nan26 plays Timetraveller
+nan26 gains an Æmber  due to Timetraveller's bonus icon
+nan26 uses Timetraveller to draw 2 cards
+nan26 draws 2 card  s
+nan26 uses Titan Mechanic to reap with Titan Mechanic
+nan26 uses Dextre to reap with Dextre
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+NaN uses The Early Bird to fulfill its prophecy
+NaN resolves the fate effect of Even Ivan
+ nan26 declares Check!
+End of turn 3
+NaN: 2 Æmber  (0 keys) nan26: 8 Æmber  (0 keys)
+TURN 4 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 2 amber. The current cost is 5 Æmber
+House phase - NaN
+NaN chooses shadows  as their active house this turn
+Main phase - NaN
+NaN plays Hoodwink
+NaN uses Hoodwink to reveal Eater of the Dead, Predatory Lending, Agamignus, Dark Centurion, and Finishing Blow
+NaN uses Hoodwink to steal 3 Æmber
+NaN uses Hoodwink to purge Hoodwink
+NaN uses Deipno Spymaster to allow Carrion Wyrm to be used for the remainder of the turn
+NaN uses Carrion Wyrm to reap with Carrion Wyrm
+NaN uses Carrion Wyrm to destroy Dextre
+nan26 uses Dextre to return Dextre to the top of their owner's deck
+NaN uses Embellish Imp to steal 1 Æmber  from nan26
+NaN uses Bandit Culver to reap with Bandit Culver
+NaN uses Urchin to make Urchin fight Timetraveller
+NaN plays Finishing Blow
+NaN gains an Æmber  due to Finishing Blow's bonus icon
+NaN uses Finishing Blow to destroy Timetraveller
+NaN uses Embellish Imp to steal 1 Æmber  from nan26
+NaN uses Finishing Blow to steal 1 Æmber  from nan26
+NaN plays Predatory Lending
+NaN gains an Æmber  due to Predatory Lending's bonus icon
+NaN uses Predatory Lending to exalt and enrage Psychic Bug
+NaN uses Fidgit to reap with Fidgit
+NaN chooses option ' Top of deck '
+NaN uses Fidgit
+NaN uses Fidgit to discard Dextre
+NaN activates their prophecy The Early Bird
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+ NaN declares Check!
+End of turn 4
+NaN: 13 Æmber  (0 keys) nan26: 2 Æmber  (0 keys)
+TURN 4 - nan26
+NaN uses Atrocity to discard Umbra from their deck and deal 1 damage to Atrocity
+NaN uses Atrocity to discard Umbra
+Key phase - nan26
+nan26 does not forge a key. They have 2 amber. The current cost is 5 Æmber
+House phase - nan26
+nan26 chooses shadows  as their active house this turn
+Main phase - nan26
+nan26 plays Ghostly Hand
+nan26 gains an Æmber  due to Ghostly Hand's bonus icon
+nan26 gains an Æmber  due to Ghostly Hand's bonus icon
+nan26 plays Carlo Phantom
+nan26 plays Bad Penny
+nan26 plays Lights Out
+nan26 gains an Æmber  due to Lights Out's bonus icon
+nan26 uses Lights Out to return Carrion Wyrm and Deipno Spymaster to their hand
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 4 card  s to their maximum of 6
+End of turn 4
+NaN: 13 Æmber  (0 keys) nan26: 5 Æmber  (0 keys)
+TURN 5 - NaN
+Key phase - NaN
+NaN forges the red key  , paying 6 Æmber
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN plays Double Doom
+NaN uses Double Doom to return Bad Penny to owners hand and discard random card
+nan26 discards Bait and Switch at random
+NaN plays Carrion Wyrm
+NaN uses Embellish Imp to reap with Embellish Imp
+NaN uses Dark Minion to make Dark Minion fight Titan Mechanic
+NaN uses Dark Minion to deal 1 damage to Carlo Phantom, Psychic Bug, and Titan Mechanic
+NaN uses Embellish Imp to steal 1 Æmber  from nan26
+NaN activates their prophecy Heads, I Win
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 1 card  to their maximum of 6
+ NaN declares Check!
+End of turn 5
+NaN: 9 Æmber  (1 key) nan26: 4 Æmber  (0 keys)
+TURN 5 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 4 amber. The current cost is 5 Æmber
+House phase - nan26
+nan26 chooses shadows  as their active house this turn
+Main phase - nan26
+nan26 plays Selwyn the Fence
+nan26 plays Umbra
+nan26 plays Bad Penny
+NaN uses Heads, I Win to fulfill its prophecy
+ NaN uses Gone Pear Shaped to prevent creatures from reaping for the remainder of the turn
+NaN resolves the fate effect of Gone Pear Shaped
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+End of turn 5
+NaN: 9 Æmber  (1 key) nan26: 4 Æmber  (0 keys)
+TURN 6 - NaN
+Key phase - NaN
+NaN forges the blue key  , paying 6 Æmber
+House phase - NaN
+NaN chooses redemption  as their active house this turn
+Main phase - NaN
+NaN plays Agamignus
+NaN plays Citizen Shrix
+NaN uses Citizen Shrix to exalt Citizen Shrix and steal 1 Æmber
+NaN uses Agamignus to gain 1 Æmber
+NaN plays Dark Centurion
+NaN uses Agamignus to gain 1 Æmber
+NaN activates their prophecy Heads, I Win
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+ NaN declares Check!
+End of turn 6
+NaN: 6 Æmber  (2 keys) nan26: 3 Æmber  (0 keys)
+TURN 6 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+nan26 plays Pandemonium
+nan26 gains an Æmber  due to Pandemonium's bonus icon
+nan26 uses Pandemonium to cause each undamaged creature to capture 1 Æmber  from their opponent
+nan26 plays Ember Imp
+nan26 plays Tolas
+NaN uses Heads, I Win to fulfill its prophecy
+ NaN uses Coup de Grâce to deal 4 damage to Tolas, Ember Imp, Umbra, Psychic Bug, Titan Mechanic, Selwyn the Fence, and Bad Penny
+nan26 uses Bad Penny to return Bad Penny to their hand
+NaN resolves the fate effect of Coup de Grâce
+nan26 plays Gongoozle
+nan26 gains an Æmber  due to Gongoozle's bonus icon
+nan26 uses Gongoozle to deal 3 damage to Citizen Shrix
+Ready phase - nan26
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+End of turn 6
+NaN: 7 Æmber  (2 keys) nan26: 3 Æmber  (0 keys)
+TURN 7 - NaN
+Key phase - NaN
+NaN forges the yellow key  , paying 6 Æmber
+ NaN has won the game

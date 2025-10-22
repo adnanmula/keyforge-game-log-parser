@@ -3,6 +3,7 @@
 namespace AdnanMula\KeyforgeGameLogParser\Tests;
 
 use AdnanMula\KeyforgeGameLogParser\Event\EventType;
+use AdnanMula\KeyforgeGameLogParser\Game\Timeline;
 use PHPUnit\Framework\TestCase;
 
 final class CardsDiscardedTest extends TestCase
@@ -75,5 +76,28 @@ final class CardsDiscardedTest extends TestCase
         self::assertEquals(2, $game->player2->timeline->filter(EventType::CARDS_DISCARDED)->count());
         self::assertEquals(2, $game->player2->timeline->filter(EventType::CARDS_DISCARDED)->totalCardsDiscarded());
         self::assertEquals(2, $game->player2->timeline->filter(EventType::CARDS_DISCARDED)->totalByValue(EventType::CARDS_DISCARDED));
+    }
+
+    public function testDiscardAtrocity(): void
+    {
+        $game = $this->getLog('11');
+
+        /** @var Timeline $timeline */
+        $timeline = $game->winner()?->timeline->filter(EventType::CARDS_DISCARDED);
+
+        self::assertEquals(1, $timeline->at(0)?->value);
+        self::assertEquals(1, $timeline->at(1)?->value);
+        self::assertEquals(1, $timeline->at(2)?->value);
+        self::assertEquals(1, $timeline->at(3)?->value);
+
+        self::assertEquals(['Novu Archaeologist'], $timeline->at(0)?->payload['cards']);
+        self::assertEquals(['Phase Shift'], $timeline->at(1)?->payload['cards']);
+        self::assertEquals(['Dextre'], $timeline->at(2)?->payload['cards']);
+        self::assertEquals(['Umbra'], $timeline->at(3)?->payload['cards']);
+
+        self::assertStringContainsString('Atrocity', $timeline->at(0)?->payload['msg'] ?? null);
+        self::assertStringContainsString('Atrocity', $timeline->at(1)?->payload['msg'] ?? null);
+        self::assertStringNotContainsString('Atrocity', $timeline->at(2)?->payload['msg'] ?? null);
+        self::assertStringContainsString('Atrocity', $timeline->at(3)?->payload['msg'] ?? null);
     }
 }

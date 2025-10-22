@@ -24,7 +24,7 @@ final class LogProcessorCardsDiscarded implements LogProcessor
 
         $pattern1 = "/($player1|$player2) discards (.*)$/i";
         $pattern2 = "/($player1|$player2) discards (.+?)\s+due to\s+(.*)\s+bonus icon$/i";
-        $pattern3 = "/($player1|$player2) uses .*? to discard(?!\s*the top)(.*)(?!\s*hand)(?<!hand)$/i";
+        $pattern3 = "/($player1|$player2) uses .*? to discard(?!.*(?:the top|from their deck))(.*)(?!\s*hand)(?<!hand)$/i";
 
         if (preg_match($pattern1, $message, $matches)) {
             $player = $matches[1];
