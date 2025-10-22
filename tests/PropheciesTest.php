@@ -20,4 +20,21 @@ final class PropheciesTest extends TestCase
         self::assertEquals(10, $game->player1->timeline->filter(EventType::FATE_RESOLVED)->count());
         self::assertEquals(9, $game->player2->timeline->filter(EventType::FATE_RESOLVED)->count());
     }
+
+    public function testPropheciesSummary(): void
+    {
+        $game = $this->getLog('4');
+
+        $summary = $game->timeline()->propheciesSummary();
+
+        self::assertArrayHasKey('prophecies', $summary);
+        self::assertArrayHasKey('fates', $summary);
+
+        self::assertCount(7, $summary['prophecies']);
+        self::assertCount(12, $summary['fates']);
+
+        self::assertEquals(5, $summary['prophecies']['Heads, I Win']['activated']);
+        self::assertEquals(3, $summary['prophecies']['Heads, I Win']['fulfilled']);
+        self::assertEquals(15.79, $summary['prophecies']['Heads, I Win']['percent']);
+    }
 }

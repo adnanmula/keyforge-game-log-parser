@@ -104,6 +104,46 @@ final class Timeline extends Collection
         );
     }
 
+    public function propheciesSummary(): array
+    {
+        $prophecies = [];
+        $fates = [];
+
+        $activatedEvents = $this->filter(EventType::PROPHECY_ACTIVATED);
+
+        foreach ($activatedEvents->items() as $event) {
+            /** @var string $card */
+            $card = $event->value;
+
+            $prophecies[$card]['activated'] = ($prophecies[$card]['activated'] ?? 0) + 1;
+        }
+
+        $fulfilledEvents = $this->filter(EventType::PROPHECY_FULFILLED);
+
+        foreach ($fulfilledEvents->items() as $event) {
+            /** @var string $card */
+            $card = $event->value;
+
+            $prophecies[$card]['fulfilled'] = ($prophecies[$card]['fulfilled'] ?? 0) + 1;
+            $prophecies[$card]['percent'] = round($prophecies[$card]['fulfilled'] * 100 / $fulfilledEvents->count(), 2);
+        }
+
+        $fateEvents = $this->filter(EventType::FATE_RESOLVED);
+
+        foreach ($fateEvents->items() as $event) {
+            /** @var string $card */
+            $card = $event->value;
+
+            $fates[$card]['resolved'] = ($fates[$card]['resolved'] ?? 0) + 1;
+            $fates[$card]['percent'] = round($fates[$card]['resolved'] * 100 / $fateEvents->count(), 2);
+        }
+
+        return [
+            'prophecies' => $prophecies,
+            'fates' => $fates,
+        ];
+    }
+
     public function eventsByTurn(?int $turns = null, EventType ...$types): array
     {
         $result = [];
