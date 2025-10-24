@@ -20,20 +20,12 @@ final class Timeline extends Collection
 
     public function totalCardsDrawn(): int
     {
-        return array_reduce(
-            $this->filter(EventType::CARDS_DRAWN)->items(),
-            static fn (int $c, Event $s): int => $c + $s->value(),
-            0,
-        );
+        return $this->totalByValue(EventType::CARDS_DRAWN);
     }
 
     public function totalCardsDiscarded(): int
     {
-        return array_reduce(
-            $this->filter(EventType::CARDS_DISCARDED)->items(),
-            static fn (int $c, Event $s): int => $c + $s->value(),
-            0,
-        );
+        return $this->totalByValue(EventType::CARDS_DISCARDED);
     }
 
     public function totalExtraTurns(): int
@@ -43,11 +35,7 @@ final class Timeline extends Collection
 
     public function totalAmberObtained(): int
     {
-        return array_reduce(
-            $this->filter(EventType::AMBER_OBTAINED)->items(),
-            static fn (int $c, Event $s): int => $c + $s->payload['delta'],
-            0,
-        );
+        return $this->totalByPayloadValue('delta', EventType::AMBER_OBTAINED);
     }
 
     public function totalAmberObtainedPositive(): int
@@ -70,11 +58,7 @@ final class Timeline extends Collection
 
     public function totalAmberStolen(): int
     {
-        return array_reduce(
-            $this->filter(EventType::AMBER_STOLEN)->items(),
-            static fn (int $c, Event $s): int => $c + $s->value(),
-            0,
-        );
+        return $this->totalByValue(EventType::AMBER_STOLEN);
     }
 
     public function totalCardsPlayed(): int
@@ -86,34 +70,12 @@ final class Timeline extends Collection
         );
     }
 
-    public function totalByValue(EventType ...$types): int
-    {
-        return array_reduce(
-            $this->filter(...$types)->items(),
-            static fn (int $c, Event $s): int => $c + $s->value(),
-            0,
-        );
-    }
-
-    public function totalByPayloadValue(string $key, EventType ...$types): int
-    {
-        return array_reduce(
-            $this->filter(...$types)->items(),
-            static fn (int $c, Event $s): int => $c + ($s->payload()[$key] ?? 0),
-            0,
-        );
-    }
-
     public function propheciesSummary(): array
     {
         $prophecies = [];
         $fates = [];
 
-        $emptyProphecy = [
-            'activated' => 0,
-            'fulfilled' => 0,
-            'percent' => 0,
-        ];
+        $emptyProphecy = ['activated' => 0, 'fulfilled' => 0, 'percent' => 0];
 
         foreach ($this->filter(EventType::PROPHECY_ACTIVATED)->items() as $event) {
             /** @var string $card */
@@ -139,7 +101,28 @@ final class Timeline extends Collection
             $fates[$card]['percent'] = round($fates[$card]['resolved'] * 100 / $fatesResolved->count(), 2);
         }
 
+        uasort($prophecies, static fn ($a, $b) => $b['fulfilled'] <=> $a['fulfilled']);
+        uasort($fates, static fn ($a, $b) => $b['resolved'] <=> $a['resolved']);
+
         return compact('prophecies', 'fates');
+    }
+
+    public function totalByValue(EventType ...$types): int
+    {
+        return array_reduce(
+            $this->filter(...$types)->items(),
+            static fn (int $c, Event $s): int => $c + $s->value(),
+            0,
+        );
+    }
+
+    public function totalByPayloadValue(string $key, EventType ...$types): int
+    {
+        return array_reduce(
+            $this->filter(...$types)->items(),
+            static fn (int $c, Event $s): int => $c + ($s->payload()[$key] ?? 0),
+            0,
+        );
     }
 
     public function eventsByTurn(?int $turns = null, EventType ...$types): array
