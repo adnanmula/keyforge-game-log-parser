@@ -37,7 +37,7 @@ final class GameLogParser
 
         foreach ($messages as $index => $message) {
             foreach ($this->processors() as $processor) {
-                $processor->execute($game, $index, $message);
+                $processor->execute($game, $index, $message, $messages);
             }
         }
 

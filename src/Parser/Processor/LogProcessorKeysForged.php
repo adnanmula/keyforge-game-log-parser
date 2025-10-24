@@ -11,7 +11,7 @@ use AdnanMula\KeyforgeGameLogParser\Game\Game;
 
 final class LogProcessorKeysForged implements LogProcessor
 {
-    public function execute(Game $game, int $index, string $message): Game
+    public function execute(Game $game, int $index, string $message, ?array $messages = null): Game
     {
         $matches = [];
 

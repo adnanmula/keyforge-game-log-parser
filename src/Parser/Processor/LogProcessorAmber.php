@@ -12,7 +12,7 @@ use AdnanMula\KeyforgeGameLogParser\Game\Player;
 
 final class LogProcessorAmber implements LogProcessor
 {
-    public function execute(Game $game, int $index, string $message): Game
+    public function execute(Game $game, int $index, string $message, ?array $messages = null): Game
     {
         $matches = [];
 

@@ -6,7 +6,7 @@ use AdnanMula\KeyforgeGameLogParser\Game\Game;
 
 final class LogProcessorFirstTurn implements LogProcessor
 {
-    public function execute(Game $game, int $index, string $message): Game
+    public function execute(Game $game, int $index, string $message, ?array $messages = null): Game
     {
         $player1 = $game->player1->escapedName();
         $player2 = $game->player2->escapedName();

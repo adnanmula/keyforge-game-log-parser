@@ -6,5 +6,5 @@ use AdnanMula\KeyforgeGameLogParser\Game\Game;
 
 interface LogProcessor
 {
-    public function execute(Game $game, int $index, string $message): Game;
+    public function execute(Game $game, int $index, string $message, ?array $messages = null): Game;
 }

@@ -13,12 +13,24 @@ final class PropheciesTest extends TestCase
     {
         $game = $this->getLog('4');
 
-        self::assertEquals(11, $game->player1->timeline->filter(EventType::PROPHECY_ACTIVATED)->count());
+        self::assertEquals(12, $game->player1->timeline->filter(EventType::PROPHECY_ACTIVATED)->count());
         self::assertEquals(10, $game->player2->timeline->filter(EventType::PROPHECY_ACTIVATED)->count());
         self::assertEquals(10, $game->player1->timeline->filter(EventType::PROPHECY_FULFILLED)->count());
         self::assertEquals(9, $game->player2->timeline->filter(EventType::PROPHECY_FULFILLED)->count());
         self::assertEquals(10, $game->player1->timeline->filter(EventType::FATE_RESOLVED)->count());
         self::assertEquals(9, $game->player2->timeline->filter(EventType::FATE_RESOLVED)->count());
+    }
+
+    public function testProphecies2(): void
+    {
+        $game = $this->getLog('12');
+
+        self::assertEquals(10, $game->player1->timeline->filter(EventType::PROPHECY_ACTIVATED)->count());
+        self::assertEquals(7, $game->player2->timeline->filter(EventType::PROPHECY_ACTIVATED)->count());
+        self::assertEquals(6, $game->player1->timeline->filter(EventType::PROPHECY_FULFILLED)->count());
+        self::assertEquals(3, $game->player2->timeline->filter(EventType::PROPHECY_FULFILLED)->count());
+        self::assertEquals(8, $game->player1->timeline->filter(EventType::FATE_RESOLVED)->count());
+        self::assertEquals(3, $game->player2->timeline->filter(EventType::FATE_RESOLVED)->count());
     }
 
     public function testPropheciesSummary(): void
