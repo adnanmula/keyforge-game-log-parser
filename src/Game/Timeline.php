@@ -99,6 +99,7 @@ final class Timeline extends Collection
             $card = $event->value;
             $fates[$card]['resolved'] = ($fates[$card]['resolved'] ?? 0) + 1;
             $fates[$card]['percent'] = round($fates[$card]['resolved'] * 100 / $fatesResolved->count(), 2);
+            $fates[$card]['has_fate'] = $event->payload['has_fate'] ?? false;
         }
 
         uasort($prophecies, static fn ($a, $b) => $b['fulfilled'] <=> $a['fulfilled']);

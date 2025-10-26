@@ -45,27 +45,11 @@ final class LogPreprocessor
                 continue;
             }
 
-            if (preg_match("/is shuffling their deck$/", $message)) {
-                continue;
-            }
-
             if (preg_match("/manual mode/", $message)) {
                 continue;
             }
 
-            if (preg_match("/manually/", $message)) {
-                continue;
-            }
-
-            if (preg_match("/(Draw|Ready|Main|House) phase -/", $message)) {
-                continue;
-            }
-
-            if (preg_match("/^End of turn/", $message)) {
-                continue;
-            }
-
-            if (preg_match("/readies their cards$/", $message)) {
+            if (preg_match("/ manually /", $message)) {
                 continue;
             }
 

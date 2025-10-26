@@ -1,0 +1,210 @@
+nan26 brings Miescher, Jotunlawn’s Brain to The Crucible
+NaN brings Director “Roulette” Cumin to The Crucible
+NaN won the flip and is first player
+ nan26 has connected to the game server
+ NaN has connected to the game server
+nan26 is shuffling their deck
+nan26 draws 6 card  s to their maximum of 6
+NaN is shuffling their deck
+NaN draws 6 card  s to their maximum of 6
+NaN draws 1 card
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses redemption  as their active house this turn
+Main phase - NaN
+NaN discards Ragatha
+NaN activates their prophecy The Cards Will Tell
+Ready phase - NaN
+Draw phase - NaN
+NaN draws 1 card  to their maximum of 6
+End of turn 1
+nan26: 0 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 1 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses saurian  as their active house this turn
+Main phase - nan26
+nan26 plays Tricerian Legionary
+nan26 uses Tricerian Legionary to ward Tricerian Legionary
+nan26 plays Gaius
+nan26 activates their prophecy Tails, You Lose
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 4 card  s to their maximum of 6
+End of turn 1
+nan26: 0 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 2 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses redemption  as their active house this turn
+Main phase - NaN
+NaN plays Citizen Shrix
+NaN uses Citizen Shrix to exalt Citizen Shrix and steal 1 Æmber
+NaN discards Charitable Herald
+NaN discards Dark Influence
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+End of turn 2
+nan26: 0 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 2 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses untamed  as their active house this turn
+Main phase - nan26
+nan26 discards Word of Returning
+nan26 discards Rat Pixie
+nan26 discards Invigorating Shower
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+End of turn 2
+nan26: 0 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 3 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses saurian  as their active house this turn
+Main phase - NaN
+NaN plays Publius Scipio
+nan26 uses Tails, You Lose to fulfill its prophecy
+nan26 resolves the fate effect of Fallguy
+NaN discards Imperial Scutum
+NaN discards Publius Scipio
+NaN discards Vesuvius Dome
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+End of turn 3
+nan26: 0 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 3 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses saurian  as their active house this turn
+Main phase - nan26
+nan26 activates their prophecy The Cards Will Tell
+nan26 discards Rufus Vergilius
+nan26 discards Ornate Remuneration
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+End of turn 3
+nan26: 0 Æmber  (0 keys) NaN: 0 Æmber  (0 keys)
+TURN 4 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+Main phase - NaN
+NaN discards Instant Transmission
+NaN discards Project Z.Y.X.
+NaN discards Zeff “Punch” Yardus
+NaN discards Director of Z.Y.X.
+NaN plays Reiteration
+NaN gains an Æmber  due to Reiteration's bonus icon
+NaN uses Reiteration to draw 2 cards
+NaN draws 2 card  s
+nan26 uses The Cards Will Tell to fulfill its prophecy
+ nan26 uses Too Low to destroy each friendly creature with the lowest power: Citizen Shrix
+nan26 resolves the fate effect of Too Low
+NaN uses Reiteration to return 2 card  s to the bottom of their deck
+NaN discards Forgive or Forget
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 6 card  s to their maximum of 6
+End of turn 4
+nan26: 1 Æmber  (0 keys) NaN: 1 Æmber  (0 keys)
+TURN 4 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses shadows  as their active house this turn
+Main phase - nan26
+nan26 discards Mooncurser
+nan26 discards Urchin
+nan26 discards Hoodwink
+nan26 activates their prophecy Ask Again Later
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 4 card  s to their maximum of 6
+End of turn 4
+nan26: 1 Æmber  (0 keys) NaN: 1 Æmber  (0 keys)
+TURN 5 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses saurian  as their active house this turn
+nan26 chooses house saurian
+nan26 uses Ask Again Later to make NaN name house saurian
+Ask Again Later reveals Burnished Nickles
+nan26 resolves the fate effect of Consult the Bones
+Main phase - NaN
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+End of turn 5
+nan26: 1 Æmber  (0 keys) NaN: 1 Æmber  (0 keys)
+TURN 5 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses saurian  as their active house this turn
+Main phase - nan26
+nan26 activates their prophecy Tails, You Lose
+nan26 discards Spendthrift
+nan26 discards Publius Scipio
+nan26 discards Philophosaurus
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 4 card  s to their maximum of 6
+nan26 uses Tails, You Lose to flip Tails, You Lose to Go Forth and Conquer
+End of turn 5
+nan26: 1 Æmber  (0 keys) NaN: 1 Æmber  (0 keys)
+TURN 6 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+Main phase - NaN
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+End of turn 6
+nan26: 1 Æmber  (0 keys) NaN: 1 Æmber  (0 keys)
+TURN 6 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses saurian  as their active house this turn
+Main phase - nan26
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+End of turn 6
+nan26: 1 Æmber  (0 keys) NaN: 1 Æmber  (0 keys)
+TURN 7 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses saurian  as their active house this turn
+Main phase - NaN
+NaN uses Publius Scipio to make Publius Scipio fight Tricerian Legionary
+Tricerian Legionary's ward token prevents the damage dealt by Publius Scipio and is discarded
+nan26 uses Go Forth and Conquer to fulfill its prophecy
+ nan26 uses Envious Venomite to give poison to enemy creatures for the remainder of the turn
+nan26 resolves the fate effect of Envious Venomite
+ NaN concedes
+ nan26 has won the game

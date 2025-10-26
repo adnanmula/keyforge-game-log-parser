@@ -15,12 +15,14 @@ use AdnanMula\KeyforgeGameLogParser\Parser\Processor\LogProcessorChains;
 use AdnanMula\KeyforgeGameLogParser\Parser\Processor\LogProcessorCheck;
 use AdnanMula\KeyforgeGameLogParser\Parser\Processor\LogProcessorConcede;
 use AdnanMula\KeyforgeGameLogParser\Parser\Processor\LogProcessorExtraTurn;
+use AdnanMula\KeyforgeGameLogParser\Parser\Processor\LogProcessorFates;
 use AdnanMula\KeyforgeGameLogParser\Parser\Processor\LogProcessorFight;
 use AdnanMula\KeyforgeGameLogParser\Parser\Processor\LogProcessorFirstTurn;
 use AdnanMula\KeyforgeGameLogParser\Parser\Processor\LogProcessorHouses;
 use AdnanMula\KeyforgeGameLogParser\Parser\Processor\LogProcessorKeysForged;
 use AdnanMula\KeyforgeGameLogParser\Parser\Processor\LogProcessorLength;
 use AdnanMula\KeyforgeGameLogParser\Parser\Processor\LogProcessorProphecies;
+use AdnanMula\KeyforgeGameLogParser\Parser\Processor\LogProcessorProphecyAskAgainLater;
 use AdnanMula\KeyforgeGameLogParser\Parser\Processor\LogProcessorReap;
 use AdnanMula\KeyforgeGameLogParser\Parser\Processor\LogProcessorTide;
 use AdnanMula\KeyforgeGameLogParser\Parser\Processor\LogProcessorTokens;
@@ -57,12 +59,14 @@ final class GameLogParser
             new LogProcessorCheck(),
             new LogProcessorConcede(),
             new LogProcessorExtraTurn(),
+            new LogProcessorFates(),
             new LogProcessorFight(),
             new LogProcessorFirstTurn(),
             new LogProcessorHouses(),
             new LogProcessorKeysForged(),
             new LogProcessorLength(),
             new LogProcessorProphecies(),
+            new LogProcessorProphecyAskAgainLater(),
             new LogProcessorReap(),
             new LogProcessorTide(),
             new LogProcessorTokens(),

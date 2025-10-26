@@ -27,7 +27,7 @@ final class PropheciesTest extends TestCase
 
         self::assertEquals(10, $game->player1->timeline->filter(EventType::PROPHECY_ACTIVATED)->count());
         self::assertEquals(7, $game->player2->timeline->filter(EventType::PROPHECY_ACTIVATED)->count());
-        self::assertEquals(6, $game->player1->timeline->filter(EventType::PROPHECY_FULFILLED)->count());
+        self::assertEquals(8, $game->player1->timeline->filter(EventType::PROPHECY_FULFILLED)->count());
         self::assertEquals(3, $game->player2->timeline->filter(EventType::PROPHECY_FULFILLED)->count());
         self::assertEquals(8, $game->player1->timeline->filter(EventType::FATE_RESOLVED)->count());
         self::assertEquals(3, $game->player2->timeline->filter(EventType::FATE_RESOLVED)->count());

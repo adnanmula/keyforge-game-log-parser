@@ -1,0 +1,555 @@
+NaN brings Thidrandi, Heavy Steppe Colonist to The Crucible
+nan26 brings The Ascetic that Pollutes with Orphans to The Crucible
+nan26 won the flip and is first player
+ nan26 has connected to the game server
+ NaN has connected to the game server
+NaN is shuffling their deck
+NaN draws 6 card  s to their maximum of 6
+nan26 is shuffling their deck
+nan26 draws 6 card  s to their maximum of 6
+nan26 draws 1 card
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses staralliance  as their active house this turn
+Main phase - nan26
+nan26 discards Future Booster
+nan26 activates their prophecy Ask Again Later
+Ready phase - nan26
+Draw phase - nan26
+nan26 draws 1 card  to their maximum of 6
+End of turn 1
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 1 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses saurian  as their active house this turn
+nan26 chooses house logos
+nan26 uses Ask Again Later to make NaN name house logos
+Ask Again Later reveals Ensign Clark
+nan26 resolves the fate effect of Parasitic Arachnoid
+Main phase - NaN
+NaN discards Orator Hissaro
+NaN discards Governess Silvina
+NaN activates their prophecy Ask Again Later
+Ready phase - NaN
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+End of turn 1
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 2 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+NaN chooses house saurian
+NaN uses Ask Again Later to make nan26 name house saurian
+Ask Again Later reveals Poised Strike
+Main phase - nan26
+nan26 discards Dark Minion
+nan26 discards Infinity Strop
+nan26 discards Dark Minion
+nan26 discards Digital Signal
+nan26 activates their prophecy Ask Again Later
+Ready phase - nan26
+Draw phase - nan26
+nan26 draws 5 card  s to their maximum of 6
+End of turn 2
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 2 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses dis  as their active house this turn
+nan26 chooses house staralliance
+nan26 uses Ask Again Later to make NaN name house staralliance
+Ask Again Later reveals Duck, Duck, Superb Duck
+nan26 resolves the fate effect of T3R-35A
+Main phase - NaN
+NaN discards Infinity Strop
+Ready phase - NaN
+Draw phase - NaN
+NaN draws 1 card  to their maximum of 6
+End of turn 2
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 3 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses staralliance  as their active house this turn
+NaN chooses house saurian
+NaN uses Ask Again Later to make nan26 name house saurian
+Ask Again Later reveals Cryptic Collapse
+NaN resolves the fate effect of Reassembly Required
+Main phase - nan26
+nan26 discards Ensign Clark
+nan26 activates their prophecy Ask Again Later
+Ready phase - nan26
+Draw phase - nan26
+nan26 draws 2 card  s to their maximum of 6
+End of turn 3
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 3 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+nan26 chooses house dis
+nan26 uses Ask Again Later to make NaN name house dis
+Ask Again Later reveals Further Investigations
+ nan26 uses Oh, You Shouldn’t Have! to gain 3 Æmber
+nan26 resolves the fate effect of Oh, You Shouldn’t Have!
+Main phase - NaN
+NaN discards Wormhole Technician
+NaN activates their prophecy Ask Again Later
+Ready phase - NaN
+Draw phase - NaN
+NaN draws 2 card  s to their maximum of 6
+End of turn 3
+NaN: 0 Æmber  (0 keys) nan26: 3 Æmber  (0 keys)
+TURN 4 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses logos  as their active house this turn
+NaN chooses house saurian
+NaN uses Ask Again Later to make nan26 name house saurian
+Ask Again Later reveals Infinity Strop
+ NaN uses Oh, You Shouldn’t Have! to gain 3 Æmber
+NaN resolves the fate effect of Oh, You Shouldn’t Have!
+Main phase - nan26
+nan26 discards Duck, Duck, Superb Duck
+nan26 plays Wormhole Technician
+nan26 activates their prophecy Ask Again Later
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+End of turn 4
+NaN: 3 Æmber  (0 keys) nan26: 3 Æmber  (0 keys)
+TURN 4 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses dis  as their active house this turn
+nan26 chooses house staralliance
+nan26 uses Ask Again Later to make NaN name house staralliance
+Ask Again Later reveals Omicron Callen
+Main phase - NaN
+NaN discards Cryptic Collapse
+NaN discards Poised Strike
+NaN activates their prophecy Ask Again Later
+Ready phase - NaN
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+End of turn 4
+NaN: 3 Æmber  (0 keys) nan26: 3 Æmber  (0 keys)
+TURN 5 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses staralliance  as their active house this turn
+NaN chooses house saurian
+NaN uses Ask Again Later to make nan26 name house saurian
+Ask Again Later reveals Neotechnic Gopher
+ NaN uses Parasitic Arachnoid to capture 2 Æmber  from nan26, placing it on Wormhole Technician
+NaN resolves the fate effect of Parasitic Arachnoid
+Main phase - nan26
+nan26 discards Further Investigations
+nan26 discards Recovery Operation
+nan26 discards Kasheek Fall
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+End of turn 5
+NaN: 3 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 5 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses dis  as their active house this turn
+nan26 chooses house dis
+nan26 uses Ask Again Later to make NaN name house dis
+Ask Again Later reveals Infurnace
+Main phase - NaN
+NaN activates their prophecy Ask Again Later
+NaN discards They Tell No Tales
+NaN discards Infinity Strop
+NaN discards Chasm Vespid
+Ready phase - NaN
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+End of turn 5
+NaN: 3 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 6 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses logos  as their active house this turn
+NaN chooses house saurian
+NaN uses Ask Again Later to make nan26 name house saurian
+Ask Again Later reveals Tricerian Legionary
+Main phase - nan26
+nan26 discards Interdimensional Graft
+nan26 discards Code Monkey
+nan26 discards Wild Wormhole
+nan26 discards Lateral Shift
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 4 card  s to their maximum of 6
+End of turn 6
+NaN: 3 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 6 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+nan26 chooses house staralliance
+nan26 uses Ask Again Later to make NaN name house staralliance
+Ask Again Later reveals Precision Striker
+Main phase - NaN
+NaN discards Z.Y.X. Researcher
+Ready phase - NaN
+Draw phase - NaN
+NaN draws 1 card  to their maximum of 6
+End of turn 6
+NaN: 3 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 7 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+NaN chooses house dis
+NaN uses Ask Again Later to make nan26 name house dis
+Ask Again Later reveals Unity Prism
+NaN resolves the fate effect of Spendthrift
+Main phase - nan26
+nan26 plays Skorpeon
+nan26 discards Infurnace
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 2 card  s to their maximum of 6
+End of turn 7
+NaN: 3 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 7 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses saurian  as their active house this turn
+nan26 chooses house dis
+nan26 uses Ask Again Later to make NaN name house dis
+Ask Again Later reveals Chasm Vespid
+Main phase - NaN
+NaN plays Lorica Infantry
+NaN plays Tricerian Legionary
+NaN uses Tricerian Legionary to ward Tricerian Legionary
+NaN activates their prophecy Ask Again Later
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+End of turn 7
+NaN: 3 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 8 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses logos  as their active house this turn
+NaN chooses house saurian
+NaN uses Ask Again Later to make nan26 name house saurian
+Ask Again Later reveals Archlegate Valeria
+Main phase - nan26
+nan26 discards Reiteration
+nan26 discards Reassembly Required
+nan26 discards Reassembly Required
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+End of turn 8
+NaN: 3 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 8 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses dis  as their active house this turn
+nan26 chooses house logos
+nan26 uses Ask Again Later to make NaN name house logos
+Ask Again Later reveals Skorpeon
+ nan26 uses Gleaming the Cube
+nan26 uses Gleaming the Cube to discard Archlegate Valeria
+nan26 chooses house saurian
+ nan26 uses Gleaming the Cube to change the active house to saurian
+nan26 resolves the fate effect of Gleaming the Cube
+Main phase - NaN
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+End of turn 8
+NaN: 3 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 9 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses staralliance  as their active house this turn
+NaN chooses house saurian
+NaN uses Ask Again Later to make nan26 name house saurian
+Ask Again Later reveals Ornate Remuneration
+Main phase - nan26
+nan26 discards Precision Striker
+nan26 discards Psionic Officer Lang
+nan26 discards Omicron Callen
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+End of turn 9
+NaN: 3 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 9 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN discards Poised Strike
+NaN discards Traumatic Echo
+NaN discards Shaffles
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+End of turn 9
+NaN: 3 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 10 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+NaN chooses house logos
+NaN uses Ask Again Later to make nan26 name house logos
+Ask Again Later reveals Hazard Zerp
+Main phase - nan26
+nan26 discards Chasm Vespid
+nan26 discards Lifeward
+nan26 discards Reiteration
+nan26 discards Skorpeon
+nan26 discards Infinity Strop
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 5 card  s to their maximum of 6
+nan26's deck has run out of cards, so they shuffle
+End of turn 10
+NaN: 3 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 10 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+Main phase - NaN
+NaN discards Neotechnic Gopher
+NaN discards 4CR “Foreseer”
+NaN discards Instant Transmission
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+End of turn 10
+NaN: 3 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 11 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses logos  as their active house this turn
+NaN chooses house logos
+NaN uses Ask Again Later to make nan26 name house logos
+Ask Again Later reveals Publius Scipio
+ NaN uses Sedimentary Nap to return Skorpeon to their owner's deck
+NaN resolves the fate effect of Sedimentary Nap
+Main phase - nan26
+nan26 discards Captain Cha
+nan26 discards [REDACTED]
+nan26 activates their prophecy Ask Again Later
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+End of turn 11
+NaN: 3 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 11 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+nan26 chooses house staralliance
+nan26 uses Ask Again Later to make NaN name house staralliance
+Ask Again Later reveals Precision Striker
+Main phase - NaN
+NaN discards Digitallia
+NaN discards Hazard Zerp
+NaN uses Hazard Zerp to discard Hazard Zerp and deal 3 damage to Tricerian Legionary
+Tricerian Legionary's ward token prevents the damage dealt by Hazard Zerp and is discarded
+NaN uses Hazard Zerp to discard Ornate Remuneration and deal 3 damage to Tricerian Legionary
+NaN activates their prophecy Ask Again Later
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 5 card  s to their maximum of 6
+End of turn 11
+NaN: 3 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 12 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+NaN chooses house dis
+NaN uses Ask Again Later to make nan26 name house dis
+Ask Again Later reveals Defense Initiative
+NaN resolves the fate effect of Unity Prism
+Main phase - nan26
+nan26 discards A Gift of Æmber
+nan26 discards Dark Minion
+nan26 discards Dark Minion
+nan26 discards Skorpeon
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 4 card  s to their maximum of 6
+End of turn 12
+NaN: 3 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 12 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses saurian  as their active house this turn
+nan26 chooses house staralliance
+nan26 uses Ask Again Later to make NaN name house staralliance
+Ask Again Later reveals Ensign Clark
+Main phase - NaN
+NaN discards Stomp
+NaN discards Marcella, the Younger
+NaN discards Publius Scipio
+NaN activates their prophecy Ask Again Later
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+NaN's deck has run out of cards, so they shuffle
+End of turn 12
+NaN: 3 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 13 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses staralliance  as their active house this turn
+NaN chooses house dis
+NaN uses Ask Again Later to make nan26 name house dis
+Ask Again Later reveals Instant Transmission
+NaN resolves the fate effect of Chasm Vespid
+Main phase - nan26
+nan26 discards Precision Striker
+nan26 discards Recovery Operation
+nan26 discards T3R-35A
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card  s to their maximum of 6
+End of turn 13
+NaN: 3 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 13 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+nan26 chooses house staralliance
+nan26 uses Ask Again Later to make NaN name house staralliance
+Ask Again Later reveals Psionic Officer Lang
+Main phase - NaN
+NaN discards Reiteration
+NaN discards Z.Y.X. Researcher
+NaN discards 4CR “Foreseer”
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 card  s to their maximum of 6
+End of turn 13
+NaN: 3 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 14 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses logos  as their active house this turn
+Main phase - nan26
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+End of turn 14
+NaN: 3 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 14 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses saurian  as their active house this turn
+nan26 chooses house staralliance
+nan26 uses Ask Again Later to make NaN name house staralliance
+Ask Again Later reveals Psionic Officer Lang
+Main phase - NaN
+NaN discards Governess Silvina
+NaN uses Governess Silvina to stun Tricerian Legionary and Lorica Infantry
+NaN discards Archlegate Valeria
+NaN discards Defense Initiative
+NaN discards Poised Strike
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 4 card  s to their maximum of 6
+End of turn 14
+NaN: 3 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 15 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+Main phase - nan26
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+End of turn 15
+NaN: 3 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 15 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses dis  as their active house this turn
+nan26 chooses house logos
+nan26 uses Ask Again Later to make NaN name house logos
+Ask Again Later reveals Psionic Officer Lang
+ nan26 uses Strategic Feint
+nan26 uses Strategic Feint to discard Cryptic Collapse
+ nan26 uses Strategic Feint to prevent playing action cards  for the remainder of the turn
+nan26 resolves the fate effect of Strategic Feint
+Main phase - NaN
+NaN activates their prophecy Ask Again Later
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 1 card  to their maximum of 6
+End of turn 15
+NaN: 3 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 16 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses dis  as their active house this turn
+NaN chooses house saurian
+NaN uses Ask Again Later to make nan26 name house saurian
+Ask Again Later reveals Infinity Strop
+ NaN uses Parasitic Arachnoid to capture 2 Æmber  from nan26, placing it on Wormhole Technician
+NaN resolves the fate effect of Parasitic Arachnoid
+Main phase - nan26
+ nan26 concedes
+ NaN has won the game
