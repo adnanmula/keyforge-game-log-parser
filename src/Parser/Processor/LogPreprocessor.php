@@ -31,7 +31,7 @@ final class LogPreprocessor
             $htmlMessages = $crawler->filter('div.message:not(.chat-bubble)');
             $messages = [];
             foreach ($htmlMessages as $htmlMessage) {
-                $messages[] = trim($htmlMessage->textContent);
+                $messages[] = $htmlMessage->textContent;
             }
         }
 
@@ -45,7 +45,15 @@ final class LogPreprocessor
                 continue;
             }
 
-            if (preg_match("/manual mode/", $message)) {
+            if (preg_match("/is attempting to switch manual mode on/", $message)) {
+                continue;
+            }
+
+            if (preg_match("/allows enabling manual mode/", $message)) {
+                continue;
+            }
+
+            if (preg_match("/switches manual mode (on|off)/", $message)) {
                 continue;
             }
 

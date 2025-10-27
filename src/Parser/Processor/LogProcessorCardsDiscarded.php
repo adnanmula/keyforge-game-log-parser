@@ -22,9 +22,12 @@ final class LogProcessorCardsDiscarded implements LogProcessor
         $payload = [];
         $matches = [];
 
-        $pattern1 = "/($player1|$player2) discards (.*)$/i";
-        $pattern2 = "/($player1|$player2) discards (.+?)\s+due to\s+(.*)\s+bonus icon$/i";
-        $pattern3 = "/($player1|$player2) uses .*? to discard(?!.*(?:the top|from their deck))(.*)(?!\s*hand)(?<!hand)$/i";
+        $pattern1 = "/^($player1|$player2) discards (.*)$/i";
+        $pattern2 = "/^($player1|$player2) discards (.+?)\s+due to\s+(.*)\s+bonus icon$/i";
+        $pattern3 = "/^($player1|$player2) uses .*? to discard(?!.*(?:the top|from their deck))(.*)(?!\s*hand)(?<!hand)$/i";
+        $pattern4 = "/^($player1|$player2) uses (.*) to discard the top (\d+) cards of their deck$/i";
+        $pattern5 = "/^($player1|$player2) uses (.*) to discard a card at random from ($player1|$player2)'s hand$/i";
+        $pattern6 = "/^($player1|$player2) uses (.*) to (.*) and discard (.*)$/i";
 
         if (preg_match($pattern1, $message, $matches)) {
             $player = $matches[1];
@@ -37,11 +40,21 @@ final class LogProcessorCardsDiscarded implements LogProcessor
             $cards = $this->splitCardString($matches[2]);
             $discardCount = count($cards);
             $payload = ['cards' => $cards];
+        } elseif (preg_match($pattern4, $message, $matches)) {
+            $player = $matches[1];
+            $discardCount = (int) $matches[3];
+        } elseif (preg_match($pattern5, $message, $matches)) {
+            $player = $matches[3];
+            $discardCount = 1;
+            $source = Source::OPPONENT;
+        } elseif (preg_match($pattern6, $message, $matches)) {
+            $player = $matches[1];
+            $discardCount = 1;
         }
 
-        $payload['msg'] = $message;
-
         if ($player !== null && $discardCount > 0) {
+            $payload['msg'] = $message;
+
             $game->player($player)?->timeline->add(
                 new Event(
                     EventType::CARDS_DISCARDED,

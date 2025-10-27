@@ -65,17 +65,17 @@ final class CardsDiscardedTest extends TestCase
     {
         $game = $this->getLog('1');
 
-        self::assertEquals(4, $game->timeline()->filter(EventType::CARDS_DISCARDED)->count());
-        self::assertEquals(4, $game->timeline()->filter(EventType::CARDS_DISCARDED)->totalCardsDiscarded());
-        self::assertEquals(4, $game->timeline()->filter(EventType::CARDS_DISCARDED)->totalByValue(EventType::CARDS_DISCARDED));
+        self::assertEquals(7, $game->timeline()->filter(EventType::CARDS_DISCARDED)->count());
+        self::assertEquals(11, $game->timeline()->filter(EventType::CARDS_DISCARDED)->totalCardsDiscarded());
+        self::assertEquals(11, $game->timeline()->filter(EventType::CARDS_DISCARDED)->totalByValue(EventType::CARDS_DISCARDED));
 
-        self::assertEquals(2, $game->player1->timeline->filter(EventType::CARDS_DISCARDED)->count());
-        self::assertEquals(2, $game->player1->timeline->filter(EventType::CARDS_DISCARDED)->totalCardsDiscarded());
-        self::assertEquals(2, $game->player1->timeline->filter(EventType::CARDS_DISCARDED)->totalByValue(EventType::CARDS_DISCARDED));
+        self::assertEquals(4, $game->player1->timeline->filter(EventType::CARDS_DISCARDED)->count());
+        self::assertEquals(8, $game->player1->timeline->filter(EventType::CARDS_DISCARDED)->totalCardsDiscarded());
+        self::assertEquals(8, $game->player1->timeline->filter(EventType::CARDS_DISCARDED)->totalByValue(EventType::CARDS_DISCARDED));
 
-        self::assertEquals(2, $game->player2->timeline->filter(EventType::CARDS_DISCARDED)->count());
-        self::assertEquals(2, $game->player2->timeline->filter(EventType::CARDS_DISCARDED)->totalCardsDiscarded());
-        self::assertEquals(2, $game->player2->timeline->filter(EventType::CARDS_DISCARDED)->totalByValue(EventType::CARDS_DISCARDED));
+        self::assertEquals(3, $game->player2->timeline->filter(EventType::CARDS_DISCARDED)->count());
+        self::assertEquals(3, $game->player2->timeline->filter(EventType::CARDS_DISCARDED)->totalCardsDiscarded());
+        self::assertEquals(3, $game->player2->timeline->filter(EventType::CARDS_DISCARDED)->totalByValue(EventType::CARDS_DISCARDED));
     }
 
     public function testDiscardAtrocity(): void
