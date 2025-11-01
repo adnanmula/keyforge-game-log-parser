@@ -22,7 +22,7 @@ final class LogProcessorAmberStolen implements LogProcessor
 
         $pattern = "/^($player1|$player2)\s+uses\s+(.+)\s+to steal\s+(\d+)\s+Æmber\s*from\s*($player1|$player2)$/";
         $pattern2 = "/^($player1|$player2)\s+uses\s+(.+)\s+to steal\s+(\d+)\s+Æmber$/";
-        $pattern3 = "/^($player1|$player2)\s+uses\s+(.+)\s+to\s+(.*)\s+and steal an Æmber$/";
+        $pattern3 = "/^($player1|$player2)\s+uses\s+(.+)\s+to\s+(.*)\s+and steal (\d+) Æmber$/";
 
         if (preg_match($pattern, $message, $matches)) {
             $player = $matches[1];
@@ -57,6 +57,7 @@ final class LogProcessorAmberStolen implements LogProcessor
         } elseif (preg_match($pattern3, $message, $matches3)) {
             $player = $matches3[1];
             $card = trim($matches3[2]);
+            $amount = (int) $matches3[4];
 
             $game->player($player)?->timeline->add(
                 new Event(
@@ -64,7 +65,7 @@ final class LogProcessorAmberStolen implements LogProcessor
                     $player,
                     new Turn($game->length, Moment::BETWEEN, $index),
                     Source::PLAYER,
-                    1,
+                    $amount,
                     ['trigger' => $card],
                 ),
             );

@@ -22,7 +22,7 @@ final class LogProcessorCardsDiscarded implements LogProcessor
         $payload = [];
         $matches = [];
 
-        $pattern1 = "/^($player1|$player2) discards (.*)$/i";
+        $pattern1 = "/^($player1|$player2) discards (.*)(?<! bonus icon)$/i";
         $pattern2 = "/^($player1|$player2) discards (.+?)\s+due to\s+(.*)\s+bonus icon$/i";
         $pattern3 = "/^($player1|$player2) uses .*? to discard(?!.*(?:the top|from their deck))(.*)(?!\s*hand)(?<!hand)$/i";
         $pattern4 = "/^($player1|$player2) uses (.*) to discard the top (\d+) cards of their deck$/i";

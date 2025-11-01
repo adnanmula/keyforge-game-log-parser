@@ -95,11 +95,11 @@ final class ChainsTest extends TestCase
         self::assertEquals(1, $player2Timeline->count());
         self::assertEquals(3, $gameTimeline->count());
 
-        self::assertEquals(3, $player1Timeline->at(0)?->value);
-        self::assertEquals('Tide', $player1Timeline->at(0)?->payload['trigger']);
-        self::assertEquals(3, $player1Timeline->at(1)?->value);
-        self::assertEquals('Tide', $player1Timeline->at(1)?->payload['trigger']);
-        self::assertEquals(3, $player2Timeline->at(0)?->value);
-        self::assertEquals('Tide', $player2Timeline->at(0)?->payload['trigger']);
+        self::assertEquals(3, $player1Timeline->at(0)?->value());
+        self::assertEquals('Tide', $player1Timeline->at(0)?->payload()['trigger']);
+        self::assertEquals(3, $player1Timeline->at(1)?->value());
+        self::assertEquals('Tide', $player1Timeline->at(1)?->payload()['trigger']);
+        self::assertEquals(3, $player2Timeline->at(0)?->value());
+        self::assertEquals('Tide', $player2Timeline->at(0)?->payload()['trigger']);
     }
 }

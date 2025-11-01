@@ -366,6 +366,7 @@ NaN chooses house dis
 NaN uses Arise! to return Gate Warden to their hand
 NaN plays Gate Warden
 NaN uses Gate Warden to make a token creature
+NaN uses Big Sal to make 2 token creatures
 Ready phase - NaN
 NaN readies their cards 
 Draw phase - NaN

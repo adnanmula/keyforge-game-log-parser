@@ -35,12 +35,8 @@ final class LogProcessorCardsUsed implements LogProcessor
         ];
 
         if (preg_match($pattern, $message, $matches)) {
-            foreach ($otherUses as $otherUse) {
-                $matches2 = [];
-
-                if (preg_match($otherUse, $message, $matches2)) {
-                    return $game;
-                }
+            if (array_any($otherUses, static fn (string $otherUse): bool => (bool) preg_match($otherUse, $message))) {
+                return $game;
             }
 
             $player = $matches[1];

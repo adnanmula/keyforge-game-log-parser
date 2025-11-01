@@ -19,7 +19,8 @@ final class AmberTest extends TestCase
         self::assertEquals(-17, $timeline->totalAmberObtainedNegative());
         self::assertEquals(61, $timeline->totalByValue(EventType::CARDS_DRAWN));
         self::assertEquals(58, $timeline->totalCardsPlayed());
-        self::assertEquals(0, $timeline->totalByValue(EventType::AMBER_STOLEN));
+        self::assertEquals(3, $timeline->totalByValue(EventType::AMBER_STOLEN));
+        self::assertEquals(3, $timeline->totalAmberStolen());
         self::assertEquals(4, $timeline->filter(EventType::FIGHT)->count());
         self::assertEquals(11, $timeline->filter(EventType::REAP)->count());
     }

@@ -61,7 +61,7 @@ final class LogProcessorAmber implements LogProcessor
 
         foreach ($player->timeline->filter(EventType::KEY_FORGED)->items() as $keyForged) {
             if ($keyForged->turn()->value() === $game->length) {
-                $adjustKeyForged += $keyForged->payload['amberCost'];
+                $adjustKeyForged += $keyForged->payload()['amberCost'];
             }
         }
 

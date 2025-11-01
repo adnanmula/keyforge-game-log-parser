@@ -8,12 +8,12 @@ use Stringable;
 readonly class Event implements JsonSerializable, Stringable
 {
     public function __construct(
-        private(set) EventType $type,
-        private(set) string $player,
-        private(set) Turn $turn,
-        private(set) Source $source,
-        private(set) int|string|array $value,
-        private(set) array $payload = [],
+        private EventType $type,
+        private string $player,
+        private Turn $turn,
+        private Source $source,
+        private int|string|array $value,
+        private array $payload = [],
     ) {}
 
     public function type(): EventType
@@ -50,7 +50,7 @@ readonly class Event implements JsonSerializable, Stringable
     {
         return [
             'player' => $this->player,
-            'type' => $this->type()->name,
+            'type' => $this->type->name,
             'source' => $this->source->value,
             'turn' => $this->turn->jsonSerialize(),
             'value' => $this->value,

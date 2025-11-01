@@ -11,19 +11,19 @@ final class ExtractPlayerAndDeckTest extends TestCase
     public function testExtract1(): void
     {
         $messages = [
-            '  Alice Smith   brings   The Mighty-Deck 2000   to The Crucible  ',
-            'Bob-the_Builder brings Deck of Many Things to The Crucible',
+            '  Kf player   brings   The Mighty-Deck 2000   to The Crucible  ',
+            'Other_player brings Deck of Many Things to The Crucible',
             ' ',
-            'Alice Smith has connected to the game server',
-            'Bob-the_Builder has connected to the game server',
+            'Kf player has connected to the game server',
+            'Other_player has connected to the game server',
         ];
 
         $parser = new GameLogParser();
         $game = $parser->execute($messages, ParseType::ARRAY);
 
-        self::assertEquals('Alice Smith', $game->player1->name);
+        self::assertEquals('Kf player', $game->player1->name);
         self::assertEquals('The Mighty-Deck 2000', $game->player1->deck);
-        self::assertEquals('Bob-the_Builder', $game->player2->name);
+        self::assertEquals('Other_player', $game->player2->name);
         self::assertEquals('Deck of Many Things', $game->player2->deck);
     }
 
@@ -40,5 +40,32 @@ final class ExtractPlayerAndDeckTest extends TestCase
         self::assertEquals('Deck A', $game->player1->deck);
         self::assertEquals('Bob', $game->player2->name);
         self::assertEquals('Deck B', $game->player2->deck);
+    }
+
+    public function testExtractIncomplete(): void
+    {
+        self::expectException(\Throwable::class);
+
+        $messages = [
+            '  Kf player   brings   The Mighty-Deck 2000   to The Crucible  ',
+        ];
+
+        $parser = new GameLogParser();
+        $parser->execute($messages, ParseType::ARRAY);
+    }
+
+    public function testExtractIncomplete2(): void
+    {
+        $messages = [
+            '  Kf player   brings   The Mighty-Deck 2000   to The Crucible  ',
+            'Kf player has connected to the game server',
+            'Other_player has connected to the game server',
+        ];
+
+        $parser = new GameLogParser();
+        $game = $parser->execute($messages, ParseType::ARRAY);
+
+        self::assertEquals('Kf player', $game->player1->name);
+        self::assertEquals('Other_player', $game->player2->name);
     }
 }

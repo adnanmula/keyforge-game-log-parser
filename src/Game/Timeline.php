@@ -42,7 +42,7 @@ final class Timeline extends Collection
     {
         return array_reduce(
             $this->filter(EventType::AMBER_OBTAINED)->items(),
-            static fn (int $c, Event $s): int => $s->payload['delta'] > 0 ? $c + $s->payload['delta'] : $c,
+            static fn (int $c, Event $s): int => $s->payload()['delta'] > 0 ? $c + $s->payload()['delta'] : $c,
             0,
         );
     }
@@ -51,7 +51,7 @@ final class Timeline extends Collection
     {
         return array_reduce(
             $this->filter(EventType::AMBER_OBTAINED)->items(),
-            static fn (int $c, Event $s): int => $s->payload['delta'] < 0 ? $c + $s->payload['delta'] : $c,
+            static fn (int $c, Event $s): int => $s->payload()['delta'] < 0 ? $c + $s->payload()['delta'] : $c,
             0,
         );
     }
@@ -79,7 +79,7 @@ final class Timeline extends Collection
 
         foreach ($this->filter(EventType::PROPHECY_ACTIVATED)->items() as $event) {
             /** @var string $card */
-            $card = $event->value;
+            $card = $event->value();
             $prophecies[$card] ??= $emptyProphecy;
             ++$prophecies[$card]['activated'];
         }
@@ -87,7 +87,7 @@ final class Timeline extends Collection
         $fulfilled = $this->filter(EventType::PROPHECY_FULFILLED);
         foreach ($fulfilled->items() as $event) {
             /** @var string $card */
-            $card = $event->value;
+            $card = $event->value();
             $prophecies[$card] ??= $emptyProphecy;
             ++$prophecies[$card]['fulfilled'];
             $prophecies[$card]['percent'] = round($prophecies[$card]['fulfilled'] * 100 / $fulfilled->count(), 2);
@@ -96,10 +96,10 @@ final class Timeline extends Collection
         $fatesResolved = $this->filter(EventType::FATE_RESOLVED);
         foreach ($fatesResolved->items() as $event) {
             /** @var string $card */
-            $card = $event->value;
+            $card = $event->value();
             $fates[$card]['resolved'] = ($fates[$card]['resolved'] ?? 0) + 1;
             $fates[$card]['percent'] = round($fates[$card]['resolved'] * 100 / $fatesResolved->count(), 2);
-            $fates[$card]['has_fate'] = $event->payload['has_fate'] ?? false;
+            $fates[$card]['has_fate'] = $event->payload()['has_fate'] ?? false;
         }
 
         uasort($prophecies, static fn ($a, $b) => $b['fulfilled'] <=> $a['fulfilled']);

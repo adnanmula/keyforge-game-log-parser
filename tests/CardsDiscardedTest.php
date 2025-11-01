@@ -85,19 +85,19 @@ final class CardsDiscardedTest extends TestCase
         /** @var Timeline $timeline */
         $timeline = $game->winner()?->timeline->filter(EventType::CARDS_DISCARDED);
 
-        self::assertEquals(1, $timeline->at(0)?->value);
-        self::assertEquals(1, $timeline->at(1)?->value);
-        self::assertEquals(1, $timeline->at(2)?->value);
-        self::assertEquals(1, $timeline->at(3)?->value);
+        self::assertEquals(1, $timeline->at(0)?->value());
+        self::assertEquals(1, $timeline->at(1)?->value());
+        self::assertEquals(1, $timeline->at(2)?->value());
+        self::assertEquals(1, $timeline->at(3)?->value());
 
-        self::assertEquals(['Novu Archaeologist'], $timeline->at(0)?->payload['cards']);
-        self::assertEquals(['Phase Shift'], $timeline->at(1)?->payload['cards']);
-        self::assertEquals(['Dextre'], $timeline->at(2)?->payload['cards']);
-        self::assertEquals(['Umbra'], $timeline->at(3)?->payload['cards']);
+        self::assertEquals(['Novu Archaeologist'], $timeline->at(0)?->payload()['cards']);
+        self::assertEquals(['Phase Shift'], $timeline->at(1)?->payload()['cards']);
+        self::assertEquals(['Dextre'], $timeline->at(2)?->payload()['cards']);
+        self::assertEquals(['Umbra'], $timeline->at(3)?->payload()['cards']);
 
-        self::assertStringContainsString('Atrocity', $timeline->at(0)?->payload['msg'] ?? null);
-        self::assertStringContainsString('Atrocity', $timeline->at(1)?->payload['msg'] ?? null);
-        self::assertStringNotContainsString('Atrocity', $timeline->at(2)?->payload['msg'] ?? null);
-        self::assertStringContainsString('Atrocity', $timeline->at(3)?->payload['msg'] ?? null);
+        self::assertStringContainsString('Atrocity', $timeline->at(0)?->payload()['msg'] ?? null);
+        self::assertStringContainsString('Atrocity', $timeline->at(1)?->payload()['msg'] ?? null);
+        self::assertStringNotContainsString('Atrocity', $timeline->at(2)?->payload()['msg'] ?? null);
+        self::assertStringContainsString('Atrocity', $timeline->at(3)?->payload()['msg'] ?? null);
     }
 }
