@@ -40,13 +40,18 @@ final class LogProcessorProphecies implements LogProcessor
         if (preg_match($patternFulfilled, $message, $matches)) {
             $player = $matches[1];
             $card = trim($matches[2]);
+            $source = Source::UNKNOWN;
+
+            if ($card === 'Trust Your Feelings') {
+                $source = Source::OPPONENT;
+            }
 
             $game->player($player)?->timeline->add(
                 new Event(
                     EventType::PROPHECY_FULFILLED,
                     $player,
                     new Turn($game->length, Moment::BETWEEN, $index),
-                    Source::UNKNOWN,
+                    $source,
                     $card,
                 ),
             );
