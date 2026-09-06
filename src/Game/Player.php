@@ -10,6 +10,7 @@ final class Player implements \JsonSerializable
         private(set) bool $isFirst = false,
         private(set) bool $isWinner = false,
         private(set) bool $hasConceded = false,
+        private(set) int $score = 0,
         private(set) Timeline $timeline = new Timeline(),
     ) {}
 
@@ -35,6 +36,27 @@ final class Player implements \JsonSerializable
     public function updateHasConceded(bool $value): self
     {
         $this->hasConceded = $value;
+
+        return $this;
+    }
+
+    public function updateScore(int $score): self
+    {
+        $this->score = $score;
+
+        return $this;
+    }
+
+    public function addScore(): self
+    {
+        ++$this->score;
+
+        return $this;
+    }
+
+    public function subtractScore(): self
+    {
+        --$this->score;
 
         return $this;
     }

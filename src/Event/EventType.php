@@ -10,6 +10,7 @@ enum EventType: string
     case CARDS_PLAYED = 'CARDS_PLAYED';
     case HOUSE_CHOSEN = 'HOUSE_CHOSEN';
     case KEY_FORGED = 'KEY_FORGED';
+    case KEY_UNFORGED = 'KEY_UNFORGED';
     case FIGHT = 'FIGHT';
     case REAP = 'REAP';
     case CARD_USED = 'CARD_USED';
