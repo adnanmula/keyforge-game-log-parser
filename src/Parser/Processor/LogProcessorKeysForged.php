@@ -58,16 +58,18 @@ final class LogProcessorKeysForged implements LogProcessor
         $matches2 = [];
 
         if (preg_match($pattern1, $message, $matches)) {
+            $color = $this->checkUnforgedKeyColor($messages[$index + 1] ?? null, $player1, $player2);
+
             $game->player($matches[1])?->timeline->add(
                 new Event(
                     EventType::KEY_UNFORGED,
                     $matches[1],
                     new Turn($game->length, Moment::BETWEEN, $index),
                     Source::PLAYER,
-                    $matches[2],
+                    $color,
                     [
                         'card' => $matches[2],
-                        'key' => $this->checkUnforgedKeyColor($messages[$index + 1] ?? null, $player1, $player2),
+                        'key' => $color,
                     ],
                 ),
             );
@@ -76,16 +78,18 @@ final class LogProcessorKeysForged implements LogProcessor
         }
 
         if (preg_match($pattern2, $message, $matches2)) {
+            $color = $this->checkUnforgedKeyColor($messages[$index + 1] ?? null, $player1, $player2);
+
             $game->player($matches2[1])?->timeline->add(
                 new Event(
                     EventType::KEY_UNFORGED,
                     $matches2[1],
                     new Turn($game->length, Moment::BETWEEN, $index),
                     Source::PLAYER,
-                    $matches2[2],
+                    $color,
                     [
                         'card' => $matches2[2],
-                        'key' => $this->checkUnforgedKeyColor($messages[$index + 1] ?? null, $player1, $player2),
+                        'key' => $color,
                     ],
                 ),
             );
@@ -94,10 +98,10 @@ final class LogProcessorKeysForged implements LogProcessor
         }
     }
 
-    public function checkUnforgedKeyColor(?string $message, string $player1, string $player2): ?string
+    public function checkUnforgedKeyColor(?string $message, string $player1, string $player2): string
     {
         if (null === $message) {
-            return null;
+            return '';
         }
 
         $unforgedKeyColorPattern = "/^($player1|$player2)\s+unforges\s+($player1|$player2)'s\s+(.*)\s+key/";
@@ -108,6 +112,6 @@ final class LogProcessorKeysForged implements LogProcessor
             return $matches[3];
         }
 
-        return null;
+        return '';
     }
 }
