@@ -59,6 +59,7 @@ final class LogProcessorKeysForged implements LogProcessor
 
         if (preg_match($pattern1, $message, $matches)) {
             $color = $this->checkUnforgedKeyColor($messages[$index + 1] ?? null, $player1, $player2);
+            $target = $matches[1] === $player1 ? $player2 : $player1;
 
             $game->player($matches[1])?->timeline->add(
                 new Event(
@@ -70,6 +71,7 @@ final class LogProcessorKeysForged implements LogProcessor
                     [
                         'card' => $matches[2],
                         'key' => $color,
+                        'target' => $target,
                     ],
                 ),
             );
@@ -79,6 +81,7 @@ final class LogProcessorKeysForged implements LogProcessor
 
         if (preg_match($pattern2, $message, $matches2)) {
             $color = $this->checkUnforgedKeyColor($messages[$index + 1] ?? null, $player1, $player2);
+            $target = $matches2[1] === $player1 ? $player2 : $player1;
 
             $game->player($matches2[1])?->timeline->add(
                 new Event(
@@ -90,6 +93,7 @@ final class LogProcessorKeysForged implements LogProcessor
                     [
                         'card' => $matches2[2],
                         'key' => $color,
+                        'target' => $target,
                     ],
                 ),
             );
