@@ -17,7 +17,7 @@ final class LogProcessorKeysForged implements LogProcessor
         $player2 = $game->player2->escapedName();
 
         $this->forge($message, $index, $player1, $player2, $game);
-        $this->unforge($message, $index, $player1, $player2, $game);
+        $this->unforge($message, $messages ?? [], $index, $player1, $player2, $game);
 
         return $game;
     }
@@ -50,7 +50,7 @@ final class LogProcessorKeysForged implements LogProcessor
         }
     }
 
-    private function unforge(string $message, int $index, string $player1, string $player2, Game $game): void
+    private function unforge(string $message, array $messages, int $index, string $player1, string $player2, Game $game): void
     {
         $pattern1 = "/^($player1|$player2)\s+uses\s+(.+)\s+to\s+cause\s+($player1|$player2)\s+to\s+unforge\s+a\s+key\s*/";
         $pattern2 = "/^($player1|$player2)\s+uses\s+(.+)\s+to\s+unforge\s+an\s+opponent's\s+key/";
@@ -67,6 +67,7 @@ final class LogProcessorKeysForged implements LogProcessor
                     $matches[2],
                     [
                         'card' => $matches[2],
+                        'key' => $this->checkUnforgedKeyColor($messages[$index + 1] ?? null, $player1, $player2),
                     ],
                 ),
             );
@@ -84,11 +85,29 @@ final class LogProcessorKeysForged implements LogProcessor
                     $matches2[2],
                     [
                         'card' => $matches2[2],
+                        'key' => $this->checkUnforgedKeyColor($messages[$index + 1] ?? null, $player1, $player2),
                     ],
                 ),
             );
 
             $game->player($matches2[1])?->subtractScore();
         }
+    }
+
+    public function checkUnforgedKeyColor(?string $message, string $player1, string $player2): ?string
+    {
+        if (null === $message) {
+            return null;
+        }
+
+        $unforgedKeyColorPattern = "/^($player1|$player2)\s+unforges\s+($player1|$player2)'s\s+(.*)\s+key/";
+
+        $matches = [];
+
+        if (preg_match($unforgedKeyColorPattern, $message, $matches)) {
+            return $matches[3];
+        }
+
+        return null;
     }
 }

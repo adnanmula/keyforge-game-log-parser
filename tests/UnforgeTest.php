@@ -23,5 +23,10 @@ final class UnforgeTest extends TestCase
         self::assertEquals(4, $timeline->filter(EventType::KEY_UNFORGED)->count());
         self::assertEquals(2, $timelinePlayer1->filter(EventType::KEY_UNFORGED)->count());
         self::assertEquals(2, $timelinePlayer2->filter(EventType::KEY_UNFORGED)->count());
+
+        self::assertEquals('blue', $timelinePlayer1->filter(EventType::KEY_UNFORGED)->at(0)?->payload()['key']);
+        self::assertEquals('red', $timelinePlayer1->filter(EventType::KEY_UNFORGED)->at(1)?->payload()['key']);
+        self::assertEquals('red', $timelinePlayer2->filter(EventType::KEY_UNFORGED)->at(0)?->payload()['key']);
+        self::assertEquals('blue', $timelinePlayer2->filter(EventType::KEY_UNFORGED)->at(1)?->payload()['key']);
     }
 }
