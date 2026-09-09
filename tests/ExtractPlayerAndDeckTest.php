@@ -2,6 +2,8 @@
 
 namespace AdnanMula\KeyforgeGameLogParser\Tests;
 
+use AdnanMula\KeyforgeGameLogParser\Parser\Exception\InvalidLogType;
+use AdnanMula\KeyforgeGameLogParser\Parser\Exception\MalformedLog;
 use AdnanMula\KeyforgeGameLogParser\Parser\GameLogParser;
 use AdnanMula\KeyforgeGameLogParser\Parser\ParseType;
 use PHPUnit\Framework\TestCase;
@@ -44,7 +46,7 @@ final class ExtractPlayerAndDeckTest extends TestCase
 
     public function testExtractIncomplete(): void
     {
-        self::expectException(\Throwable::class);
+        self::expectException(MalformedLog::class);
 
         $messages = [
             '  Kf player   brings   The Mighty-Deck 2000   to The Crucible  ',
@@ -67,5 +69,35 @@ final class ExtractPlayerAndDeckTest extends TestCase
 
         self::assertEquals('Kf player', $game->player1->name);
         self::assertEquals('Other_player', $game->player2->name);
+    }
+
+    public function testWrongParseType(): void
+    {
+        self::expectException(InvalidLogType::class);
+
+        $messages = [];
+
+        $parser = new GameLogParser();
+        $parser->execute($messages, ParseType::ARRAY);
+    }
+
+    public function testWrongParseType2(): void
+    {
+        self::expectException(InvalidLogType::class);
+
+        $messages = '';
+
+        $parser = new GameLogParser();
+        $parser->execute($messages, ParseType::PLAIN);
+    }
+
+    public function testWrongParseType3(): void
+    {
+        self::expectException(InvalidLogType::class);
+
+        $messages = 'asd asda asd';
+
+        $parser = new GameLogParser();
+        $parser->execute($messages, ParseType::ARRAY);
     }
 }

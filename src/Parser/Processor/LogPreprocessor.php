@@ -2,6 +2,7 @@
 
 namespace AdnanMula\KeyforgeGameLogParser\Parser\Processor;
 
+use AdnanMula\KeyforgeGameLogParser\Parser\Exception\InvalidLogType;
 use AdnanMula\KeyforgeGameLogParser\Parser\ParseType;
 use Symfony\Component\DomCrawler\Crawler;
 
@@ -11,20 +12,20 @@ final class LogPreprocessor
     public function execute(string|array $log, ParseType $parseType): array
     {
         if (ParseType::PLAIN === $parseType) {
-            if (false === is_string($log)) {
-                throw new \InvalidArgumentException('Log must be a string when using plain type');
+            if (false === is_string($log) || '' === $log) {
+                throw new InvalidLogType(ParseType::PLAIN);
             }
 
             $messages = explode(\PHP_EOL, $log);
         } elseif (ParseType::ARRAY === $parseType) {
-            if (false === is_array($log)) {
-                throw new \InvalidArgumentException('Log must be an array when using array type');
+            if (false === is_array($log) || 0 === count($log)) {
+                throw new InvalidLogType(ParseType::ARRAY);
             }
 
             $messages = $log;
         } else {
-            if (false === is_string($log)) {
-                throw new \InvalidArgumentException('Log must be a string when using html type');
+            if (false === is_string($log) || '' === $log) {
+                throw new InvalidLogType(ParseType::HTML);
             }
 
             $crawler = new Crawler($log);

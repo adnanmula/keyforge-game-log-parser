@@ -3,6 +3,7 @@
 namespace AdnanMula\KeyforgeGameLogParser\Parser\Processor;
 
 use AdnanMula\KeyforgeGameLogParser\Game\Player;
+use AdnanMula\KeyforgeGameLogParser\Parser\Exception\MalformedLog;
 
 final class LogPlayerExtractor
 {
@@ -51,7 +52,7 @@ final class LogPlayerExtractor
         $names = array_keys($players);
 
         if (count($names) < 2) {
-            throw new \Exception('Malformed or incomplete log');
+            throw new MalformedLog();
         }
 
         return [

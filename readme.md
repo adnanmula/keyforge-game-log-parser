@@ -38,6 +38,9 @@ You can parse logs provided in 3 different formats via `ParseType`:
 - `ParseType::ARRAY`: an array of strings containing the log messages, one per line.
 - `ParseType::HTML`: the HTML markup of the log view.
 
+InvalidLogType is thrown if the input data does not match the expected format
+MalformedLog is thrown if the input data is not valid
+
 ```php
 <?php
 
@@ -72,14 +75,12 @@ $game3 = $parser->execute($html, ParseType::HTML);
 `execute()` returns a `Game` object with the following useful members:
 
 - `player1`, `player2` (AdnanMula\KeyforgeGameLogParser\Game\Player)
-  - `name`, `deck`, `isFirst`, `isWinner`, `hasConceded`
+  - `name`, `deck`, `isFirst`, `isWinner`, `hasConceded`, `score`
   - `timeline` (AdnanMula\KeyforgeGameLogParser\Game\Timeline)
 - `winner(): ?Player`
 - `loser(): ?Player`
 - `first(): ?Player` (the player who took the first turn)
-- `timeline(): Timeline` (combined, time-ordered events from both players)
-
-Timelines are collections with helper methods:
+- `timeline(): Timeline` (combined, time-ordered events from both players) Timelines are collections with helper methods:
 - `filter(EventType ...$events): Collection`
 - `count()`, `first()`, `last()`, `at(int $i)`, `items(): array`
 
@@ -112,6 +113,7 @@ The library categorizes log messages into typed events via `EventType` enum:
 - CARD_USED
 - HOUSE_CHOSEN
 - KEY_FORGED
+- KEY_UNFORGED
 - FIGHT
 - REAP
 - EXTRA_TURN
