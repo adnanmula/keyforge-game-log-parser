@@ -20,6 +20,8 @@ final class LogProcessorProphecies implements LogProcessor
 
         $patternActivate = "/^($player1|$player2)\s+activates their prophecy\s+(.+)$/";
         $patternFulfilled = "/^($player1|$player2)\s+uses\s+(.+)\s+to fulfill its prophecy$/";
+        $patternFulfilled2 = "/^($player1|$player2)\s+fulfills\s+(.+)\'s\s+prophecy$/";
+
         $patternFlipped = "/^($player1|$player2)\s+uses\s+(Heads, I Win|Tails, You Lose)\s+to flip\s+(Heads, I Win|Tails, You Lose)\s+to\s+(.*)$/";
 
         if (preg_match($patternActivate, $message, $matches)) {
@@ -44,6 +46,32 @@ final class LogProcessorProphecies implements LogProcessor
 
             if ($card === 'Trust Your Feelings') {
                 $source = Source::OPPONENT;
+            }
+
+            $game->player($player)?->timeline->add(
+                new Event(
+                    EventType::PROPHECY_FULFILLED,
+                    $player,
+                    new Turn($game->length, Moment::BETWEEN, $index),
+                    $source,
+                    $card,
+                ),
+            );
+        }
+
+        if (preg_match($patternFulfilled2, $message, $matches)) {
+            $player = $matches[1];
+            $card = trim($matches[2]);
+            $source = Source::UNKNOWN;
+
+            if ($card === 'Trust Your Feelings') {
+                $source = Source::OPPONENT;
+            }
+
+            if ($player === $player1) {
+                $player = $player2;
+            } elseif ($player === $player2) {
+                $player = $player1;
             }
 
             $game->player($player)?->timeline->add(
