@@ -63,6 +63,17 @@ final class Game implements \JsonSerializable
         return null;
     }
 
+    public function opponentOf(Player $player): ?Player
+    {
+        if (false === in_array($player->name, [$this->player1->name, $this->player2->name])) {
+            return null;
+        }
+
+        return $player->name === $this->player1->name
+            ? $this->player2
+            : $this->player1;
+    }
+
     public function updateLength(int $value): self
     {
         $this->length = $value;

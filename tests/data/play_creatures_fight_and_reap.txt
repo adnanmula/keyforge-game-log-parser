@@ -1,0 +1,302 @@
+NaN brings Bjorn, Anciano de la Prisión Piadosa to The Crucible
+nan26 brings Kyrielle “Valquiria”, la Obtusa to The Crucible
+nan26 won the flip and is first player
+nan26 has connected to the game server
+NaN has connected to the game server
+NaN shuffles their deck
+NaN draws 6 cards  to refill their hand to 6 cards
+nan26 shuffles their deck
+nan26 draws 7 cards  to refill their hand to 7 cards
+nan26 keeps their starting hand
+NaN keeps their starting hand
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses sanctum  as their active house this turn
+Main phase - nan26
+nan26 plays Commander Remiel
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+End of turn 1
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 1 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+Main phase - NaN
+NaN plays Ganymede Archivist
+NaN plays Research Smoko
+NaN discards Knowledge is Power
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 cards  to refill their hand to 6 cards
+End of turn 1
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 2 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses untamed  as their active house this turn
+Main phase - nan26
+nan26 discards Regrowth
+nan26 discards Key Charge
+nan26 discards Word of Returning
+Ready phase - nan26
+Draw phase - nan26
+nan26 draws 3 cards  to refill their hand to 6 cards
+End of turn 2
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 2 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses untamed  as their active house this turn
+Main phase - NaN
+NaN plays Hunting Witch
+NaN plays Hunting Witch
+NaN uses Hunting Witch to gain 1 Æmber
+NaN plays Flaxia
+NaN uses Hunting Witch to gain 1 Æmber
+NaN uses Hunting Witch to gain 1 Æmber
+NaN uses Flaxia to gain 2 Æmber
+NaN discards Regrowth
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 4 cards  to refill their hand to 6 cards
+End of turn 2
+NaN: 5 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 3 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses sanctum  as their active house this turn
+Main phase - nan26
+nan26 discards Hallowed Blaster
+nan26 discards Terms of Redress
+nan26 plays Protectrix
+nan26 uses Commander Remiel to reap with Commander Remiel
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 cards  to refill their hand to 6 cards
+End of turn 3
+NaN: 5 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 3 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 5 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses untamed  as their active house this turn
+Main phase - NaN
+NaN plays Dust Pixie
+NaN uses Dust Pixie's Æmber  bonus icon to gain 1 Æmber
+NaN uses Dust Pixie's Æmber  bonus icon to gain 1 Æmber
+NaN uses Hunting Witch to gain 1 Æmber
+NaN uses Hunting Witch to gain 1 Æmber
+NaN uses Flaxia to reap with Flaxia
+NaN uses Hunting Witch to reap with Hunting Witch
+NaN uses Hunting Witch to reap with Hunting Witch
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 1 card  to refill their hand to 6 cards
+NaN declares Check!
+End of turn 3
+NaN: 12 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 4 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses sanctum  as their active house this turn
+Main phase - nan26
+nan26 uses Commander Remiel to reap with Commander Remiel
+nan26 discards Doorstep to Heaven
+nan26 uses Protectrix to make Protectrix fight Hunting Witch
+Hunting Witch is destroyed
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 1 card  to refill their hand to 6 cards
+End of turn 4
+NaN: 12 Æmber  (0 keys) nan26: 2 Æmber  (0 keys)
+TURN 4 - NaN
+Key phase - NaN
+NaN forges the red key , paying 6 Æmber
+House phase - NaN
+NaN chooses shadows  as their active house this turn
+Main phase - NaN
+NaN plays Nexus
+NaN uses Hunting Witch to gain 1 Æmber
+NaN plays Shadow Self
+NaN uses Hunting Witch to gain 1 Æmber
+NaN discards Too Much to Protect
+NaN discards Lights Out
+NaN discards Poison Wave
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 5 cards  to refill their hand to 6 cards
+NaN declares Check!
+End of turn 4
+NaN: 8 Æmber  (1 key) nan26: 2 Æmber  (0 keys)
+TURN 5 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 2 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses shadows  as their active house this turn
+Main phase - nan26
+nan26 plays Bad Penny
+nan26 plays Urchin
+nan26 uses Urchin to steal 1 Æmber  from NaN
+nan26 discards Pawn Sacrifice
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 cards  to refill their hand to 6 cards
+End of turn 5
+NaN: 7 Æmber  (1 key) nan26: 3 Æmber  (0 keys)
+TURN 5 - NaN
+Key phase - NaN
+NaN forges the blue key , paying 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+Main phase - NaN
+NaN uses Ganymede Archivist to reap with Ganymede Archivist
+NaN uses Ganymede Archivist to archive a card
+NaN uses Research Smoko to make Research Smoko fight Commander Remiel
+Research Smoko is destroyed
+NaN uses Research Smoko to archive the top card  of their deck
+NaN plays Dextre
+NaN uses Hunting Witch to gain 1 Æmber
+NaN uses Dextre to capture 1 Æmber  from their opponent, placing it on Dextre
+NaN plays Ganymede Archivist
+NaN uses Hunting Witch to gain 1 Æmber
+NaN discards Remote Access
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 4 cards  to refill their hand to 6 cards
+End of turn 5
+NaN: 4 Æmber  (2 keys) nan26: 2 Æmber  (0 keys)
+TURN 6 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 2 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses sanctum  as their active house this turn
+Main phase - nan26
+nan26 plays Bulwark
+nan26 plays Inspiration
+nan26 uses Inspiration to ready and use Bulwark
+nan26 uses Bulwark to make Bulwark fight Hunting Witch
+Hunting Witch is destroyed
+nan26 uses Commander Remiel to reap with Commander Remiel
+nan26 uses Commander Remiel to use Urchin
+nan26 uses Urchin to reap with Urchin
+nan26 uses Protectrix to reap with Protectrix
+nan26 uses Protectrix to heal Commander Remiel fully
+nan26 discards The Spirit’s Way
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 cards  to refill their hand to 6 cards
+End of turn 6
+NaN: 4 Æmber  (2 keys) nan26: 5 Æmber  (0 keys)
+TURN 6 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 4 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses untamed  as their active house this turn
+NaN moves all the cards  in their archives to their hand
+Main phase - NaN
+NaN discards Lifeweb
+NaN plays Ancient Bear
+NaN plays Ancient Bear
+NaN plays Regrowth
+NaN uses Regrowth's Æmber  bonus icon to gain 1 Æmber
+NaN uses Regrowth to return Research Smoko to their hand
+NaN uses Dust Pixie to make Dust Pixie fight Bad Penny
+Dust Pixie is destroyed
+Bad Penny is destroyed
+nan26 uses Bad Penny to return Bad Penny to their hand
+NaN uses Flaxia to make Flaxia fight Bulwark
+Flaxia is destroyed
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 1 card  to refill their hand to 6 cards
+End of turn 6
+NaN: 5 Æmber  (2 keys) nan26: 5 Æmber  (0 keys)
+TURN 7 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 5 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses untamed  as their active house this turn
+Main phase - nan26
+nan26 plays Niffle Queen
+nan26 plays Niffle Ape
+nan26 plays Niffle Ape
+nan26 plays Flaxia
+nan26 uses Flaxia to gain 2 Æmber
+nan26 discards Full Moon
+nan26 discards Nature’s Call
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 5 cards  to refill their hand to 6 cards
+nan26 declares Check!
+End of turn 7
+NaN: 5 Æmber  (2 keys) nan26: 7 Æmber  (0 keys)
+TURN 7 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 5 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+Main phase - NaN
+NaN plays Research Smoko
+NaN discards Reverse Time
+NaN discards Effervescent Principle
+NaN uses Ganymede Archivist to reap with Ganymede Archivist
+NaN uses Ganymede Archivist to archive a card
+NaN uses Ganymede Archivist to reap with Ganymede Archivist
+NaN uses Ganymede Archivist to archive a card
+NaN uses Dextre to make Dextre fight Niffle Ape
+NaN uses Shadow Self to redirect the damage
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 5 cards  to refill their hand to 6 cards
+NaN declares Check!
+End of turn 7
+NaN: 7 Æmber  (2 keys) nan26: 7 Æmber  (0 keys)
+TURN 8 - nan26
+Key phase - nan26
+nan26 forges the blue key , paying 6 Æmber
+House phase - nan26
+nan26 chooses untamed  as their active house this turn
+Main phase - nan26
+nan26 plays Niffle Ape
+nan26 uses Flaxia to make Flaxia fight Research Smoko
+Research Smoko is destroyed
+NaN uses Research Smoko to archive the top card  of their deck
+nan26 uses Niffle Ape to make Niffle Ape fight Dextre
+NaN uses Shadow Self to redirect the damage
+Shadow Self is destroyed
+nan26 uses Niffle Ape to make Niffle Ape fight Dextre
+Niffle Ape is destroyed
+Dextre is destroyed
+NaN uses Dextre to return Dextre to the top of their owner's deck
+nan26 uses Niffle Queen to make Niffle Queen fight Ganymede Archivist
+Ganymede Archivist is destroyed
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 1 card  to refill their hand to 6 cards
+End of turn 8
+NaN: 7 Æmber  (2 keys) nan26: 2 Æmber  (1 key)
+TURN 8 - NaN
+Key phase - NaN
+NaN forges the yellow key , paying 6 Æmber
+NaN has won the game

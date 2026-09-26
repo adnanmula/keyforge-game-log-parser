@@ -13,7 +13,7 @@ final class EventTest extends TestCase
 {
     use GetTestData;
 
-    public function testExtraTurns(): void
+    public function testEventPayload(): void
     {
         $event = new Event(
             EventType::TIDE_RAISED,
