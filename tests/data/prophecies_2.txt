@@ -1,0 +1,90 @@
+NaN brings Fletbeast, the Gas Master of the Theater to The Crucible
+nan26 brings Custodia la Robótica to The Crucible
+nan26 won the flip and is first player
+NaN has connected to the game server
+nan26 has connected to the game server
+NaN shuffles their deck
+NaN draws 6 cards  to refill their hand to 6 cards 
+nan26 shuffles their deck
+nan26 draws 7 cards  to refill their hand to 7 cards 
+nan26 keeps their starting hand
+NaN keeps their starting hand
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses logos  as their active house this turn
+Main phase - nan26
+nan26 plays Hologrammophone
+nan26 uses Hologrammophone's Æmber  bonus icon to gain 1 Æmber 
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+End of turn 1
+NaN: 0 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 1 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber 
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN discards Eater of the Dead
+NaN discards Eddy of Dis
+NaN activates their prophecy Outlook Not So Good
+Ready phase - NaN
+Draw phase - NaN
+NaN draws 3 cards  to refill their hand to 6 cards 
+End of turn 1
+NaN: 0 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 2 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses brobnar  as their active house this turn
+nan26 fulfills Outlook Not So Good's prophecy
+nan26 resolves the fate effect of Citizen Shrix
+Main phase - nan26
+nan26 discards Gravelguts
+nan26 plays Cacophonous Riot
+nan26 uses Cacophonous Riot's Æmber  bonus icon to gain 1 Æmber 
+Ready phase - nan26
+Draw phase - nan26
+nan26 draws 2 cards  to refill their hand to 6 cards 
+End of turn 2
+NaN: 0 Æmber  (0 keys) nan26: 2 Æmber  (0 keys)
+TURN 2 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber 
+House phase - NaN
+NaN chooses shadows  as their active house this turn
+Main phase - NaN
+NaN plays Fidgit
+NaN activates their prophecy Outlook Not So Good
+NaN discards Hoodwink
+Ready phase - NaN
+NaN readies their cards 
+Draw phase - NaN
+NaN draws 3 cards  to refill their hand to 6 cards 
+End of turn 2
+NaN: 0 Æmber  (0 keys) nan26: 2 Æmber  (0 keys)
+TURN 3 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 2 amber. The current cost is 6 Æmber 
+House phase - nan26
+nan26 chooses ekwidon  as their active house this turn
+nan26 fulfills Outlook Not So Good's prophecy
+nan26 resolves the fate effect of Predatory Lending
+nan26 uses Predatory Lending to pay their opponent 1 Æmber  for each enemy Shadows  creature
+Main phase - nan26
+nan26 plays Gemcoat Vendor
+Ready phase - nan26
+nan26 readies their cards 
+Draw phase - nan26
+nan26 draws 1 card  to refill their hand to 6 cards 
+End of turn 3
+NaN: 1 Æmber  (0 keys) nan26: 1 Æmber  (0 keys)
+TURN 3 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 1 amber. The current cost is 6 Æmber 
+House phase - NaN
+nan26 concedes
+NaN has won the game

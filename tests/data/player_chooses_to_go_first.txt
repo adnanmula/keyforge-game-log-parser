@@ -1,0 +1,18 @@
+NaN brings L. Kingsley, the Garage Seer to The Crucible
+nan26 brings Kyrielle “Valquiria”, la Obtusa to The Crucible
+nan26 has connected to the game server
+NaN has connected to the game server
+nan26 chooses to go first
+NaN shuffles their deck
+NaN draws 6 cards  to refill their hand to 6 cards
+nan26 shuffles their deck
+nan26 draws 7 cards  to refill their hand to 7 cards
+nan26 mulligans their starting hand
+NaN mulligans their starting hand
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses sanctum  as their active house this turn
+Main phase - nan26
+nan26 concedes
+NaN has won the game

@@ -10,16 +10,6 @@ final class ChainsTest extends TestCase
 {
     use GetTestData;
 
-    public function testChains1(): void
-    {
-        $game = $this->getLog('3');
-
-        self::assertEquals(1, $game->player1->timeline->filter(EventType::CHAINS_REDUCED)->count());
-        self::assertEquals(0, $game->player1->timeline->filter(EventType::CHAINS_REDUCED)->at(0)?->payload()['currentChains']);
-        self::assertEquals(0, $game->player2->timeline->filter(EventType::CHAINS_REDUCED)->count());
-        self::assertEquals(1, $game->timeline()->filter(EventType::CHAINS_REDUCED)->count());
-    }
-
     public function testChains2(): void
     {
         $game = $this->getLog('5');

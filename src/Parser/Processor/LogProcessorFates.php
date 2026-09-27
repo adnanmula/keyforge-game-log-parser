@@ -94,15 +94,17 @@ final class LogProcessorFates implements LogProcessor
         $patternFate = "/^($player1|$player2)\s+resolves the fate effect of\s+(.+)$/";
 
         if (preg_match($patternFate, $message, $matches)) {
-            $player = $matches[1];
             $card = trim($matches[2]);
 
-            $game->player($player)?->timeline->add(
+            $player = $game->player($matches[1]);
+            $opponent = $game->opponentOf($player);
+
+            $opponent?->timeline->add(
                 new Event(
                     EventType::FATE_RESOLVED,
-                    $player,
+                    $opponent->name,
                     new Turn($game->length, Moment::BETWEEN, $index),
-                    Source::UNKNOWN,
+                    Source::OPPONENT,
                     $card,
                     ['has_fate' => in_array($card, self::FATE_CARDS, true)],
                 ),

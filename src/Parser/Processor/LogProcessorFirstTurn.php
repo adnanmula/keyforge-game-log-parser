@@ -11,10 +11,24 @@ final class LogProcessorFirstTurn implements LogProcessor
         $player1 = $game->player1->escapedName();
         $player2 = $game->player2->escapedName();
 
-        $pattern = "/^($player1|$player2) won the flip and is first player/";
+        $pattern1 = "/^($player1|$player2) won the flip and is first player/";
+        $pattern2 = "/^($player1|$player2) chooses to go first/";
+        $pattern3 = "/^($player1|$player2) chooses to go second/";
 
-        if (preg_match($pattern, $message, $matches)) {
+        if (preg_match($pattern1, $message, $matches)) {
             $game->player($matches[1])?->updateIsFirst(true);
+        }
+
+        if (preg_match($pattern2, $message, $matches2)) {
+            $game->player($matches2[1])?->updateIsFirst(true);
+        }
+
+        if (preg_match($pattern3, $message, $matches3)) {
+            $player = $game->player($matches3[1]);
+            $opponent = $game->opponentOf($player);
+
+            $player?->updateIsFirst(false);
+            $opponent?->updateIsFirst(true);
         }
 
         return $game;
