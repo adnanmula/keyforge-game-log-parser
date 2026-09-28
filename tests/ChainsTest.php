@@ -10,32 +10,9 @@ final class ChainsTest extends TestCase
 {
     use GetTestData;
 
-    public function testChains2(): void
+    public function testChains1(): void
     {
-        $game = $this->getLog('5');
-
-        $player1Events = $game->player1->timeline->filter(EventType::CHAINS_REDUCED);
-        $player2Events = $game->player2->timeline->filter(EventType::CHAINS_REDUCED);
-
-        self::assertEquals(6, $player1Events->count());
-        self::assertEquals(3, $player2Events->count());
-        self::assertEquals(9, $game->timeline()->filter(EventType::CHAINS_REDUCED)->count());
-
-        self::assertEquals(2, $player1Events->at(0)?->payload()['currentChains']);
-        self::assertEquals(1, $player1Events->at(1)?->payload()['currentChains']);
-        self::assertEquals(0, $player1Events->at(2)?->payload()['currentChains']);
-        self::assertEquals(2, $player1Events->at(3)?->payload()['currentChains']);
-        self::assertEquals(1, $player1Events->at(4)?->payload()['currentChains']);
-        self::assertEquals(0, $player1Events->at(5)?->payload()['currentChains']);
-
-        self::assertEquals(2, $player2Events->at(0)?->payload()['currentChains']);
-        self::assertEquals(1, $player2Events->at(1)?->payload()['currentChains']);
-        self::assertEquals(0, $player2Events->at(2)?->payload()['currentChains']);
-    }
-
-    public function testChains3(): void
-    {
-        $game = $this->getLog('7');
+        $game = $this->getLog('chains');
 
         $player1Events = $game->player1->timeline->filter(EventType::CHAINS_ADDED);
         $player2Events = $game->player2->timeline->filter(EventType::CHAINS_ADDED);
@@ -73,23 +50,39 @@ final class ChainsTest extends TestCase
         self::assertEquals(Source::PLAYER, $player2Events->at(2)?->source());
     }
 
-    public function testChains4(): void
+    public function testChains2(): void
     {
-        $game = $this->getLog('5');
+        $game = $this->getLog('tides');
 
-        $player1Timeline = $game->player1->timeline->filter(EventType::CHAINS_ADDED);
-        $player2Timeline = $game->player2->timeline->filter(EventType::CHAINS_ADDED);
-        $gameTimeline = $game->timeline()->filter(EventType::CHAINS_ADDED);
+        $chainsAddedPlayer1 = $game->player1->timeline->filter(EventType::CHAINS_ADDED);
+        $chainsAddedPlayer2 = $game->player2->timeline->filter(EventType::CHAINS_ADDED);
+        $chainsReducedPlayer1 = $game->player1->timeline->filter(EventType::CHAINS_REDUCED);
+        $chainsReducedPlayer2 = $game->player2->timeline->filter(EventType::CHAINS_REDUCED);
 
-        self::assertEquals(2, $player1Timeline->count());
-        self::assertEquals(1, $player2Timeline->count());
-        self::assertEquals(3, $gameTimeline->count());
+        self::assertCount(2, $chainsAddedPlayer1);
+        self::assertCount(1, $chainsAddedPlayer2);
+        self::assertCount(3, $game->timeline()->filter(EventType::CHAINS_ADDED));
 
-        self::assertEquals(3, $player1Timeline->at(0)?->value());
-        self::assertEquals('Tide', $player1Timeline->at(0)?->payload()['trigger']);
-        self::assertEquals(3, $player1Timeline->at(1)?->value());
-        self::assertEquals('Tide', $player1Timeline->at(1)?->payload()['trigger']);
-        self::assertEquals(3, $player2Timeline->at(0)?->value());
-        self::assertEquals('Tide', $player2Timeline->at(0)?->payload()['trigger']);
+        self::assertEquals(3, $chainsAddedPlayer1->at(0)?->value());
+        self::assertEquals('Tide', $chainsAddedPlayer1->at(0)?->payload()['trigger']);
+        self::assertEquals(3, $chainsAddedPlayer1->at(1)?->value());
+        self::assertEquals('Tide', $chainsAddedPlayer1->at(1)?->payload()['trigger']);
+        self::assertEquals(3, $chainsAddedPlayer2->at(0)?->value());
+        self::assertEquals('Tide', $chainsAddedPlayer2->at(0)?->payload()['trigger']);
+
+        self::assertCount(6, $chainsReducedPlayer1);
+        self::assertCount(3, $chainsReducedPlayer2);
+        self::assertCount(9, $game->timeline()->filter(EventType::CHAINS_REDUCED));
+
+        self::assertEquals(2, $chainsReducedPlayer1->at(0)?->payload()['currentChains']);
+        self::assertEquals(1, $chainsReducedPlayer1->at(1)?->payload()['currentChains']);
+        self::assertEquals(0, $chainsReducedPlayer1->at(2)?->payload()['currentChains']);
+        self::assertEquals(2, $chainsReducedPlayer1->at(3)?->payload()['currentChains']);
+        self::assertEquals(1, $chainsReducedPlayer1->at(4)?->payload()['currentChains']);
+        self::assertEquals(0, $chainsReducedPlayer1->at(5)?->payload()['currentChains']);
+
+        self::assertEquals(2, $chainsReducedPlayer2->at(0)?->payload()['currentChains']);
+        self::assertEquals(1, $chainsReducedPlayer2->at(1)?->payload()['currentChains']);
+        self::assertEquals(0, $chainsReducedPlayer2->at(2)?->payload()['currentChains']);
     }
 }

@@ -28,10 +28,19 @@ final class LogProcessorCardsDiscarded implements LogProcessor
         $pattern4 = "/^($player1|$player2) uses (.*) to discard the top (\d+) cards of their deck$/i";
         $pattern5 = "/^($player1|$player2) uses (.*) to discard a card at random from ($player1|$player2)'s hand$/i";
         $pattern6 = "/^($player1|$player2) uses (.*) to (.*) and discard (.*)$/i";
+        $pattern7 = "/^($player1|$player2) uses Atrocity to discard (.*) from the top of their deck$/i";
 
         if (preg_match($pattern1, $message, $matches)) {
+            $card = preg_replace('/from hand$/', '', $message);
+            $card = preg_replace("/^($player1|$player2) discards /", '', (string) $card);
             $player = $matches[1];
             $discardCount = 1;
+
+            if (null !== $card) {
+                $cards = [trim($card)];
+            }
+
+            $payload = ['cards' => $cards ?? []];
         } elseif (preg_match($pattern2, $message, $matches)) {
             $player = $matches[1];
             $discardCount = 1;
@@ -50,6 +59,14 @@ final class LogProcessorCardsDiscarded implements LogProcessor
         } elseif (preg_match($pattern6, $message, $matches)) {
             $player = $matches[1];
             $discardCount = 1;
+        } elseif (preg_match($pattern7, $message, $matches)) {
+            $player = $matches[1];
+            $source = Source::OPPONENT;
+            $discardCount = 1;
+            $payload = [
+                'trigger' => 'Atrocity',
+                'cards' => [trim($matches[2])],
+            ];
         }
 
         if ($player !== null && $discardCount > 0) {
@@ -82,9 +99,24 @@ final class LogProcessorCardsDiscarded implements LogProcessor
             return [];
         }
 
-        $lastCard = array_pop($cards);
-        $lastCard = preg_replace('/^and /', '', $lastCard);
-        $cards[] = $lastCard;
+        if (1 === count($cards)) {
+            $lastCard = array_pop($cards);
+
+            if (str_starts_with($lastCard, 'and ')) {
+                $lastCard = preg_replace('/^and /', '', $lastCard);
+                $cards[] = $lastCard;
+            } elseif (preg_match('/.+ and /', $lastCard)) {
+                $lastCards = explode('and', $lastCard);
+                $cards[] = $lastCards[0];
+                $cards[] = $lastCards[1];
+            } else {
+                $cards[] = trim($lastCard);
+            }
+        } else {
+            $lastCard = array_pop($cards);
+            $lastCard = preg_replace('/^and /', '', $lastCard);
+            $cards[] = $lastCard;
+        }
 
         return array_map(static fn (?string $s) => trim($s??''), $cards);
     }

@@ -12,23 +12,44 @@ final class ScoreTest extends TestCase
     public function testScore1(): void
     {
         $game = $this->getLog('1');
+        $timeline = $game->timeline();
 
         self::assertEquals(3, $game->player1->score);
         self::assertEquals(2, $game->player2->score);
         self::assertEquals(3, $game->winner()?->score);
         self::assertEquals(2, $game->loser()?->score);
+
+        self::assertFalse($game->player1->isFirst);
+        self::assertTrue($game->player1->isWinner);
+        self::assertFalse($game->player1->hasConceded);
+
+        self::assertTrue($game->player2->isFirst);
+        self::assertFalse($game->player2->isWinner);
+        self::assertFalse($game->player2->hasConceded);
+
+        self::assertEquals(5, $timeline->filter(EventType::KEY_FORGED)->count());
     }
 
     public function testScore2(): void
     {
         $game = $this->getLog('2');
 
+        self::assertTrue($game->player1->isFirst);
+        self::assertTrue($game->player1->isWinner);
         self::assertFalse($game->player1->hasConceded);
-        self::assertTrue($game->player2->hasConceded);
         self::assertEquals(3, $game->player1->score);
+
+        self::assertFalse($game->player2->isFirst);
+        self::assertFalse($game->player2->isWinner);
+        self::assertTrue($game->player2->hasConceded);
         self::assertEquals(0, $game->player2->score);
+
         self::assertEquals(3, $game->winner()?->score);
         self::assertEquals(0, $game->loser()?->score);
+
+        self::assertEquals(0, $game->timeline()->filter(EventType::KEY_FORGED)->count());
+        self::assertEquals(0, $game->player1->timeline->filter(EventType::PLAYER_CONCEDED)->count());
+        self::assertEquals(1, $game->player2->timeline->filter(EventType::PLAYER_CONCEDED)->count());
     }
 
     public function testMinimal1(): void
@@ -79,6 +100,6 @@ final class ScoreTest extends TestCase
         );
 
         self::assertCount(1, $timeline->filter(EventType::PLAYER_CONCEDED));
-        self::assertEquals('nan26', $timeline->filter(EventType::PLAYER_CONCEDED)->first()->player());
+        self::assertEquals('nan26', $timeline->filter(EventType::PLAYER_CONCEDED)->first()?->player());
     }
 }

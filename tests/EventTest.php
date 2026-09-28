@@ -7,6 +7,7 @@ use AdnanMula\KeyforgeGameLogParser\Event\EventType;
 use AdnanMula\KeyforgeGameLogParser\Event\Moment;
 use AdnanMula\KeyforgeGameLogParser\Event\Source;
 use AdnanMula\KeyforgeGameLogParser\Event\Turn;
+use AdnanMula\KeyforgeGameLogParser\Game\Player;
 use PHPUnit\Framework\TestCase;
 
 final class EventTest extends TestCase
@@ -39,6 +40,21 @@ final class EventTest extends TestCase
         self::assertEquals(
             '2 BETWEEN 10 | player1 | TIDE_RAISED',
             (string) $event,
+        );
+
+        $player1 = new Player('Name', 'The deck', true, true, false, 3);
+
+        self::assertEquals(
+            [
+                'name' => 'Name',
+                'escaped_name' => 'Name',
+                'deck' => 'The deck',
+                'is_first' => true,
+                'is_winner' => true,
+                'has_conceded' => false,
+                'timeline' => [],
+            ],
+            $player1->jsonSerialize(),
         );
     }
 }

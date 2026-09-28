@@ -65,7 +65,7 @@ final class Game implements \JsonSerializable
 
     public function opponentOf(Player $player): ?Player
     {
-        if (false === in_array($player->name, [$this->player1->name, $this->player2->name])) {
+        if (false === in_array($player->name, [$this->player1->name, $this->player2->name], true)) {
             return null;
         }
 
