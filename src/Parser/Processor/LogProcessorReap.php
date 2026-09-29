@@ -25,7 +25,7 @@ final class LogProcessorReap implements LogProcessor
             $card = trim($matches[2]);
             $card2 = trim($matches[3]);
 
-            $game->player($player)?->timeline->add(
+            $game->player($player)->timeline->add(
                 new Event(
                     EventType::REAP,
                     $player,

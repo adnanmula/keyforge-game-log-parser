@@ -26,7 +26,7 @@ final class LogProcessorFight implements LogProcessor
             $value = trim($matches[3]);
             $target = trim($matches[4]);
 
-            $game->player($player)?->timeline->add(
+            $game->player($player)->timeline->add(
                 new Event(
                     EventType::FIGHT,
                     $player,

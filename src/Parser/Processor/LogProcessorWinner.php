@@ -15,8 +15,8 @@ final class LogProcessorWinner implements LogProcessor
         $pattern = "/($player1|$player2) has won the game$/";
 
         if (preg_match($pattern, $message, $matches)) {
-            $game->player($matches[1])?->updateIsWinner(true);
-            $game->player($matches[1])?->updateScore(3);
+            $game->player($matches[1])->updateIsWinner(true);
+            $game->player($matches[1])->updateScore(3);
         }
 
         return $game;

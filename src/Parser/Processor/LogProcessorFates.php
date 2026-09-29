@@ -99,7 +99,7 @@ final class LogProcessorFates implements LogProcessor
             $player = $game->player($matches[1]);
             $opponent = $game->opponentOf($player);
 
-            $opponent?->timeline->add(
+            $opponent->timeline->add(
                 new Event(
                     EventType::FATE_RESOLVED,
                     $opponent->name,

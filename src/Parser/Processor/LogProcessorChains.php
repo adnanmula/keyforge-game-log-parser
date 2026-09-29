@@ -24,7 +24,7 @@ final class LogProcessorChains implements LogProcessor
         $pattern = "/^($player1|$player2)'s\s+chains are reduced by\s+(\d+)\s+to\s+(\d+)$/";
 
         if (preg_match($pattern, $message, $matches)) {
-            $game->player($matches[1])?->timeline->add(
+            $game->player($matches[1])->timeline->add(
                 new Event(
                     EventType::CHAINS_REDUCED,
                     $matches[1],
@@ -39,7 +39,7 @@ final class LogProcessorChains implements LogProcessor
         $pattern2 = "/^($player1|$player2)\s+uses\s+(.*)\s+to increase their chains by\s+(\d+)$/";
 
         if (preg_match($pattern2, $message, $matches2)) {
-            $game->player($matches2[1])?->timeline->add(
+            $game->player($matches2[1])->timeline->add(
                 new Event(
                     EventType::CHAINS_ADDED,
                     $matches2[1],
@@ -54,7 +54,7 @@ final class LogProcessorChains implements LogProcessor
         $pattern3 = "/^($player1|$player2)\s+uses\s+(.*)\s+to give\s+($player1|$player2)\s+(\d+)\s*chains$/";
 
         if (preg_match($pattern3, $message, $matches3)) {
-            $game->player($matches3[3])?->timeline->add(
+            $game->player($matches3[3])->timeline->add(
                 new Event(
                     EventType::CHAINS_ADDED,
                     $matches3[3],
@@ -100,7 +100,7 @@ final class LogProcessorChains implements LogProcessor
             $chains = $chainData[$card] ?? 0;
 
             if ($chains > 0) {
-                $game->player($player)?->timeline->add(
+                $game->player($player)->timeline->add(
                     new Event(
                         EventType::CHAINS_ADDED,
                         $player,

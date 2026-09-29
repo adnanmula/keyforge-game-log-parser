@@ -16,19 +16,19 @@ final class LogProcessorFirstTurn implements LogProcessor
         $pattern3 = "/^($player1|$player2) chooses to go second/";
 
         if (preg_match($pattern1, $message, $matches)) {
-            $game->player($matches[1])?->updateIsFirst(true);
+            $game->player($matches[1])->updateIsFirst(true);
         }
 
         if (preg_match($pattern2, $message, $matches2)) {
-            $game->player($matches2[1])?->updateIsFirst(true);
+            $game->player($matches2[1])->updateIsFirst(true);
         }
 
         if (preg_match($pattern3, $message, $matches3)) {
             $player = $game->player($matches3[1]);
             $opponent = $game->opponentOf($player);
 
-            $player?->updateIsFirst(false);
-            $opponent?->updateIsFirst(true);
+            $player->updateIsFirst(false);
+            $opponent->updateIsFirst(true);
         }
 
         return $game;

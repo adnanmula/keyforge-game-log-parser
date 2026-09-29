@@ -32,11 +32,6 @@ final class LogProcessorAmber implements LogProcessor
     private function processPlayer(Game $game, int $index, string $playerName, int $amber, int $keys): void
     {
         $player = $game->player($playerName);
-
-        if (null === $player) {
-            return;
-        }
-
         $lastEvent = $player->timeline->filter(EventType::AMBER_OBTAINED)->last();
         [$currentTurn, $currentMoment] = $this->calculateTurn($game, $player, $lastEvent);
 

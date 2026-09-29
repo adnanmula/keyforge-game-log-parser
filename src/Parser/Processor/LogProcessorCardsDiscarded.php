@@ -72,7 +72,7 @@ final class LogProcessorCardsDiscarded implements LogProcessor
         if ($player !== null && $discardCount > 0) {
             $payload['msg'] = $message;
 
-            $game->player($player)?->timeline->add(
+            $game->player($player)->timeline->add(
                 new Event(
                     EventType::CARDS_DISCARDED,
                     $player,

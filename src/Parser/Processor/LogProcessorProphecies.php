@@ -27,7 +27,7 @@ final class LogProcessorProphecies implements LogProcessor
             $player = $matches[1];
             $card = trim($matches[2]);
 
-            $game->player($player)?->timeline->add(
+            $game->player($player)->timeline->add(
                 new Event(
                     EventType::PROPHECY_ACTIVATED,
                     $player,
@@ -42,7 +42,7 @@ final class LogProcessorProphecies implements LogProcessor
             $player = $matches[1];
             $card = trim($matches[4]);
 
-            $game->player($player)?->timeline->add(
+            $game->player($player)->timeline->add(
                 new Event(
                     EventType::PROPHECY_ACTIVATED,
                     $player,
@@ -62,7 +62,7 @@ final class LogProcessorProphecies implements LogProcessor
                 $source = Source::OPPONENT;
             }
 
-            $game->player($player)?->timeline->add(
+            $game->player($player)->timeline->add(
                 new Event(
                     EventType::PROPHECY_FULFILLED,
                     $player,
@@ -84,7 +84,7 @@ final class LogProcessorProphecies implements LogProcessor
             $player = $game->player($matches[1]);
             $opponent = $game->opponentOf($player);
 
-            $opponent?->timeline->add(
+            $opponent->timeline->add(
                 new Event(
                     EventType::PROPHECY_FULFILLED,
                     $opponent->name,

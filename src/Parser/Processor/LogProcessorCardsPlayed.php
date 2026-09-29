@@ -24,7 +24,7 @@ final class LogProcessorCardsPlayed implements LogProcessor
             $player = $matches[1];
             $card = trim($matches[2]);
 
-            $game->player($player)?->timeline->add(
+            $game->player($player)->timeline->add(
                 new Event(
                     EventType::CARDS_PLAYED,
                     $player,
