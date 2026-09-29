@@ -50,6 +50,11 @@ final class ScoreTest extends TestCase
         self::assertEquals(0, $game->timeline()->filter(EventType::KEY_FORGED)->count());
         self::assertEquals(0, $game->player1->timeline->filter(EventType::PLAYER_CONCEDED)->count());
         self::assertEquals(1, $game->player2->timeline->filter(EventType::PLAYER_CONCEDED)->count());
+
+        $amberObtainedByTurn = $game->timeline()->aggEventsByTurn($game->length, EventType::AMBER_OBTAINED);
+        self::assertEquals(3, $amberObtainedByTurn[1]);
+        self::assertEquals(7, $amberObtainedByTurn[2]);
+        self::assertEquals(3, $amberObtainedByTurn[3]);
     }
 
     public function testMinimal1(): void
@@ -101,5 +106,6 @@ final class ScoreTest extends TestCase
 
         self::assertCount(1, $timeline->filter(EventType::PLAYER_CONCEDED));
         self::assertEquals('nan26', $timeline->filter(EventType::PLAYER_CONCEDED)->first()?->player());
+        self::assertEquals(1, $timeline->eventsByTurn($game->length, ...EventType::cases())[1]);
     }
 }

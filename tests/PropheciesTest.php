@@ -95,4 +95,27 @@ final class PropheciesTest extends TestCase
         self::assertEquals(3, $summary['prophecies']['Ask Again Later']['fulfilled']);
         self::assertEquals(100, $summary['prophecies']['Ask Again Later']['percent']);
     }
+
+    public function testHeadsOrTails(): void
+    {
+        $game = $this->getLog('prophecies_4');
+        $summaryPlayer1 = $game->player1->timeline->propheciesSummary();
+        $summaryPlayer2 = $game->player2->timeline->propheciesSummary();
+
+        self::assertArrayHasKey('prophecies', $summaryPlayer1);
+        self::assertArrayHasKey('prophecies', $summaryPlayer2);
+
+        self::assertCount(2, $summaryPlayer1['prophecies']);
+        self::assertCount(2, $summaryPlayer2['prophecies']);
+
+        self::assertEquals(7, $summaryPlayer1['prophecies']['Heads, I Win']['activated']);
+        self::assertEquals(6, $summaryPlayer1['prophecies']['Heads, I Win']['fulfilled']);
+        self::assertEquals(1, $summaryPlayer1['prophecies']['Trust Your Feelings']['activated']);
+        self::assertEquals(0, $summaryPlayer1['prophecies']['Trust Your Feelings']['fulfilled']);
+
+        self::assertEquals(4, $summaryPlayer2['prophecies']['Tails, You Lose']['activated']);
+        self::assertEquals(1, $summaryPlayer2['prophecies']['Tails, You Lose']['fulfilled']);
+        self::assertEquals(3, $summaryPlayer2['prophecies']['Stars Aligned']['activated']);
+        self::assertEquals(2, $summaryPlayer2['prophecies']['Stars Aligned']['fulfilled']);
+    }
 }

@@ -56,5 +56,8 @@ final class UnforgedKeysTest extends TestCase
         self::assertEquals($allEvents->at(0), $player2Events->at(0));
         self::assertEquals($allEvents->at(1), $player1Events->at(0));
         self::assertEquals($allEvents->at(2), $player1Events->at(1));
+
+        self::assertEquals(1, $timeline->eventsByTurn($game->length, EventType::KEY_FORGED)[11]);
+        self::assertEquals(2, $timeline->eventsByTurn($game->length, EventType::KEY_UNFORGED)[9]);
     }
 }

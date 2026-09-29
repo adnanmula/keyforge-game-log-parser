@@ -2,6 +2,8 @@
 
 namespace AdnanMula\KeyforgeGameLogParser\Game;
 
+use AdnanMula\KeyforgeGameLogParser\Parser\Exception\PlayerNotInGameException;
+
 final class Game implements \JsonSerializable
 {
     public function __construct(
@@ -21,7 +23,7 @@ final class Game implements \JsonSerializable
             return $this->player2;
         }
 
-        throw new \InvalidArgumentException(sprintf('Player "%s" is not part of the game.', $name));
+        throw new PlayerNotInGameException($name);
     }
 
     public function winner(): ?Player
@@ -63,10 +65,14 @@ final class Game implements \JsonSerializable
         return null;
     }
 
-    public function opponentOf(Player $player): Player
+    public function opponentOf(Player|string $player): Player
     {
+        if (is_string($player)) {
+            $player = $this->player($player);
+        }
+
         if (false === in_array($player->name, [$this->player1->name, $this->player2->name], true)) {
-            throw new \InvalidArgumentException(sprintf('Player "%s" is not part of the game.', $player->name));
+            throw new PlayerNotInGameException($player->name);
         }
 
         return $player->name === $this->player1->name
