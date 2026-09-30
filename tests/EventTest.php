@@ -45,7 +45,7 @@ final class EventTest extends TestCase
             (string) $event,
         );
 
-        $player1 = new Player('Name', 'The deck', true, true, false, 3);
+        $player1 = new Player('Name', 'The deck', true, false, true, false, 3);
 
         self::assertEquals(
             [
@@ -54,6 +54,7 @@ final class EventTest extends TestCase
                 'deck' => 'The deck',
                 'is_first' => true,
                 'is_winner' => true,
+                'mulligan' => false,
                 'has_conceded' => false,
                 'timeline' => [],
             ],

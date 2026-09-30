@@ -13,8 +13,6 @@ final class LogProcessorProphecies implements LogProcessor
 {
     public function execute(Game $game, int $index, string $message, ?array $messages = null): Game
     {
-        $matches = [];
-
         $player1 = $game->player1->escapedName();
         $player2 = $game->player2->escapedName();
 
@@ -59,6 +57,7 @@ final class LogProcessorProphecies implements LogProcessor
             $source = Source::UNKNOWN;
 
             if ($card === 'Trust Your Feelings') {
+                $player = $game->opponentOf($game->player($player))->name;
                 $source = Source::OPPONENT;
             }
 

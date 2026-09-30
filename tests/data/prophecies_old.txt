@@ -1,0 +1,465 @@
+nan26 brings Vegas Farmingberg Manipulator to The Crucible
+NaN brings Fletbeast the Gas Master of the Theater to The Crucible
+nan26 has connected to the game server
+NaN has connected to the game server
+NaN chooses to randomize the first player
+NaN won the flip and is first player
+nan26 is shuffling their deck
+nan26 draws 6 card s to their maximum of 6
+NaN is shuffling their deck
+NaN draws 6 card s to their maximum of 6
+NaN draws 1 card
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses shadows as their active house this turn
+Main phase - NaN
+NaN plays Deipno Spymaster
+NaN activates their prophecy Outlook Not So Good
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 2 card s to their maximum of 6
+End of turn 1
+nan26: 0 Æmber (0 keys) NaN: 0 Æmber (0 keys)
+TURN 1 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses dis as their active house this turn
+NaN uses Outlook Not So Good to fulfill its prophecy
+NaN resolves the fate effect of Double Doom
+Main phase - nan26
+nan26 plays Fear
+nan26 uses Fear to return Deipno Spymaster to their hand
+nan26 plays Infurnace
+nan26 chooses option ' Opponent's '
+nan26 uses Infurnace to purge Double Doom
+nan26 plays Pied Viper
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card s to their maximum of 6
+End of turn 1
+nan26: 0 Æmber (0 keys) NaN: 0 Æmber (0 keys)
+TURN 2 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses shadows as their active house this turn
+Main phase - NaN
+NaN discards Hoodwink
+NaN plays Bandit Culver
+NaN plays Deipno Spymaster
+NaN plays Urchin
+NaN plays Vial of Mutation
+NaN gains an Æmber due to Vial of Mutation's bonus icon
+NaN uses Vial of Mutation to put a mutation counter on Deipno Spymaster and Bandit Culver, making them gain the Mutant trait
+NaN activates their prophecy The Early Bird
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 5 card s to their maximum of 6
+End of turn 2
+nan26: 0 Æmber (0 keys) NaN: 1 Æmber (0 keys)
+TURN 2 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses dis as their active house this turn
+Main phase - nan26
+nan26 activates their prophecy The Early Bird
+nan26 plays Atrocity
+nan26 plays Relativity Imp
+nan26 gains an Æmber due to Relativity Imp's bonus icon
+nan26 gains an Æmber due to Relativity Imp's bonus icon
+nan26 draws a card due to Relativity Imp's bonus icon
+nan26 uses Infurnace to reap with Infurnace
+nan26 uses Pied Viper to reap with Pied Viper
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 2 card s to their maximum of 6
+NaN uses The Early Bird to fulfill its prophecy
+NaN resolves the fate effect of Shaffles
+End of turn 2
+nan26: 4 Æmber (0 keys) NaN: 1 Æmber (0 keys)
+TURN 3 - NaN
+nan26 uses Atrocity to discard Finishing Blow from their deck and deal 1 damage to Atrocity
+nan26 uses Atrocity to discard Finishing Blow
+Key phase - NaN
+NaN does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses shadows as their active house this turn
+Main phase - NaN
+NaN plays Hock
+NaN gains an Æmber due to Hock's bonus icon
+NaN uses Bandit Culver to make Bandit Culver fight Atrocity
+NaN uses Deipno Spymaster to reap with Deipno Spymaster
+NaN uses Urchin to reap with Urchin
+NaN activates their prophecy The Early Bird
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 2 card s to their maximum of 6
+End of turn 3
+nan26: 4 Æmber (0 keys) NaN: 4 Æmber (0 keys)
+TURN 3 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 4 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses dis as their active house this turn
+Main phase - nan26
+nan26 plays Banish
+nan26 gains an Æmber due to Banish's bonus icon
+nan26 uses Banish to archive Deipno Spymaster
+nan26 plays Mogg
+nan26 uses Relativity Imp to reap with Relativity Imp
+nan26 uses Infurnace to reap with Infurnace
+nan26 uses Pied Viper to reap with Pied Viper
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 2 card s to their maximum of 6
+NaN uses The Early Bird to fulfill its prophecy
+NaN resolves the fate effect of Carrion Wyrm
+nan26 declares Check!
+End of turn 3
+nan26: 8 Æmber (0 keys) NaN: 4 Æmber (0 keys)
+TURN 4 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 4 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses redemption as their active house this turn
+Main phase - NaN
+NaN plays Ragatha
+NaN plays Dark Centurion
+NaN plays Sacro-Beast
+NaN captures an Æmber on Sacro-Beast due to Sacro-Beast's bonus icon
+NaN plays Ruthless Avenger
+NaN activates their prophecy Trust Your Feelings
+NaN chooses house dis
+NaN uses Trust Your Feelings to name dis
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 5 card s to their maximum of 6
+End of turn 4
+nan26: 7 Æmber (0 keys) NaN: 4 Æmber (0 keys)
+TURN 4 - nan26
+Key phase - nan26
+nan26 forges the red key, paying 6 Æmber
+House phase - nan26
+nan26 chooses untamed as their active house this turn
+Main phase - nan26
+nan26 uses Mogg to reap with Mogg
+nan26 plays Cladogenesis
+nan26 gains an Æmber due to Cladogenesis's bonus icon
+nan26 uses Cladogenesis to discard Envious Venomite and Gone Pear Shaped, reveal each player's hand, and discard cards belonging to each player's discarded card's house
+nan26 uses Cladogenesis to discard Envious Venomite and Gone Pear Shaped
+Cladogenesis reveals Cladogenesis
+Cladogenesis reveals Lightbearer Kelvin
+Cladogenesis reveals Prince Bufo
+Cladogenesis reveals Aubade the Grim
+Cladogenesis reveals Prince Bufo
+Cladogenesis reveals Eater of the Dead
+Cladogenesis reveals Eddy of Dis
+Cladogenesis reveals Citizen Shrix
+Cladogenesis reveals Atrocity
+Cladogenesis reveals Fallen Sovereign
+Cladogenesis reveals Citizen Shrix
+nan26 uses Cladogenesis to discard Cladogenesis, Prince Bufo, and Prince Bufo
+nan26 uses Cladogenesis to have each player refill their hand
+nan26 draws 4 card s to their maximum of 6
+nan26 plays Fog Murmook
+nan26 plays Fog Murmook
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 2 card s to their maximum of 6
+End of turn 4
+nan26: 3 Æmber (1 key) NaN: 4 Æmber (0 keys)
+TURN 5 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 4 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses redemption as their active house this turn
+Main phase - NaN
+NaN uses Sacro-Beast to reap with Sacro-Beast
+nan26 uses Ragatha to deal 3 damage to Fog Murmook and Pied Viper
+NaN plays Citizen Shrix
+NaN uses Citizen Shrix to exalt Citizen Shrix and steal 1 Æmber
+NaN uses Dark Centurion to reap with Dark Centurion
+nan26 uses Ragatha to deal 3 damage to Infurnace
+NaN plays Citizen Shrix
+NaN uses Citizen Shrix to exalt Citizen Shrix and steal 1 Æmber
+NaN plays Fallen Sovereign
+NaN uses Ruthless Avenger to make Ruthless Avenger fight Relativity Imp
+NaN uses Ruthless Avenger to deal 2 damage to Relativity Imp
+NaN activates their prophecy The Early Bird
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 4 card s to their maximum of 6
+nan26 uses The Early Bird to fulfill its prophecy
+nan26 uses Solo to destroy Ragatha, Infurnace, Mogg, Fog Murmook, Fallen Sovereign, Citizen Shrix, Dark Centurion, Urchin, Sacro-Beast, Ruthless Avenger, and Citizen Shrix
+nan26 resolves the fate effect of Solo
+NaN declares Check!
+End of turn 5
+nan26: 4 Æmber (1 key) NaN: 8 Æmber (0 keys)
+TURN 5 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 4 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses sanctum as their active house this turn
+Main phase - nan26
+nan26 plays Sir Jaune
+nan26 uses Sir Jaune to capture 2 Æmber from their opponent, placing it on Sir Jaune
+nan26 plays Aubade the Grim
+nan26 uses Aubade the Grim to capture 3 Æmber from their opponent, placing it on Aubade the Grim
+nan26 plays Holdfast
+nan26 plays Lightbearer Kelvin
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 4 card s to their maximum of 6
+NaN uses The Early Bird to fulfill its prophecy
+NaN resolves the fate effect of Eater of the Dead
+End of turn 5
+nan26: 4 Æmber (1 key) NaN: 3 Æmber (0 keys)
+TURN 6 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses dis as their active house this turn
+Main phase - NaN
+NaN plays They Tell No Tales
+NaN gains an Æmber due to They Tell No Tales's bonus icon
+NaN chooses house sanctum
+NaN uses They Tell No Tales to destroy all creatures of house sanctum and gain 2 chains
+NaN plays Atrocity
+NaN plays Eddy of Dis
+NaN gains an Æmber due to Eddy of Dis's bonus icon
+NaN uses Eddy of Dis to return a card to their owner's deck
+NaN activates their prophecy Outlook Not So Good
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 card s to their maximum of 6
+NaN's chains are reduced by 1 to 1
+NaN declares Check!
+End of turn 6
+nan26: 4 Æmber (1 key) NaN: 10 Æmber (0 keys)
+TURN 6 - nan26
+NaN uses Atrocity to discard Broken Intent from their deck and deal 1 damage to Atrocity
+NaN uses Atrocity to discard Broken Intent
+Key phase - nan26
+nan26 does not forge a key. They have 4 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses sanctum as their active house this turn
+NaN uses Outlook Not So Good to fulfill its prophecy
+NaN resolves the fate effect of Even Ivan
+Main phase - nan26
+Ready phase - nan26
+Draw phase - nan26
+nan26 draws 1 card to their maximum of 6
+End of turn 6
+nan26: 4 Æmber (1 key) NaN: 10 Æmber (0 keys)
+TURN 7 - NaN
+Key phase - NaN
+NaN forges the red key 
+paying 6 Æmber
+House phase - NaN
+NaN chooses shadows as their active house this turn
+NaN moves all the cards in their archives to their hand
+Main phase - NaN
+NaN plays Deipno Spymaster
+NaN plays Thunk
+NaN plays Fidgit
+NaN activates their prophecy Outlook Not So Good
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 card s to their maximum of 6
+NaN's chains are reduced by 1 to 0
+End of turn 7
+nan26: 4 Æmber (1 key) NaN: 4 Æmber (1 key)
+TURN 7 - nan26
+NaN uses Atrocity to discard Jayne the Bard from their deck and deal 1 damage to Atrocity
+NaN uses Atrocity to discard Jayne the Bard
+Key phase - nan26
+nan26 does not forge a key. They have 4 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses sanctum as their active house this turn
+NaN uses Outlook Not So Good to fulfill its prophecy
+NaN uses Predatory Lending to pay their opponent 1 Æmber for each enemy Shadows creature
+NaN resolves the fate effect of Predatory Lending
+Main phase - nan26
+nan26 plays Aubade the Grim
+nan26 uses Aubade the Grim to capture 3 Æmber from their opponent 
+placing it on Aubade the Grim
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 1 card to their maximum of 6
+End of turn 7
+nan26: 1 Æmber (1 key) NaN: 4 Æmber (1 key)
+TURN 8 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 4 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses dis as their active house this turn
+Main phase - NaN
+NaN plays Embellish Imp
+NaN plays Chasm Vespid
+NaN uses Deipno Spymaster to allow Fidgit to be used for the remainder of the turn
+NaN uses Fidgit to reap with Fidgit
+NaN chooses option ' Top of deck '
+NaN uses Fidgit
+NaN uses Fidgit to discard Rat Pixie
+NaN uses Atrocity to reap with Atrocity
+NaN activates their prophecy The Early Bird
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 4 card s to their maximum of 6
+NaN declares Check!
+End of turn 8
+nan26: 1 Æmber (1 key) NaN: 6 Æmber (1 key)
+TURN 8 - nan26
+NaN uses Atrocity to discard Chasm Vespid from their deck and deal 1 damage to Atrocity
+NaN uses Atrocity to discard Chasm Vespid
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses dis as their active house this turn
+nan26 uses Trust Your Feelings to fulfill its prophecy
+nan26 resolves the fate effect of Genetic Strain
+Main phase - nan26
+nan26 plays Hamstrung
+nan26 gains an Æmber due to Hamstrung's bonus icon
+nan26 chooses option ' Opponent's '
+nan26 uses Hamstrung to discard nothing from the top of NaN's deck
+nan26 plays Skorpeon
+nan26 plays A Gift of Æmber
+nan26 gains an Æmber due to A Gift of Æmber's bonus icon
+nan26 draws a card due to A Gift of Æmber's bonus icon
+nan26 uses A Gift of Æmber to destroy Skorpeon and Embellish Imp
+nan26 uses A Gift of Æmber to gain 1 amber, and NaN gains 1 Æmber
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 2 card s to their maximum of 6
+End of turn 8
+nan26: 4 Æmber (1 key) NaN: 7 Æmber (1 key)
+TURN 9 - NaN
+Key phase - NaN
+NaN forges the blue key, paying 6 Æmber
+House phase - NaN
+NaN chooses dis as their active house this turn
+Main phase - NaN
+NaN plays Strug
+NaN uses Strug to make nan26 lose 1 Æmber
+NaN plays Dark Minion
+NaN uses Chasm Vespid to reap with Chasm Vespid
+NaN uses Deipno Spymaster to allow Fidgit to be used for the remainder of the turn
+NaN uses Fidgit to reap with Fidgit
+NaN chooses option ' Top of deck '
+NaN uses Fidgit
+NaN uses Fidgit to discard Outflank
+NaN plays Outflank
+NaN gains an Æmber due to Outflank's bonus icon
+NaN uses Outflank to cause each Sanctum flank creature to capture 2 Æmber from their opponent
+NaN activates their prophecy Trust Your Feelings
+NaN chooses house sanctum
+NaN uses Trust Your Feelings to name sanctum
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 card s to their maximum of 6
+NaN's deck has run out of cards, so they shuffle
+End of turn 9
+nan26: 3 Æmber (1 key) NaN: 2 Æmber (2 keys)
+TURN 9 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses sanctum as their active house this turn
+nan26 uses Trust Your Feelings to fulfill its prophecy
+NaN uses Predatory Lending to pay their opponent 1 Æmber for each enemy Shadows creature
+nan26 resolves the fate effect of Predatory Lending
+Main phase - nan26
+nan26 uses Aubade the Grim to reap with Aubade the Grim
+nan26 uses Aubade the Grim to move 1 Æmber from Aubade the Grim to the pool
+nan26 plays Chanel the Wise
+nan26 plays Grey Warden
+nan26 plays Grey Warden
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 3 card s to their maximum of 6
+nan26's deck has run out of cards, so they shuffle
+End of turn 9
+nan26: 1 Æmber (1 key) NaN: 5 Æmber (2 keys)
+TURN 10 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 5 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses shadows as their active house this turn
+Main phase - NaN
+NaN plays Bondsman Belvan
+NaN uses Fidgit to reap with Fidgit
+NaN chooses option ' Top of deck '
+NaN uses Fidgit
+NaN uses Fidgit to discard Prince Bufo
+NaN uses Deipno Spymaster to allow Strug to be used for the remainder of the turn
+NaN uses Strug to reap with Strug
+NaN uses Thunk to reap with Thunk
+NaN plays Gone Pear Shaped
+NaN gains an Æmber due to Gone Pear Shaped's bonus icon
+NaN activates their prophecy Trust Your Feelings
+NaN chooses house sanctum
+NaN uses Trust Your Feelings to name sanctum
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 card s to their maximum of 6
+NaN declares Check!
+End of turn 10
+nan26: 1 Æmber (1 key) NaN: 9 Æmber (2 keys)
+TURN 10 - nan26
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses sanctum as their active house this turn
+nan26 uses Trust Your Feelings to fulfill its prophecy
+NaN uses Genetic Strain to gain 2 Æmber
+nan26 resolves the fate effect of Genetic Strain
+Main phase - nan26
+nan26 plays Grey Warden
+nan26 uses Chanel the Wise to reap with Chanel the Wise
+nan26 uses Aubade the Grim to reap with Aubade the Grim
+nan26 uses Aubade the Grim to move 1 Æmber from Aubade the Grim to the pool
+nan26 uses Grey Warden to reap with Grey Warden
+nan26 uses Grey Warden to ready Aubade the Grim
+nan26 uses Aubade the Grim to reap with Aubade the Grim
+nan26 uses Aubade the Grim to move 1 Æmber from Aubade the Grim to the pool
+nan26 uses Grey Warden to reap with Grey Warden
+nan26 uses Grey Warden to ready Grey Warden
+nan26 uses Grey Warden to reap with Grey Warden
+nan26 uses Grey Warden to ready Grey Warden
+nan26 uses Grey Warden to reap with Grey Warden
+nan26 uses Grey Warden to ready Grey Warden
+nan26 uses Grey Warden to reap with Grey Warden
+nan26 uses Grey Warden to ready Grey Warden
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 1 card to their maximum of 6
+nan26 declares Check!
+End of turn 10
+nan26: 9 Æmber (1 key) NaN: 11 Æmber (2 keys)
+TURN 11 - NaN
+Key phase - NaN
+NaN forges the yellow key, paying 6 Æmber
+NaN has won the game

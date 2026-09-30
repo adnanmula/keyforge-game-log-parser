@@ -79,6 +79,20 @@ final class PropheciesTest extends TestCase
         self::assertTrue($fatesPlayer1->at(1)?->payload()['has_fate']);
     }
 
+    public function testPropheciesOld(): void
+    {
+        $game = $this->getLog('prophecies_old');
+
+        $propheciesPlayer1 = $game->player1->timeline->filter(EventType::PROPHECY_ACTIVATED);
+        $propheciesPlayer2 = $game->player2->timeline->filter(EventType::PROPHECY_ACTIVATED);
+
+        self::assertCount(1, $propheciesPlayer1);
+        self::assertCount(10, $propheciesPlayer2);
+
+        self::assertEquals('The Early Bird', $propheciesPlayer1->at(0)?->value());
+        self::assertEquals('Outlook Not So Good', $propheciesPlayer2->at(0)?->value());
+    }
+
     public function testAskAgainLater(): void
     {
         $game = $this->getLog('prophecies_3');
@@ -117,5 +131,14 @@ final class PropheciesTest extends TestCase
         self::assertEquals(1, $summaryPlayer2['prophecies']['Tails, You Lose']['fulfilled']);
         self::assertEquals(3, $summaryPlayer2['prophecies']['Stars Aligned']['activated']);
         self::assertEquals(2, $summaryPlayer2['prophecies']['Stars Aligned']['fulfilled']);
+    }
+
+    public function testStrategicFeint(): void
+    {
+        $game = $this->getLog('prophecies_1');
+        $events = $game->player1->timeline->filter(EventType::FATE_RESOLVED);
+
+        self::assertEquals(1, $game->player1->timeline->propheciesSummary()['fates']['Strategic Feint']['resolved']);
+        self::assertEquals('Strategic Feint', $events->at(1)?->value());
     }
 }

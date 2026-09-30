@@ -54,8 +54,6 @@ final class LogProcessorKeysForged implements LogProcessor
     {
         $pattern1 = "/^($player1|$player2)\s+uses\s+(.+)\s+to\s+cause\s+($player1|$player2)\s+to\s+unforge\s+a\s+key\s*/";
         $pattern2 = "/^($player1|$player2)\s+uses\s+(.+)\s+to\s+unforge\s+an\s+opponent's\s+key/";
-        $matches = [];
-        $matches2 = [];
 
         if (preg_match($pattern1, $message, $matches)) {
             $color = $this->checkUnforgedKeyColor($messages[$index + 1] ?? null, $player1, $player2);
@@ -80,21 +78,21 @@ final class LogProcessorKeysForged implements LogProcessor
             $opponent->subtractScore();
         }
 
-        if (preg_match($pattern2, $message, $matches2)) {
+        if (preg_match($pattern2, $message, $matches)) {
             $color = $this->checkUnforgedKeyColor($messages[$index + 1] ?? null, $player1, $player2);
 
-            $player = $game->player($matches2[1]);
+            $player = $game->player($matches[1]);
             $opponent = $game->opponentOf($player);
 
             $player->timeline->add(
                 new Event(
                     EventType::KEY_UNFORGED,
-                    $matches2[1],
+                    $matches[1],
                     new Turn($game->length, Moment::BETWEEN, $index),
                     Source::PLAYER,
                     $color,
                     [
-                        'card' => $matches2[2],
+                        'card' => $matches[2],
                         'key' => $color,
                         'target' => $opponent->name,
                     ],
@@ -105,15 +103,13 @@ final class LogProcessorKeysForged implements LogProcessor
         }
     }
 
-    public function checkUnforgedKeyColor(?string $message, string $player1, string $player2): string
+    private function checkUnforgedKeyColor(?string $message, string $player1, string $player2): string
     {
         if (null === $message) {
             return '';
         }
 
         $unforgedKeyColorPattern = "/^($player1|$player2)\s+unforges\s+($player1|$player2)'s\s+(.*)\s+key/";
-
-        $matches = [];
 
         if (preg_match($unforgedKeyColorPattern, $message, $matches)) {
             return $matches[3];

@@ -55,4 +55,11 @@ final class CardsDiscardedTest extends TestCase
         self::assertEquals(['Fallen Sovereign', 'Navigator Ali'], $player2Events->at(1)?->payload()['cards']);
         self::assertEquals(['Urchin'], $player2Events->at(2)?->payload()['cards']);
     }
+
+    public function testDiscardInHereSomewhere(): void
+    {
+        $game = $this->getLog('1');
+
+        self::assertEquals(5, $game->player1->timeline->filter(EventType::CARDS_DISCARDED)->at(0)?->value());
+    }
 }
