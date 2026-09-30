@@ -11,7 +11,7 @@ final class TidesTest extends TestCase
 
     public function testTides(): void
     {
-        $game = $this->getLog('5');
+        $game = $this->getLog('tides');
 
         $player1Timeline = $game->player1->timeline->filter(EventType::TIDE_RAISED);
         $player2Timeline = $game->player2->timeline->filter(EventType::TIDE_RAISED);

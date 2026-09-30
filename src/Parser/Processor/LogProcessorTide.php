@@ -23,7 +23,7 @@ final class LogProcessorTide implements LogProcessor
         $pattern2 = "/^($player1|$player2)\s+uses\s+(.*)\s+to raise the tide$/";
 
         if (preg_match($pattern1, $message, $matches)) {
-            $game->player($matches[1])?->timeline->add(
+            $game->player($matches[1])->timeline->add(
                 new Event(
                     EventType::TIDE_RAISED,
                     $matches[1],
@@ -33,7 +33,7 @@ final class LogProcessorTide implements LogProcessor
                 ),
             );
 
-            $game->player($matches[1])?->timeline->add(
+            $game->player($matches[1])->timeline->add(
                 new Event(
                     EventType::CHAINS_ADDED,
                     $matches[1],
@@ -46,7 +46,7 @@ final class LogProcessorTide implements LogProcessor
         }
 
         if (preg_match($pattern2, $message, $matches2)) {
-            $game->player($matches2[1])?->timeline->add(
+            $game->player($matches2[1])->timeline->add(
                 new Event(
                     EventType::TIDE_RAISED,
                     $matches2[1],

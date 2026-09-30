@@ -22,7 +22,7 @@ final class LogProcessorCheck implements LogProcessor
         if (preg_match($pattern, $message, $matches)) {
             $player = $matches[1];
 
-            $game->player($player)?->timeline->add(
+            $game->player($player)->timeline->add(
                 new Event(
                     EventType::CHECK_DECLARED,
                     $player,

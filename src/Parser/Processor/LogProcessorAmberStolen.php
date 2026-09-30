@@ -29,7 +29,7 @@ final class LogProcessorAmberStolen implements LogProcessor
             $card = trim($matches[2]);
             $value = (int) $matches[3];
 
-            $game->player($player)?->timeline->add(
+            $game->player($player)->timeline->add(
                 new Event(
                     EventType::AMBER_STOLEN,
                     $player,
@@ -44,7 +44,7 @@ final class LogProcessorAmberStolen implements LogProcessor
             $card = trim($matches2[2]);
             $value = (int) $matches2[3];
 
-            $game->player($player)?->timeline->add(
+            $game->player($player)->timeline->add(
                 new Event(
                     EventType::AMBER_STOLEN,
                     $player,
@@ -59,7 +59,7 @@ final class LogProcessorAmberStolen implements LogProcessor
             $card = trim($matches3[2]);
             $amount = (int) $matches3[4];
 
-            $game->player($player)?->timeline->add(
+            $game->player($player)->timeline->add(
                 new Event(
                     EventType::AMBER_STOLEN,
                     $player,

@@ -44,6 +44,19 @@ final class ExtractPlayerAndDeckTest extends TestCase
         self::assertEquals('Deck B', $game->player2->deck);
     }
 
+    public function testExtract3(): void
+    {
+        self::expectException(InvalidLogType::class);
+
+        $parser = new GameLogParser();
+        $game = $parser->execute('', ParseType::HTML);
+
+        self::assertEquals('Alice', $game->player1->name);
+        self::assertEquals('Deck A', $game->player1->deck);
+        self::assertEquals('Bob', $game->player2->name);
+        self::assertEquals('Deck B', $game->player2->deck);
+    }
+
     public function testExtractIncomplete(): void
     {
         self::expectException(MalformedLog::class);
@@ -69,6 +82,34 @@ final class ExtractPlayerAndDeckTest extends TestCase
 
         self::assertEquals('Kf player', $game->player1->name);
         self::assertEquals('Other_player', $game->player2->name);
+        self::assertCount(0, $game->timeline());
+
+        self::assertEquals([
+            'player1' => [
+                'name' => 'Kf player',
+                'escaped_name' => 'Kf player',
+                'deck' => 'The Mighty-Deck 2000',
+                'is_first' => false,
+                'is_winner' => false,
+                'has_conceded' => false,
+                'timeline' => [],
+            ],
+            'player2' => [
+                'name' => 'Other_player',
+                'escaped_name' => 'Other_player',
+                'deck' => 'Unknown',
+                'is_first' => false,
+                'is_winner' => false,
+                'has_conceded' => false,
+                'timeline' => [],
+            ],
+            'winner' => null,
+            'raw_log' => [
+                'Kf player brings The Mighty-Deck 2000 to The Crucible',
+                'Kf player has connected to the game server',
+                'Other_player has connected to the game server',
+            ],
+        ], $game->jsonSerialize());
     }
 
     public function testWrongParseType(): void

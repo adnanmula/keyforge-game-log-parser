@@ -1,0 +1,234 @@
+NaN brings L. Kingsley, the Garage Seer to The Crucible
+nan26 brings Kyrielle “Valquiria”, la Obtusa to The Crucible
+nan26 won the flip and is first player
+NaN has connected to the game server
+nan26 has connected to the game server
+NaN shuffles their deck
+NaN draws 6 cards  to refill their hand to 6 cards
+nan26 shuffles their deck
+nan26 draws 7 cards  to refill their hand to 7 cards
+nan26 keeps their starting hand
+NaN mulligans their starting hand
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses untamed  as their active house this turn
+Main phase - nan26
+nan26 plays Witch of the Eye
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+End of turn 1
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 1 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses logos  as their active house this turn
+Main phase - NaN
+NaN plays Emeritus Darn
+NaN activates their prophecy Ask Again Later
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 cards  to refill their hand to 6 cards
+End of turn 1
+NaN: 0 Æmber  (0 keys) nan26: 0 Æmber  (0 keys)
+TURN 2 - nan26
+NaN chooses house logos
+NaN uses Ask Again Later to make nan26 name house logos
+Ask Again Later reveals Rage Reset
+Key phase - nan26
+nan26 does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses untamed  as their active house this turn
+Main phase - nan26
+nan26 plays Flaxia
+nan26 uses Flaxia to gain 2 Æmber
+nan26 plays Niffle Ape
+nan26 uses Witch of the Eye to reap with Witch of the Eye
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 2 cards  to refill their hand to 6 cards
+End of turn 2
+NaN: 0 Æmber  (0 keys) nan26: 3 Æmber  (0 keys)
+TURN 2 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses staralliance  as their active house this turn
+Main phase - NaN
+NaN discards Spade Teller
+NaN discards J.O.N. Cargo
+NaN discards Into the Warp
+NaN discards Ensign Clark
+Ready phase - NaN
+Draw phase - NaN
+NaN draws 4 cards  to refill their hand to 6 cards
+End of turn 2
+NaN: 0 Æmber  (0 keys) nan26: 3 Æmber  (0 keys)
+TURN 3 - nan26
+NaN chooses house dis
+NaN uses Ask Again Later to make nan26 name house dis
+Ask Again Later reveals 4CR “Foreseer”
+nan26 fulfills Ask Again Later's prophecy
+nan26 resolves the fate effect of Poised Strike
+NaN uses Poised Strike to apply a lasting effect
+Key phase - nan26
+nan26 does not forge a key. They have 3 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses sanctum  as their active house this turn
+Main phase - nan26
+nan26 discards Francus
+nan26 discards Bulwark
+nan26 plays Doorstep to Heaven
+nan26 uses Doorstep to Heaven's Æmber  bonus icon to gain 1 Æmber
+Draw phase - nan26
+nan26 draws 3 cards  to refill their hand to 6 cards
+End of turn 3
+NaN: 0 Æmber  (0 keys) nan26: 4 Æmber  (0 keys)
+TURN 3 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses staralliance  as their active house this turn
+Main phase - NaN
+NaN plays Scout Pete
+NaN uses Scout Pete to look at the top card  of their deck
+NaN uses Scout Pete to discard 4CR “Foreseer”
+NaN plays Sample 42-C
+NaN uses Sample 42-C's Æmber  bonus icon to gain 1 Æmber
+NaN uses Sample 42-C's capture bonus icon to capture 1 Æmber  onto Scout Pete
+NaN uses Sample 42-C's damage bonus icon to deal 1 damage to Scout Pete
+NaN activates their prophecy Ask Again Later
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 cards  to refill their hand to 6 cards
+End of turn 3
+NaN: 1 Æmber  (0 keys) nan26: 3 Æmber  (0 keys)
+TURN 4 - nan26
+NaN chooses house staralliance
+NaN uses Ask Again Later to make nan26 name house staralliance
+Ask Again Later reveals 4CR “Foreseer”
+nan26 fulfills Ask Again Later's prophecy
+nan26 resolves the fate effect of Strug
+NaN uses Strug to make nan26 lose 2 Æmber
+Key phase - nan26
+nan26 does not forge a key. They have 1 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses shadows  as their active house this turn
+Main phase - nan26
+nan26 plays Masterplan
+nan26 uses Masterplan's Æmber  bonus icon to gain 1 Æmber
+nan26 uses Masterplan to place a card  facedown under Masterplan
+nan26 plays Ghostly Hand
+nan26 uses Ghostly Hand's Æmber  bonus icon to gain 1 Æmber
+nan26 uses Ghostly Hand's Æmber  bonus icon to gain 1 Æmber
+nan26 uses Ghostly Hand to steal 1 Æmber  from NaN
+nan26 plays Noddy the Thief
+nan26 plays Urchin
+nan26 plays Bait and Switch
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 6 cards  to refill their hand to 6 cards
+End of turn 4
+NaN: 0 Æmber  (0 keys) nan26: 5 Æmber  (0 keys)
+TURN 4 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 0 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+NaN plays They Tell No Tales
+NaN uses They Tell No Tales's Æmber  bonus icon to gain 1 Æmber
+NaN chooses house saurian
+NaN uses They Tell No Tales to destroy all creatures of house saurian  and gain 2 chains
+NaN plays Hamstrung
+NaN uses Hamstrung's Æmber  bonus icon to gain 1 Æmber
+NaN chooses option 'Mine'
+NaN uses Hamstrung to discard 4CR “Foreseer” from the top of NaN's deck and purge it
+NaN uses Hamstrung to discard 4CR “Foreseer” from the top of NaN's deck
+NaN plays Skorpeon
+NaN activates their prophecy Ask Again Later
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN draws 3 cards  to refill their hand to 5 cards
+NaN sheds 1 chain to 1 chains
+End of turn 4
+NaN: 2 Æmber  (0 keys) nan26: 5 Æmber  (0 keys)
+TURN 5 - nan26
+NaN chooses house staralliance
+NaN uses Ask Again Later to make nan26 name house staralliance
+Ask Again Later reveals Strategic Feint
+Key phase - nan26
+nan26 does not forge a key. They have 5 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses shadows  as their active house this turn
+Main phase - nan26
+nan26 discards Pawn Sacrifice
+nan26 uses Urchin to reap with Urchin
+Ready phase - nan26
+nan26 readies their cards
+Draw phase - nan26
+nan26 draws 1 card  to refill their hand to 6 cards
+nan26 declares Check!
+End of turn 5
+NaN: 2 Æmber  (0 keys) nan26: 6 Æmber  (0 keys)
+TURN 5 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 2 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses staralliance  as their active house this turn
+Main phase - NaN
+NaN uses Sample 42-C to move 1 Æmber  from nan26 to Sample 42-C
+Ready phase - NaN
+NaN readies their cards
+Draw phase - NaN
+NaN sheds 1 chain to 0 chains
+End of turn 5
+NaN: 2 Æmber  (0 keys) nan26: 5 Æmber  (0 keys)
+TURN 6 - nan26
+NaN chooses house staralliance
+NaN uses Ask Again Later to make nan26 name house staralliance
+Ask Again Later reveals Strategic Feint
+Key phase - nan26
+nan26 does not forge a key. They have 5 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses sanctum  as their active house this turn
+Main phase - nan26
+Ready phase - nan26
+Draw phase - nan26
+End of turn 6
+NaN: 2 Æmber  (0 keys) nan26: 5 Æmber  (0 keys)
+TURN 6 - NaN
+Key phase - NaN
+NaN does not forge a key. They have 2 amber. The current cost is 6 Æmber
+House phase - NaN
+NaN chooses dis  as their active house this turn
+Main phase - NaN
+Ready phase - NaN
+Draw phase - NaN
+NaN draws 1 card  to refill their hand to 6 cards
+End of turn 6
+NaN: 2 Æmber  (0 keys) nan26: 5 Æmber  (0 keys)
+TURN 7 - nan26
+NaN chooses house dis
+NaN uses Ask Again Later to make nan26 name house dis
+Ask Again Later reveals We Can ALL Win
+nan26 fulfills Ask Again Later's prophecy
+nan26 resolves the fate effect of Rage Reset
+NaN uses Rage Reset to randomly discard 3 cards  from nan26's hand
+nan26 randomly discards Niffle Queen from hand
+nan26 randomly discards Commander Remiel from hand
+nan26 randomly discards Protectrix from hand
+Key phase - nan26
+nan26 does not forge a key. They have 5 amber. The current cost is 6 Æmber
+House phase - nan26
+nan26 chooses shadows  as their active house this turn
+Main phase - nan26
+nan26 concedes
+NaN has won the game

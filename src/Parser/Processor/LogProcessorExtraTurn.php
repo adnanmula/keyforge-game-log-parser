@@ -24,7 +24,7 @@ final class LogProcessorExtraTurn implements LogProcessor
             $player = $matches[1];
             $trigger = trim($matches[2]);
 
-            $game->player($player)?->timeline->add(
+            $game->player($player)->timeline->add(
                 new Event(
                     EventType::EXTRA_TURN,
                     $player,

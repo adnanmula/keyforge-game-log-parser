@@ -26,7 +26,7 @@ final class LogProcessorTokens implements LogProcessor
             $player = $matches[1];
             $card = trim($matches[2]);
 
-            $game->player($player)?->timeline->add(
+            $game->player($player)->timeline->add(
                 new Event(
                     EventType::TOKEN_CREATED,
                     $player,
@@ -43,7 +43,7 @@ final class LogProcessorTokens implements LogProcessor
             $amount = (int) $matches2[3];
 
             for ($i = 0; $i < $amount; ++$i) {
-                $game->player($player)?->timeline->add(
+                $game->player($player)->timeline->add(
                     new Event(
                         EventType::TOKEN_CREATED,
                         $player,

@@ -9,21 +9,45 @@ final class ExtraTurnsTest extends TestCase
 {
     use GetTestData;
 
-    public function testExtraTurns(): void
+    public function testExtraTurns1(): void
     {
-        $game = $this->getLog('6');
+        $game = $this->getLog('extra_turns');
 
-        $extraTurn1 = $game->player1->timeline->filter(EventType::EXTRA_TURN)->at(0);
-        $extraTurn2 = $game->player2->timeline->filter(EventType::EXTRA_TURN)->at(0);
-        $extraTurn3 = $game->timeline()->filter(EventType::EXTRA_TURN)->at(0);
-        $extraTurn4 = $game->timeline()->filter(EventType::EXTRA_TURN)->at(1);
+        $allEvents = $game->timeline()->filter(EventType::EXTRA_TURN);
+        $player1Events = $game->player1->timeline->filter(EventType::EXTRA_TURN);
+        $player2Events = $game->player2->timeline->filter(EventType::EXTRA_TURN);
 
-        self::assertEquals(1, $game->player1->timeline->totalExtraTurns());
-        self::assertEquals('Ancestral Timekeeper', $extraTurn1?->payload()['trigger'] ?? null);
-        self::assertEquals(1, $game->player2->timeline->totalExtraTurns());
-        self::assertEquals('Tachyon Manifold', $extraTurn2?->payload()['trigger'] ?? null);
+        self::assertCount(2, $allEvents);
+        self::assertCount(1, $player1Events);
+        self::assertCount(1, $player2Events);
+
         self::assertEquals(2, $game->timeline()->totalExtraTurns());
-        self::assertEquals('Ancestral Timekeeper', $extraTurn3?->payload()['trigger'] ?? null);
-        self::assertEquals('Tachyon Manifold', $extraTurn4?->payload()['trigger'] ?? null);
+        self::assertEquals('Tachyon Manifold', $allEvents->at(0)?->payload()['trigger']);
+        self::assertEquals('Ancestral Timekeeper', $allEvents->at(1)?->payload()['trigger']);
+        self::assertEquals(1, $game->player1->timeline->totalExtraTurns());
+        self::assertEquals('Tachyon Manifold', $player1Events->at(0)?->payload()['trigger']);
+        self::assertEquals(1, $game->player2->timeline->totalExtraTurns());
+        self::assertEquals('Ancestral Timekeeper', $player2Events->at(0)?->payload()['trigger']);
+    }
+
+    public function testExtraTurns2(): void
+    {
+        $game = $this->getLog('extra_turns_2');
+
+        $allEvents = $game->timeline()->filter(EventType::EXTRA_TURN);
+        $player1Events = $game->player1->timeline->filter(EventType::EXTRA_TURN);
+        $player2Events = $game->player2->timeline->filter(EventType::EXTRA_TURN);
+
+        self::assertCount(2, $allEvents);
+        self::assertCount(1, $player1Events);
+        self::assertCount(1, $player2Events);
+
+        self::assertEquals(2, $game->timeline()->totalExtraTurns());
+        self::assertEquals('Ancestral Timekeeper', $allEvents->at(0)?->payload()['trigger']);
+        self::assertEquals('Tachyon Manifold', $allEvents->at(1)?->payload()['trigger']);
+        self::assertEquals(1, $game->player1->timeline->totalExtraTurns());
+        self::assertEquals('Ancestral Timekeeper', $player1Events->at(0)?->payload()['trigger']);
+        self::assertEquals(1, $game->player2->timeline->totalExtraTurns());
+        self::assertEquals('Tachyon Manifold', $player2Events->at(0)?->payload()['trigger']);
     }
 }

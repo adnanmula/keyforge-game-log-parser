@@ -19,7 +19,7 @@ final class LogProcessorHouses implements LogProcessor
         $pattern = "/($player1|$player2)\s+chooses\s+(\w*)\s+as their active house this turn$/";
 
         if (preg_match($pattern, $message, $matches)) {
-            $game->player($matches[1])?->timeline->add(
+            $game->player($matches[1])->timeline->add(
                 new Event(
                     EventType::HOUSE_CHOSEN,
                     $matches[1],

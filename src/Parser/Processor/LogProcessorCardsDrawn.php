@@ -21,7 +21,7 @@ final class LogProcessorCardsDrawn implements LogProcessor
         $pattern = "/^($player1|$player2)\s+draws\s+(\d+)\s+card/";
 
         if (preg_match($pattern, $message, $matches)) {
-            $game->player($matches[1])?->timeline->add(
+            $game->player($matches[1])->timeline->add(
                 new Event(
                     EventType::CARDS_DRAWN,
                     $matches[1],

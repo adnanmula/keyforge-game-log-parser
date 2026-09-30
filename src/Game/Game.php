@@ -2,6 +2,8 @@
 
 namespace AdnanMula\KeyforgeGameLogParser\Game;
 
+use AdnanMula\KeyforgeGameLogParser\Parser\Exception\PlayerNotInGameException;
+
 final class Game implements \JsonSerializable
 {
     public function __construct(
@@ -11,7 +13,7 @@ final class Game implements \JsonSerializable
         private(set) array $rawLog,
     ) {}
 
-    public function player(string $name): ?Player
+    public function player(string $name): Player
     {
         if ($name === $this->player1->name) {
             return $this->player1;
@@ -21,7 +23,7 @@ final class Game implements \JsonSerializable
             return $this->player2;
         }
 
-        return null;
+        throw new PlayerNotInGameException($name);
     }
 
     public function winner(): ?Player
@@ -61,6 +63,21 @@ final class Game implements \JsonSerializable
         }
 
         return null;
+    }
+
+    public function opponentOf(Player|string $player): Player
+    {
+        if (is_string($player)) {
+            $player = $this->player($player);
+        }
+
+        if (false === in_array($player->name, [$this->player1->name, $this->player2->name], true)) {
+            throw new PlayerNotInGameException($player->name);
+        }
+
+        return $player->name === $this->player1->name
+            ? $this->player2
+            : $this->player1;
     }
 
     public function updateLength(int $value): self

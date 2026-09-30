@@ -49,14 +49,18 @@ final class Player implements \JsonSerializable
 
     public function addScore(): self
     {
-        ++$this->score;
+        if ($this->score < 3) {
+            ++$this->score;
+        }
 
         return $this;
     }
 
     public function subtractScore(): self
     {
-        --$this->score;
+        if ($this->score > 0) {
+            --$this->score;
+        }
 
         return $this;
     }

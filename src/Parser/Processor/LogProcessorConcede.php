@@ -21,9 +21,9 @@ final class LogProcessorConcede implements LogProcessor
         if (preg_match($pattern, $message, $matches)) {
             $player = $matches[1];
 
-            $game->player($player)?->updateHasConceded(true);
+            $game->player($player)->updateHasConceded(true);
 
-            $game->player($player)?->timeline->add(
+            $game->player($player)->timeline->add(
                 new Event(
                     EventType::PLAYER_CONCEDED,
                     $player,
